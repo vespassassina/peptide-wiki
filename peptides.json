@@ -16,7 +16,7 @@
     "status": "Research chemical / not FDA-approved. Tested in a handful of small human trials under the name PL 14736 (rectal enemas for ulcerative colitis); most other human use is off-label self-administration.",
     "origin": "A fragment of a larger gastric-juice protein called Body Protection Compound. It occurs naturally in the human GI tract, and older Croatian tissue-distribution work found it expressed at low levels in lung, kidney, and skin too.",
     "mechanism": "It doesn't bind classical receptors: dopamine, serotonin, histamine, adrenergic, muscarinic, and adenosine receptors have all been screened and show no affinity. Its effects instead run through upregulated growth-factor receptor expression (including growth hormone receptor in tendon fibroblasts), nitric-oxide modulation, and strong pro-angiogenic signaling. In animal models it consistently speeds fibroblast activity, blood vessel formation, and collagen organization at injury sites while suppressing scar tissue.",
-    "research_summary": "The published evidence base is large, over 200 papers, but almost entirely rodent and in-vitro. Repeated findings include faster healing of tendon, ligament, muscle, and nerve transections; faster healing of skin incisions, burns, and GI fistulas; protection against and healing of gastric ulcers; and a strong anti-inflammatory effect across multiple models. Human data is limited to Phase I/II trials of a rectal enema formulation (PL 14736) in healthy volunteers and ulcerative colitis patients in the early 2000s: well tolerated, with a statistically significant improvement in disease-activity scores versus placebo, and essentially no systemic absorption from the rectal route. No modern human dosing, efficacy, or long-term safety trials exist for the injectable or oral forms people use. One red flag: essentially every animal study on BPC-157 reports a positive result, which points to publication bias. Treat individual studies as suggestive, not proof.",
+    "research_summary": "The published evidence base is large, over 200 papers, but almost entirely rodent and in-vitro. Repeated findings include faster healing of tendon, ligament, muscle, and nerve transections; faster healing of skin incisions, burns, and GI fistulas; protection against and healing of gastric ulcers; and a strong anti-inflammatory effect across multiple models. Human data is limited to Phase I/II trials of a rectal enema formulation (PL 14736) in healthy volunteers and ulcerative colitis patients in the early 2000s: well tolerated, with a statistically significant improvement in disease-activity scores versus placebo, and essentially no systemic absorption from the rectal route. No modern human dosing, efficacy, or long-term safety trials exist for the injectable or oral forms people use. One red flag: essentially every animal study on BPC-157 reports a positive result, which points to publication bias. Treat individual studies as suggestive, not proof. One in-vitro plasma-stability study found roughly 36% of BPC-157 still intact after 60 minutes, implying a plasma half-life in the range of 40 minutes — short, consistent with why community protocols favor frequent small doses over infrequent large ones.",
     "reported_benefits": [
       "Faster recovery from tendon, ligament and muscle strains reported anecdotally and in animal studies",
       "Reduced joint and connective-tissue pain in long-standing injuries",
@@ -30,7 +30,7 @@
       },
       {
         "route": "Oral (capsules or reconstituted drops)",
-        "protocol": "500 mcg, twice daily is a commonly reported oral dose. The 'stable' arginine-salt version (Arg-BPC-157) survives low stomach pH far better than the acetate salt and is generally preferred for oral use, though orally dosed BPC-157 is too large a molecule to be meaningfully absorbed intact \u2014 any systemic effect from oral dosing is unproven and the community consensus is that oral use is mainly reported to help local GI complaints, not peripheral joint or tendon injuries."
+        "protocol": "500 mcg, twice daily is a commonly reported oral dose. The 'stable' arginine-salt version (Arg-BPC-157) survives low stomach pH far better than the acetate salt and is generally preferred for oral use, though orally dosed BPC-157 is too large a molecule to be meaningfully absorbed intact — any systemic effect from oral dosing is unproven and the community consensus is that oral use is mainly reported to help local GI complaints, not peripheral joint or tendon injuries."
       },
       {
         "route": "Local/near-injury injection",
@@ -51,24 +51,76 @@
       "kpv",
       "ara-290",
       "ipamorelin"
-    ]
+    ],
+    "citations": [
+      {
+        "title": "Effects of BPC-157 and TB-500 on Achilles tendon healing in rats: A histopathological and biomechanical study",
+        "authors_year": "Biçer et al. 2026",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42542926/"
+      },
+      {
+        "title": "Peptide Supplements and Their Therapeutic Applications in Sports Medicine",
+        "authors_year": "Tewari et al. 2026",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42578445/"
+      },
+      {
+        "title": "From Regeneration to Analgesia: The Role of BPC-157 in Tissue Repair and Pain Management",
+        "authors_year": "Yuan et al. 2026",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41898733/"
+      },
+      {
+        "title": "Regeneration or Risk? A Narrative Review of BPC-157 for Musculoskeletal Healing",
+        "authors_year": "McGuire et al. 2025",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40789979/"
+      }
+    ],
+    "mixing_notes": {
+      "clinic_combos": [
+        "cjc-1295",
+        "cjc-1295-dac",
+        "epithalon",
+        "ghk-cu",
+        "ghrp-6",
+        "hexarelin",
+        "ipamorelin",
+        "kpv",
+        "mgf",
+        "pe-22-28",
+        "pinealon",
+        "selank",
+        "semax",
+        "tb-500",
+        "tesamorelin",
+        "thymalin",
+        "thymosin-alpha-1"
+      ],
+      "anecdotal_combos": [
+        "hcg",
+        "igf-1-lr3"
+      ],
+      "reported_avoid": [
+        "ara-290",
+        "mots-c",
+        "nad"
+      ]
+    }
   },
   "tb-500": {
     "name": "TB-500 / Thymosin Beta-4",
-    "full_name": "Thymosin Beta-4 (full sequence) \u2014 products sold as 'TB-500' may contain either the full 43-amino-acid T\u03b24 or just its Frag 17-23 fragment",
+    "full_name": "Thymosin Beta-4 (full sequence) — products sold as 'TB-500' may contain either the full 43-amino-acid Tβ4 or just its Frag 17-23 fragment",
     "aliases": [
       "TB-500",
       "TB4",
-      "Thymosin \u03b24",
+      "Thymosin β4",
       "Frag 17-23"
     ],
     "categories": [
       "recovery-healing"
     ],
     "tagline": "A naturally occurring wound-response peptide released by platelets, used for muscle, tendon and neurological healing, often stacked with BPC-157.",
-    "status": "Research chemical for the self-administered market. The active molecule (T\u03b24) has gone through legitimate pharmaceutical development under RegeneRx as RGN-259 (eye drops, completed Phase III), RGN-352 (systemic injection, completed Phase I) and RGN-137 (topical gel, Phase II) \u2014 but none of these are approved, marketed drugs.",
-    "origin": "Thymosin Beta-4 is a 43-amino-acid peptide present in nearly all human cells, especially platelets and white blood cells, released at wound sites as part of the natural clotting and repair cascade. 'TB-500' is a commercial name that's ambiguous: some vendors sell the full T\u03b24 sequence, others sell only its Frag 17-23 region (LKKTETQ), the piece responsible for actin-binding and cell-migration effects. Check what a specific product actually contains before assuming.",
-    "mechanism": "Different regions of the T\u03b24 sequence do different jobs: amino acids 1-4 are anti-inflammatory and anti-fibrotic; 1-15 is anti-apoptotic/cytoprotective; 17-23 drives actin binding, cell migration, angiogenesis and dermal wound healing (and triggers mast-cell degranulation); 40-43 supports cardiac cell migration after ischemic injury. TB4 binds free actin monomers (G-actin) rather than a conventional receptor, effectively expanding the pool of building blocks cells use to rebuild cytoskeletal structure during repair.",
+    "status": "Research chemical for the self-administered market. The active molecule (Tβ4) has gone through legitimate pharmaceutical development under RegeneRx as RGN-259 (eye drops, completed Phase III), RGN-352 (systemic injection, completed Phase I) and RGN-137 (topical gel, Phase II) — but none of these are approved, marketed drugs.",
+    "origin": "Thymosin Beta-4 is a 43-amino-acid peptide present in nearly all human cells, especially platelets and white blood cells, released at wound sites as part of the natural clotting and repair cascade. 'TB-500' is a commercial name that's ambiguous: some vendors sell the full Tβ4 sequence, others sell only its Frag 17-23 region (LKKTETQ), the piece responsible for actin-binding and cell-migration effects. Check what a specific product actually contains before assuming.",
+    "mechanism": "Different regions of the Tβ4 sequence do different jobs: amino acids 1-4 are anti-inflammatory and anti-fibrotic; 1-15 is anti-apoptotic/cytoprotective; 17-23 drives actin binding, cell migration, angiogenesis and dermal wound healing (and triggers mast-cell degranulation); 40-43 supports cardiac cell migration after ischemic injury. TB4 binds free actin monomers (G-actin) rather than a conventional receptor, effectively expanding the pool of building blocks cells use to rebuild cytoskeletal structure during repair.",
     "research_summary": "A 2015 meta-analysis found broad applicability across tissue regeneration, post-heart-attack cardiac repair, stroke and neurological recovery, kidney/liver repair, and bone/ligament/spinal cord injury in animal models. Human data is more substantial than for most research peptides: RGN-259 eye drops completed Phase III trials for dry eye and neurotrophic keratitis with statistically significant symptom improvement and no adverse events. RGN-352 systemic IV dosing was tested up to single doses of 1260 mg and repeated daily dosing for 14 days (cumulative ~18.9 g in one subject) with no dose-limiting toxicity, no cardiovascular/respiratory signal, and no cancers at 6-month follow-up; headache was the only adverse event, occurring equally in placebo. Pharmacokinetics show a short half-life (under 1-2 hours even at high doses) and dose-independent clearance, so TB4 doesn't meaningfully accumulate with daily dosing at the doses studied.",
     "reported_benefits": [
       "Faster recovery from muscle strains and tears",
@@ -78,38 +130,85 @@
     ],
     "dosing_protocols": [
       {
-        "route": "Subcutaneous injection \u2014 loading protocol",
+        "route": "Subcutaneous injection — loading protocol",
         "protocol": "A widely circulated protocol: 5 mg twice weekly (e.g. Monday/Thursday) for 5 weeks, then 5 mg once weekly for 2 more weeks (total ~35 mg over 7 weeks)."
       },
       {
-        "route": "Subcutaneous injection \u2014 daily lower-dose protocol",
-        "protocol": "Alternative protocols use smaller daily doses: roughly 450-750 mcg per day for 20-30 days. Because T\u03b24's half-life is short and it doesn't accumulate systemically, both large-infrequent and small-frequent dosing schemes appear in the literature with good animal results; there's no head-to-head human comparison."
+        "route": "Subcutaneous injection — daily lower-dose protocol",
+        "protocol": "Alternative protocols use smaller daily doses: roughly 450-750 mcg per day for 20-30 days. Because Tβ4's half-life is short and it doesn't accumulate systemically, both large-infrequent and small-frequent dosing schemes appear in the literature with good animal results; there's no head-to-head human comparison."
       },
       {
         "route": "Post-injury / acute dosing",
-        "protocol": "Some practitioners use a short course of higher daily dosing (e.g. ~1.5 mg/day for about a week) immediately after an acute injury or surgery, on the theory of mimicking the natural post-injury T\u03b24 spike, then tapering to a lower maintenance dose."
+        "protocol": "Some practitioners use a short course of higher daily dosing (e.g. ~1.5 mg/day for about a week) immediately after an acute injury or surgery, on the theory of mimicking the natural post-injury Tβ4 spike, then tapering to a lower maintenance dose."
       }
     ],
     "side_effects": [
       "Injection site irritation",
-      "Possible mast-cell activation from the Frag 17-23 region \u2014 a concern for people with MCAS",
-      "Theoretical proliferative/metastasis-promoting risk, since T\u03b24 overexpression is associated with several cancer types at the cellular level (no data yet on whether exogenous dosing carries this risk in humans) \u2014 TB4 is generally considered contraindicated for anyone with active or recent cancer"
+      "Possible mast-cell activation from the Frag 17-23 region — a concern for people with MCAS",
+      "Theoretical proliferative/metastasis-promoting risk, since Tβ4 overexpression is associated with several cancer types at the cellular level (no data yet on whether exogenous dosing carries this risk in humans) — TB4 is generally considered contraindicated for anyone with active or recent cancer"
     ],
     "safety_notes": "Human injection safety data (RGN-352 Phase I) is reassuring at doses far higher than self-experimenters typically use: no dose-limiting toxicity, no cancer signal at 6-month follow-up. But that was a short trial in healthy volunteers, not a long-term study, and the theoretical cancer-proliferation concern from cell-biology data means anyone with a personal or strong family history of cancer should weigh that risk carefully and ideally talk to a physician.",
-    "community_notes": "Frequently stacked with BPC-157: BPC for connective tissue and gut, TB4 for muscle, systemic inflammation and flexibility. People with Ehlers-Danlos/hypermobility spectrum disorders report mixed results on flexibility; most find reduced muscle spasticity helpful, a minority report an unwanted increase in joint hypermobility during use. Community also disputes what's actually being sold as 'TB-500': cheaper vials are more likely the smaller Frag 17-23 fragment rather than full T\u03b24. That's not necessarily a scam (Frag 17-23 delivers more molecules per mg and covers the muscle/actin-binding effects), but buyers should know which one they're getting if they want T\u03b24's broader immune and cardiac-repair activity too.",
+    "community_notes": "Frequently stacked with BPC-157: BPC for connective tissue and gut, TB4 for muscle, systemic inflammation and flexibility. People with Ehlers-Danlos/hypermobility spectrum disorders report mixed results on flexibility; most find reduced muscle spasticity helpful, a minority report an unwanted increase in joint hypermobility during use. Community also disputes what's actually being sold as 'TB-500': cheaper vials are more likely the smaller Frag 17-23 fragment rather than full Tβ4. That's not necessarily a scam (Frag 17-23 delivers more molecules per mg and covers the muscle/actin-binding effects), but buyers should know which one they're getting if they want Tβ4's broader immune and cardiac-repair activity too. Separately, some in the EDS/HSD community flag that TB-500's active sequence includes a region known to activate mast cells, and suggest starting low for anyone with Mast Cell Activation Syndrome (MCAS) or a history of mast-cell reactivity.",
     "related": [
       "bpc-157",
       "ghk-cu",
       "kpv"
     ],
-    "variant_note": "Sometimes sold as 'TB-500 Frag' or 'Thymosin Beta-4 Fragment' \u2014 a shorter fragment of the same parent protein, marketed as a cheaper alternative. It is not established as pharmacologically equivalent to full TB-500/T\u03b24, and independent evidence for the fragment specifically is essentially absent; treat fragment products as a distinct, far less characterized compound rather than an interchangeable substitute."
+    "variant_note": "Sometimes sold as 'TB-500 Frag' or 'Thymosin Beta-4 Fragment' — a shorter fragment of the same parent protein, marketed as a cheaper alternative. It is not established as pharmacologically equivalent to full TB-500/Tβ4, and independent evidence for the fragment specifically is essentially absent; treat fragment products as a distinct, far less characterized compound rather than an interchangeable substitute.",
+    "citations": [
+      {
+        "title": "Effects of BPC-157 and TB-500 on Achilles tendon healing in rats: A histopathological and biomechanical study",
+        "authors_year": "Biçer et al. 2026",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42542926/"
+      },
+      {
+        "title": "Peptide Supplements and Their Therapeutic Applications in Sports Medicine",
+        "authors_year": "Tewari et al. 2026",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42578445/"
+      },
+      {
+        "title": "Engineered Tandem Thymosin Peptide Promotes Corneal Wound Healing",
+        "authors_year": "Nguyen et al. 2025",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41235866/"
+      },
+      {
+        "title": "Thymosin β4 and Actin: Binding Modes, Biological Functions and Clinical Applications",
+        "authors_year": "Ying et al. 2023",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36464872/"
+      }
+    ],
+    "mixing_notes": {
+      "clinic_combos": [
+        "bpc-157",
+        "cjc-1295",
+        "cjc-1295-dac",
+        "epithalon",
+        "ghk-cu",
+        "ipamorelin",
+        "ll-37",
+        "mt-1",
+        "mt-2",
+        "pinealon",
+        "selank",
+        "semax",
+        "thymalin",
+        "thymosin-alpha-1"
+      ],
+      "anecdotal_combos": [],
+      "reported_avoid": [
+        "aod-9604",
+        "ara-290",
+        "mots-c",
+        "nad"
+      ]
+    }
   },
   "kpv": {
     "name": "KPV",
     "full_name": "Lysine-Proline-Valine (C-terminal tripeptide fragment of alpha-MSH)",
     "aliases": [
       "KPV tripeptide",
-      "\u03b1-MSH(11-13)"
+      "α-MSH(11-13)"
     ],
     "categories": [
       "recovery-healing"
@@ -139,7 +238,7 @@
       }
     ],
     "side_effects": [
-      "Limited human safety data \u2014 most reported issues are generic to peptide self-injection (site irritation)",
+      "Limited human safety data — most reported issues are generic to peptide self-injection (site irritation)",
       "No known pigmentation or libido effects (unlike full-length alpha-MSH analogs)"
     ],
     "safety_notes": "There's essentially no human trial data for isolated KPV, so dosing and long-term safety rest entirely on extrapolation from animal work and community reporting. One of the least-studied compounds in this wiki.",
@@ -147,7 +246,42 @@
     "related": [
       "bpc-157",
       "ara-290"
-    ]
+    ],
+    "citations": [
+      {
+        "title": "Orally Targeted Delivery of Tripeptide KPV via Hyaluronic Acid-Functionalized Nanoparticles Efficiently Alleviates Ulcerative Colitis",
+        "authors_year": "Xiao et al. 2017",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/28143741/"
+      },
+      {
+        "title": "Alpha-melanocyte-stimulating hormone and related tripeptides: biochemistry, antiinflammatory and protective effects in vitro and in vivo, and future perspectives for the treatment of immune-mediated inflammatory diseases",
+        "authors_year": "Brzoska et al. 2008",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/18612139/"
+      },
+      {
+        "title": "Critical role of PepT1 in promoting colitis-associated cancer and therapeutic benefits of the anti-inflammatory PepT1-mediated tripeptide KPV in a murine model",
+        "authors_year": "Viennois et al. 2016",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/27458604/"
+      },
+      {
+        "title": "Self-Cross-Linked Hydrogel of Cysteamine-Grafted γ-Polyglutamic Acid Stabilized Tripeptide KPV for Alleviating TNBS-Induced Ulcerative Colitis in Rats",
+        "authors_year": "Sun et al. 2021",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34547895/"
+      }
+    ],
+    "mixing_notes": {
+      "clinic_combos": [
+        "bpc-157",
+        "ghk-cu"
+      ],
+      "anecdotal_combos": [],
+      "reported_avoid": [
+        "aod-9604",
+        "ara-290",
+        "mots-c",
+        "nad"
+      ]
+    }
   },
   "ara-290": {
     "name": "ARA-290",
@@ -161,7 +295,7 @@
       "recovery-healing"
     ],
     "tagline": "A non-hematopoietic EPO fragment developed for neuropathic pain and small-fiber nerve repair, without EPO's blood-thickening effects.",
-    "status": "Clinical-stage investigational drug (further along than most peptides in this wiki) \u2014 tested in several placebo-controlled human trials for small fiber neuropathy and diabetic neuropathy, but not yet an approved medication.",
+    "status": "Clinical-stage investigational drug (further along than most peptides in this wiki) — tested in several placebo-controlled human trials for small fiber neuropathy and diabetic neuropathy, but not yet an approved medication.",
     "origin": "Derived from erythropoietin (EPO), the hormone that drives red blood cell production. EPO's neuroprotective, anti-inflammatory, and nerve-repair effects run through a separate receptor complex (the innate repair receptor) from the one that stimulates red blood cells. ARA-290 was engineered to hit only the repair pathway, giving EPO-like tissue protection without raising red blood cell count or blood viscosity.",
     "mechanism": "Binds the innate repair receptor, distinct from the classical EPO receptor, triggering anti-inflammatory and cytoprotective signaling in nerve and vascular tissue. Trials have shown it increases corneal small-nerve-fiber density, a direct, measurable marker of nerve regeneration.",
     "research_summary": "Multiple placebo-controlled human trials exist. A double-blind trial in sarcoidosis patients with small fiber neuropathy (4 mg subcutaneous daily for 28 days) showed symptom improvement and increased corneal nerve fiber density versus placebo. Separate trials in type 2 diabetes patients with neuropathic symptoms showed improved metabolic control and symptom scores, with dose-ranging work across 1 mg, 4 mg, and 8 mg groups. It's one of the better-studied compounds in peptide communities, with real dose-response human data, a rarity here.",
@@ -178,18 +312,79 @@
     ],
     "side_effects": [
       "Generally well tolerated in trials with no major red flags reported",
-      "Does not raise red blood cell count or blood pressure the way EPO itself can \u2014 this was the whole design goal and trial data supports it"
+      "Does not raise red blood cell count or blood pressure the way EPO itself can — this was the whole design goal and trial data supports it"
     ],
     "safety_notes": "One of the more reassuring safety profiles here, backed by real placebo-controlled human dosing data. But trials ran only 28 days in specific patient populations (sarcoidosis, diabetic neuropathy); long-term use in healthy people or off-label indications like dysautonomia hasn't been studied.",
     "community_notes": "Less mainstream than BPC-157/TB-500, but draws strong interest from people with small fiber neuropathy, POTS/dysautonomia, and EDS/HSD, where standard treatment is mostly symptom management rather than repair. Cost and sourcing difficulty temper enthusiasm, and anecdotal reports of benefit are sparser than for the popular healing peptides.",
     "related": [
       "bpc-157",
       "kpv"
-    ]
+    ],
+    "citations": [
+      {
+        "title": "Cibinetide Improves Corneal Nerve Fiber Abundance in Patients With Sarcoidosis-Associated Small Nerve Fiber Loss and Neuropathic Pain",
+        "authors_year": "Culver et al. 2017",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/28475703/"
+      },
+      {
+        "title": "ARA 290 for treatment of small fiber neuropathy in sarcoidosis",
+        "authors_year": "van Velzen et al. 2014",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/24555851/"
+      },
+      {
+        "title": "The erythropoietin-derived peptide ARA290 reverses mechanical allodynia in the neuritis model",
+        "authors_year": "Pulman et al. 2012",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/23262243/"
+      },
+      {
+        "title": "Corneal nerve fiber size adds utility to the diagnosis and assessment of therapeutic response in patients with small fiber neuropathy",
+        "authors_year": "Brines et al. 2018",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/29549285/"
+      }
+    ],
+    "mixing_notes": {
+      "clinic_combos": [],
+      "anecdotal_combos": [],
+      "reported_avoid": [
+        "aod-9604",
+        "bpc-157",
+        "cjc-1295",
+        "cjc-1295-dac",
+        "dsip",
+        "epithalon",
+        "ghk-cu",
+        "ghrp-2",
+        "ghrp-6",
+        "hcg",
+        "hexarelin",
+        "hgh-somatropin",
+        "humanin",
+        "igf-1-lr3",
+        "ipamorelin",
+        "kisspeptin",
+        "kpv",
+        "ll-37",
+        "mgf",
+        "mots-c",
+        "mt-1",
+        "mt-2",
+        "nad",
+        "p21",
+        "pe-22-28",
+        "pinealon",
+        "pt-141",
+        "selank",
+        "semax",
+        "tb-500",
+        "tesamorelin",
+        "thymalin",
+        "thymosin-alpha-1"
+      ]
+    }
   },
   "ghk-cu": {
     "name": "GHK-Cu",
-    "full_name": "Glycyl-L-Histidyl-L-Lysine \u2014 Copper Complex",
+    "full_name": "Glycyl-L-Histidyl-L-Lysine — Copper Complex",
     "aliases": [
       "Copper peptide",
       "GHK-Copper",
@@ -220,17 +415,58 @@
       }
     ],
     "side_effects": [
-      "Topical: generally very well tolerated; can transiently increase skin sun-sensitivity due to increased cell turnover \u2014 sunscreen use recommended during treatment",
+      "Topical: generally very well tolerated; can transiently increase skin sun-sensitivity due to increased cell turnover — sunscreen use recommended during treatment",
       "Injectable: local injection-site reactions reported; systemic safety data at self-experimentation doses is essentially absent"
     ],
     "safety_notes": "Topical GHK-Cu is one of the safest and best-studied compounds in this wiki. Injectable/systemic use is different: popular in self-experimentation stacks, but without the same evidence backing as the topical form, and dosing is folk convention.",
-    "community_notes": "Frequently added in small doses to BPC-157/TB-500 healing stacks and to hair-loss protocols alongside minoxidil/finasteride. Also popular as a standalone topical anti-aging ingredient outside the injectable-peptide community, showing up in mainstream skincare marketing. Community sentiment on injectable use is generally positive but far less confident and detailed than for BPC-157 or TB-500: people describe it as a nice addition, not a primary driver of results.",
+    "community_notes": "Frequently added in small doses to BPC-157/TB-500 healing stacks and to hair-loss protocols alongside minoxidil/finasteride. Also popular as a standalone topical anti-aging ingredient outside the injectable-peptide community, showing up in mainstream skincare marketing. Community sentiment on injectable use is generally positive but far less confident and detailed than for BPC-157 or TB-500: people describe it as a nice addition, not a primary driver of results. Reported personal dosing patterns vary widely, from roughly 1 mg/day as a baseline addition to a stack, up to occasional higher-dose cycles around 20 mg — none of it standardized, and mostly folded into other peptides' protocols rather than run alone.",
     "related": [
       "bpc-157",
       "tb-500",
       "epithalon"
     ],
-    "variant_note": "Sometimes sold as plain 'GHK' (without copper already bound) rather than the copper-complexed GHK-Cu described on this page. GHK requires copper binding in vivo to exert its characteristic effects, so uncomplexed GHK is a meaningfully different product with a thinner evidence base than the copper complex."
+    "variant_note": "Sometimes sold as plain 'GHK' (without copper already bound) rather than the copper-complexed GHK-Cu described on this page. GHK requires copper binding in vivo to exert its characteristic effects, so uncomplexed GHK is a meaningfully different product with a thinner evidence base than the copper complex.",
+    "citations": [
+      {
+        "title": "Peptide Supplements and Their Therapeutic Applications in Sports Medicine",
+        "authors_year": "Tewari et al. 2026",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42578445/"
+      },
+      {
+        "title": "GHK Peptide as a Natural Modulator of Multiple Cellular Pathways in Skin Regeneration",
+        "authors_year": "Pickart et al. 2015",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/26236730/"
+      },
+      {
+        "title": "The human tri-peptide GHK and tissue remodeling",
+        "authors_year": "Pickart 2008",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/18644225/"
+      },
+      {
+        "title": "Augmented Skin Beneficial Effects of Thermus Thermophilus and Bacillus Subtilis Mixed-Culture Ferment Extract by Tripeptide GHK-Cu",
+        "authors_year": "Wang et al. 2026",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42573538/"
+      }
+    ],
+    "mixing_notes": {
+      "clinic_combos": [
+        "bpc-157",
+        "cjc-1295",
+        "cjc-1295-dac",
+        "epithalon",
+        "ipamorelin",
+        "kpv",
+        "tb-500",
+        "thymalin"
+      ],
+      "anecdotal_combos": [],
+      "reported_avoid": [
+        "aod-9604",
+        "ara-290",
+        "mots-c",
+        "nad"
+      ]
+    }
   },
   "epithalon": {
     "name": "Epithalon",
@@ -257,11 +493,11 @@
     ],
     "dosing_protocols": [
       {
-        "route": "Subcutaneous injection \u2014 classic 'course' protocol",
-        "protocol": "The traditional Khavinson-derived protocol is 5-10 mg per day for 10-20 days, done as a single annual or biannual course rather than continuous daily use \u2014 the theory being pulsed exposure rather than constant dosing."
+        "route": "Subcutaneous injection — classic 'course' protocol",
+        "protocol": "The traditional Khavinson-derived protocol is 5-10 mg per day for 10-20 days, done as a single annual or biannual course rather than continuous daily use — the theory being pulsed exposure rather than constant dosing."
       },
       {
-        "route": "Subcutaneous injection \u2014 lower dose variant",
+        "route": "Subcutaneous injection — lower dose variant",
         "protocol": "Some self-experimenters use lower daily doses (around 1 mg/day) for a similar 10-20 day course."
       }
     ],
@@ -278,14 +514,63 @@
       "nad",
       "dsip"
     ],
-    "variant_note": "Sometimes sold as 'N-Acetyl Epitalon Amidate' rather than plain Epithalon (Epitalon/Epithalone). The acetylated, amidated form is marketed as more stable in solution; it has not been independently studied to the same degree as the parent tetrapeptide, and community reports of equivalence are anecdotal."
+    "variant_note": "Sometimes sold as 'N-Acetyl Epitalon Amidate' rather than plain Epithalon (Epitalon/Epithalone). The acetylated, amidated form is marketed as more stable in solution; it has not been independently studied to the same degree as the parent tetrapeptide, and community reports of equivalence are anecdotal.",
+    "citations": [
+      {
+        "title": "Morphofunctional and molecular bases of pineal gland aging",
+        "authors_year": "Khavinson and Lin'kova 2012",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/22567846/"
+      },
+      {
+        "title": "Normalizing effect of the pineal gland peptides on the daily melatonin rhythm in old monkeys and elderly people",
+        "authors_year": "Korkushko et al. 2007",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/17969590/"
+      },
+      {
+        "title": "The influence of melatonin and epithalon on blood leukocyte count and leukocyte alkaline phosphatase in rats under different lighting conditions during ontogenesis",
+        "authors_year": "Uzenbaeva et al. 2008",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/19432172/"
+      },
+      {
+        "title": "Effect of a synthetic pineal tetrapeptide (Ala-Glu-Asp-Gly) on melatonin secretion by the pineal gland of young and old rats",
+        "authors_year": "Djeridane et al. 2003",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/12809170/"
+      }
+    ],
+    "mixing_notes": {
+      "clinic_combos": [
+        "bpc-157",
+        "cjc-1295",
+        "cjc-1295-dac",
+        "dsip",
+        "ghk-cu",
+        "ghrp-2",
+        "ghrp-6",
+        "ipamorelin",
+        "pe-22-28",
+        "pinealon",
+        "selank",
+        "semax",
+        "tb-500",
+        "tesamorelin",
+        "thymalin",
+        "thymosin-alpha-1"
+      ],
+      "anecdotal_combos": [],
+      "reported_avoid": [
+        "aod-9604",
+        "ara-290",
+        "mots-c",
+        "nad"
+      ]
+    }
   },
   "thymosin-alpha-1": {
     "name": "Thymosin Alpha-1",
-    "full_name": "Thymosin \u03b11 (T\u03b11)",
+    "full_name": "Thymosin α1 (Tα1)",
     "aliases": [
       "TA-1",
-      "T\u03b11",
+      "Tα1",
       "Zadaxin (brand name)"
     ],
     "categories": [
@@ -305,7 +590,7 @@
     ],
     "dosing_protocols": [
       {
-        "route": "Subcutaneous injection \u2014 standard protocol",
+        "route": "Subcutaneous injection — standard protocol",
         "protocol": "The approved Zadaxin dosing (in countries where it's licensed) is 1.6 mg subcutaneously, twice weekly. Self-experimenters largely mirror this."
       },
       {
@@ -316,7 +601,7 @@
     "side_effects": [
       "Generally well tolerated in the clinical literature backing its drug approval abroad",
       "Mild injection-site reactions reported",
-      "As an immune modulator, caution is warranted for people on immunosuppressant therapy or with autoimmune conditions \u2014 effects on an already-dysregulated immune system are harder to predict"
+      "As an immune modulator, caution is warranted for people on immunosuppressant therapy or with autoimmune conditions — effects on an already-dysregulated immune system are harder to predict"
     ],
     "safety_notes": "One of the better safety profiles in this wiki given genuine drug-approval-grade trial data, though most of that data comes from specific patient populations (chronic hepatitis, cancer adjuvant use) rather than healthy people using it prophylactically.",
     "community_notes": "Popular among people who get frequent colds/infections, and within the EDS/HSD and chronic-illness communities as a general immune-support peptide. Regarded as one of the 'more legitimate' peptides because of its overseas drug approval, a common talking point when comparing evidence quality across peptides.",
@@ -324,7 +609,52 @@
       "epithalon",
       "ara-290",
       "kpv"
-    ]
+    ],
+    "citations": [
+      {
+        "title": "Safety and efficacy of Thymosin α1 in the treatment of hepatitis B virus-related acute-on-chronic liver failure: a randomized controlled trial",
+        "authors_year": "Chen et al. 2022",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35616850/"
+      },
+      {
+        "title": "Combination of entecavir with thymosin alpha-1 in HBV-related compensated cirrhosis: a prospective multicenter randomized open-label study",
+        "authors_year": "Wu et al. 2018",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/30063860/"
+      },
+      {
+        "title": "A multicenter, randomized, observation-controlled clinical trial to evaluate the efficacy and safety of thymalfasin adjuvant therapy in patients with HBV-related HCC after curative resection - first announcement of the protocol",
+        "authors_year": "Qiu et al. 2015",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/26094695/"
+      },
+      {
+        "title": "Thymosin alpha 1 - Reimagine its broader applications in the immuno-oncology era",
+        "authors_year": "Mao 2023",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36871535/"
+      }
+    ],
+    "mixing_notes": {
+      "clinic_combos": [
+        "bpc-157",
+        "cjc-1295",
+        "cjc-1295-dac",
+        "epithalon",
+        "ipamorelin",
+        "ll-37",
+        "mgf",
+        "pinealon",
+        "selank",
+        "semax",
+        "tb-500",
+        "thymalin"
+      ],
+      "anecdotal_combos": [],
+      "reported_avoid": [
+        "aod-9604",
+        "ara-290",
+        "mots-c",
+        "nad"
+      ]
+    }
   },
   "nad": {
     "name": "NAD+",
@@ -358,7 +688,7 @@
       },
       {
         "route": "Oral precursors (NMN/NR)",
-        "protocol": "Typical studied oral doses are 250-1000 mg/day for NMN and 300-1000 mg/day for NR \u2014 these are the routes with the most actual human trial data."
+        "protocol": "Typical studied oral doses are 250-1000 mg/day for NMN and 300-1000 mg/day for NR — these are the routes with the most actual human trial data."
       }
     ],
     "side_effects": [
@@ -372,7 +702,69 @@
       "epithalon",
       "mots-c",
       "humanin"
-    ]
+    ],
+    "citations": [
+      {
+        "title": "Safety and efficacy of long-term nicotinamide mononucleotide supplementation on metabolism, sleep, and nicotinamide adenine dinucleotide biosynthesis in healthy, middle-aged Japanese men",
+        "authors_year": "Yamaguchi et al. 2024",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38191197/"
+      },
+      {
+        "title": "Nicotinamide adenine dinucleotide metabolism and arterial stiffness after long-term nicotinamide mononucleotide supplementation: a randomized, double-blind, placebo-controlled trial",
+        "authors_year": "Katayoshi et al. 2023",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36797393/"
+      },
+      {
+        "title": "Oral nicotinamide riboside raises NAD+ and lowers biomarkers of neurodegenerative pathology in plasma extracellular vesicles enriched for neuronal origin",
+        "authors_year": "Vreones et al. 2022",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36515353/"
+      },
+      {
+        "title": "Nicotinamide riboside does not alter mitochondrial respiration, content or morphology in skeletal muscle from obese and insulin-resistant men",
+        "authors_year": "Dollerup et al. 2019",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31710095/"
+      }
+    ],
+    "mixing_notes": {
+      "clinic_combos": [
+        "humanin",
+        "mots-c"
+      ],
+      "anecdotal_combos": [],
+      "reported_avoid": [
+        "aod-9604",
+        "ara-290",
+        "bpc-157",
+        "cjc-1295",
+        "cjc-1295-dac",
+        "dsip",
+        "epithalon",
+        "ghk-cu",
+        "ghrp-2",
+        "ghrp-6",
+        "hcg",
+        "hexarelin",
+        "hgh-somatropin",
+        "igf-1-lr3",
+        "ipamorelin",
+        "kisspeptin",
+        "kpv",
+        "ll-37",
+        "mgf",
+        "mt-1",
+        "mt-2",
+        "p21",
+        "pe-22-28",
+        "pinealon",
+        "pt-141",
+        "selank",
+        "semax",
+        "tb-500",
+        "tesamorelin",
+        "thymalin",
+        "thymosin-alpha-1"
+      ]
+    }
   },
   "mots-c": {
     "name": "MOTS-c",
@@ -410,7 +802,69 @@
       "nad",
       "epithalon",
       "humanin"
-    ]
+    ],
+    "citations": [
+      {
+        "title": "The mitochondrial-derived peptide MOTS-c promotes metabolic homeostasis and reduces obesity and insulin resistance",
+        "authors_year": "Lee et al. 2015",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/25738459/"
+      },
+      {
+        "title": "The mitochondrial-derived peptide MOTS-c is a regulator of plasma metabolites and enhances insulin sensitivity",
+        "authors_year": "Kim et al. 2019",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31293078/"
+      },
+      {
+        "title": "Mitochondrial-derived peptides and exercise",
+        "authors_year": "Woodhead and Merry 2021",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34520826/"
+      },
+      {
+        "title": "Exercise-Induced Muscle-Fat Crosstalk: Molecular Mediators and Their Pharmacological Modulation for the Maintenance of Metabolic Flexibility in Aging",
+        "authors_year": "Tero-Vescan et al. 2025",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40872612/"
+      }
+    ],
+    "mixing_notes": {
+      "clinic_combos": [
+        "humanin",
+        "nad"
+      ],
+      "anecdotal_combos": [],
+      "reported_avoid": [
+        "aod-9604",
+        "ara-290",
+        "bpc-157",
+        "cjc-1295",
+        "cjc-1295-dac",
+        "dsip",
+        "epithalon",
+        "ghk-cu",
+        "ghrp-2",
+        "ghrp-6",
+        "hcg",
+        "hexarelin",
+        "hgh-somatropin",
+        "igf-1-lr3",
+        "ipamorelin",
+        "kisspeptin",
+        "kpv",
+        "ll-37",
+        "mgf",
+        "mt-1",
+        "mt-2",
+        "p21",
+        "pe-22-28",
+        "pinealon",
+        "pt-141",
+        "selank",
+        "semax",
+        "tb-500",
+        "tesamorelin",
+        "thymalin",
+        "thymosin-alpha-1"
+      ]
+    }
   },
   "humanin": {
     "name": "Humanin",
@@ -447,7 +901,40 @@
       "mots-c",
       "nad",
       "epithalon"
-    ]
+    ],
+    "citations": [
+      {
+        "title": "Detailed characterization of neuroprotection by a rescue factor humanin against various Alzheimer's disease-relevant insults",
+        "authors_year": "Hashimoto et al. 2001",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/11717357/"
+      },
+      {
+        "title": "Mechanisms of neuroprotection by a novel rescue factor humanin from Swedish mutant amyloid precursor protein",
+        "authors_year": "Hashimoto et al. 2001",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/11327724/"
+      },
+      {
+        "title": "Neuroprotective Action of Humanin and Humanin Analogues: Research Findings and Perspectives",
+        "authors_year": "Karachaliou and Livaniou 2023",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38132360/"
+      },
+      {
+        "title": "The Molecular Structure and Role of Humanin in Neural and Skeletal Diseases, and in Tissue Regeneration",
+        "authors_year": "Zhu et al. 2022",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35372353/"
+      }
+    ],
+    "mixing_notes": {
+      "clinic_combos": [
+        "mots-c",
+        "nad"
+      ],
+      "anecdotal_combos": [],
+      "reported_avoid": [
+        "aod-9604",
+        "ara-290"
+      ]
+    }
   },
   "semaglutide": {
     "name": "Semaglutide",
@@ -474,11 +961,11 @@
     "dosing_protocols": [
       {
         "route": "Subcutaneous injection, once weekly (standard prescribed titration)",
-        "protocol": "Standard titration starts at 0.25 mg/week for 4 weeks, then increases roughly every 4 weeks (0.5 mg \u2192 1 mg \u2192 1.7 mg \u2192 2.4 mg for Wegovy) to reduce GI side effects; maintenance dose depends on indication and tolerability."
+        "protocol": "Standard titration starts at 0.25 mg/week for 4 weeks, then increases roughly every 4 weeks (0.5 mg → 1 mg → 1.7 mg → 2.4 mg for Wegovy) to reduce GI side effects; maintenance dose depends on indication and tolerability."
       }
     ],
     "side_effects": [
-      "Nausea, vomiting, diarrhea or constipation, especially during dose escalation \u2014 the most common reason people stop",
+      "Nausea, vomiting, diarrhea or constipation, especially during dose escalation — the most common reason people stop",
       "Rare but serious: pancreatitis, gallbladder disease, risk of thyroid C-cell tumors (boxed warning based on rodent data; human relevance unconfirmed but the warning stands)",
       "Loss of lean muscle mass alongside fat mass is a well-documented concern, making resistance training and adequate protein intake important during treatment",
       "Not recommended in personal/family history of medullary thyroid carcinoma or MEN 2 syndrome"
@@ -489,7 +976,30 @@
       "tirzepatide",
       "retatrutide",
       "tesamorelin"
-    ]
+    ],
+    "citations": [
+      {
+        "title": "Once-Weekly Semaglutide in Adults with Overweight or Obesity",
+        "authors_year": "Wilding et al. 2021",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33567185/"
+      },
+      {
+        "title": "Weight regain and cardiometabolic effects after withdrawal of semaglutide: The STEP 1 trial extension",
+        "authors_year": "Wilding et al. 2022",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35441470/"
+      },
+      {
+        "title": "Changes in Glucose Metabolism and Glycemic Status With Once-Weekly Subcutaneous Semaglutide 2.4 mg Among Participants With Prediabetes in the STEP Program",
+        "authors_year": "Perreault et al. 2022",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35724304/"
+      },
+      {
+        "title": "Semaglutide 2.4 mg for the Treatment of Obesity: Key Elements of the STEP Trials 1 to 5",
+        "authors_year": "Kushner et al. 2020",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32441473/"
+      }
+    ],
+    "mixing_caution": "This chart's source flags GLP-1/GIP/glucagon-receptor drugs as broadly avoided in combination with other research peptides across the board — not a peptide-specific interaction, more a general caution against stacking incretin drugs with anything else. Treat any combination here as unverified."
   },
   "tirzepatide": {
     "name": "Tirzepatide",
@@ -528,7 +1038,20 @@
     "related": [
       "semaglutide",
       "retatrutide"
-    ]
+    ],
+    "citations": [
+      {
+        "title": "Tirzepatide Once Weekly for the Treatment of Obesity",
+        "authors_year": "Jastreboff et al. 2022",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35658024/"
+      },
+      {
+        "title": "Tirzepatide for Obesity Treatment and Diabetes Prevention",
+        "authors_year": "Jastreboff et al. 2024",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39536238/"
+      }
+    ],
+    "mixing_caution": "This chart's source flags GLP-1/GIP/glucagon-receptor drugs as broadly avoided in combination with other research peptides across the board — not a peptide-specific interaction, more a general caution against stacking incretin drugs with anything else. Treat any combination here as unverified."
   },
   "retatrutide": {
     "name": "Retatrutide",
@@ -541,7 +1064,7 @@
       "fat-loss"
     ],
     "tagline": "Investigational triple-hormone-receptor agonist with the largest weight-loss effect of any GLP-1-class compound tested so far. Not FDA-approved.",
-    "status": "Investigational \u2014 in Phase 3 clinical trials as of this writing, not yet FDA-approved for any indication. Available through research-chemical/grey-market channels despite lacking approval, which carries significant additional risk versus using a regulated, approved drug.",
+    "status": "Investigational — in Phase 3 clinical trials as of this writing, not yet FDA-approved for any indication. Available through research-chemical/grey-market channels despite lacking approval, which carries significant additional risk versus using a regulated, approved drug.",
     "origin": "Developed by Eli Lilly. A single synthetic peptide engineered to hit three receptors at once: GLP-1, GIP, and glucagon. The first 'triple agonist' in this class to reach late-stage trials.",
     "mechanism": "Combines GLP-1 and GIP receptor activity (as in tirzepatide) with glucagon receptor agonism, which raises energy expenditure and drives lipolysis in the liver. That stacks a metabolic-rate effect on top of the appetite suppression the other GLP-1-class drugs already provide.",
     "research_summary": "A Phase 2 trial in the New England Journal of Medicine reported average weight loss around 24% of body weight at the highest dose (12 mg/week) at 48 weeks, the largest effect size reported for this class at time of publication. Weight loss was still trending down, not plateaued, at trial's end, suggesting more loss with continued treatment. Phase 3 trials are underway to confirm long-term efficacy and safety at scale; longer-term glucagon-receptor effects are still being worked out.",
@@ -558,7 +1081,7 @@
     ],
     "side_effects": [
       "GI side effects similar to but potentially more pronounced than semaglutide/tirzepatide given the added glucagon receptor activity, including nausea, diarrhea and reduced appetite",
-      "Increased heart rate has been observed in trials, thought related to glucagon receptor activation \u2014 a distinguishing safety signal versus the dual/single agonists",
+      "Increased heart rate has been observed in trials, thought related to glucagon receptor activation — a distinguishing safety signal versus the dual/single agonists",
       "Long-term safety data does not yet exist at the scale available for semaglutide or tirzepatide"
     ],
     "safety_notes": "This is an investigational drug, not an approved medication. Anyone using it outside a trial is taking a compound with an unestablished long-term human safety profile, sourced through channels with zero regulatory quality control. Take the heart-rate signal seen in trials seriously: it's mechanistically distinct from the other GLP-1-class drugs.",
@@ -566,7 +1089,20 @@
     "related": [
       "tirzepatide",
       "semaglutide"
-    ]
+    ],
+    "citations": [
+      {
+        "title": "Triple-Hormone-Receptor Agonist Retatrutide for Obesity - A Phase 2 Trial",
+        "authors_year": "Jastreboff et al. 2023",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37366315/"
+      },
+      {
+        "title": "The power of three: Retatrutide's role in modern obesity and diabetes therapy",
+        "authors_year": "Abdul-Rahman et al. 2024",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39515565/"
+      }
+    ],
+    "mixing_caution": "This chart's source flags GLP-1/GIP/glucagon-receptor drugs as broadly avoided in combination with other research peptides across the board — not a peptide-specific interaction, more a general caution against stacking incretin drugs with anything else. Treat any combination here as unverified."
   },
   "aod-9604": {
     "name": "AOD-9604",
@@ -594,7 +1130,7 @@
       }
     ],
     "side_effects": [
-      "Reported as generally well tolerated in trials (this was not the reason development stopped \u2014 lack of efficacy was)",
+      "Reported as generally well tolerated in trials (this was not the reason development stopped — lack of efficacy was)",
       "Limited independent safety data outside the original manufacturer's trials"
     ],
     "safety_notes": "This compound went through real Phase IIb human obesity trials and didn't beat placebo. That's a worse evidence situation than most research peptides, which simply haven't been tested rigorously at all. Read continued marketing for fat loss in that light.",
@@ -602,7 +1138,60 @@
     "related": [
       "tesamorelin",
       "semaglutide"
-    ]
+    ],
+    "citations": [
+      {
+        "title": "The effects of human GH and its lipolytic fragment (AOD9604) on lipid metabolism following chronic treatment in obese mice and beta(3)-AR knock-out mice",
+        "authors_year": "Heffernan et al. 2001",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/11713213/"
+      },
+      {
+        "title": "Increase of fat oxidation and weight loss in obese mice caused by chronic treatment with human growth hormone or a modified C-terminal fragment",
+        "authors_year": "Heffernan et al. 2001",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/11673763/"
+      },
+      {
+        "title": "Metabolic studies of a synthetic lipolytic domain (AOD9604) of human growth hormone",
+        "authors_year": "Ng et al. 2000",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/11146367/"
+      }
+    ],
+    "mixing_notes": {
+      "clinic_combos": [],
+      "anecdotal_combos": [],
+      "reported_avoid": [
+        "ara-290",
+        "cjc-1295",
+        "cjc-1295-dac",
+        "dsip",
+        "epithalon",
+        "ghk-cu",
+        "ghrp-2",
+        "ghrp-6",
+        "hcg",
+        "hexarelin",
+        "hgh-somatropin",
+        "humanin",
+        "igf-1-lr3",
+        "kisspeptin",
+        "kpv",
+        "ll-37",
+        "mgf",
+        "mots-c",
+        "mt-1",
+        "mt-2",
+        "nad",
+        "p21",
+        "pe-22-28",
+        "pinealon",
+        "pt-141",
+        "selank",
+        "semax",
+        "tb-500",
+        "thymalin",
+        "thymosin-alpha-1"
+      ]
+    }
   },
   "tesamorelin": {
     "name": "Tesamorelin",
@@ -632,8 +1221,8 @@
     ],
     "side_effects": [
       "Injection-site reactions",
-      "Joint pain, swelling or fluid retention (edema) \u2014 a known class effect of raising GH/IGF-1",
-      "Increased blood glucose has been observed in trials \u2014 caution advised for people with insulin resistance or diabetes",
+      "Joint pain, swelling or fluid retention (edema) — a known class effect of raising GH/IGF-1",
+      "Increased blood glucose has been observed in trials — caution advised for people with insulin resistance or diabetes",
       "Contraindicated in active malignancy given IGF-1's growth-promoting effects"
     ],
     "safety_notes": "A real, FDA-approved drug with a genuine efficacy trial behind its specific indication, firmer ground than most 'GH secretagogue' research peptides. Watch for the known GH-axis side effects (fluid retention, joint discomfort, blood sugar effects), particularly if you have pre-diabetes or diabetes.",
@@ -642,7 +1231,39 @@
       "semaglutide",
       "cjc-1295",
       "ipamorelin"
-    ]
+    ],
+    "citations": [
+      {
+        "title": "Effects of tesamorelin (TH9507), a growth hormone-releasing factor analog, in human immunodeficiency virus-infected patients with excess abdominal fat: a pooled analysis of two multicenter, double-blind placebo-controlled phase 3 trials with safety extension data",
+        "authors_year": "Falutz et al. 2010",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/20554713/"
+      },
+      {
+        "title": "Long-term safety and effects of tesamorelin, a growth hormone-releasing factor analogue, in HIV patients with abdominal fat accumulation",
+        "authors_year": "Falutz et al. 2008",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/18690162/"
+      },
+      {
+        "title": "Reduction in visceral adiposity is associated with an improved metabolic profile in HIV-infected patients receiving tesamorelin",
+        "authors_year": "Stanley et al. 2012",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/22495074/"
+      }
+    ],
+    "mixing_notes": {
+      "clinic_combos": [
+        "bpc-157",
+        "cjc-1295",
+        "cjc-1295-dac",
+        "epithalon",
+        "ipamorelin"
+      ],
+      "anecdotal_combos": [],
+      "reported_avoid": [
+        "ara-290",
+        "mots-c",
+        "nad"
+      ]
+    }
   },
   "cjc-1295": {
     "name": "CJC-1295 / Mod-GRF (1-29)",
@@ -667,8 +1288,8 @@
     ],
     "dosing_protocols": [
       {
-        "route": "Subcutaneous injection (Mod-GRF, without DAC) \u2014 the generally preferred version",
-        "protocol": "Commonly cited compounding-pharmacy protocol: 200 mcg once daily, 5x/week, paired with a GHRP. Many experienced self-experimenters use notably lower doses \u2014 around 100 mcg or less \u2014 arguing that higher doses increase GH only marginally further while adding cost and side-effect risk. Nobody in harm-reduction-focused communities recommends exceeding 100 mcg per injection."
+        "route": "Subcutaneous injection (Mod-GRF, without DAC) — the generally preferred version",
+        "protocol": "Commonly cited compounding-pharmacy protocol: 200 mcg once daily, 5x/week, paired with a GHRP. Many experienced self-experimenters use notably lower doses — around 100 mcg or less — arguing that higher doses increase GH only marginally further while adding cost and side-effect risk. Nobody in harm-reduction-focused communities recommends exceeding 100 mcg per injection."
       },
       {
         "route": "Timing",
@@ -676,9 +1297,9 @@
       }
     ],
     "side_effects": [
-      "Flushing, hot skin, itchiness reported especially at higher doses \u2014 treated by cautious users as an early warning sign to reduce dose, not a benign sign of 'working'",
-      "Heart palpitations reported at higher doses \u2014 a stop-and-reassess signal",
-      "Water retention / mild edema, joint discomfort \u2014 general GH-axis class effects",
+      "Flushing, hot skin, itchiness reported especially at higher doses — treated by cautious users as an early warning sign to reduce dose, not a benign sign of 'working'",
+      "Heart palpitations reported at higher doses — a stop-and-reassess signal",
+      "Water retention / mild edema, joint discomfort — general GH-axis class effects",
       "The DAC (long-acting) version specifically has more reports of allergic-type reactions in self-experimentation communities than Mod-GRF"
     ],
     "safety_notes": "Since no dedicated human trials of these modified compounds exist, dosing is community convention, not established pharmacology. The harm-reduction-minded corner of the community has shifted toward lower doses and the shorter-acting Mod-GRF version, based on accumulated adverse-reaction reports at higher doses and with the DAC version.",
@@ -689,7 +1310,53 @@
       "mk-677",
       "tesamorelin"
     ],
-    "variant_note": "Not to be confused with 'CJC-1295 with DAC' (see the separate page for that long-acting, albumin-binding variant) \u2014 the two are pharmacokinetically distinct compounds with different half-lives and dosing frequency, despite the similar name."
+    "variant_note": "Not to be confused with 'CJC-1295 with DAC' (see the separate page for that long-acting, albumin-binding variant) — the two are pharmacokinetically distinct compounds with different half-lives and dosing frequency, despite the similar name.",
+    "citations": [
+      {
+        "title": "Prolonged stimulation of growth hormone (GH) and insulin-like growth factor I secretion by CJC-1295, a long-acting analog of GH-releasing hormone, in healthy adults",
+        "authors_year": "Teichman et al. 2006",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/16352683/"
+      },
+      {
+        "title": "Pulsatile secretion of growth hormone (GH) persists during continuous stimulation by CJC-1295, a long-acting GH-releasing hormone analog",
+        "authors_year": "Ionescu and Frohman 2006",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/17018654/"
+      },
+      {
+        "title": "A new era of doping? Use of peptide and peptide-analog drugs in recreational and professional sport and bodybuilding: a critical review",
+        "authors_year": "Coutinho et al. 2026",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41880199/"
+      }
+    ],
+    "mixing_notes": {
+      "clinic_combos": [
+        "bpc-157",
+        "epithalon",
+        "ghk-cu",
+        "ghrp-6",
+        "hexarelin",
+        "ipamorelin",
+        "mgf",
+        "pe-22-28",
+        "pinealon",
+        "selank",
+        "semax",
+        "tb-500",
+        "tesamorelin",
+        "thymalin",
+        "thymosin-alpha-1"
+      ],
+      "anecdotal_combos": [
+        "igf-1-lr3"
+      ],
+      "reported_avoid": [
+        "aod-9604",
+        "ara-290",
+        "hgh-somatropin",
+        "mots-c",
+        "nad"
+      ]
+    }
   },
   "ipamorelin": {
     "name": "Ipamorelin",
@@ -718,7 +1385,7 @@
       },
       {
         "route": "Timing",
-        "protocol": "Same fasted-state, pre-bed and/or on-waking timing logic as CJC-1295/Mod-GRF \u2014 insulin can blunt the GH pulse, so injecting away from meals is standard advice."
+        "protocol": "Same fasted-state, pre-bed and/or on-waking timing logic as CJC-1295/Mod-GRF — insulin can blunt the GH pulse, so injecting away from meals is standard advice."
       }
     ],
     "side_effects": [
@@ -734,7 +1401,42 @@
       "sermorelin",
       "mk-677",
       "bpc-157"
-    ]
+    ],
+    "citations": [
+      {
+        "title": "Ipamorelin, the first selective growth hormone secretagogue",
+        "authors_year": "Raun et al. 1998",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/9849822/"
+      },
+      {
+        "title": "Efficacy of ipamorelin, a novel ghrelin mimetic, in a rodent model of postoperative ileus",
+        "authors_year": "Venkova et al. 2009",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/19289567/"
+      }
+    ],
+    "mixing_notes": {
+      "clinic_combos": [
+        "bpc-157",
+        "cjc-1295",
+        "cjc-1295-dac",
+        "epithalon",
+        "ghk-cu",
+        "pe-22-28",
+        "pinealon",
+        "selank",
+        "semax",
+        "tb-500",
+        "tesamorelin",
+        "thymalin",
+        "thymosin-alpha-1"
+      ],
+      "anecdotal_combos": [],
+      "reported_avoid": [
+        "ara-290",
+        "mots-c",
+        "nad"
+      ]
+    }
   },
   "sermorelin": {
     "name": "Sermorelin",
@@ -773,11 +1475,28 @@
       "cjc-1295",
       "ipamorelin",
       "mk-677"
+    ],
+    "citations": [
+      {
+        "title": "Sermorelin: a review of its use in the diagnosis and treatment of children with idiopathic growth hormone deficiency",
+        "authors_year": "Prakash and Goa 1999",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/18031173/"
+      },
+      {
+        "title": "Pharmacokinetics of growth hormone-releasing hormone(1-29)-NH2 and stimulation of growth hormone secretion in healthy subjects after intravenous or intranasal administration",
+        "authors_year": "Wilton et al. 1993",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/8329825/"
+      },
+      {
+        "title": "The relative roles of continuous growth hormone-releasing hormone (GHRH(1-29)NH2) and intermittent somatostatin(1-14)(SS) in growth hormone (GH) pulse generation: studies in normal and post cranial irradiated individuals",
+        "authors_year": "Achermann et al. 1999",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/10594518/"
+      }
     ]
   },
   "mk-677": {
     "name": "MK-677 (Ibutamoren)",
-    "full_name": "Ibutamoren (not a peptide \u2014 an orally active small-molecule ghrelin receptor agonist, included here because it's routinely grouped with GH-secretagogue peptides)",
+    "full_name": "Ibutamoren (not a peptide — an orally active small-molecule ghrelin receptor agonist, included here because it's routinely grouped with GH-secretagogue peptides)",
     "aliases": [
       "Ibutamoren",
       "Ibutamoren Mesylate",
@@ -789,8 +1508,8 @@
     "tagline": "Orally active ghrelin mimetic that raises growth hormone and IGF-1 without injections. Not actually a peptide, but a fixture of GH-secretagogue discussions.",
     "status": "Was investigated by pharmaceutical companies (Merck and others) for GH deficiency, sarcopenia and hip fracture recovery in the elderly, but never received FDA approval for any indication and development was discontinued. Sold today only as a research chemical/grey-market product.",
     "origin": "A small synthetic molecule, not a peptide, developed as an orally bioavailable ghrelin receptor agonist. The appeal: a daily pill instead of daily injections for GH-axis stimulation.",
-    "mechanism": "Activates the same ghrelin/GH secretagogue receptor as injectable GHRPs like Ipamorelin, but produces a sustained GH/IGF-1 elevation over roughly 12-24 hours per dose instead of the sharper, shorter pulse from injectables. Because it mimics ghrelin, the hunger hormone, it reliably increases appetite \u2014 a plus for some users, a problem for others.",
-    "research_summary": "Human trial data is more substantial than for most research peptides. Studies in the elderly showed increased lean body mass and improved some muscle function markers, with the clearest benefit in people who actually had low GH to begin with \u2014 a caveat for younger, GH-replete users expecting the same results. A hip fracture trial was stopped early over safety concerns: increased congestive heart failure and edema in the treatment group. That trial is a big part of why it never reached approval.",
+    "mechanism": "Activates the same ghrelin/GH secretagogue receptor as injectable GHRPs like Ipamorelin, but produces a sustained GH/IGF-1 elevation over roughly 12-24 hours per dose instead of the sharper, shorter pulse from injectables. Because it mimics ghrelin, the hunger hormone, it reliably increases appetite — a plus for some users, a problem for others.",
+    "research_summary": "Human trial data is more substantial than for most research peptides. Studies in the elderly showed increased lean body mass and improved some muscle function markers, with the clearest benefit in people who actually had low GH to begin with — a caveat for younger, GH-replete users expecting the same results. A hip fracture trial was stopped early over safety concerns: increased congestive heart failure and edema in the treatment group. That trial is a big part of why it never reached approval.",
     "reported_benefits": [
       "Increased appetite (often deliberately used for this reason during muscle-gain phases)",
       "Improved sleep quality, commonly and consistently reported",
@@ -804,9 +1523,9 @@
       }
     ],
     "side_effects": [
-      "Increased appetite/hunger \u2014 often significant and sometimes unwanted",
-      "Water retention, mild edema, especially in the hands/feet/face \u2014 a known dose-related effect",
-      "Elevated blood glucose / reduced insulin sensitivity reported with sustained use \u2014 worth monitoring, especially for anyone with pre-diabetes",
+      "Increased appetite/hunger — often significant and sometimes unwanted",
+      "Water retention, mild edema, especially in the hands/feet/face — a known dose-related effect",
+      "Elevated blood glucose / reduced insulin sensitivity reported with sustained use — worth monitoring, especially for anyone with pre-diabetes",
       "The hip-fracture trial safety signal (increased heart failure/edema rates) is a genuine red flag, particularly for anyone with existing cardiovascular disease",
       "Lethargy or grogginess reported by some users the morning after dosing"
     ],
@@ -816,6 +1535,23 @@
       "ipamorelin",
       "cjc-1295",
       "igf-1-lr3"
+    ],
+    "citations": [
+      {
+        "title": "Effects of an oral ghrelin mimetic on body composition and clinical outcomes in healthy older adults: a randomized trial",
+        "authors_year": "Nass et al. 2008",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/18981485/"
+      },
+      {
+        "title": "Stimulation of the growth hormone (GH)-insulin-like growth factor I axis by daily oral administration of a GH secretogogue (MK-677) in healthy elderly subjects",
+        "authors_year": "Chapman et al. 1996",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/8954023/"
+      },
+      {
+        "title": "Two-month treatment of obese subjects with the oral growth hormone (GH) secretagogue MK-677 increases GH secretion, fat-free mass, and energy expenditure",
+        "authors_year": "Svensson et al. 1998",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/9467542/"
+      }
     ]
   },
   "igf-1-lr3": {
@@ -841,14 +1577,14 @@
     "dosing_protocols": [
       {
         "route": "Subcutaneous or intramuscular injection",
-        "protocol": "Community-reported doses are typically very low \u2014 commonly 20-50 mcg per day \u2014 reflecting IGF-1's high potency; doses are often kept short-term (a few weeks) rather than continuous, partly due to concerns about hypoglycemia and receptor downregulation with longer use."
+        "protocol": "Community-reported doses are typically very low — commonly 20-50 mcg per day — reflecting IGF-1's high potency; doses are often kept short-term (a few weeks) rather than continuous, partly due to concerns about hypoglycemia and receptor downregulation with longer use."
       }
     ],
     "side_effects": [
-      "Hypoglycemia (low blood sugar) is a well-documented risk given IGF-1's insulin-like receptor cross-activity \u2014 this is one of the more acutely dangerous side effects discussed in this wiki and requires blood glucose awareness, especially combined with fasting or low-carb dieting",
+      "Hypoglycemia (low blood sugar) is a well-documented risk given IGF-1's insulin-like receptor cross-activity — this is one of the more acutely dangerous side effects discussed in this wiki and requires blood glucose awareness, especially combined with fasting or low-carb dieting",
       "Injection site reactions, and with intramuscular use, more significant local soreness",
       "Theoretical organ growth (organomegaly) concern with prolonged high-dose use, extrapolated from IGF-1's known growth-promoting physiology",
-      "Theoretical cancer-growth-promotion concern given IGF-1's role in cell proliferation signalling \u2014 a reason it's generally considered contraindicated for anyone with active or recent cancer"
+      "Theoretical cancer-growth-promotion concern given IGF-1's role in cell proliferation signalling — a reason it's generally considered contraindicated for anyone with active or recent cancer"
     ],
     "safety_notes": "The hypoglycemia risk is real and distinct from most other compounds here: IGF-1 cross-reacts with the insulin receptor at high enough local concentrations, and self-experimenters have reported acute low-blood-sugar episodes. This is a genuinely different, more acute risk profile than the GH secretagogues it's often grouped with.",
     "community_notes": "Popular in bodybuilding-adjacent corners of the peptide community for its rapid, visible pump and fullness effect, generally used in short cycles rather than continuously. Discussion centers on hypoglycemia risk management, keeping fast-acting carbohydrate on hand, avoiding fasted use, more than for most other compounds here, reflecting real awareness of this specific danger.",
@@ -856,7 +1592,37 @@
       "mk-677",
       "cjc-1295",
       "ipamorelin"
-    ]
+    ],
+    "citations": [
+      {
+        "title": "Revolutionary decellularized Alstroemeria stem-based nerve conduit integrated with GelMA and controlled IGF-1 LR3 release for enhanced rat sciatic nerve regeneration",
+        "authors_year": "Yavuz et al. 2025",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41015370/"
+      },
+      {
+        "title": "Provisional Treatment of Volumetric Muscle Loss With Insulin-like Growth Factor 1 Releasing Muscle Void Fillers",
+        "authors_year": "Clark et al. 2025",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41418663/"
+      },
+      {
+        "title": "Insulin-like growth factor-I and analogues increase growth in artificially-reared neonatal pigs",
+        "authors_year": "Dunshea et al. 2002",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/12067429/"
+      }
+    ],
+    "mixing_notes": {
+      "clinic_combos": [],
+      "anecdotal_combos": [
+        "bpc-157",
+        "cjc-1295"
+      ],
+      "reported_avoid": [
+        "aod-9604",
+        "ara-290",
+        "mots-c",
+        "nad"
+      ]
+    }
   },
   "pt-141": {
     "name": "PT-141 (Bremelanotide)",
@@ -868,7 +1634,7 @@
     "categories": [
       "sexual-health"
     ],
-    "tagline": "A melanocortin-receptor agonist that acts on the brain's sexual-arousal pathways rather than on blood flow directly \u2014 FDA-approved as Vyleesi for hypoactive sexual desire disorder in premenopausal women, used off-label by men for erectile/libido support.",
+    "tagline": "A melanocortin-receptor agonist that acts on the brain's sexual-arousal pathways rather than on blood flow directly — FDA-approved as Vyleesi for hypoactive sexual desire disorder in premenopausal women, used off-label by men for erectile/libido support.",
     "status": "FDA-approved prescription drug (Vyleesi) for acquired, generalized hypoactive sexual desire disorder (HSDD) in premenopausal women. Used off-label, including by men, and also available through the grey/research-chemical market outside a prescription.",
     "origin": "A synthetic analog of alpha-MSH engineered specifically for activity at melanocortin 4 receptors (MC4R) in the brain, which govern sexual arousal, distinct from the pigmentation-related MC1R pathway.",
     "mechanism": "Unlike PDE5 inhibitors (sildenafil, tadalafil), which work locally by increasing blood flow to genital tissue, bremelanotide acts centrally on melanocortin receptors in the neural arousal pathway. That's why it's framed as addressing 'desire' rather than mechanical erectile function, and why it treats a condition, HSDD, that PDE5 inhibitors don't touch.",
@@ -889,9 +1655,9 @@
       }
     ],
     "side_effects": [
-      "Nausea is the most common and often dose-limiting side effect \u2014 frequently reported and can be significant",
+      "Nausea is the most common and often dose-limiting side effect — frequently reported and can be significant",
       "Flushing, headache",
-      "Transient increase in blood pressure and decrease in heart rate observed in trials \u2014 worth caution for anyone with cardiovascular disease",
+      "Transient increase in blood pressure and decrease in heart rate observed in trials — worth caution for anyone with cardiovascular disease",
       "Skin/gum darkening has been reported with frequent, prolonged use, related to melanocortin receptor activity on pigmentation pathways"
     ],
     "safety_notes": "Nausea is common enough that many users experiment with the lowest effective dose instead of the full approved autoinjector amount. Blood pressure and heart rate effects warrant caution for anyone with cardiovascular conditions, and should be discussed with a physician even for off-label male use.",
@@ -900,7 +1666,39 @@
       "oxytocin",
       "kisspeptin"
     ],
-    "variant_note": "Occasionally discussed alongside PSK/other melanocortin-pathway variants sold under adjacent names; PT-141 (bremelanotide) itself is the only form with FDA approval (as Vyleesi, for HSDD in women) and the only form with real human trial data."
+    "variant_note": "Occasionally discussed alongside PSK/other melanocortin-pathway variants sold under adjacent names; PT-141 (bremelanotide) itself is the only form with FDA approval (as Vyleesi, for HSDD in women) and the only form with real human trial data.",
+    "citations": [
+      {
+        "title": "Bremelanotide for the Treatment of Hypoactive Sexual Desire Disorder: Two Randomized Phase 3 Trials",
+        "authors_year": "Kingsberg et al. 2019",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31599840/"
+      },
+      {
+        "title": "Long-Term Safety and Efficacy of Bremelanotide for Hypoactive Sexual Desire Disorder",
+        "authors_year": "Simon et al. 2019",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31599847/"
+      },
+      {
+        "title": "Responder Analyses from a Phase 2b Dose-Ranging Study of Bremelanotide",
+        "authors_year": "Althof et al. 2019",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31277966/"
+      }
+    ],
+    "mixing_notes": {
+      "clinic_combos": [
+        "ghrp-2",
+        "kisspeptin",
+        "pinealon",
+        "semax"
+      ],
+      "anecdotal_combos": [],
+      "reported_avoid": [
+        "aod-9604",
+        "ara-290",
+        "mots-c",
+        "nad"
+      ]
+    }
   },
   "oxytocin": {
     "name": "Oxytocin",
@@ -911,7 +1709,7 @@
     "categories": [
       "sexual-health"
     ],
-    "tagline": "The 'bonding hormone' \u2014 an FDA-approved drug for labor induction and postpartum hemorrhage, explored off-label for social bonding, sexual intimacy and anxiety.",
+    "tagline": "The 'bonding hormone' — an FDA-approved drug for labor induction and postpartum hemorrhage, explored off-label for social bonding, sexual intimacy and anxiety.",
     "status": "FDA-approved prescription drug (as Pitocin/Syntocinon) for labor induction/augmentation and postpartum hemorrhage control. Off-label and research-chemical use for social/sexual/anxiety purposes is not an approved indication.",
     "origin": "A naturally occurring neuropeptide hormone produced in the hypothalamus and released by the posterior pituitary. Classically known for childbirth (uterine contractions) and lactation (milk let-down), more recently studied for social bonding, trust, and attachment.",
     "mechanism": "Acts on oxytocin receptors throughout the brain, especially regions involved in social cognition and reward, and peripherally on uterine smooth muscle. The 'bonding hormone' label comes from behavioral neuroscience research showing oxytocin administration increases trust, in-group bonding, eye contact, and emotional empathy in experimental settings, alongside its role in orgasm and post-intimacy bonding physiology.",
@@ -930,13 +1728,35 @@
     "side_effects": [
       "Generally well tolerated at studied doses",
       "Nasal irritation with intranasal use",
-      "Theoretical concern about blunting rather than enhancing some social responses in certain contexts/doses per some of the more nuanced recent research \u2014 the effect isn't simply 'more is better' in all social situations"
+      "Theoretical concern about blunting rather than enhancing some social responses in certain contexts/doses per some of the more nuanced recent research — the effect isn't simply 'more is better' in all social situations"
     ],
     "safety_notes": "Oxytocin's approved uses are obstetric (labor, postpartum bleeding), at doses and routes very different from intranasal self-administration for social or sexual purposes. Off-label users are relying on the separate, more mixed academic literature on intranasal effects, not the approval that put it on the market.",
     "community_notes": "Popular as a couples' intimacy aid, sometimes used alongside PT-141. Reports of a subjective 'warmth' or closeness effect are common, but consistent with the replication concerns, some users report no noticeable effect at all. Response varies a lot between individuals and contexts.",
     "related": [
       "pt-141",
       "kisspeptin"
+    ],
+    "citations": [
+      {
+        "title": "Does intranasal oxytocin reduce symptoms of mental disorders? A meta-analysis of clinical trials",
+        "authors_year": "Bonnieux et al. 2026",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42134427/"
+      },
+      {
+        "title": "A key gene modulating oxytocin efficacy in autism: genome-wide discovery and verification in randomized controlled trials datasets",
+        "authors_year": "Kuwabara et al. 2026",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41904269/"
+      },
+      {
+        "title": "The role of the oxytocinergic system in oral microbiome composition in children with autism: evidence from a randomized controlled trial of intranasal oxytocin",
+        "authors_year": "Evenepoel et al. 2026",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41876480/"
+      },
+      {
+        "title": "Biological modulators of treatment outcome during psychiatric care: The interplay between inflammation and oxytocin",
+        "authors_year": "Sedoff et al. 2026",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42156189/"
+      }
     ]
   },
   "kisspeptin": {
@@ -962,19 +1782,49 @@
     "dosing_protocols": [
       {
         "route": "Subcutaneous injection (self-experimentation, extrapolated from research protocols)",
-        "protocol": "Research studies commonly use kisspeptin doses in the range of a few hundred nanomoles to low micrograms-per-kg, given as single doses or short infusions in controlled research settings \u2014 very different from the community-sourced 'daily dosing' patterns common for other peptides, since kisspeptin's research use has mostly been in acute, single-administration study designs rather than chronic self-dosing protocols."
+        "protocol": "Research studies commonly use kisspeptin doses in the range of a few hundred nanomoles to low micrograms-per-kg, given as single doses or short infusions in controlled research settings — very different from the community-sourced 'daily dosing' patterns common for other peptides, since kisspeptin's research use has mostly been in acute, single-administration study designs rather than chronic self-dosing protocols."
       }
     ],
     "side_effects": [
       "Generally well tolerated in the research trials conducted to date",
-      "Because it sits at the top of the reproductive hormone cascade, theoretical concern about disrupting normal hormonal feedback loops with chronic/frequent dosing outside a controlled research context \u2014 this hasn't been well studied"
+      "Because it sits at the top of the reproductive hormone cascade, theoretical concern about disrupting normal hormonal feedback loops with chronic/frequent dosing outside a controlled research context — this hasn't been well studied"
     ],
     "safety_notes": "Kisspeptin's research pedigree is unusually strong for a peptide discussed in self-experimentation spaces, but nearly all of it used acute, single-dose or short-infusion protocols in controlled clinical settings, not the ongoing, self-directed daily/weekly dosing typical of self-experimentation. That mismatch between how it's been studied and how it's actually used off-label matters.",
     "community_notes": "Less mainstream than PT-141 in self-experimentation communities. Interest tends to come from people who've read the Imperial College London fMRI research rather than from a large base of self-reported user experience, the opposite pattern from something like BPC-157: the academic research is ahead of the community-use track record.",
     "related": [
       "pt-141",
       "oxytocin"
-    ]
+    ],
+    "citations": [
+      {
+        "title": "Efficacy of Kisspeptin-54 to Trigger Oocyte Maturation in Women at High Risk of Ovarian Hyperstimulation Syndrome (OHSS) During In Vitro Fertilization (IVF) Therapy",
+        "authors_year": "Abbara et al. 2015",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/26192876/"
+      },
+      {
+        "title": "A second dose of kisspeptin-54 improves oocyte maturation in women at high risk of ovarian hyperstimulation syndrome: a Phase 2 randomized controlled trial",
+        "authors_year": "Abbara et al. 2017",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/28854728/"
+      },
+      {
+        "title": "The direct and indirect effects of kisspeptin-54 on granulosa lutein cell function",
+        "authors_year": "Owens et al. 2018",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/29206944/"
+      }
+    ],
+    "mixing_notes": {
+      "clinic_combos": [
+        "pinealon",
+        "pt-141"
+      ],
+      "anecdotal_combos": [],
+      "reported_avoid": [
+        "aod-9604",
+        "ara-290",
+        "mots-c",
+        "nad"
+      ]
+    }
   },
   "semax": {
     "name": "Semax",
@@ -1014,7 +1864,52 @@
       "selank",
       "dsip"
     ],
-    "variant_note": "Sometimes sold as 'NA-Semax amidate' (N-acetyl, amidated form) rather than the original Semax sequence. The amidate modification is intended to improve stability, and community reports treat it as roughly interchangeable in effect, but it has not been independently studied to the same extent as the parent compound."
+    "variant_note": "Sometimes sold as 'NA-Semax amidate' (N-acetyl, amidated form) rather than the original Semax sequence. The amidate modification is intended to improve stability, and community reports treat it as roughly interchangeable in effect, but it has not been independently studied to the same extent as the parent compound.",
+    "citations": [
+      {
+        "title": "[The efficacy of semax in the treatment of patients at different stages of ischemic stroke]",
+        "authors_year": "Gusev et al. 2018",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/29798983/"
+      },
+      {
+        "title": "[The effect of semax and its C-end peptide PGP on expression of the neurotrophins and their receptors in the rat brain during incomplete global ischemia]",
+        "authors_year": "Stavchanskiĭ et al. 2011",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/22295573/"
+      },
+      {
+        "title": "Comparison of the temporary dynamics of NGF and BDNF gene expression in rat hippocampus, frontal cortex, and retina under Semax action",
+        "authors_year": "Shadrina et al. 2009",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/19662538/"
+      }
+    ],
+    "mixing_notes": {
+      "clinic_combos": [
+        "bpc-157",
+        "cjc-1295",
+        "cjc-1295-dac",
+        "epithalon",
+        "ghrp-2",
+        "ghrp-6",
+        "hexarelin",
+        "ipamorelin",
+        "ll-37",
+        "mgf",
+        "pt-141",
+        "tb-500",
+        "thymalin",
+        "thymosin-alpha-1"
+      ],
+      "anecdotal_combos": [
+        "dsip",
+        "p21"
+      ],
+      "reported_avoid": [
+        "aod-9604",
+        "ara-290",
+        "mots-c",
+        "nad"
+      ]
+    }
   },
   "selank": {
     "name": "Selank",
@@ -1052,7 +1947,38 @@
       "semax",
       "dsip"
     ],
-    "variant_note": "Sometimes sold as 'Selank amidate' rather than the original Selank sequence. As with Semax's amidate variant, this is a stability-oriented modification with a thinner independent evidence base than the parent peptide, though community reports treat it as similar in effect."
+    "variant_note": "Sometimes sold as 'Selank amidate' rather than the original Selank sequence. As with Semax's amidate variant, this is a stability-oriented modification with a thinner independent evidence base than the parent peptide, though community reports treat it as similar in effect.",
+    "citations": [
+      {
+        "title": "[Efficacy and possible mechanisms of action of a new peptide anxiolytic selank in the therapy of generalized anxiety disorders and neurasthenia]",
+        "authors_year": "Zozulia et al. 2008",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/18454096/"
+      }
+    ],
+    "mixing_notes": {
+      "clinic_combos": [
+        "bpc-157",
+        "cjc-1295",
+        "cjc-1295-dac",
+        "epithalon",
+        "ipamorelin",
+        "ll-37",
+        "pinealon",
+        "tb-500",
+        "thymalin",
+        "thymosin-alpha-1"
+      ],
+      "anecdotal_combos": [
+        "dsip",
+        "p21"
+      ],
+      "reported_avoid": [
+        "aod-9604",
+        "ara-290",
+        "mots-c",
+        "nad"
+      ]
+    }
   },
   "dsip": {
     "name": "DSIP",
@@ -1089,7 +2015,44 @@
       "epithalon",
       "semax",
       "selank"
-    ]
+    ],
+    "citations": [
+      {
+        "title": "Delta Sleep-Inducing Peptide Recovers Motor Function in SD Rats after Focal Stroke",
+        "authors_year": "Tukhovskaya et al. 2021",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34500605/"
+      },
+      {
+        "title": "DSIP-Like KND Peptide Reduces Brain Infarction in C57Bl/6 and Reduces Myocardial Infarction in SD Rats When Administered during Reperfusion",
+        "authors_year": "Tukhovskaya et al. 2021",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33918965/"
+      },
+      {
+        "title": "Secreted peptides crossing the blood-brain barrier and DSIP fusion peptide efficacy in PCPA-induced insomnia mouse models",
+        "authors_year": "Mu et al. 2024",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39444618/"
+      },
+      {
+        "title": "Phosphorylated delta sleep inducing peptide restores spatial memory and p-CREB expression by improving sleep architecture at high altitude",
+        "authors_year": "Roy et al. 2018",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/30107169/"
+      }
+    ],
+    "mixing_notes": {
+      "clinic_combos": [
+        "epithalon"
+      ],
+      "anecdotal_combos": [
+        "selank",
+        "semax"
+      ],
+      "reported_avoid": [
+        "aod-9604",
+        "ara-290",
+        "mots-c",
+        "nad"
+      ]
+    }
   },
   "cagrilintide": {
     "name": "Cagrilintide",
@@ -1200,7 +2163,8 @@
       "tirzepatide",
       "survodutide",
       "retatrutide"
-    ]
+    ],
+    "mixing_caution": "This chart's source flags GLP-1/GIP/glucagon-receptor drugs as broadly avoided in combination with other research peptides across the board — not a peptide-specific interaction, more a general caution against stacking incretin drugs with anything else. Treat any combination here as unverified."
   },
   "survodutide": {
     "name": "Survodutide",
@@ -1253,7 +2217,8 @@
       "semaglutide",
       "tirzepatide",
       "retatrutide"
-    ]
+    ],
+    "mixing_caution": "This chart's source flags GLP-1/GIP/glucagon-receptor drugs as broadly avoided in combination with other research peptides across the board — not a peptide-specific interaction, more a general caution against stacking incretin drugs with anything else. Treat any combination here as unverified."
   },
   "liraglutide": {
     "name": "Liraglutide",
@@ -1304,7 +2269,8 @@
     "related": [
       "semaglutide",
       "tirzepatide"
-    ]
+    ],
+    "mixing_caution": "This chart's source flags GLP-1/GIP/glucagon-receptor drugs as broadly avoided in combination with other research peptides across the board — not a peptide-specific interaction, more a general caution against stacking incretin drugs with anything else. Treat any combination here as unverified."
   },
   "adipotide": {
     "name": "Adipotide",
@@ -1487,7 +2453,21 @@
       "ipamorelin",
       "sermorelin",
       "hexarelin"
-    ]
+    ],
+    "mixing_notes": {
+      "clinic_combos": [],
+      "anecdotal_combos": [
+        "hcg"
+      ],
+      "reported_avoid": [
+        "aod-9604",
+        "ara-290",
+        "cjc-1295",
+        "cjc-1295-dac",
+        "mots-c",
+        "nad"
+      ]
+    }
   },
   "ghrp-2": {
     "name": "GHRP-2",
@@ -1537,7 +2517,21 @@
       "hexarelin",
       "cjc-1295-dac",
       "ipamorelin"
-    ]
+    ],
+    "mixing_notes": {
+      "clinic_combos": [
+        "epithalon",
+        "pt-141",
+        "semax"
+      ],
+      "anecdotal_combos": [],
+      "reported_avoid": [
+        "aod-9604",
+        "ara-290",
+        "mots-c",
+        "nad"
+      ]
+    }
   },
   "ghrp-6": {
     "name": "GHRP-6",
@@ -1587,7 +2581,26 @@
       "hexarelin",
       "cjc-1295-dac",
       "ipamorelin"
-    ]
+    ],
+    "mixing_notes": {
+      "clinic_combos": [
+        "bpc-157",
+        "cjc-1295",
+        "cjc-1295-dac",
+        "epithalon",
+        "hexarelin",
+        "mgf",
+        "semax",
+        "thymalin"
+      ],
+      "anecdotal_combos": [],
+      "reported_avoid": [
+        "aod-9604",
+        "ara-290",
+        "mots-c",
+        "nad"
+      ]
+    }
   },
   "hexarelin": {
     "name": "Hexarelin",
@@ -1635,7 +2648,24 @@
       "ghrp-2",
       "ghrp-6",
       "cjc-1295-dac"
-    ]
+    ],
+    "mixing_notes": {
+      "clinic_combos": [
+        "bpc-157",
+        "cjc-1295",
+        "cjc-1295-dac",
+        "ghrp-6",
+        "mgf",
+        "semax"
+      ],
+      "anecdotal_combos": [],
+      "reported_avoid": [
+        "aod-9604",
+        "ara-290",
+        "mots-c",
+        "nad"
+      ]
+    }
   },
   "cjc-1295-dac": {
     "name": "CJC-1295 with DAC",
@@ -1682,7 +2712,36 @@
       "ipamorelin",
       "sermorelin",
       "cjc-1295"
-    ]
+    ],
+    "mixing_notes": {
+      "clinic_combos": [
+        "bpc-157",
+        "epithalon",
+        "ghk-cu",
+        "ghrp-6",
+        "hexarelin",
+        "ipamorelin",
+        "mgf",
+        "pe-22-28",
+        "pinealon",
+        "selank",
+        "semax",
+        "tb-500",
+        "tesamorelin",
+        "thymalin",
+        "thymosin-alpha-1"
+      ],
+      "anecdotal_combos": [
+        "hcg"
+      ],
+      "reported_avoid": [
+        "aod-9604",
+        "ara-290",
+        "hgh-somatropin",
+        "mots-c",
+        "nad"
+      ]
+    }
   },
   "mgf": {
     "name": "MGF",
@@ -1724,7 +2783,25 @@
       "hgh-somatropin",
       "ipamorelin"
     ],
-    "variant_note": "PEG-MGF is a pegylated variant with extended half-life (minutes to hours) enabling more systemic distribution beyond the injection site, versus native MGF's local/periosteal action. Dosed similarly but with enhanced systemic bioavailability."
+    "variant_note": "PEG-MGF is a pegylated variant with extended half-life (minutes to hours) enabling more systemic distribution beyond the injection site, versus native MGF's local/periosteal action. Dosed similarly but with enhanced systemic bioavailability.",
+    "mixing_notes": {
+      "clinic_combos": [
+        "bpc-157",
+        "cjc-1295",
+        "cjc-1295-dac",
+        "ghrp-6",
+        "hexarelin",
+        "semax",
+        "thymosin-alpha-1"
+      ],
+      "anecdotal_combos": [],
+      "reported_avoid": [
+        "aod-9604",
+        "ara-290",
+        "mots-c",
+        "nad"
+      ]
+    }
   },
   "ace-031": {
     "name": "ACE-031",
@@ -1772,7 +2849,7 @@
   },
   "mt-2": {
     "name": "Melanotan II",
-    "full_name": "alpha-Melanocyte-stimulating hormone (\u03b1-MSH) analog (synthetic)",
+    "full_name": "alpha-Melanocyte-stimulating hormone (α-MSH) analog (synthetic)",
     "aliases": [
       "melanotan-2",
       "MT-II"
@@ -1823,11 +2900,25 @@
     "related": [
       "pt-141",
       "mt-1"
-    ]
+    ],
+    "mixing_notes": {
+      "clinic_combos": [
+        "tb-500"
+      ],
+      "anecdotal_combos": [
+        "hcg"
+      ],
+      "reported_avoid": [
+        "aod-9604",
+        "ara-290",
+        "mots-c",
+        "nad"
+      ]
+    }
   },
   "mt-1": {
     "name": "Melanotan I",
-    "full_name": "Afamelanotide (NDP-\u03b1-MSH)",
+    "full_name": "Afamelanotide (NDP-α-MSH)",
     "aliases": [
       "afamelanotide",
       "Scenesse"
@@ -1838,13 +2929,13 @@
     ],
     "tagline": "FDA- and EU-approved MC1R agonist for erythropoietic protoporphyria; regulated pharmaceutical with photoprotection benefits, distinct from unregulated MT-2.",
     "status": "FDA approved (2019, USA) | EMA approved (2014, EU) | Indication: Erythropoietic Protoporphyria (EPP)",
-    "origin": "Chemically modified, MC1R-selective \u03b1-MSH analogue developed by Clinuvel Pharmaceuticals for photosensitivity disorders, notably erythropoietic protoporphyria. The structural modifications give it receptor selectivity and better stability than the non-selective MT-2.",
+    "origin": "Chemically modified, MC1R-selective α-MSH analogue developed by Clinuvel Pharmaceuticals for photosensitivity disorders, notably erythropoietic protoporphyria. The structural modifications give it receptor selectivity and better stability than the non-selective MT-2.",
     "mechanism": "Selectively activates MC1R on melanocytes, increasing eumelanin synthesis via cAMP signaling for UV-absorbing photoprotection. The MC1R selectivity minimizes the CNS and systemic off-target effects seen with MT-2.",
     "research_summary": "Phase III trials in EPP patients showed significant reduction in phototoxic reaction frequency and severity, combined with photoprotection measures. Safety is well-characterized: adverse events are mostly mild nausea and injection-site effects. The cardiovascular, melanoma, and priapism signals seen with MT-2 haven't shown up in controlled afamelanotide trials.",
     "citations": [
       {
         "title": "Hormones and skin pigmentation: fundamentals and clinical relevance.",
-        "authors_year": "B\u00f6hm et al. 2026",
+        "authors_year": "Böhm et al. 2026",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41489668/"
       }
     ],
@@ -1869,7 +2960,21 @@
     "community_notes": "Off-label tanning or anti-aging use is uncommon due to regulatory restriction and cost. No solid evidence supports cosmetic tanning or general anti-aging use outside the approved EPP indication.",
     "related": [
       "mt-2"
-    ]
+    ],
+    "mixing_notes": {
+      "clinic_combos": [
+        "tb-500"
+      ],
+      "anecdotal_combos": [
+        "hcg"
+      ],
+      "reported_avoid": [
+        "aod-9604",
+        "ara-290",
+        "mots-c",
+        "nad"
+      ]
+    }
   },
   "gonadorelin": {
     "name": "Gonadorelin acetate",
@@ -1972,7 +3077,23 @@
     "related": [
       "gonadorelin"
     ],
-    "variant_note": "HMG (human menopausal gonadotropin / menotropins) is a related fertility drug providing both FSH and LH (unlike hCG's LH-only activity), making it more effective for complete spermatogenesis recovery. Used clinically, often combined with hCG, but has a thinner off-label TRT following due to cost and complexity; not covered as a separate leaf page."
+    "variant_note": "HMG (human menopausal gonadotropin / menotropins) is a related fertility drug providing both FSH and LH (unlike hCG's LH-only activity), making it more effective for complete spermatogenesis recovery. Used clinically, often combined with hCG, but has a thinner off-label TRT following due to cost and complexity; not covered as a separate leaf page.",
+    "mixing_notes": {
+      "clinic_combos": [],
+      "anecdotal_combos": [
+        "bpc-157",
+        "cjc-1295-dac",
+        "hgh-somatropin",
+        "mt-1",
+        "mt-2"
+      ],
+      "reported_avoid": [
+        "aod-9604",
+        "ara-290",
+        "mots-c",
+        "nad"
+      ]
+    }
   },
   "ss-31": {
     "name": "SS-31",
@@ -2166,7 +3287,7 @@
     "tagline": "Lipidated collagen-mimetic peptide (palmitoyl-KTTKS) that pushes fibroblasts to make more collagen and glycosaminoglycans.",
     "status": "Cosmetic ingredient (topical, unregulated as drug)",
     "origin": "Developed in the early 2000s. KTTKS mimics a bioactive fragment of type I procollagen that fibroblasts recognize; a palmitoyl fatty-acid tail was added for skin penetration. Classic 'matrikine' cosmetic strategy.",
-    "mechanism": "Triggers fibroblast matrikine signaling, activating TGF-\u03b2 and boosting synthesis of collagen I/III, fibronectin, and glycosaminoglycans. Restores dermal support and reduces wrinkle depth.",
+    "mechanism": "Triggers fibroblast matrikine signaling, activating TGF-β and boosting synthesis of collagen I/III, fibronectin, and glycosaminoglycans. Restores dermal support and reduces wrinkle depth.",
     "research_summary": "Better cosmetic data than Snap-8, still thin next to pharmaceutical standards. Trials show significant wrinkle-depth improvement over 12 weeks in photoaged skin, but cohorts are small (20-60 participants) and industry-funded. Effect size: 10-20% wrinkle-depth reduction, roughly matching mild retinoids.",
     "citations": [
       {
@@ -2198,7 +3319,7 @@
   },
   "ptd-dbm": {
     "name": "PTD-DBM",
-    "full_name": "Protein Transduction Domain\u2013Dishevelled Binding Motif",
+    "full_name": "Protein Transduction Domain–Dishevelled Binding Motif",
     "aliases": [
       "CXXC5 inhibitor",
       "DBM peptide"
@@ -2277,11 +3398,26 @@
       "topical: local skin reactions (erythema, irritation)"
     ],
     "safety_notes": "Good topical safety in wound trials, but LL-37 is an established autoantigen in psoriasis and a driver of rosacea; systemic or high topical exposure may worsen these conditions. Pro-tumorigenic effects documented in cancer cell lines suggest caution in cancer patients.",
-    "community_notes": "Used primarily in clinical/compounding-pharmacy wound-care contexts. Some functional-medicine practitioners theorize intranasal benefits, but this is speculative.",
+    "community_notes": "Used primarily in clinical/compounding-pharmacy wound-care contexts. Some functional-medicine practitioners theorize intranasal benefits, but this is speculative. Because LL-37 is itself part of the innate immune system's own antimicrobial-peptide arsenal, some caution that introducing it exogenously can trigger an inflammatory response — another reason people who do try it tend to start at low doses.",
     "related": [
       "vip",
       "bpc-157"
-    ]
+    ],
+    "mixing_notes": {
+      "clinic_combos": [
+        "selank",
+        "semax",
+        "tb-500",
+        "thymosin-alpha-1"
+      ],
+      "anecdotal_combos": [],
+      "reported_avoid": [
+        "aod-9604",
+        "ara-290",
+        "mots-c",
+        "nad"
+      ]
+    }
   },
   "vip": {
     "name": "VIP",
@@ -2296,7 +3432,7 @@
     "tagline": "Endogenous neuropeptide and vasodilator with immunomodulatory properties, used investigationally for mold-illness immune dysregulation and pulmonary hypertension.",
     "status": "FDA investigational (synthetic aviptadil had Fast Track status for COVID-19, not approved) | Compounding-pharmacy use only",
     "origin": "A naturally occurring 28-amino-acid neuropeptide produced in the central/peripheral nervous system and gut. Its vasodilatory and anti-inflammatory properties drove cardiovascular/inflammatory-disorder research. The CIRS (chronic inflammatory response syndrome/mold illness) community adopted intranasal VIP off-label based on proposed immune mechanisms.",
-    "mechanism": "Binds VPAC1/VPAC2/PAC1 GPCRs, elevating cAMP and suppressing NF-\u03baB inflammatory signaling, reducing pro-inflammatory cytokines and expanding regulatory T cells. Also drives direct vasodilation via smooth-muscle relaxation.",
+    "mechanism": "Binds VPAC1/VPAC2/PAC1 GPCRs, elevating cAMP and suppressing NF-κB inflammatory signaling, reducing pro-inflammatory cytokines and expanding regulatory T cells. Also drives direct vasodilation via smooth-muscle relaxation.",
     "research_summary": "Strong mechanistic foundation. The synthetic analog aviptadil showed selective pulmonary vasodilation, reducing vascular resistance ~50% in trials. Human RCT evidence for compounded intranasal VIP specifically for CIRS is limited; small case series suggest symptom improvement but lack blinding/placebo control. FDA Fast Track for aviptadil in COVID-19 was granted but never led to approval.",
     "citations": [],
     "reported_benefits": [
@@ -2391,7 +3527,7 @@
     "tagline": "Porcine neuropeptide preparation with clinical use for stroke and dementia in non-US countries.",
     "status": "Approved in 40+ countries (Austria, Russia, Eastern Europe, Asia); not FDA-approved in US",
     "origin": "A standardized complex of neuropeptides and free amino acids derived from porcine brain tissue, developed in Austria and used clinically in Europe and Asia since the 1970s-80s for stroke, dementia, and Alzheimer's disease.",
-    "mechanism": "Modulates inflammatory cytokines, reducing IL-1\u03b2 and IL-6 while boosting IL-10, enhances neurotrophic signaling, promotes neuroplasticity (dendritic spine density in hippocampus and cortex), and stabilizes the blood-brain barrier.",
+    "mechanism": "Modulates inflammatory cytokines, reducing IL-1β and IL-6 while boosting IL-10, enhances neurotrophic signaling, promotes neuroplasticity (dendritic spine density in hippocampus and cortex), and stabilizes the blood-brain barrier.",
     "research_summary": "Neuroprotective effects are documented in in-vitro stroke and TBI models, with improved memory and increased hippocampal spine density in animal models. Clinical trials in dementia and vascular cognitive impairment show modest cognitive benefits, particularly post-stroke, mostly from European and Eastern European institutions. No large US FDA-track trials have been completed.",
     "citations": [
       {
@@ -2454,7 +3590,7 @@
     "dosing_protocols": [
       {
         "route": "Intraperitoneal injection (research only)",
-        "protocol": "Mouse models: 0.03-3 \u03bcg/kg; no human dosing established."
+        "protocol": "Mouse models: 0.03-3 μg/kg; no human dosing established."
       }
     ],
     "side_effects": [
@@ -2466,7 +3602,23 @@
     "related": [
       "semax",
       "cerebrolysin"
-    ]
+    ],
+    "mixing_notes": {
+      "clinic_combos": [
+        "bpc-157",
+        "cjc-1295",
+        "cjc-1295-dac",
+        "epithalon",
+        "ipamorelin"
+      ],
+      "anecdotal_combos": [],
+      "reported_avoid": [
+        "aod-9604",
+        "ara-290",
+        "mots-c",
+        "nad"
+      ]
+    }
   },
   "p21": {
     "name": "P21",
@@ -2510,7 +3662,20 @@
       "cerebrolysin",
       "semax"
     ],
-    "variant_note": "The adamantane-conjugated form (sometimes marketed as 'Adamax') is a blood-brain-barrier-penetration modification of the same peptide, with essentially no published pharmacology or safety data beyond community discussion."
+    "variant_note": "The adamantane-conjugated form (sometimes marketed as 'Adamax') is a blood-brain-barrier-penetration modification of the same peptide, with essentially no published pharmacology or safety data beyond community discussion.",
+    "mixing_notes": {
+      "clinic_combos": [],
+      "anecdotal_combos": [
+        "selank",
+        "semax"
+      ],
+      "reported_avoid": [
+        "aod-9604",
+        "ara-290",
+        "mots-c",
+        "nad"
+      ]
+    }
   },
   "pnc27": {
     "name": "PNC27",
@@ -2545,7 +3710,7 @@
     "dosing_protocols": [
       {
         "route": "Intravenous or intraperitoneal (mouse studies only)",
-        "protocol": "Mouse models: ~50-100 \u03bcg/kg; NO human dosing exists or should be attempted."
+        "protocol": "Mouse models: ~50-100 μg/kg; NO human dosing exists or should be attempted."
       }
     ],
     "side_effects": [
@@ -2553,7 +3718,7 @@
       "membrane-pore-forming mechanism could plausibly cause severe tissue damage if misapplied in vivo"
     ],
     "safety_notes": "CRITICAL: this is a cancer-research tool, not an approved or investigational human therapeutic. Zero human trials, zero healthy-volunteer data. Self-administration would be extremely dangerous and no evidence supports it.",
-    "community_notes": "Some longevity forums mistakenly categorize PNC27 as a life-extension peptide. It isn't \u2014 it's pure oncology research. Legitimate anecdotal human use essentially doesn't exist.",
+    "community_notes": "Some longevity forums mistakenly categorize PNC27 as a life-extension peptide. It isn't — it's pure oncology research. Legitimate anecdotal human use essentially doesn't exist.",
     "related": []
   },
   "thymalin": {
@@ -2570,7 +3735,7 @@
     "tagline": "Thymic bioregulator from the Khavinson family with long-term human mortality follow-up and immune-modulating effects.",
     "status": "Approved in Russia and Eastern Europe; used in clinical practice",
     "origin": "Isolated from thymic tissue extracts, developed by Vladimir Khavinson's laboratory at the St. Petersburg Institute of Bioregulation and Gerontology, part of the Russian bioregulation-therapy tradition emerging in the late 1980s-90s.",
-    "mechanism": "Stimulates differentiation of T lymphocyte precursors into mature CD4+/CD8+ T cells, reduces apoptosis of aging thymocytes, and modulates cytokine balance (lower IL-6/IL-1\u03b2, higher IL-10), normalizing immune homeostasis in aging.",
+    "mechanism": "Stimulates differentiation of T lymphocyte precursors into mature CD4+/CD8+ T cells, reduces apoptosis of aging thymocytes, and modulates cytokine balance (lower IL-6/IL-1β, higher IL-10), normalizing immune homeostasis in aging.",
     "research_summary": "A long-running Russian/Ukrainian cohort study (~266 elderly participants over 6-8 years) reported a 2.0-2.1-fold reduction in all-cause mortality in the Thymalin group versus controls, and 2.5-fold when combined with Epithalamin. Secondary outcomes included fewer acute respiratory infections and cardiovascular events. These are large effect sizes from small, Russian-led trials with limited Western replication, a caveat that applies to the whole bioregulator family.",
     "citations": [
       {
@@ -2608,7 +3773,30 @@
       "epithalon",
       "pinealon",
       "thymosin-alpha-1"
-    ]
+    ],
+    "mixing_notes": {
+      "clinic_combos": [
+        "bpc-157",
+        "cjc-1295",
+        "cjc-1295-dac",
+        "epithalon",
+        "ghk-cu",
+        "ghrp-6",
+        "ipamorelin",
+        "pinealon",
+        "selank",
+        "semax",
+        "tb-500",
+        "thymosin-alpha-1"
+      ],
+      "anecdotal_combos": [],
+      "reported_avoid": [
+        "aod-9604",
+        "ara-290",
+        "mots-c",
+        "nad"
+      ]
+    }
   },
   "vilon": {
     "name": "Vilon",
@@ -2697,7 +3885,29 @@
       "epithalon",
       "thymalin",
       "cerebrolysin"
-    ]
+    ],
+    "mixing_notes": {
+      "clinic_combos": [
+        "bpc-157",
+        "cjc-1295",
+        "cjc-1295-dac",
+        "epithalon",
+        "ipamorelin",
+        "kisspeptin",
+        "pt-141",
+        "selank",
+        "tb-500",
+        "thymalin",
+        "thymosin-alpha-1"
+      ],
+      "anecdotal_combos": [],
+      "reported_avoid": [
+        "aod-9604",
+        "ara-290",
+        "mots-c",
+        "nad"
+      ]
+    }
   },
   "testagen": {
     "name": "Testagen",
@@ -2963,7 +4173,7 @@
     "dosing_protocols": [
       {
         "route": "Subcutaneous/intramuscular injection or oral tablet",
-        "protocol": "Primate studies used 50-500 \u00b5g/animal/day for 10 days IM; community dosing 10-20 mg subcutaneously, unvalidated in humans."
+        "protocol": "Primate studies used 50-500 µg/animal/day for 10 days IM; community dosing 10-20 mg subcutaneously, unvalidated in humans."
       }
     ],
     "side_effects": [

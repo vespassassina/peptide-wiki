@@ -269,6 +269,27 @@ def stack_chip_list(slugs):
     items = [f'<li><a href="/stacks/{s}.html" rel="related">{esc(STACKS[s]["title"])}</a></li>' for s in slugs if s in STACKS]
     return f'<ul class="chip-list">{"".join(items)}</ul>' if items else ""
 
+def peptide_chip_list(slugs):
+    items = [f'<li><a href="/peptides/{s}.html" rel="related">{esc(PEPTIDES[s]["name"])}</a></li>' for s in slugs if s in PEPTIDES]
+    return f'<ul class="chip-list">{"".join(items)}</ul>' if items else '<p class="ak-small">None charted.</p>'
+
+def mixing_block(p):
+    m = p.get("mixing_notes")
+    caution = p.get("mixing_caution")
+    if not m and not caution:
+        return ""
+    parts = ['<p class="ak-small">Pulled from a community-charted mixing-compatibility reference (anecdotal, clinic-use, and community-reported signals) — not a safety guarantee. Verify independently before combining anything.</p>']
+    if caution:
+        parts.append(f'<div class="ak-banner"><strong>Note:</strong> {esc(caution)}</div>')
+    if m:
+        if m.get("clinic_combos"):
+            parts.append(f'<h3>Used together in wellness-clinic protocols</h3>{peptide_chip_list(m["clinic_combos"])}')
+        if m.get("anecdotal_combos"):
+            parts.append(f'<h3>Anecdotally combined (outside clinic protocols)</h3>{peptide_chip_list(m["anecdotal_combos"])}')
+        if m.get("reported_avoid"):
+            parts.append(f'<h3>Reported as a combination to avoid</h3>{peptide_chip_list(m["reported_avoid"])}')
+    return "".join(parts)
+
 def peptide_page(slug, p):
     cats = p["categories"]
     primary_cat = cats[0]
@@ -317,6 +338,7 @@ def peptide_page(slug, p):
       <li><a href="#community">Community &amp; reddit notes</a></li>
       <li><a href="#related">Related peptides</a></li>
       {'<li><a href="#stacks">Used in stacks</a></li>' if slug in PEPTIDE_STACKS else ''}
+      {'<li><a href="#mixing">Mixing compatibility</a></li>' if p.get("mixing_notes") or p.get("mixing_caution") else ''}
     </ul>
   </nav>
 
@@ -363,6 +385,8 @@ def peptide_page(slug, p):
     <section id="related" class="ak-section"><h2>Related peptides</h2>{related_list(p.get("related", []))}</section>
 
     {f'<section id="stacks" class="ak-section"><h2>Used in stacks</h2><p class="ak-small">Community combinations that include {esc(p["name"])} — see each stack page for the combination-specific rationale and evidence.</p>{stack_chip_list(PEPTIDE_STACKS.get(slug, []))}</section>' if slug in PEPTIDE_STACKS else ''}
+
+    {f'<section id="mixing" class="ak-section"><h2>Mixing compatibility</h2>{mixing_block(p)}</section>' if p.get("mixing_notes") or p.get("mixing_caution") else ''}
   </article>
 </div>
 </article>
@@ -634,6 +658,21 @@ GLOSSARY = [
     ("Anecdotal / community-reported", "Based on self-reported experiences from online communities rather than controlled clinical trials — useful for hypothesis-generation, not proof of effect."),
     ("Off-label", "Using an approved drug for a purpose other than the one it was specifically approved for — legal for physicians to prescribe, but without the same trial evidence backing that specific use."),
     ("Research chemical", "A compound sold for laboratory research use only, explicitly not for human consumption — the legal fiction under which most self-administered peptides are actually purchased."),
+    ("Bioregulator", "A short (usually 2-4 amino acid) synthetic peptide modeled on natural tissue-specific regulatory fragments, developed mostly by Russian researchers (the Khavinson group). Marketed for organ-specific aging support; human trial evidence is thin and largely from the same research lineage."),
+    ("Receptor agonist / antagonist", "An agonist binds a receptor and activates it, triggering the cell's normal response (e.g. Ipamorelin agonizes the ghrelin receptor). An antagonist binds the same receptor but blocks it instead of activating it."),
+    ("Endogenous / exogenous", "Endogenous means produced naturally by the body (e.g. endogenous GH). Exogenous means introduced from outside it (e.g. an injected peptide). Exogenous administration can suppress the body's own endogenous production through negative feedback."),
+    ("PMID / PubMed", "PubMed is the US National Library of Medicine's database of biomedical literature. A PMID (PubMed ID) is the unique number identifying an indexed paper — the citation links on this site point to pubmed.ncbi.nlm.nih.gov/{PMID}."),
+    ("RCT (randomized controlled trial)", "A study where participants are randomly assigned to receive the treatment or a control/placebo, reducing bias — the strongest common evidence type for whether a treatment actually works in humans. Most peptides on this site have no RCT evidence at all."),
+    ("In vitro / in vivo", "In vitro: in a lab dish or test tube, outside a living organism (cell cultures). In vivo: inside a living organism (animal or human). In vitro findings frequently fail to replicate in vivo — treat them as a first hint, not a result."),
+    ("Meta-analysis / systematic review", "A meta-analysis statistically pools results from multiple studies to estimate an overall effect; a systematic review summarizes them without necessarily pooling the numbers. Both sit above individual trials in evidence strength, when enough trials exist to review — which is rare for research peptides."),
+    ("Bioavailability", "The fraction of an administered dose that actually reaches systemic circulation intact. Most peptides have poor oral bioavailability (stomach acid and enzymes break them down), which is why almost all of them are injected rather than swallowed."),
+    ("First-pass metabolism", "The breakdown of a substance by the liver and gut wall before it reaches general circulation, after oral absorption. A major reason peptides are dosed by injection instead of pill."),
+    ("Titration", "Gradually increasing (or decreasing) a dose over time to find the level that works with tolerable side effects, rather than jumping straight to a target dose — standard practice for GLP-1 drugs and GH secretagogues."),
+    ("TFA / acetate salt form", "The counter-ion a peptide is synthesized and sold with. Acetate is generally preferred for injectables; TFA (trifluoroacetate), common in cheaper research-grade synthesis, is more cytotoxic in cell studies and considered lower quality for anything injected."),
+    ("Purity / HPLC testing", "HPLC (high-performance liquid chromatography) separates and quantifies the actual peptide content of a vial versus contaminants or degraded product. A certificate of analysis (CoA) showing HPLC purity is the main way to check whether a research-chemical source is selling what it claims."),
+    ("Half-life extension (PEGylation, DAC, Fc-fusion)", "Chemical modification techniques that slow a peptide's clearance from the body, cutting dosing frequency. Comes with trade-offs: less precise control over blood levels and, in some cases, altered receptor binding versus the native peptide."),
+    ("Ghrelin receptor (GHS-R)", "The growth-hormone-secretagogue receptor. Ghrelin is its natural ligand; GHRPs and compounds like Ipamorelin and MK-677 are synthetic agonists that trigger pituitary GH release through this same receptor."),
+    ("Melanocortin receptor (MC1R-MC5R)", "A family of five receptors involved in pigmentation, appetite, inflammation, and sexual arousal depending on subtype. PT-141 and MT-1/MT-2 work through this receptor family — different subtype selectivity explains their different effect profiles."),
 ]
 
 def glossary_page():
