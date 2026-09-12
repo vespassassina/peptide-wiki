@@ -21,7 +21,7 @@ def relativize_links(out_path, content):
     return re.sub(r'(href|src|action)="(/[^"]*)"', repl, content)
 
 SRC = os.path.dirname(os.path.abspath(__file__))
-OUT = os.path.join(os.path.dirname(SRC), "out")
+OUT = os.path.join(SRC, "out")
 VENDOR = os.path.join(SRC, "vendor", "artifactkit")
 
 with open(os.path.join(SRC, "peptides.json")) as f:
