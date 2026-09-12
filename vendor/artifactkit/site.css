@@ -136,4 +136,18 @@
 @media (prefers-color-scheme: dark){
   .fav-toggle.is-fav{ background:hsl(45 30% 18%) }
 }
+
+/* ── calculator page ─────────────────────────────────────────────────── */
+.calc-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:var(--ak-s5); margin-bottom:var(--ak-s4) }
+.calc-field label{ display:block; font-size:12.5px; font-weight:600; margin-bottom:6px; color:var(--ak-ink-muted) }
+.calc-inline{ display:flex; align-items:center; gap:8px; flex-wrap:wrap }
+.calc-inline .ak-input{ min-width:120px }
+.calc-inline .ak-select{ min-width:auto }
+.calc-presets{ display:flex; gap:6px; margin-top:8px; flex-wrap:wrap }
+.calc-preset{ font-size:12.5px; padding:4px 10px }
+
+.pw-syringe-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:var(--ak-s6) }
+.pw-syringe{ border:1px solid var(--ak-rule-mid); border-radius:var(--t-radius, 10px); padding:var(--ak-s4); background:var(--ak-surface) }
+.pw-syringe-svg{ width:100%; height:auto; display:block; margin:var(--ak-s2) 0 }
+.pw-syringe-readout{ font-weight:700; font-size:14.5px; margin:6px 0 2px }
 .fav-star{ font-size:14px }

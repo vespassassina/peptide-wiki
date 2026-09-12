@@ -4458,5 +4458,471 @@
       "cardiogen",
       "thymosin-alpha-1"
     ]
+  },
+  "peg-mgf": {
+    "name": "PEG-MGF",
+    "full_name": "PEGylated Mechano Growth Factor",
+    "aliases": [
+      "Pegylated MGF",
+      "PEG MGF"
+    ],
+    "categories": [
+      "fitness-muscle"
+    ],
+    "tagline": "Native MGF with a polyethylene glycol tag bolted on to stretch its otherwise minutes-long half-life into something injectable a few times a week; the underlying human data is essentially borrowed from other pegylated IGF-1 work, not PEG-MGF itself.",
+    "status": "Unapproved research compound, no regulatory approval for any human indication. Sold through the same research-chemical channels as unmodified MGF.",
+    "origin": "MGF (mechano growth factor, the IGF-1Ec splice variant) is produced locally in muscle tissue after mechanical loading or damage and is cleared within minutes. PEG-MGF is a synthetic version with polyethylene glycol chains attached to the peptide backbone, a modification used across biologics (PEGylated interferons, PEGylated growth hormone, etc.) specifically to slow renal clearance and proteolysis.",
+    "mechanism": "Proposed to act the same way as native MGF, binding IGF-1 receptors on satellite cells to trigger proliferation and fusion into myofibers, but with PEGylation increasing hydrodynamic size and shielding the peptide from clearance so it persists in circulation rather than acting only locally and briefly.",
+    "research_summary": "No PubMed-indexed studies test PEG-MGF itself in animals or humans. What exists is indirect: a first-in-human trial of a differently PEGylated IGF-1 molecule (not MGF) showed PEGylation extended IGF-1 half-life from a matter of hours to roughly 140-200 hours and blunted the hypoglycemia and GH-suppression seen with unmodified IGF-1, demonstrating PEGylation's general effect on this protein family's pharmacokinetics. Separately, human muscle-biopsy studies confirm native MGF mRNA is induced transiently by resistance exercise and that this response is blunted in older adults. A 2026 narrative review of unregulated performance-enhancing peptides lists PEG-MGF among compounds being self-administered off-label and explicitly flags the absence of human pharmacokinetic or efficacy data for it specifically, contrasting it with better-studied compounds in the same drug class.",
+    "reported_benefits": [
+      "claimed longer-lasting, more systemic muscle-building effect than native MGF (theoretical, extrapolated from PEGylation's known effect on IGF-1 half-life)",
+      "reduced injection frequency compared to native MGF due to slower clearance",
+      "same satellite-cell activation/hypertrophy claims made for native MGF, unverified for the pegylated form"
+    ],
+    "dosing_protocols": [
+      {
+        "route": "Subcutaneous injection",
+        "protocol": "Commonly reported at 200-500 mcg per injection, roughly 2x weekly, sometimes framed as once-weekly given the claimed extended half-life. No clinical dosing standard exists; these figures come from self-experimentation reporting, not trials."
+      }
+    ],
+    "side_effects": [
+      "injection site irritation",
+      "theoretical hypoglycemia risk from IGF-1 receptor activation",
+      "unknown long-term effects of chronic PEG accumulation (a general PEGylation concern seen with other pegylated biologics, not established for PEG-MGF specifically)"
+    ],
+    "safety_notes": "There is no published human safety data for PEG-MGF as a distinct molecule. Safety claims lean entirely on data for native MGF and on unrelated PEGylated IGF-1/growth-hormone products, which is a real evidentiary gap, not a formality. Theoretical concerns carried over from the IGF-1 pathway generally (mitogenic signaling, malignancy risk in susceptible tissue) apply here too and are, if anything, amplified by the longer systemic exposure PEGylation is designed to produce.",
+    "community_notes": "Discussed in bodybuilding and peptide self-experimentation circles as the 'systemic' counterpart to local MGF injections, used post-training with claims of prolonged muscle-building signaling. Reports are anecdotal; users generally acknowledge there's no controlled human trial behind the protocols being passed around.",
+    "related": [
+      "mgf"
+    ],
+    "citations": [
+      {
+        "title": "The emerging landscape of performance-enhancing peptides modulating GH-IGF1 axis: bridging the gap between clinical evidence and patient self-administration",
+        "authors_year": "Dominikowski et al. 2026",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42395176/"
+      },
+      {
+        "title": "First-in-man study with a novel PEGylated recombinant human insulin-like growth factor-I",
+        "authors_year": "Kletzl et al. 2017",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/28110155/"
+      },
+      {
+        "title": "Expression of IGF-1 isoforms after exercise-induced muscle damage in humans: characterization of the MGF E peptide actions in vitro",
+        "authors_year": "Philippou et al. 2009",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/19567392/"
+      },
+      {
+        "title": "Expression of IGF-I splice variants in young and old human skeletal muscle after high resistance exercise",
+        "authors_year": "Hameed et al. 2003",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/12562960/"
+      }
+    ]
+  },
+  "glutathione": {
+    "name": "Glutathione",
+    "full_name": "Glutathione (gamma-L-glutamyl-L-cysteinyl-glycine, GSH)",
+    "aliases": [
+      "GSH",
+      "reduced glutathione",
+      "L-glutathione"
+    ],
+    "categories": [
+      "anti-aging"
+    ],
+    "tagline": "The body's main intracellular antioxidant tripeptide; oral supplementation genuinely raises body stores in trials, but the skin-lightening and detox claims built on top of that are much thinner.",
+    "status": "Sold over-the-counter as an oral supplement, and used off-label as an IV or injectable product in wellness/aesthetic clinics; not FDA-approved for any indication marketed to consumers.",
+    "origin": "A tripeptide (glutamate-cysteine-glycine) synthesized in nearly every cell, not obtained from diet as an intact peptide. It's the most abundant low-molecular-weight thiol in the body and central to redox buffering and detoxification.",
+    "mechanism": "The cysteine thiol group lets glutathione cycle between reduced (GSH) and oxidized (GSSG) states, neutralizing reactive oxygen species and peroxides via glutathione peroxidase, and conjugating with xenobiotics via glutathione S-transferases for excretion. Proposed skin-lightening effects come from direct and indirect inhibition of tyrosinase and a shift in melanin synthesis from darker eumelanin toward lighter pheomelanin.",
+    "research_summary": "Oral bioavailability was long assumed to be near zero because gut peptidases break glutathione down, but a 6-month randomized placebo-controlled trial in healthy adults showed daily oral GSH (250 or 1000 mg) did raise blood, erythrocyte, and buccal-cell glutathione levels in a dose- and time-dependent way, with levels falling back to baseline after a washout month. For the skin-lightening use case specifically, multiple human RCTs exist and reviews of them are mixed: some show modest melanin reduction with oral or topical glutathione, effects are inconsistent across body sites and populations, not long-lasting after stopping, and IV/parenteral glutathione carries real safety concerns (anaphylaxis, hepatotoxicity reports) that oral and topical forms don't. General antioxidant/longevity/detox benefit claims beyond raising measured GSH levels are not well supported by controlled human trials.",
+    "reported_benefits": [
+      "reliably raises measured glutathione levels in blood and tissue with sustained oral dosing (best-supported claim)",
+      "modest, inconsistent skin-lightening/depigmentation effect reported in some RCTs, not durable after discontinuation",
+      "marketed general antioxidant/detox and anti-aging support, largely unproven beyond the biomarker changes above"
+    ],
+    "dosing_protocols": [
+      {
+        "route": "Oral capsule",
+        "protocol": "Trial doses of 250-1000 mg/day for up to 6 months raised body glutathione stores in a dose-dependent way; community use commonly mirrors this range."
+      },
+      {
+        "route": "IV infusion (clinic setting)",
+        "protocol": "Widely used off-label for skin lightening at clinic-set doses with no standardized protocol; reviews note this route has the least standardization and the worst safety signal of the three."
+      },
+      {
+        "route": "Topical",
+        "protocol": "Used in cosmetic formulations for localized skin-lightening effect; reported better tolerated than IV but with variable, non-durable results."
+      }
+    ],
+    "side_effects": [
+      "oral: generally well tolerated, mild GI upset reported occasionally",
+      "IV/parenteral: flushing, and rarer but serious reports of anaphylaxis and hepatotoxicity",
+      "topical: mostly local irritation"
+    ],
+    "safety_notes": "Oral glutathione has the best safety and mechanistic evidence of the three routes and is where the strongest trial (Richie et al. 2014) sits. IV glutathione, despite being popular in aesthetic clinics for skin lightening, has weaker efficacy evidence and a real, documented risk of serious adverse events including anaphylaxis and liver injury; regulators in some countries have issued warnings against off-label IV use for this purpose. Long-term safety of sustained high-dose supplementation of any form isn't well characterized.",
+    "community_notes": "Frequently paired with NAD+ in longevity and detox-focused wellness stacks, marketed as antioxidant/anti-aging support alongside NAD+'s energy-metabolism pitch. In cosmetic-focused communities it's discussed mainly for skin lightening, where users generally note effects fade if supplementation stops.",
+    "related": [
+      "nad"
+    ],
+    "citations": [
+      {
+        "title": "Randomized controlled trial of oral glutathione supplementation on body stores of glutathione",
+        "authors_year": "Richie et al. 2015",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/24791752/"
+      },
+      {
+        "title": "Exploring the Safety and Efficacy of Glutathione Supplementation for Skin Lightening: A Narrative Review",
+        "authors_year": "Alzahrani et al. 2025",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40013212/"
+      },
+      {
+        "title": "Systemic Glutathione as a Skin-Whitening Agent in Adult",
+        "authors_year": "Sitohang & Ninditya 2020",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32373172/"
+      },
+      {
+        "title": "Glutathione as a skin whitening agent: Facts, myths, evidence and controversies",
+        "authors_year": "Sonthalia et al. 2016",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/27088927/"
+      }
+    ]
+  },
+  "fgl-l": {
+    "name": "FGL(L)",
+    "full_name": "FGL Peptide (NCAM-derived FG-Loop Peptide)",
+    "aliases": [
+      "FGL",
+      "FG-Loop peptide",
+      "FGLL",
+      "NCAM mimetic peptide FGL"
+    ],
+    "categories": [
+      "nootropics-cognitive"
+    ],
+    "tagline": "A 15-amino-acid fragment of the neural cell adhesion molecule that activates FGFR1 in rodent brains — real synaptic-plasticity data, zero human trials.",
+    "status": "Unapproved research compound. No FDA/EMA approval, no clinical trials registered in humans as of 2026; all published work is in vitro or in rodent models.",
+    "origin": "FGL is a synthetic 15-amino-acid peptide (sequence EVYVVAENQQGKSKA) corresponding to the second fibronectin type III (F3) module of the neural cell adhesion molecule (NCAM), first described by Cambon et al. (2004). It is not naturally circulating — it's a lab-designed mimetic of a binding loop within a much larger cell-surface protein.",
+    "mechanism": "FGL binds and activates fibroblast growth factor receptor 1 (FGFR1), the same receptor NCAM engages via heterophilic interaction, without requiring the full NCAM protein. Downstream, this triggers PKC and CaMKII signaling that facilitates synaptic AMPA receptor delivery and NMDA-receptor-dependent long-term potentiation (LTP) in hippocampal neurons, and separately drives neurotrophic and anti-inflammatory effects (suppressing microglial activation via neuronal CD200 upregulation).",
+    "research_summary": "All evidence is preclinical — cell culture and rodent studies, no human data. In rats, systemic or intracerebroventricular FGL improved spatial and fear-conditioning memory consolidation, facilitated hippocampal LTP in the dentate gyrus, and reduced amyloid-beta-induced CA1 pyramidal cell loss with partial rescue of social recognition memory in an Alzheimer's-relevant lesion model. In vitro, FGL promoted synaptogenesis, enhanced presynaptic function, mobilized neural stem cells, and suppressed neuroinflammatory microglial activation in aged rats. One study also found FGL alone (without amyloid-beta) reduced CA1 pyramidal cell counts by 40%, a caution against assuming benign effects outside disease models.",
+    "reported_benefits": [
+      "Enhanced spatial learning and memory consolidation (rodent studies)",
+      "Facilitated hippocampal long-term potentiation (LTP)",
+      "Partial protection against amyloid-beta-induced neuronal loss and memory deficits (rodent AD model)",
+      "Anti-inflammatory / anti-microglial activation effects in aged rat brain",
+      "Promoted synaptogenesis and neural stem cell mobilization in vitro"
+    ],
+    "dosing_protocols": [
+      {
+        "route": "Subcutaneous (rodent research dose)",
+        "protocol": "Published rat studies typically used single or repeated doses in the range of ~1-3 mg/kg systemically; no human dosing data exists. Self-experimentation reports describing human doses are anecdotal extrapolations, not validated protocols."
+      },
+      {
+        "route": "Intracerebroventricular (research only)",
+        "protocol": "Used exclusively in animal studies (microgram-range local infusion) to demonstrate direct CNS mechanism — not a route relevant to human self-use."
+      }
+    ],
+    "side_effects": [
+      "Unknown in humans — no human safety data exists",
+      "In rats, FGL alone (without pathology present) was associated with a reduction in CA1 pyramidal neuron counts in one study, suggesting effects may not be uniformly beneficial in a healthy brain",
+      "Theoretical concern: FGFR1 agonism is not tissue-restricted to brain — systemic off-target growth-factor signaling effects are unstudied"
+    ],
+    "safety_notes": "FGL has never been tested in a human clinical trial; everything known comes from rodent behavioral studies and cell culture. The finding that FGL alone reduced CA1 neuron counts in non-lesioned tissue is a real red flag in the literature that self-experimentation communities often omit. Long-term safety, pharmacokinetics, immunogenicity (as a foreign peptide fragment), and optimal dosing are all unknown.",
+    "community_notes": "FGL circulates in nootropic/longevity peptide forums as a theoretical 'NCAM mimetic' for memory enhancement, usually referenced alongside other FGFR-pathway peptides. Discussion tends to lean heavily on the Cambon 2004 and Knafo 2012 papers while glossing over the mixed CA1-neuron finding; actual self-reported use logs are sparse compared to better-established nootropic peptides.",
+    "related": [
+      "semax",
+      "selank",
+      "cerebrolysin"
+    ],
+    "citations": [
+      {
+        "title": "A synthetic neural cell adhesion molecule mimetic peptide promotes synaptogenesis, enhances presynaptic function, and facilitates memory consolidation",
+        "authors_year": "Cambon K, Hansen SM, Venero C, et al. (2004)",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/15115815/"
+      },
+      {
+        "title": "A novel anti-inflammatory role of NCAM-derived mimetic peptide, FGL",
+        "authors_year": "Downer EJ, Cowley TR, Lyons A, et al. (2008)",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/18468731/"
+      },
+      {
+        "title": "Amyloid-beta induced CA1 pyramidal cell loss in young adult rats is alleviated by systemic treatment with FGL, a neural cell adhesion molecule-derived mimetic peptide",
+        "authors_year": "Corbett NJ, Gabbott PL, Klementiev B, et al. (2013)",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/23951173/"
+      },
+      {
+        "title": "Facilitation of AMPA receptor synaptic delivery as a molecular mechanism for cognitive enhancement",
+        "authors_year": "Knafo S, Venero C, Sánchez-Puelles C, et al. (2012)",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/22363206/"
+      },
+      {
+        "title": "The neural cell adhesion molecule-derived peptide FGL facilitates long-term plasticity in the dentate gyrus in vivo",
+        "authors_year": "Dallérac G, Zerwas M, Novikova T, et al. (2011)",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/21508096/"
+      },
+      {
+        "title": "The synthetic NCAM mimetic peptide FGL mobilizes neural stem cells in vitro and in vivo",
+        "authors_year": "Klein R, Blaschke S, Neumaier B, et al. (2014)",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/24817672/"
+      }
+    ]
+  },
+  "met-enkephalin": {
+    "name": "Met-Enkephalin",
+    "full_name": "Methionine-Enkephalin (Opioid Growth Factor, OGF)",
+    "aliases": [
+      "OGF",
+      "[Met5]-enkephalin",
+      "Methionine enkephalin",
+      "Opioid Growth Factor"
+    ],
+    "categories": [
+      "bioregulators"
+    ],
+    "tagline": "An endogenous five-amino-acid opioid that quietly puts a brake on cell division — well-studied in oncology and immunology labs, but that's not the same as a validated self-use protocol.",
+    "status": "Endogenous human peptide (naturally produced). Not FDA-approved as a drug in its own right; investigated in early-phase oncology trials as 'OGF' biotherapy and mechanistically tied to low-dose naltrexone (LDN) research, which itself is used off-label.",
+    "origin": "Met-enkephalin (Tyr-Gly-Gly-Phe-Met) is one of the body's native opioid peptides, derived from proteolytic processing of proenkephalin. Beyond its classical role as a weak opioid-receptor ligand, a specific pool of it functions as the 'opioid growth factor' (OGF) — an autocrine/paracrine signal that acts through a distinct, non-classical receptor (OGFr) to regulate cell replication.",
+    "mechanism": "OGF (Met-enkephalin) binds OGFr and traffics into the cell nucleus, where it upregulates cyclin-dependent kinase inhibitors (p16, p21), delaying the G1/S transition of the cell cycle and slowing proliferation. This is the same axis proposed to underlie low-dose naltrexone's effects: brief opioid receptor blockade triggers compensatory upregulation of OGF and OGFr, amplifying the inhibitory signal once blockade wears off — a rebound mechanism distinct from naltrexone's classical opioid antagonism.",
+    "research_summary": "Human data is limited mostly to small early-phase oncology trials using OGF as an adjunct biotherapy, plus indirect clinical experience via low-dose naltrexone (which is not the same compound but is mechanistically linked). The bulk of solid evidence is in vitro and in xenograft/animal models: the OGF-OGFr axis has been shown to inhibit proliferation across multiple human cancer cell lines (triple-negative breast, thyroid follicular, pancreatic, ovarian, colorectal, squamous cell), consistently via p16/p21-mediated cell-cycle arrest, and mutations in OGFr found in human tumors can blunt this response. Immune-modulating and wound-healing/homeostatic roles are also documented, chiefly in rodent models. No robust randomized controlled trial has established Met-enkephalin itself as a clinical therapy.",
+    "reported_benefits": [
+      "Cell-cycle arrest / growth inhibition of cancer cell lines in vitro and in animal xenograft models",
+      "Proposed synergy with chemotherapy agents (e.g., paclitaxel) in preclinical models",
+      "Immune-modulatory and homeostatic signaling implicated in wound healing and autoimmune disease models",
+      "Mechanistic basis cited for low-dose naltrexone's reported effects in autoimmune and oncology self-experimentation contexts"
+    ],
+    "dosing_protocols": [
+      {
+        "route": "Intravenous (clinical trial context, historical)",
+        "protocol": "Early oncology trials investigated OGF infusions in defined clinical protocols under medical supervision; these are not replicable or safe outside a trial/clinical setting and specific dosing is not something to extrapolate for self-use."
+      },
+      {
+        "route": "Subcutaneous (self-experimentation reports)",
+        "protocol": "Community-reported use (loosely modeled on published rodent dosing, roughly 0.1-1 mg/kg equivalents scaled down) is speculative and not validated in controlled human studies — genuine dosing standards do not exist outside supervised trials."
+      }
+    ],
+    "side_effects": [
+      "Because it interacts with opioid-receptor-adjacent pathways, theoretical risk of interaction with opioid medications or endogenous opioid tone",
+      "Injection-site reactions reported anecdotally",
+      "Unknown long-term effects of exogenous administration outside short clinical trial windows",
+      "Tumor cells with OGFr mutations may not respond as expected, complicating any assumption of predictable growth-inhibitory effect"
+    ],
+    "safety_notes": "Met-enkephalin/OGF has real oncology-research pedigree, but that pedigree is early-phase and mechanistic, not a settled clinical protocol. It should not be conflated with low-dose naltrexone, which is a different molecule with a much larger (though still mostly off-label) human-use footprint. Self-administering a peptide whose only rigorous human data comes from monitored trials is a meaningfully different risk profile than trials themselves.",
+    "community_notes": "In self-experimentation and biohacking circles, Met-enkephalin/OGF is discussed mostly as the 'mechanistic explanation' for why low-dose naltrexone might work in autoimmune and oncology-adjacent contexts, rather than as a peptide people commonly inject directly — actual first-hand use reports are far rarer than LDN reports themselves.",
+    "related": [
+      "ll-37",
+      "thymosin-alpha-1",
+      "bpc-157"
+    ],
+    "citations": [
+      {
+        "title": "The opioid growth factor-opioid growth factor receptor axis: homeostatic regulator of cell proliferation and its implications for health and disease",
+        "authors_year": "McLaughlin PJ, Zagon IS (2012)",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/22687282/"
+      },
+      {
+        "title": "Opioid growth factor - opioid growth factor receptor axis inhibits proliferation of triple negative breast cancer",
+        "authors_year": "Zagon IS, Porterfield NK, McLaughlin PJ (2013)",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/23918871/"
+      },
+      {
+        "title": "Low-dose naltrexone targets the opioid growth factor-opioid growth factor receptor pathway to inhibit cell proliferation: mechanistic evidence from a tissue culture model",
+        "authors_year": "Donahue RN, McLaughlin PJ, Zagon IS (2011)",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/21807817/"
+      },
+      {
+        "title": "Growth inhibition of thyroid follicular cell-derived cancers by the opioid growth factor (OGF) - opioid growth factor receptor (OGFr) axis",
+        "authors_year": "McLaughlin PJ, Zagon IS, Park SS, et al. (2009)",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/19835629/"
+      },
+      {
+        "title": "Mutations in the opioid growth factor receptor in human cancers alter receptor function",
+        "authors_year": "Kren NP, Zagon IS, McLaughlin PJ (2015)",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/26005722/"
+      }
+    ]
+  },
+  "leuphasyl": {
+    "name": "Leuphasyl",
+    "full_name": "Pentapeptide-18",
+    "aliases": [
+      "Pentapeptide-18",
+      "Leu-DAP",
+      "SNAP-8 alternative",
+      "Enkephalin-analog pentapeptide"
+    ],
+    "categories": [
+      "anti-aging"
+    ],
+    "tagline": "A stabilized enkephalin fragment marketed as a topical, needle-free alternative to neuromuscular-blocking wrinkle treatments — the mechanism is plausible, the human wrinkle-reduction evidence is thin.",
+    "status": "Unregulated cosmetic ingredient (not a drug); sold in serums/creams, not injectables. No FDA or EMA drug approval process applies because it isn't marketed as a therapeutic.",
+    "origin": "Leuphasyl is a synthetic pentapeptide (Tyr-D-Ala-Gly-Phe-Leu) derived from the endogenous opioid peptide Leu-enkephalin, with a D-amino acid substitution at position 2 to resist enzymatic degradation and extend stability in topical formulations. It is a cosmetic-industry ingredient, not a pharmaceutical.",
+    "mechanism": "Proposed to act at the neuromuscular junction interface in skin by binding opioid-receptor-like sites and dampening catecholamine and acetylcholine release, theoretically reducing the frequency and force of the micro-contractions in facial muscles that contribute to expression-line formation. This is distinct from Botox's mechanism (SNARE-protein cleavage) and from Argireline's (SNARE-complex assembly inhibition); Leuphasyl is generally pitched as complementary to both.",
+    "research_summary": "Published data are almost entirely in vitro and in silico: molecular docking/dynamics and spectroscopic studies show Leuphasyl binding to inflammation- and matrix-remodeling targets (MMP-13, TGF-β, TNF-α pathways) and formulation studies confirm it is stable and non-cytotoxic to skin cell lines when delivered in lipid nanocarriers. No randomized, placebo-controlled human trial of Leuphasyl alone measuring wrinkle depth has been located on PubMed; manufacturer-reported efficacy claims are not independently peer-reviewed. By contrast, its usual co-formulant Argireline (acetyl hexapeptide-3) does have a small published RCT showing modest anti-wrinkle effects.",
+    "reported_benefits": [
+      "Reported softening of expression lines (crow's feet, forehead lines) with regular topical use, per manufacturer and formulation literature",
+      "Marketed as a synergistic partner to Argireline for combined 'triple mechanism' wrinkle serums",
+      "Non-injectable, no downtime, compatible with routine skincare layering"
+    ],
+    "dosing_protocols": [
+      {
+        "route": "topical",
+        "protocol": "Typically formulated at 5-10% of a peptide-complex solution, itself included in a finished serum/cream at low single-digit percentages; applied once or twice daily to clean, dry skin, often in combination products with Argireline and/or Matrixyl-type peptides"
+      }
+    ],
+    "side_effects": [
+      "Mild irritation or contact sensitivity in a minority of users, as with most concentrated peptide serums",
+      "No systemic side effects reported given negligible dermal penetration at typical topical concentrations"
+    ],
+    "safety_notes": "Cosmetic peptides at these concentrations have a good short-term dermal safety record, but there is no dedicated long-term human safety dataset for Leuphasyl specifically, and efficacy claims rest almost entirely on industry-funded formulation studies rather than independent clinical trials.",
+    "community_notes": "Discussed mainly in skincare/DIY-formulation circles as a budget, non-invasive component of 'peptide facial serums,' almost always stacked with Argireline; users report subtle, gradual softening rather than Botox-like results, and skepticism about marketing claims is common even among enthusiasts.",
+    "related": [
+      "zinc-thymulin"
+    ],
+    "citations": [
+      {
+        "title": "Pentapeptide-18 as an anti-aging candidate: Spectroscopic characterization and molecular interaction analysis",
+        "authors_year": "Akhan et al., 2026",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41722287/"
+      },
+      {
+        "title": "Integrative In Silico and In Vitro Evaluation of Vialox and Leuphasyl Pentapeptides for Antiaging Applications",
+        "authors_year": "Akhan et al., 2026",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42116636/"
+      },
+      {
+        "title": "Solid Lipid Nanoparticles Incorporated with Retinol and Pentapeptide-18—Optimization, Characterization, and Cosmetic Application",
+        "authors_year": "Pawłowska et al., 2024",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39337562/"
+      },
+      {
+        "title": "D-tyrosine adds an anti-melanogenic effect to cosmetic peptides",
+        "authors_year": "Park et al., 2020",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31937863/"
+      },
+      {
+        "title": "The anti-wrinkle efficacy of argireline, a synthetic hexapeptide, in Chinese subjects: a randomized, placebo-controlled study",
+        "authors_year": "Wang et al., 2013",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/23417317/"
+      }
+    ]
+  },
+  "zinc-thymulin": {
+    "name": "Zinc-thymulin",
+    "full_name": "Zinc-bound Thymulin (Zn-FTS, zinc-dependent thymic nonapeptide)",
+    "aliases": [
+      "Zn-thymulin",
+      "FTS (Facteur Thymique Sérique)",
+      "Zinc-thymulin nonapeptide"
+    ],
+    "categories": [
+      "anti-aging"
+    ],
+    "tagline": "A zinc-dependent thymic hormone with real, decades-old immunology behind it, repackaged for topical hair-loss use on evidence that is mostly adjacent, not direct.",
+    "status": "Not an approved drug for hair loss anywhere; sold as a cosmetic/topical ingredient in hair serums. Thymulin itself has a long research history in immunology, unrelated to any hair-specific approval.",
+    "origin": "Thymulin is an endogenous nonapeptide hormone (Glu-Ala-Lys-Ser-Gln-Gly-Gly-Ser-Asn) produced by thymic epithelial cells; it is biologically inactive unless bound to a zinc ion, which is required for receptor binding and immune activity — hence 'zinc-thymulin.' In topical cosmetics, a synthesized or recombinant zinc-thymulin complex is applied to the scalp on the premise that local immune modulation in hair follicles can influence hair cycling and pigmentation.",
+    "mechanism": "Physiologically, zinc-thymulin regulates T-lymphocyte differentiation and maturation and modulates cytokine expression. The hair-loss rationale extends this to the hair follicle's mini-immune environment: androgenetic alopecia and alopecia areata both involve local immune/inflammatory dysregulation around the follicle bulb, and zinc itself is an established cofactor for hair follicle keratinocyte turnover, so the proposed mechanism is restoring local immune balance and zinc-dependent follicular signaling rather than a direct androgen pathway effect.",
+    "research_summary": "The zinc-thymulin biology (zinc-dependence, T-cell modulation, age-related decline) is well established in PubMed-indexed immunology and aging literature going back to the 1990s-2000s, mostly in the context of thymic involution and autoimmune disease, not hair. Separately, zinc deficiency is independently associated with alopecia areata and implicated as a modifiable factor in non-scarring hair loss in dermatology reviews. No PubMed-indexed clinical trial directly testing a topical zinc-thymulin formulation for androgenetic alopecia or hair pigmentation was found; the hair-specific application appears to be a cosmetic-industry extrapolation from these two separate literatures rather than a studied combination.",
+    "reported_benefits": [
+      "Claimed reduction in hair shedding and support for hair density in androgenetic alopecia (manufacturer/industry claims, not independently trialed)",
+      "Claimed support for maintaining hair pigmentation, based on zinc's and immune modulation's roles in follicle melanocyte function",
+      "General scalp health support attributed to zinc's role in keratinocyte turnover"
+    ],
+    "dosing_protocols": [
+      {
+        "route": "topical (scalp serum/solution)",
+        "protocol": "Applied directly to scalp, typically once daily, as part of a hair-serum formulation; concentrations are not standardized across products and no clinical dosing protocol exists in the literature"
+      }
+    ],
+    "side_effects": [
+      "Local scalp irritation possible with any concentrated topical actives",
+      "No systemic toxicity expected at topical doses; injectable/systemic thymulin (studied in unrelated immunology contexts) is not the same use case as topical scalp application"
+    ],
+    "safety_notes": "The underlying zinc-thymulin biology is legitimate and well-studied, but that evidence base is about systemic immune function and thymic aging, not scalp application — safety and efficacy for topical hair use has essentially no direct human trial data, so claims should be treated as unproven extrapolation rather than established fact.",
+    "community_notes": "Appears in peptide/hair-loss self-experimentation forums as a niche, 'immune-modulation angle' alternative or add-on to minoxidil/finasteride regimens, usually discussed with acknowledgment that evidence is indirect and results anecdotal; framed more as a plausible mechanism worth trying than a proven treatment.",
+    "related": [
+      "leuphasyl"
+    ],
+    "citations": [
+      {
+        "title": "Plasticity of neuroendocrine-thymus interactions during ontogeny and ageing: role of zinc and arginine",
+        "authors_year": "Mocchegiani et al., 2006",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/16904953/"
+      },
+      {
+        "title": "The Role of Vitamins and Minerals in Hair Loss: A Review",
+        "authors_year": "Almohanna et al., 2018",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/30547302/"
+      },
+      {
+        "title": "The Role of Micronutrients in Alopecia Areata: A Review",
+        "authors_year": "Thompson et al., 2017",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/28508256/"
+      },
+      {
+        "title": "Altered thymic endocrine activity along with impairments of peripheral zinc metabolism and T-lymphocyte populations are associated with myasthenia gravis: a follow-up study",
+        "authors_year": "Licastro et al., 1997",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/9258245/"
+      }
+    ]
+  },
+  "slu-pp-332": {
+    "name": "SLU-PP-332",
+    "full_name": "SLU-PP-332 (synthetic pan-ERR agonist)",
+    "aliases": [
+      "SLU-PP-332",
+      "ERR pan-agonist SLU-PP-332"
+    ],
+    "categories": [
+      "longevity"
+    ],
+    "tagline": "A rodent-only 'exercise in a pill' compound that genuinely turns on exercise-like gene programs — but it is a small molecule, not a peptide, and has never been dosed in a human trial.",
+    "status": "Preclinical research chemical only. No human trials registered or published; not approved or reviewed by any regulatory agency for any use. Sold in the gray-market research-chemical space alongside peptides, but it is chemically unrelated to peptides.",
+    "origin": "IMPORTANT: SLU-PP-332 is NOT a peptide, despite being commonly sold and discussed alongside peptide research compounds. It is a synthetic small-molecule drug — a designed pan-agonist of the three estrogen-related receptor subtypes (ERRα, ERRβ, ERRγ), orphan nuclear receptors unrelated to estrogen signaling itself. It was developed and first reported by academic pharmacology labs (Washington University in St. Louis / Saint Louis University / University of Florida groups) as a chemical tool to probe ERR biology.",
+    "mechanism": "ERRs are master transcriptional regulators of mitochondrial biogenesis, oxidative phosphorylation, and fatty acid oxidation, and are activated physiologically during aerobic exercise. SLU-PP-332 binds and activates all three ERR subtypes (with highest potency at ERRα), driving an ERRα-dependent gene program that mimics acute aerobic exercise — including induction of Ddit4 and Slc25a25, increased type IIa oxidative muscle fiber content, and enhanced cellular respiration — without the animal actually exercising.",
+    "research_summary": "All published evidence is preclinical: cell-based assays and mouse studies show SLU-PP-332 increases mitochondrial function and exercise endurance, reduces fat mass, and improves insulin sensitivity in diet-induced-obesity and metabolic syndrome mouse models. A 2026 structure-activity-relationship paper further characterizes its binding and identifies analogues (including the orally bioavailable follow-up compound SLU-PP-915) with improved pharmacokinetics. No human pharmacokinetic, safety, or efficacy data exist; a 2026 doping-control analytical paper characterizes its metabolites specifically because anti-doping labs are watching for illicit human use, which underscores that it is being taken by people despite zero human trials.",
+    "reported_benefits": [
+      "In mice only: increased treadmill endurance, increased oxidative (type IIa) muscle fiber proportion, and improved aerobic capacity",
+      "In mouse obesity/metabolic syndrome models: reduced fat mass, increased energy expenditure, improved insulin sensitivity",
+      "Proposed (unproven in humans) as a mitochondrial-biogenesis and 'exercise mimetic' strategy for sarcopenia, metabolic disease, and aging-related muscle decline"
+    ],
+    "dosing_protocols": [
+      {
+        "route": "not established for humans",
+        "protocol": "All published dosing is intraperitoneal or oral administration in mice at research doses (mg/kg); no human dosing protocol exists, and self-administration in humans is unstudied off-label use of a research chemical with unknown human pharmacokinetics"
+      }
+    ],
+    "side_effects": [
+      "No human safety data exists at all — side effect profile in humans is unknown",
+      "Mouse studies report no evident toxicity at studied doses, but this does not establish human safety",
+      "Flagged by anti-doping researchers as a potential performance-enhancing substance of concern, implying real-world human use is already occurring ahead of any safety data"
+    ],
+    "safety_notes": "This is the single largest gap in the whole profile: a compound with zero published human trials is being self-administered based on mouse data alone. Long-term effects of chronic ERR pan-activation in humans — including any off-target effects, since it hits all three ERR subtypes rather than a single isoform — are completely uncharacterized.",
+    "community_notes": "Discussed in fitness/longevity research-chemical circles as a next-generation 'exercise mimetic,' often mentioned in the same breath as peptide compounds even though it is chemically distinct; self-experimenters extrapolate mouse dosing to humans by body-weight scaling, a practice with no validated basis and no reported pharmacokinetic grounding.",
+    "related": [],
+    "citations": [
+      {
+        "title": "Synthetic ERRα/β/γ Agonist Induces an ERRα-Dependent Acute Aerobic Exercise Response and Enhances Exercise Capacity",
+        "authors_year": "Billon et al., 2023",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36988910/"
+      },
+      {
+        "title": "A Synthetic ERR Agonist Alleviates Metabolic Syndrome",
+        "authors_year": "Billon et al., 2024",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37739806/"
+      },
+      {
+        "title": "An orally active estrogen receptor-related receptor agonist, SLU-PP-915, enhances aerobic exercise capacity",
+        "authors_year": "Billon et al., 2025",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41421047/"
+      },
+      {
+        "title": "Chemical optimization of the exercise mimetic SLU-PP-332 enables insight into estrogen-related receptor signaling",
+        "authors_year": "Okda et al., 2026",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41850449/"
+      },
+      {
+        "title": "[Pharmacological Activation of ERRα/β/γ as an Exercise Mimetic: Potential Therapeutic Applications]",
+        "authors_year": "de Souza-Lima et al., 2026",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42024694/"
+      }
+    ]
   }
 }

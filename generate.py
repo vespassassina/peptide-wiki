@@ -174,6 +174,7 @@ def site_nav(active=""):
         <li><a href="/favorites.html"{cur("favorites")}>★ Favorites</a></li>
         <li><a href="/glossary.html"{cur("glossary")}>Glossary</a></li>
         <li><a href="/dosing-safety.html"{cur("dosing-safety")}>Dosing &amp; safety</a></li>
+        <li><a href="/calculator.html"{cur("calculator")}>Calculator</a></li>
         <li><a href="/about.html"{cur("about")}>About</a></li>
       </ul>
       <form class="site-search" role="search" action="/directory.html" method="get">
@@ -593,11 +594,17 @@ def home_page():
 <h2 class="ak-sechead"><span class="ak-n">START</span> here</h2>
 <ul>
   <li><a href="/dosing-safety.html">Dosing, reconstitution &amp; safety guide</a> — reconstitution math, storage, injection basics, general risk framing.</li>
+  <li><a href="/calculator.html">Reconstitution &amp; dose calculator</a> — work out concentration and draw volume for your own vial, with a live 1 mL and 2 mL syringe readout.</li>
   <li><a href="/stacks.html">Peptide stacks</a> — commonly combined peptides, with rationale, evidence level and links back to each component.</li>
   <li><a href="/glossary.html">Glossary</a> — GHRP, GHRH, DAC, half-life and other recurring terms explained once.</li>
   <li><a href="/directory.html">Full directory</a> — every peptide in one sortable, filterable table.</li>
   <li><a href="/about.html">About &amp; disclaimer</a> — sourcing, limitations, and why this is not medical advice.</li>
 </ul>
+
+<div class="ak-exhibit">
+  <p class="ak-eyebrow">Open source</p>
+  <p>This wiki is free and open source. Browse the code, correct an entry, or add one at <a href="https://github.com/vespassassina/peptide-wiki" rel="noopener">github.com/vespassassina/peptide-wiki</a>.</p>
+</div>
 <script type="application/ld+json">{ld}</script>'''
     return page(SITE_NAME, SITE_DESC, "home", body, canonical="/index.html", page_id="home")
 
@@ -742,6 +749,223 @@ def dosing_safety_page():
 </section>
 </article>'''
     return page("Dosing & safety guide", "Reconstitution math, storage, injection supplies and general safety framing shared across most injectable peptides.", "dosing-safety", body, canonical="/dosing-safety.html", page_id="dosing-safety")
+
+# ---------- calculator ----------
+def syringe_block(prefix, title, note):
+    return f'''<div class="pw-syringe">
+    <p class="ak-eyebrow">{esc(title)}</p>
+    <svg viewBox="-120 0 1000 170" class="pw-syringe-svg" role="img" aria-labelledby="{prefix}-svgtitle">
+      <title id="{prefix}-svgtitle">{esc(title)}, plunger position shows the calculated draw</title>
+      <line x1="820" y1="80" x2="866" y2="80" stroke="var(--ak-ink-soft)" stroke-width="3"/>
+      <polygon points="866,73 884,80 866,87" fill="var(--ak-ink-soft)"/>
+      <rect id="{prefix}-fill" x="820" y="57" width="0" height="46" fill="var(--ak-accent)" opacity="0.5"/>
+      <rect x="400" y="55" width="420" height="50" rx="6" fill="none" stroke="var(--ak-ink)" stroke-width="2"/>
+      <g id="{prefix}-ticks" font-size="12" fill="var(--ak-ink-soft)"></g>
+      <rect id="{prefix}-stopper" x="815" y="53" width="10" height="54" fill="var(--ak-ink-soft)" rx="1.5"/>
+      <g id="{prefix}-plunger">
+        <rect x="330" y="72" width="70" height="16" fill="var(--ak-ink-soft)"/>
+        <rect x="300" y="55" width="10" height="50" fill="var(--ak-ink-soft)"/>
+        <rect x="264" y="48" width="38" height="64" rx="3" fill="var(--ak-ink-soft)"/>
+      </g>
+    </svg>
+    <p class="pw-syringe-readout" id="{prefix}-readout">Enter values above</p>
+    <p class="ak-small">{esc(note)}</p>
+  </div>'''
+
+def calculator_page():
+    body = f'''{breadcrumbs([("Home", "/index.html"), ("Calculator", None)])}
+<header class="ak-pagehead">
+  <div>
+    <p class="ak-eyebrow">Tool</p>
+    <h1>Reconstitution &amp; dose calculator</h1>
+    <p class="ak-lede">Works out concentration from a vial's peptide content and the bacteriostatic water added, then shows the syringe draw for a target dose — with a live 1&nbsp;mL (100-unit insulin) and 2&nbsp;mL syringe readout. All calculation happens in your browser; nothing here is sent anywhere.</p>
+  </div>
+</header>
+
+<div class="ak-banner ak-banner-bad"><strong>Not medical advice.</strong> This tool does arithmetic on the numbers you enter — it has no way to verify your vial's actual labelled content, your syringe's actual markings, or whether a given dose is appropriate for you. Always read your vial and syringe against what you enter here before drawing anything, and see the <a href="/dosing-safety.html">dosing &amp; safety guide</a>.</div>
+
+<article class="ak-prose">
+<section class="ak-section" id="reconstitution">
+  <h2>1. Reconstitution</h2>
+  <div class="calc-grid">
+    <div class="calc-field">
+      <label for="calcMg">Peptide in vial</label>
+      <div class="calc-inline"><input class="ak-input" type="number" id="calcMg" min="0" step="0.01" value="5"> <span class="ak-small">mg</span></div>
+    </div>
+    <div class="calc-field">
+      <label for="calcWater">Bacteriostatic water added</label>
+      <div class="calc-inline"><input class="ak-input" type="number" id="calcWater" min="0.01" step="0.01" value="2"> <span class="ak-small">mL</span></div>
+      <div class="calc-presets" role="group" aria-label="Common water volumes">
+        <button type="button" class="ak-btn calc-preset" data-water="1">1 mL</button>
+        <button type="button" class="ak-btn calc-preset" data-water="2">2 mL</button>
+        <button type="button" class="ak-btn calc-preset" data-water="3">3 mL</button>
+        <button type="button" class="ak-btn calc-preset" data-water="5">5 mL</button>
+      </div>
+    </div>
+  </div>
+  <div class="ak-exhibit" id="calcConcOut">
+    <p class="ak-eyebrow">Resulting concentration</p>
+    <p class="ak-takeaway" id="calcConcText">—</p>
+  </div>
+</section>
+
+<section class="ak-section" id="dose">
+  <h2>2. Target dose</h2>
+  <div class="calc-grid">
+    <div class="calc-field">
+      <label for="calcDose">Desired dose</label>
+      <div class="calc-inline">
+        <input class="ak-input" type="number" id="calcDose" min="0" step="1" value="250">
+        <select class="ak-select" id="calcDoseUnit">
+          <option value="mcg" selected>mcg</option>
+          <option value="mg">mg</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="ak-exhibit" id="calcDoseOut">
+    <p class="ak-eyebrow">Draw</p>
+    <p class="ak-takeaway" id="calcDoseText">—</p>
+  </div>
+  <p class="ak-small" id="calcOverflowNote" hidden></p>
+</section>
+
+<section class="ak-section" id="syringes">
+  <h2>3. Where to pull the plunger</h2>
+  <div class="pw-syringe-grid">
+    {syringe_block("s1", "1 mL insulin syringe (100 units)", "Standard insulin syringe, marked in units. 100 units = 1 mL = 20 units per 0.2 mL major line.")}
+    {syringe_block("s2", "2 mL syringe", "Standard Luer syringe marked in 0.1 mL graduations, no unit markings.")}
+  </div>
+  <p class="ak-small">If a reading exceeds a syringe's barrel, the fill shows full red rather than overflowing — switch to the larger syringe, or reconstitute with more water to bring the draw volume back within range.</p>
+</section>
+</article>'''
+    extra = '''<script>
+(function(){
+  var BARREL_LEFT = 400, BARREL_RIGHT = 820, BARREL_LEN = BARREL_RIGHT - BARREL_LEFT;
+
+  function fmt(n, d){
+    if (!isFinite(n)) return "0";
+    var f = n.toFixed(d);
+    return f.replace(/\\.0+$/,'').replace(/(\\.\\d*?)0+$/,'$1').replace(/\\.$/,'');
+  }
+
+  function drawTicks(prefix, capacity, step, labelStep, labelFmt){
+    var g = document.getElementById(prefix + '-ticks');
+    if (!g) return;
+    g.innerHTML = '';
+    var n = Math.round(capacity / step);
+    for (var i = 0; i <= n; i++){
+      var v = i * step;
+      var x = BARREL_RIGHT - (v / capacity) * BARREL_LEN;
+      var isMajor = Math.round(v / labelStep) * labelStep === Math.round(v * 1000) / 1000;
+      var tickTop = isMajor ? 55 : 62;
+      var line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+      line.setAttribute('x1', x); line.setAttribute('x2', x);
+      line.setAttribute('y1', tickTop); line.setAttribute('y2', 105);
+      line.setAttribute('stroke', 'var(--ak-ink-soft)');
+      line.setAttribute('stroke-width', isMajor ? '1.5' : '1');
+      g.appendChild(line);
+      if (isMajor){
+        var text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+        text.setAttribute('x', x); text.setAttribute('y', 120);
+        text.setAttribute('text-anchor', 'middle');
+        text.textContent = labelFmt(v);
+        g.appendChild(text);
+      }
+    }
+  }
+
+  function setSyringe(prefix, fraction){
+    var overflow = fraction > 1;
+    var f = Math.max(0, Math.min(1, fraction));
+    var stopperX = BARREL_RIGHT - f * BARREL_LEN;
+    var fill = document.getElementById(prefix + '-fill');
+    var stopper = document.getElementById(prefix + '-stopper');
+    var plunger = document.getElementById(prefix + '-plunger');
+    if (fill){
+      fill.setAttribute('x', stopperX);
+      fill.setAttribute('width', Math.max(0, BARREL_RIGHT - stopperX));
+      fill.setAttribute('fill', overflow ? 'var(--ak-neg)' : 'var(--ak-accent)');
+      fill.setAttribute('opacity', overflow ? '0.6' : '0.5');
+    }
+    if (stopper) stopper.setAttribute('x', stopperX - 5);
+    if (plunger) plunger.setAttribute('transform', 'translate(' + (stopperX - BARREL_RIGHT) + ',0)');
+  }
+
+  drawTicks('s1', 100, 10, 20, function(v){ return fmt(v, 0); });
+  drawTicks('s2', 2, 0.2, 0.4, function(v){ return fmt(v, 1); });
+  setSyringe('s1', 0); setSyringe('s2', 0);
+
+  var mgEl = document.getElementById('calcMg');
+  var waterEl = document.getElementById('calcWater');
+  var doseEl = document.getElementById('calcDose');
+  var doseUnitEl = document.getElementById('calcDoseUnit');
+  var concText = document.getElementById('calcConcText');
+  var doseText = document.getElementById('calcDoseText');
+  var overflowNote = document.getElementById('calcOverflowNote');
+  var readout1 = document.getElementById('s1-readout');
+  var readout2 = document.getElementById('s2-readout');
+
+  function recalc(){
+    var mg = parseFloat(mgEl.value) || 0;
+    var water = parseFloat(waterEl.value) || 0;
+    var doseRaw = parseFloat(doseEl.value) || 0;
+    var doseMcg = doseUnitEl.value === 'mg' ? doseRaw * 1000 : doseRaw;
+
+    if (mg <= 0 || water <= 0){
+      concText.textContent = 'Enter a vial amount and water volume above.';
+      doseText.textContent = '—';
+      readout1.textContent = 'Enter values above';
+      readout2.textContent = 'Enter values above';
+      setSyringe('s1', 0); setSyringe('s2', 0);
+      overflowNote.hidden = true;
+      return;
+    }
+
+    var concMcgPerMl = (mg * 1000) / water;
+    var mcgPerUnit = concMcgPerMl / 100;
+    concText.textContent = fmt(concMcgPerMl, 1) + ' mcg/mL — ' + fmt(mcgPerUnit, 2) + ' mcg per unit on a 1 mL (100-unit) syringe.';
+
+    if (doseMcg <= 0){
+      doseText.textContent = 'Enter a target dose above.';
+      readout1.textContent = 'Enter a target dose above';
+      readout2.textContent = 'Enter a target dose above';
+      setSyringe('s1', 0); setSyringe('s2', 0);
+      overflowNote.hidden = true;
+      return;
+    }
+
+    var volumeMl = doseMcg / concMcgPerMl;
+    var units = volumeMl * 100;
+    doseText.textContent = 'Draw ' + fmt(volumeMl, 3) + ' mL (' + fmt(units, 1) + ' units) to deliver ' + fmt(doseMcg, 1) + ' mcg.';
+
+    var f1 = units / 100;
+    var f2 = volumeMl / 2;
+    setSyringe('s1', f1);
+    setSyringe('s2', f2);
+    readout1.textContent = f1 > 1 ? 'Exceeds 1 mL barrel — use the 2 mL syringe or add more water' : 'Pull to ' + fmt(units, 1) + ' units (' + fmt(volumeMl, 2) + ' mL)';
+    readout2.textContent = f2 > 1 ? 'Exceeds 2 mL barrel — reconstitute with more water' : 'Pull to ' + fmt(volumeMl, 2) + ' mL';
+
+    if (f1 > 1 || f2 > 1){
+      overflowNote.hidden = false;
+      overflowNote.textContent = 'This draw volume exceeds at least one syringe shown. Add more bacteriostatic water to lower the concentration, or use a larger syringe.';
+    } else {
+      overflowNote.hidden = true;
+    }
+  }
+
+  [mgEl, waterEl, doseEl].forEach(function(el){ el.addEventListener('input', recalc); });
+  doseUnitEl.addEventListener('change', recalc);
+  document.querySelectorAll('.calc-preset').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      waterEl.value = btn.getAttribute('data-water');
+      recalc();
+    });
+  });
+  recalc();
+})();
+</script>'''
+    return page("Reconstitution & dose calculator", "Calculate peptide reconstitution concentration and syringe draw volume, with a live 1 mL and 2 mL syringe visual.", "calculator", body, canonical="/calculator.html", page_id="calculator", extra_scripts=extra)
 
 # ---------- about ----------
 def about_page():
@@ -936,6 +1160,7 @@ def main():
     write("directory.html", directory_page())
     write("glossary.html", glossary_page())
     write("dosing-safety.html", dosing_safety_page())
+    write("calculator.html", calculator_page())
     write("about.html", about_page())
     write("favorites.html", favorites_page())
     for cslug, c in CATEGORIES.items():
