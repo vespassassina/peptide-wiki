@@ -266,7 +266,10 @@ def citations_block(citations):
     return f'<ul class="citation-list">{items}</ul>'
 
 def stack_chip_list(slugs):
-    items = [f'<li><a href="/stacks/{s}.html" rel="related">{esc(STACKS[s]["title"])}</a></li>' for s in slugs if s in STACKS]
+    def label(s):
+        aka = STACKS[s].get("aka")
+        return f'{esc(STACKS[s]["title"])} ({esc(", ".join(aka))})' if aka else esc(STACKS[s]["title"])
+    items = [f'<li><a href="/stacks/{s}.html" rel="related">{label(s)}</a></li>' for s in slugs if s in STACKS]
     return f'<ul class="chip-list">{"".join(items)}</ul>' if items else ""
 
 def peptide_chip_list(slugs):
@@ -463,9 +466,11 @@ def stack_component_cards(slugs):
 def stack_page(slug, s):
     cls, label = EVIDENCE_LEVEL_PILL.get(s["evidence_level"], ("ak-pill-off", "Unclear evidence level"))
     crumbs = breadcrumbs([("Home", "/index.html"), ("Stacks", "/stacks.html"), (s["title"], None)])
+    aka = s.get("aka", [])
+    aka_line = f'<p class="ak-small">Also known as: {esc(", ".join(aka))}</p>' if aka else ""
     jsonld = json.dumps({
         "@context": "https://schema.org", "@type": "MedicalWebPage", "name": s["title"],
-        "description": s["tagline"], "lastReviewed": TODAY,
+        "alternateName": aka, "description": s["tagline"], "lastReviewed": TODAY,
     })
     body = f'''{crumbs}
 <article itemscope itemtype="https://schema.org/MedicalWebPage" data-stack-slug="{esc(slug)}">
@@ -474,6 +479,7 @@ def stack_page(slug, s):
     <p class="ak-eyebrow">Peptide stack</p>
     <h1 itemprop="name">{esc(s["title"])}</h1>
     <p class="ak-lede" itemprop="description">{esc(s["tagline"])}</p>
+    {aka_line}
     <p class="peptide-pills"><span class="ak-pill {cls}">{esc(label)}</span></p>
   </div>
   <div class="ak-meta">
@@ -489,6 +495,8 @@ def stack_page(slug, s):
 
 <article class="ak-prose">
   <section class="ak-section"><h2>Why these are combined</h2><p>{esc(s["rationale"])}</p></section>
+
+  {f'<section class="ak-section"><h2>Mechanism &amp; pharmacokinetics</h2><p>{esc(s["mechanism_pk"])}</p></section>' if s.get("mechanism_pk") else ''}
 
   <section class="ak-section">
     <h2>Citations</h2>
@@ -518,6 +526,7 @@ def stacks_index_page():
         f'''<li>
   <a class="card-link" href="/stacks/{slug}.html">
     <h3>{esc(s["title"])}</h3>
+    {f'<p class="ak-small">AKA {esc(", ".join(s["aka"]))}</p>' if s.get("aka") else ''}
     <p>{esc(s["tagline"])}</p>
     <span class="ak-pill {EVIDENCE_LEVEL_PILL.get(s["evidence_level"], ("ak-pill-off",""))[0]}">{esc(EVIDENCE_LEVEL_PILL.get(s["evidence_level"], ("", "Unclear"))[1])}</span>
   </a>

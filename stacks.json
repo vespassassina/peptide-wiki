@@ -1,115 +1,234 @@
 {
   "bpc-157-tb-500": {
     "title": "BPC-157 + TB-500",
-    "component_slugs": ["bpc-157", "tb-500"],
+    "component_slugs": [
+      "bpc-157",
+      "tb-500"
+    ],
     "tagline": "The default recovery stack: one systemic healer, one local one.",
     "rationale": "BPC-157 works systemically through growth-hormone signaling and neuroprotection; TB-500 drives angiogenesis and fibroblast activation. A rat Achilles-tendon study tested the combination directly and found both peptides improved healing, but not clearly more than either one alone. People stack them anyway because the mechanisms are different enough to seem complementary.",
     "evidence_level": "component-only",
     "citations": [
-      {"title": "Effects of BPC-157 and TB-500 on Achilles tendon healing in rats: A histopathological and biomechanical study", "authors_year": "Biçer et al. 2026", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42542926/"},
-      {"title": "Injectable Peptide Therapy: A Primer for Orthopaedic and Sports Medicine Physicians", "authors_year": "Mayfield et al. 2026", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41476424/"}
+      {
+        "title": "Effects of BPC-157 and TB-500 on Achilles tendon healing in rats: A histopathological and biomechanical study",
+        "authors_year": "Biçer et al. 2026",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42542926/"
+      },
+      {
+        "title": "Injectable Peptide Therapy: A Primer for Orthopaedic and Sports Medicine Physicians",
+        "authors_year": "Mayfield et al. 2026",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41476424/"
+      }
     ],
     "typical_community_protocol": "Commonly dosed as BPC-157 at 200-500 mcg daily (often 250 mcg) and TB-500 at 2-4 mg weekly for 4-12 weeks, subcutaneous injection, often staggered to minimize injection frequency.",
     "safety_notes": "Both peptides are well tolerated individually, but there's no long-term data on the combination. Stacking their effects on growth factors and vasodilation is plausible but not studied.",
-    "community_notes": "The most-cited recovery stack in injury forums, built on mechanistic reasoning rather than human trials."
+    "community_notes": "The most-cited recovery stack in injury forums, built on mechanistic reasoning rather than human trials.",
+    "aka": [
+      "Wolverine stack"
+    ],
+    "mechanism_pk": "The two don't compete for the same receptors, which is the whole logic of pairing them: BPC-157 works through upregulated growth-factor receptor expression and nitric-oxide signaling, while TB-500 (a Thymosin Beta-4 fragment) works through actin regulation and cell migration. Their pharmacokinetics differ sharply, though. BPC-157 has a short plasma half-life, estimated at around 40 minutes in vitro, which is why community protocols dose it daily or even twice daily. TB-500/Tβ4 behaves differently: it binds and sequesters actin, and its downstream effects on cell migration and angiogenesis are reported to persist well beyond its own plasma clearance, which is the rationale behind loading-phase-then-taper protocols (frequent dosing for the first weeks, then dropping to once or twice weekly). No study has measured the two given together, so this is mechanistic reasoning from each peptide's individual data, not a tested combination."
   },
   "cjc-1295-ipamorelin": {
     "title": "CJC-1295 + Ipamorelin",
-    "component_slugs": ["cjc-1295-dac", "ipamorelin"],
+    "component_slugs": [
+      "cjc-1295-dac",
+      "ipamorelin"
+    ],
     "tagline": "A GHRH and a GHRP paired to push more GH out of the pituitary.",
     "rationale": "CJC-1295 stimulates the hypothalamic-pituitary GHRH pathway; ipamorelin hits the ghrelin receptor without meaningfully raising cortisol or prolactin. Together they pull on two different levers of the same axis. No trial has tested the pairing directly, but the mechanism is well described and this is treated as a standard combo.",
     "evidence_level": "component-only",
     "citations": [
-      {"title": "The emerging landscape of performance-enhancing peptides modulating GH-IGF1 axis: bridging the gap between clinical evidence and patient self-administration", "authors_year": "Dominikowski et al. 2026", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42395176/"},
-      {"title": "Injectable Peptides in Sports Medicine: A Structured Narrative Review of Evidence, Safety, and Antidoping Implications", "authors_year": "Villegas Meza et al. 2026", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42160466/"}
+      {
+        "title": "The emerging landscape of performance-enhancing peptides modulating GH-IGF1 axis: bridging the gap between clinical evidence and patient self-administration",
+        "authors_year": "Dominikowski et al. 2026",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42395176/"
+      },
+      {
+        "title": "Injectable Peptides in Sports Medicine: A Structured Narrative Review of Evidence, Safety, and Antidoping Implications",
+        "authors_year": "Villegas Meza et al. 2026",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42160466/"
+      }
     ],
     "typical_community_protocol": "CJC-1295 typically 100-200 mcg once or twice weekly; ipamorelin 200-300 mcg daily or split into 2-3 smaller doses. Often run in 12-16 week cycles, subcutaneous injection.",
     "safety_notes": "Combining GHRH and GHRP raises GH/IGF-1 more than either alone, which means more hyperglycemia and joint-fluid risk too. Long-term effects of that combined push haven't been studied.",
-    "community_notes": "The default GH-axis stack since the early 2000s bodybuilding scene. Widely assumed to beat either compound solo; never actually tested that way."
+    "community_notes": "The default GH-axis stack since the early 2000s bodybuilding scene. Widely assumed to beat either compound solo; never actually tested that way.",
+    "aka": [],
+    "mechanism_pk": "The pairing is built around mismatched receptors and mismatched half-lives, both deliberately. CJC-1295 (with DAC) binds serum albumin, which stretches its half-life from minutes to roughly a week, producing a sustained lift in growth-hormone tone via the GHRH receptor. Ipamorelin is short-acting (roughly a 2-hour half-life) and hits the ghrelin receptor (GHS-R) instead, producing a sharp, pulsatile GH release without the cortisol and prolactin increases seen with older GHRPs. Riding a short-acting pulse peptide on top of a long-acting sustained one is meant to approximate the body's natural pulsatile GH release pattern more closely than either compound alone — a pharmacokinetic rationale more than a receptor-interaction one, since GHRH-R and GHS-R signaling converge on GH release without directly competing."
   },
   "tesamorelin-ipamorelin": {
     "title": "Tesamorelin + Ipamorelin",
-    "component_slugs": ["tesamorelin", "ipamorelin"],
+    "component_slugs": [
+      "tesamorelin",
+      "ipamorelin"
+    ],
     "tagline": "Same idea as CJC-1295 + ipamorelin, but with an FDA-approved GHRH backbone.",
     "rationale": "Tesamorelin (Egrifta) has the best clinical trial record of any GHRH analog, shown to cut visceral fat and improve body composition in HIV-associated lipodystrophy. Ipamorelin adds ghrelin-receptor GH stimulation on top. No trial has tested this specific pairing outside that patient population.",
     "evidence_level": "component-only",
     "citations": [
-      {"title": "Efficacy and safety of tesamorelin in people with HIV on integrase inhibitors", "authors_year": "Russo et al. 2024", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38905488/"},
-      {"title": "Tesamorelin as an Adjunct to Exercise for Improving Physical Function in HIV (TRIUMPH): a clinical trial protocol", "authors_year": "Erlandson et al. 2026", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42419889/"}
+      {
+        "title": "Efficacy and safety of tesamorelin in people with HIV on integrase inhibitors",
+        "authors_year": "Russo et al. 2024",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38905488/"
+      },
+      {
+        "title": "Tesamorelin as an Adjunct to Exercise for Improving Physical Function in HIV (TRIUMPH): a clinical trial protocol",
+        "authors_year": "Erlandson et al. 2026",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42419889/"
+      }
     ],
     "typical_community_protocol": "Tesamorelin commonly 1-2 mg daily (approved dosing is 2 mg/day); ipamorelin 200-300 mcg daily. Often cycled 12-16 weeks, subcutaneous injection.",
     "safety_notes": "Tesamorelin's own trials show a real hyperglycemia risk; adding ipamorelin's GH push likely adds to that, plus joint swelling and carpal-tunnel-type symptoms.",
-    "community_notes": "Popular because tesamorelin is an actual approved drug with real safety data, which gives the whole stack more credibility than most research-chemical combos."
+    "community_notes": "Popular because tesamorelin is an actual approved drug with real safety data, which gives the whole stack more credibility than most research-chemical combos.",
+    "aka": [],
+    "mechanism_pk": "Same GHRH-receptor-plus-ghrelin-receptor logic as CJC-1295/ipamorelin, but with a clinically-trialed GHRH analog instead of a research one. Tesamorelin has a short half-life (roughly 26 to 38 minutes), so it's dosed daily to sustain GHRH-receptor stimulation; ipamorelin's ~2-hour half-life layers a sharper GH pulse on top through the separate ghrelin receptor. Because tesamorelin has real trial data behind it (unlike CJC-1295), this pairing has a firmer PK foundation for its individual components, even though the combination itself has never been studied directly."
   },
   "semax-selank": {
     "title": "Semax + Selank",
-    "component_slugs": ["semax", "selank"],
+    "component_slugs": [
+      "semax",
+      "selank"
+    ],
     "tagline": "Russian nootropic paired with a Russian anxiolytic.",
     "rationale": "Semax works through BDNF and neurotrophic signaling; Selank is anxiolytic and anti-inflammatory via cytokine modulation and amygdala effects. An fMRI study dosed both in humans and found distinct but complementary connectivity changes. Both have a longer clinical-use history in Russia than most peptides on this wiki.",
     "evidence_level": "component-only",
     "citations": [
-      {"title": "Functional Connectomic Approach to Studying Selank and Semax Effects", "authors_year": "Panikratova et al. 2020", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32342318/"},
-      {"title": "The Influence of Selank on the Level of Cytokines Under the Conditions of 'Social' Stress", "authors_year": "Yasenyavskaya et al. 2021", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32621722/"}
+      {
+        "title": "Functional Connectomic Approach to Studying Selank and Semax Effects",
+        "authors_year": "Panikratova et al. 2020",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32342318/"
+      },
+      {
+        "title": "The Influence of Selank on the Level of Cytokines Under the Conditions of 'Social' Stress",
+        "authors_year": "Yasenyavskaya et al. 2021",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32621722/"
+      }
     ],
     "typical_community_protocol": "Semax intranasal, 100-500 mcg daily (often split into two doses); Selank intranasal, 250-500 mcg daily. Commonly cycled 2-4 weeks on, 1-2 weeks off.",
     "safety_notes": "Neither has Western regulatory approval or safety data outside Russian literature. What combined effects on neuroinflammation and dopamine signaling look like isn't known.",
-    "community_notes": "Picked up by Western nootropic communities through translated Russian research. The appeal is focus plus calm in one stack."
+    "community_notes": "Picked up by Western nootropic communities through translated Russian research. The appeal is focus plus calm in one stack.",
+    "aka": [],
+    "mechanism_pk": "Both are fast-degrading peptide fragments (typical reported half-lives run from minutes to roughly half an hour, largely due to peptidase breakdown, especially with intranasal dosing), so neither is expected to linger long enough to meaningfully alter the other's clearance. Mechanistically they don't overlap either: Semax works through BDNF and neurotrophic signaling, Selank through GABAergic and cytokine-modulating pathways affecting the amygdala. The one human data point available — an fMRI study that dosed both together — found distinct, non-overlapping activation patterns for each, which is at least consistent with (though not proof of) the idea that they're not interfering with each other's mechanism."
   },
   "bpc-157-tb-500-ghk-cu": {
     "title": "BPC-157 + TB-500 + GHK-Cu",
-    "component_slugs": ["bpc-157", "tb-500", "ghk-cu"],
+    "component_slugs": [
+      "bpc-157",
+      "tb-500",
+      "ghk-cu"
+    ],
     "tagline": "The base recovery stack plus a collagen-remodeling peptide.",
     "rationale": "BPC-157 for systemic healing, TB-500 for angiogenesis and fibroblast migration, GHK-Cu for collagen synthesis and tissue remodeling. Each has its own wound-healing evidence, but nobody has tested the three together, so any added benefit from combining them is assumed, not measured.",
     "evidence_level": "component-only",
     "citations": [
-      {"title": "Biomimetic Hydrogel Scaffolds with Copper Peptide-Functionalized RADA16 Nanofiber Improve Wound Healing in Diabetes", "authors_year": "Yang et al. 2022", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35598070/"},
-      {"title": "GHK and DNA: resetting the human genome to health", "authors_year": "Pickart et al. 2014", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/25302294/"},
-      {"title": "Exploring the Role of Tripeptides in Wound Healing and Skin Regeneration: A Comprehensive Review", "authors_year": "Adnan et al. 2025", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41209547/"}
+      {
+        "title": "Biomimetic Hydrogel Scaffolds with Copper Peptide-Functionalized RADA16 Nanofiber Improve Wound Healing in Diabetes",
+        "authors_year": "Yang et al. 2022",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35598070/"
+      },
+      {
+        "title": "GHK and DNA: resetting the human genome to health",
+        "authors_year": "Pickart et al. 2014",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/25302294/"
+      },
+      {
+        "title": "Exploring the Role of Tripeptides in Wound Healing and Skin Regeneration: A Comprehensive Review",
+        "authors_year": "Adnan et al. 2025",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41209547/"
+      }
     ],
     "typical_community_protocol": "BPC-157 250-500 mcg daily, TB-500 2-4 mg weekly, GHK-Cu 200-300 mcg 3-4x weekly. Commonly run 8-12 weeks, subcutaneous injection.",
     "safety_notes": "Stacking three growth-factor and angiogenesis drivers could, in theory, push toward excess scar tissue with prolonged use. No data on the combined regimen exists either way.",
-    "community_notes": "Called the 'full healing stack' in recovery forums. Popular for post-injury and post-surgical use despite zero trial data on the three-way combination."
+    "community_notes": "Called the 'full healing stack' in recovery forums. Popular for post-injury and post-surgical use despite zero trial data on the three-way combination.",
+    "aka": [
+      "GLOW stack"
+    ],
+    "mechanism_pk": "Adds a third, mechanistically separate pathway to the BPC-157/TB-500 base: GHK-Cu acts through copper-dependent modulation of matrix metalloproteinases and direct effects on collagen and fibroblast gene expression, distinct from BPC-157's growth-factor-receptor route and TB-500's actin-binding route. Like the other two, GHK-Cu clears from plasma quickly, but its reported effects (collagen remodeling, wound-site gene expression changes) are described as outlasting its circulating presence, similar in shape to TB-500's profile. Because none of the three peptides are reported to compete for the same receptor or enzyme system, the theoretical case against pharmacodynamic interference is reasonable — but again, nobody has run the three-way combination as a study; this is inference from three separate evidence bases, not a tested one. The 'GLOW' name reflects the cosmetic/skin angle GHK-Cu adds on top of the base recovery stack, not a literal acronym of the ingredients."
   },
   "bpc-157-tb-500-ghk-cu-kpv": {
     "title": "BPC-157 + TB-500 + GHK-Cu + KPV",
-    "component_slugs": ["bpc-157", "tb-500", "ghk-cu", "kpv"],
+    "component_slugs": [
+      "bpc-157",
+      "tb-500",
+      "ghk-cu",
+      "kpv"
+    ],
     "tagline": "The full recovery stack plus an anti-inflammatory tripeptide.",
-    "rationale": "Adds KPV, an alpha-MSH-derived tripeptide that suppresses IL-1beta, IL-6 and TNF-alpha, to the base three-peptide recovery stack. The idea is to calm inflammation while the other three drive repair. Nobody has tested all four together, and KPV itself has no standalone page here.",
+    "rationale": "Adds KPV, an alpha-MSH-derived tripeptide that suppresses IL-1beta, IL-6 and TNF-alpha, to the base three-peptide recovery stack. The idea is to calm inflammation while the other three drive repair. Nobody has tested all four together.",
     "evidence_level": "component-only",
     "citations": [
-      {"title": "KPV attenuates adipogenesis and lipid metabolism through modulation of ROS-mediated AKT/mTORC1/PPARgamma signaling", "authors_year": "An et al. 2026", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42585803/"},
-      {"title": "Inflammation-triggered self-immolative conjugates enable oral peptide delivery by overcoming gastrointestinal barriers", "authors_year": "Cheng et al. 2026", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41533788/"}
+      {
+        "title": "KPV attenuates adipogenesis and lipid metabolism through modulation of ROS-mediated AKT/mTORC1/PPARgamma signaling",
+        "authors_year": "An et al. 2026",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42585803/"
+      },
+      {
+        "title": "Inflammation-triggered self-immolative conjugates enable oral peptide delivery by overcoming gastrointestinal barriers",
+        "authors_year": "Cheng et al. 2026",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41533788/"
+      }
     ],
     "typical_community_protocol": "BPC-157 250-500 mcg daily, TB-500 2-4 mg weekly, GHK-Cu 200-300 mcg daily, KPV 100-300 mcg daily (occasionally intranasal). Often run 8-16 weeks for injury or post-surgical recovery.",
     "safety_notes": "Layering multiple anti-inflammatory and pro-regenerative peptides could blunt the acute inflammation a wound actually needs to heal. KPV's human pharmacology is barely characterized, and the four-way combination is completely unvalidated.",
-    "community_notes": "An 'all-in' extension of the base stack in advanced recovery circles. Driven by mechanistic appeal, not evidence."
+    "community_notes": "An 'all-in' extension of the base stack in advanced recovery circles. Driven by mechanistic appeal, not evidence.",
+    "aka": [
+      "KLOW stack"
+    ],
+    "mechanism_pk": "KPV adds a fourth, again mechanistically distinct pathway: it's an alpha-MSH-derived tripeptide that works through melanocortin-receptor signaling and direct suppression of NF-kB-driven cytokine production (IL-1beta, IL-6, TNF-alpha), independent of the growth-factor, actin, and collagen-remodeling pathways the other three use. Like BPC-157 and GHK-Cu, KPV clears from plasma quickly and is dosed frequently in community protocols. The name 'KLOW' is generally explained in community sources as 'K(PV) + (G)LOW' — the GLOW stack with KPV added, rather than a literal per-letter acronym of all four ingredients. Combining four unstudied-together compounds compounds the uncertainty rather than resolving it: there is no data on the four-way combination, only individual-peptide and at-most-three-peptide reasoning stacked on top of each other."
   },
   "cagrilintide-semaglutide": {
     "title": "Cagrilintide + Semaglutide (CagriSema)",
-    "component_slugs": ["cagrilintide", "semaglutide"],
+    "component_slugs": [
+      "cagrilintide",
+      "semaglutide"
+    ],
     "tagline": "The one stack on this list with real trial data behind it.",
     "rationale": "CagriSema pairs cagrilintide (amylin agonist) with semaglutide (GLP-1 agonist) as a fixed-dose combination, and it's been through actual Phase 3 trials. A meta-analysis of seven RCTs (n=8,069) found it beat semaglutide alone by 7.58 kg and cagrilintide alone by 9.24 kg. The REDEFINE 1 trial confirmed higher rates of hitting anthropometric targets versus either drug solo. Semaglutide itself is an approved drug (Ozempic/Wegovy), not a research peptide, so it doesn't have its own page here.",
     "evidence_level": "clinical-trial",
     "citations": [
-      {"title": "Maximizing weight loss with CagriSema: a systematic review and GRADE-assessed meta-analysis of randomized controlled trials", "authors_year": "Khan et al. 2026", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42608559/"},
-      {"title": "Efficacy of CagriSema for Reaching Anthropometric Treatment Targets and Cardiometabolic Outcomes: A Secondary, Post hoc Analysis of REDEFINE 1", "authors_year": "Busetto et al. 2026", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42503495/"},
-      {"title": "Comparative effects of drugs for adults with overweight or obesity: systematic review and network meta-analysis", "authors_year": "Nong et al. 2026", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42419792/"}
+      {
+        "title": "Maximizing weight loss with CagriSema: a systematic review and GRADE-assessed meta-analysis of randomized controlled trials",
+        "authors_year": "Khan et al. 2026",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42608559/"
+      },
+      {
+        "title": "Efficacy of CagriSema for Reaching Anthropometric Treatment Targets and Cardiometabolic Outcomes: A Secondary, Post hoc Analysis of REDEFINE 1",
+        "authors_year": "Busetto et al. 2026",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42503495/"
+      },
+      {
+        "title": "Comparative effects of drugs for adults with overweight or obesity: systematic review and network meta-analysis",
+        "authors_year": "Nong et al. 2026",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42419792/"
+      }
     ],
     "typical_community_protocol": "Trial dosing used a once-weekly subcutaneous injection at a 2.4 mg/2.4 mg target dose, titrated up over several months, matching semaglutide's dosing schedule.",
     "safety_notes": "Mostly GI side effects (nausea, vomiting, diarrhea) plus injection-site reactions; fatigue is more common than with semaglutide alone. Lean mass drops along with fat, same as other GLP-1 drugs.",
-    "community_notes": "The most closely watched combination in obesity medicine right now, and unlike everything else on this page, it's backed by trial data rather than forum logic."
+    "community_notes": "The most closely watched combination in obesity medicine right now, and unlike everything else on this page, it's backed by trial data rather than forum logic.",
+    "aka": [
+      "CagriSema"
+    ],
+    "mechanism_pk": "Unusually for a stack on this page, the pharmacokinetics were matched by design rather than assembled from mismatched parts: both cagrilintide (a lipidated amylin analog) and semaglutide (a lipidated GLP-1 analog) are engineered for roughly week-long half-lives, which is why the fixed-dose co-formulation CagriSema is dosed once weekly, same as either drug alone. Mechanistically they act on separate receptor systems (amylin receptor for cagrilintide, GLP-1 receptor for semaglutide) that both feed into satiety and gastric-emptying regulation through overlapping but non-identical hypothalamic and brainstem circuits — the premise being additive appetite suppression rather than one drug amplifying the other's pharmacology. This is the one stack on this page with actual Phase 3 trial data behind the combination itself, not just each ingredient separately."
   },
   "retatrutide-cagrilintide": {
     "title": "Retatrutide + Cagrilintide",
-    "component_slugs": ["retatrutide", "cagrilintide"],
+    "component_slugs": [
+      "retatrutide",
+      "cagrilintide"
+    ],
     "tagline": "Two trial drugs nobody has actually combined yet.",
     "rationale": "Retatrutide hits GLP-1, GIP and glucagon receptors; cagrilintide hits the amylin receptor. Both are in late-stage trials on their own, but no study has combined them. The logic is that adding a fourth pathway to an already triple-agonist drug should extend the metabolic effect, but that's a guess from mechanism, not a result.",
     "evidence_level": "speculative",
     "citations": [
-      {"title": "Comparative effects of drugs for adults with overweight or obesity: systematic review and network meta-analysis", "authors_year": "Nong et al. 2026", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42419792/"}
+      {
+        "title": "Comparative effects of drugs for adults with overweight or obesity: systematic review and network meta-analysis",
+        "authors_year": "Nong et al. 2026",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42419792/"
+      }
     ],
     "typical_community_protocol": "None established. Neither drug has an approved dosing schedule yet, and there's no real-world co-dosing data. This is discussion, not practice.",
     "safety_notes": "No safety data exists for the combination. Expect additive GI side effects and the same lean-mass-loss concern as other multi-agonist drugs. Both compounds are still investigational, so any combined use is off-label and unsupervised by definition.",
-    "community_notes": "Purely speculative talk in metabolic-optimization forums, framed as a 'future stack' pending approval of both drugs individually. No data, no protocol, no real use yet."
+    "community_notes": "Purely speculative talk in metabolic-optimization forums, framed as a 'future stack' pending approval of both drugs individually. No data, no protocol, no real use yet.",
+    "aka": [],
+    "mechanism_pk": "Retatrutide (a GLP-1/GIP/glucagon triple agonist) and cagrilintide (an amylin agonist) both carry roughly week-long half-lives by design, so the pharmacokinetics line up cleanly for once-weekly co-dosing even though nobody has run them together in a trial. Mechanistically they'd be hitting four separate receptor systems at once (GLP-1, GIP, glucagon, and amylin), each individually linked to appetite or energy-expenditure effects — the logic for combining them mirrors CagriSema's, just with a triple agonist standing in for semaglutide. That also means four times the receptor systems with no combined safety data, rather than two."
   }
 }
