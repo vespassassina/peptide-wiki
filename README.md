@@ -1,5 +1,7 @@
 # Peptide Wiki
 
+**Live site: https://vespassassina.github.io/peptide-wiki/**
+
 A static reference site for research peptides: mechanism, dosing protocols reported in the community, safety notes, and citations. 72 peptides across 8 categories, plus 8 common stacks.
 
 This is not medical advice. Most of these compounds are unregulated, sold for research use only, and have thin or no human trial data. The site says so on every page. Read it as a research summary, not a green light.
