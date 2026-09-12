@@ -1,0 +1,139 @@
+/* Peptide Wiki — site chrome layered on top of artifactkit's theme/components.
+   Everything here reads artifactkit tokens (--ak-*, --t-*) — no literal colours,
+   so it re-themes automatically if the markers in theme.css change. */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --t-bg:#15170F; --t-ink:#E9E6DA; --t-accent:#6FBFA8; --t-accent-2:#D8AE73;
+    --t-pos:#6FBF7F; --t-neg:#E08080; --t-warn:#E0B15A;
+    --t-lift:#FFFFFF; --t-lift-amt:7%;
+  }
+}
+
+/* ── top navigation bar ─────────────────────────────────────────────── */
+.site-topbar{
+  border-bottom:1px solid var(--ak-rule);
+  background:var(--ak-surface);
+  position:sticky; top:0; z-index:20;
+}
+.site-topbar-inner{
+  max-width:var(--ak-maxw); margin:0 auto;
+  display:flex; align-items:center; gap:var(--ak-s5);
+  padding:var(--ak-s3) var(--ak-s6);
+}
+.site-brand{
+  font-weight:var(--t-heading-weight); font-size:15px; letter-spacing:-.01em;
+  color:var(--ak-ink); text-decoration:none; white-space:nowrap;
+  display:flex; align-items:center; gap:var(--ak-s2);
+}
+.site-nav-toggle{
+  display:none; margin-left:auto; font:inherit; font-size:12px; font-weight:600;
+  padding:5px 11px; cursor:pointer; border:1px solid var(--ak-rule-mid);
+  border-radius:var(--ak-radius); background:var(--ak-surface); color:var(--ak-ink);
+}
+.site-nav{ display:flex; align-items:center; gap:var(--ak-s5); flex:1; flex-wrap:wrap }
+.site-links{ list-style:none; display:flex; gap:var(--ak-s4); margin:0; padding:0; flex-wrap:wrap }
+.site-links a{
+  font-size:13px; color:var(--ak-ink-muted); text-decoration:none; white-space:nowrap;
+  border-bottom:2px solid transparent; padding-bottom:2px;
+}
+.site-links a:hover{ color:var(--ak-ink) }
+.site-links a[aria-current="page"]{ color:var(--ak-accent); border-bottom-color:var(--ak-accent); font-weight:600 }
+.site-search{ margin-left:auto; display:flex; gap:6px; min-width:180px }
+.site-search input{ width:100%; }
+
+@media (max-width:860px){
+  .site-nav-toggle{ display:block }
+  .site-nav{ display:none; width:100%; flex-direction:column; align-items:stretch; order:3 }
+  .site-nav.is-open{ display:flex }
+  .site-links{ flex-direction:column; gap:2px }
+  .site-links a{ display:block; padding:var(--ak-s2) 0 }
+  .site-search{ margin-left:0; width:100% }
+}
+
+/* ── homepage hero ──────────────────────────────────────────────────── */
+.hero{ padding:var(--ak-s6) 0 var(--ak-s5); border-bottom:2px solid var(--ak-rule-strong); margin-bottom:var(--ak-s6) }
+.hero h1{ font-size:34px }
+.hero-search{ display:flex; gap:var(--ak-s2); margin-top:var(--ak-s5); max-width:560px }
+.hero-search input{ flex:1 }
+
+/* ── category / peptide card grids ──────────────────────────────────── */
+.card-grid{
+  list-style:none; margin:0 0 var(--ak-s6); padding:0;
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:var(--ak-s4);
+}
+.card-grid > li{
+  background:var(--ak-surface); border:1px solid var(--ak-rule); border-radius:var(--ak-radius);
+  padding:var(--ak-s4);
+}
+.card-grid a.card-link{ text-decoration:none; color:var(--ak-ink); display:block }
+.card-grid h3{ margin:0 0 var(--ak-s2) }
+.card-grid p{ margin:0 0 var(--ak-s2); font-size:13.5px; color:var(--ak-ink-muted); max-width:none }
+.cat-icon-lg{ display:block; width:28px; height:28px; margin-bottom:var(--ak-s2); color:var(--ak-accent) }
+.cat-icon-lg svg{ width:100%; height:100%; display:block }
+.cat-icon{ display:inline-block; width:16px; height:16px; vertical-align:-3px; color:currentColor }
+.cat-icon svg, .cat-icon-sm svg{ width:100%; height:100%; display:block }
+.cat-icon-sm{ display:inline-block; width:12px; height:12px; vertical-align:-1px }
+.card-count{ font-size:11.5px; color:var(--ak-ink-soft) }
+
+/* ── homepage category cards: subtle per-category tint ──────────────── */
+.card-grid > li.cat-card{
+  background:hsl(var(--cat-hue) 55% 95%);
+  border-color:hsl(var(--cat-hue) 35% 78%);
+  transition:transform .12s ease;
+}
+.card-grid > li.cat-card:hover{ transform:translateY(-2px) }
+@media (prefers-color-scheme: dark){
+  .card-grid > li.cat-card{ background:hsl(var(--cat-hue) 28% 16%); border-color:hsl(var(--cat-hue) 30% 30%) }
+}
+
+/* ── peptide leaf page header ───────────────────────────────────────── */
+.peptide-pills{ margin:0 0 var(--ak-s3); display:flex; gap:6px; flex-wrap:wrap }
+.peptide-quickfacts{ font-size:13px; color:var(--ak-ink-muted); margin-top:var(--ak-s3) }
+.peptide-quickfacts dt{ font-weight:600; color:var(--ak-ink); display:inline }
+.peptide-quickfacts dd{ display:inline; margin:0 var(--ak-s5) 0 6px }
+.peptide-quickfacts div{ margin-bottom:4px }
+
+/* ── directory table controls ───────────────────────────────────────── */
+.dir-controls{ margin-bottom:var(--ak-s4) }
+
+/* ── related peptide chip list ──────────────────────────────────────── */
+.chip-list{ list-style:none; display:flex; flex-wrap:wrap; gap:8px; padding:0; margin:0 }
+.chip-list a{
+  display:inline-block; font-size:12.5px; font-weight:600; padding:3px 10px;
+  border-radius:999px; border:1px solid var(--ak-rule-mid); background:var(--ak-surface);
+  color:var(--ak-ink); text-decoration:none;
+}
+.chip-list a:hover{ border-color:var(--ak-accent); color:var(--ak-accent) }
+
+/* ── citation list (peptide + stack pages) ──────────────────────────── */
+.citation-list{ list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:8px }
+.citation-list li{ padding-left:var(--ak-s4); border-left:2px solid var(--ak-rule-mid); font-size:13.5px }
+.citation-list a{ font-weight:600 }
+
+/* ── glossary ────────────────────────────────────────────────────────── */
+.glossary-list .ak-section{ margin-top:0 }
+.glossary-list dl{ margin:0 }
+.glossary-list .glossary-item{ border-bottom:1px solid var(--ak-rule); padding:var(--ak-s3) 0 }
+.glossary-list dt{ font-weight:700; margin-bottom:2px }
+.glossary-list dd{ margin:0; color:var(--ak-ink-muted) }
+
+.visually-hidden{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap }
+
+/* ── footer: centered disclaimer ────────────────────────────────────── */
+.ak-footer{ text-align:center }
+.ak-footer p{ max-width:640px; margin-left:auto; margin-right:auto }
+
+/* ── favorite toggle button ──────────────────────────────────────────── */
+.ak-meta{ display:flex; flex-direction:column; align-items:flex-end; gap:6px }
+.fav-toggle{
+  font-size:12.5px; padding:4px 10px; display:inline-flex; align-items:center; gap:5px;
+  border:1px solid var(--ak-rule-mid); border-radius:999px; background:var(--ak-surface);
+  color:var(--ak-ink-muted); cursor:pointer;
+}
+.fav-toggle:hover{ border-color:var(--ak-accent); color:var(--ak-ink) }
+.fav-toggle.is-fav{ border-color:var(--ak-accent-2, var(--ak-accent)); color:var(--ak-ink); background:hsl(45 70% 95%) }
+@media (prefers-color-scheme: dark){
+  .fav-toggle.is-fav{ background:hsl(45 30% 18%) }
+}
+.fav-star{ font-size:14px }

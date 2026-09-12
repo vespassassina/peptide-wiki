@@ -1,0 +1,50 @@
+{
+  "recovery-healing": {
+    "name": "Recovery & healing",
+    "icon": "🩹",
+    "summary": "Peptides for tendon, ligament, muscle, gut and nerve healing. The most-discussed category in self-experimentation communities. BPC-157 and TB-500/Thymosin Beta-4 are the anchor compounds, usually run together and often stacked with GH secretagogues.",
+    "primer": "Most of these work by amplifying the body's own wound-response signalling: angiogenesis, fibroblast activity, cytoskeleton rebuilding, local anti-inflammatory action. Nothing mechanically new. Evidence is overwhelmingly animal and in-vitro. BPC-157 has the deepest circumstantial human safety history, from unrelated ulcerative-colitis enema trials. TB-500's active ingredient (Tβ4) has the most direct human dosing safety data, via RegeneRx's drug-development program."
+  },
+  "anti-aging": {
+    "name": "Anti-aging",
+    "icon": "✨",
+    "summary": "Peptides for skin, connective tissue and general aging markers. Spans genuinely well-studied topical compounds (GHK-Cu) to speculative systemic 'bioregulator' peptides (Epithalon) with a much thinner human evidence base.",
+    "primer": "This category has the widest evidence spread on the whole wiki. GHK-Cu's topical effects are backed by decades of real research. Systemic anti-aging claims for compounds like Epithalon rest on a much smaller, less independently replicated body of work. Read each research-summary section on its own terms rather than assuming uniform evidence quality here."
+  },
+  "longevity": {
+    "name": "Longevity",
+    "icon": "⏳",
+    "summary": "Peptides and peptide-adjacent compounds aimed at the biology of aging itself: mitochondrial function, cellular energy metabolism, telomere maintenance, immune aging. Not tied to any single organ or symptom.",
+    "primer": "Almost everything here is early-stage: strong mouse and cell-culture mechanistic stories (MOTS-c, Humanin, NAD+ precursors) with essentially no rigorous human longevity trial data, because human lifespan trials are extremely hard to run. Treat this category as promising mechanistic hypotheses currently being self-tested by early adopters, not established interventions."
+  },
+  "fat-loss": {
+    "name": "Fat loss",
+    "icon": "⚖️",
+    "summary": "The best-funded, most rigorously trialed category here by a wide margin. GLP-1/GIP-class drugs (semaglutide, tirzepatide, retatrutide) have large randomized controlled trials behind them, alongside older, less successful compounds (AOD-9604) and GH-axis approaches (tesamorelin).",
+    "primer": "Don't lump this category in with the rest of the wiki on evidence. Semaglutide and tirzepatide are FDA-approved drugs with some of the largest, best-run clinical trials of anything discussed here. Retatrutide is investigational but has genuine Phase 2/3 data. AOD-9604 actually failed its efficacy trial, a useful reminder that 'sold as a fat-loss peptide' doesn't mean 'shown to cause fat loss.'"
+  },
+  "fitness-muscle": {
+    "name": "Fitness & muscle",
+    "icon": "💪",
+    "summary": "Growth-hormone-axis peptides for training recovery, lean mass and body composition. CJC-1295/Ipamorelin is the default GH-secretagogue pairing, MK-677 the oral alternative, IGF-1 LR3 the more potent and more acutely risky downstream option.",
+    "primer": "Almost everything here works by manipulating the GH → IGF-1 axis, either upstream (GHRH analogs, GHRPs, MK-677, all increasing the body's own GH release) or downstream (IGF-1 LR3, delivering the growth signal directly). Upstream approaches preserve the body's natural feedback regulation and are viewed as gentler. IGF-1 LR3 bypasses that regulation entirely and carries a distinct, more acute risk: hypoglycemia."
+  },
+  "sexual-health": {
+    "name": "Sexual health",
+    "icon": "❤️",
+    "summary": "Peptides acting on brain-level arousal, bonding and reproductive-hormone pathways rather than local blood flow. A genuinely different mechanism class from PDE5 inhibitors like sildenafil.",
+    "primer": "PT-141 is the only compound here with a real FDA approval, for HSDD in women. Oxytocin has decades of academic research behind its social/bonding effects, and a real replication-crisis history worth knowing about. Kisspeptin has unusually rigorous, if small-scale and acute-dosing, academic research behind it, more than most peptides discussed here for off-label use."
+  },
+  "nootropics-cognitive": {
+    "name": "Nootropics & cognitive",
+    "icon": "🧠",
+    "summary": "Peptides from the Russian 'peptide bioregulator' research tradition, several with genuine domestic drug approval in Russia, used elsewhere off-label for focus, mood and sleep.",
+    "primer": "Semax and Selank both hold real Russian drug approvals and dedicated clinical trials, genuinely more than most compounds on this wiki, but that evidence base has had less independent international replication than Western regulatory review typically requires. DSIP is the weakest-evidenced member of this category despite the name."
+  },
+  "bioregulators": {
+    "name": "Peptide bioregulators",
+    "icon": "🧬",
+    "summary": "Organ-targeted synthetic peptide bioregulators developed in Russia, from the Khavinson research tradition. Short peptides designed to selectively influence specific tissues through epigenetic mechanisms.",
+    "primer": "These are short synthetic peptides, typically di-, tri- or tetrapeptides, developed mainly by the St. Petersburg Institute of Bioregulation and Gerontology under Vladimir Khavinson. The premise: peptide sequences can selectively regulate gene expression in specific tissues. They're approved for medical use in Russia and marketed internationally for research and longevity use. The evidence standard here differs a lot from the rest of the site: most studies are Russian-language, concentrated in a small number of institutions, and haven't been independently replicated in Western peer-reviewed literature. Read every page here with that in mind. The claims rest on a narrower, more geographically concentrated evidence base than the rest of the wiki."
+  }
+}
