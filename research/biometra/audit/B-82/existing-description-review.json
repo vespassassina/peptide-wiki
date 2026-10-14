@@ -1,0 +1,21 @@
+{
+  "catalog:supplement:casein-protein": "The live guide explicitly says most casein users consume it before bed and gives the water-mixed powder example. No efficacy statement is repeated.",
+  "catalog:supplement:creatine": "The live guide explicitly calls the loading sequence a common approach and distinguishes it from maintenance. The retained text attributes the sequence to the guide rather than prescribing it.",
+  "catalog:supplement:whey-protein": "The live guide describes shakes between meals or around workouts and specifies the powder's usual protein content per scoop. The description does not assert a superior training time.",
+  "catalog:supplement:caffeine": "The live guide supports the listed consumption forms, but its numerical amounts are recommendations and study-based amounts; the dose wording was removed.",
+  "catalog:food-protocol:16-8": "The live guide explicitly describes a popular daily 16-hour fast and eight-hour eating window.",
+  "catalog:food-protocol:5-2": "The live guide describes five usual eating days and two restricted days. The description identifies the named pattern, not a recommendation to adopt it.",
+  "catalog:food-protocol:adf": "The live guide lists alternate-day fasting and describes fasting every other day; no efficacy or adherence claim is repeated.",
+  "catalog:food-protocol:full-day-fast": "The live guide explicitly describes Eat Stop Eat as a 24-hour fast once or twice per week, outside an intervention-trial description.",
+  "catalog:food-protocol:keto": "The live guide documents both the stated standard macro proportions and a cyclical variant. The description reports those versions, not health outcomes.",
+  "catalog:food-protocol:paleo": "The live guide lists the food groups in the description, identifies grains, dairy and legumes as restricted groups, and discusses flexible modern variants.",
+  "catalog:food-protocol:mediterranean": "The live guide describes the stated food pattern and includes fish and seafood at least twice weekly. No outcome claims are repeated.",
+  "catalog:recovery:breathwork": "The live NHS practice contains seated, standing and lying options, nasal inhalation, oral exhalation and optional counting. Its suggested duration is not repeated.",
+  "catalog:recovery:stretching": "The live NHS routine contains the named lower-body stretches with sides repeated in turn. Stretch durations and benefit claims are not repeated.",
+  "catalog:recovery:cold-exposure": "The web-fetch tool retrieved the live Cleveland Clinic article and its description of cold tap water or added ice in a workout/wellness context. Direct curl was blocked; no source access barrier was bypassed and no temperature or safety-duration advice is repeated.",
+  "catalog:recovery:meditation": "The live Mindful guide describes a short seated practice with attention to breathing and returning attention when distracted. The text attributes the practice to this guide, not a measured population frequency.",
+  "catalog:recovery:journaling": "The live Berkeley practice describes private expressive writing about a challenging emotional experience on four consecutive days. Its benefit claims are not repeated.",
+  "catalog:recovery:gratitude-therapy": "The live Berkeley Three Good Things practice contains a written record of three good events and explanations of why they occurred. The source also discusses a before-bed reflection.",
+  "catalog:recovery:yoga": "The live NCCIH page explicitly describes the postures, breathing and meditation emphasis of US practice and its range of styles. Trial results are not repeated.",
+  "catalog:recovery:nap": "The original Sleep Foundation page was blocked. The replacement NIH report documents actual midday siestas in an observational Spanish cohort, rather than recommended durations."
+}

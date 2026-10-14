@@ -1,0 +1,1806 @@
+{
+  "entries": {
+    "catalog:context:alcohol": {
+      "attempts": [
+        {
+          "reason": "Fetched live NIAAA page; confirms the documented practice of logging each drink via a printable tracker card.",
+          "result": "supports-description",
+          "url": "https://rethinkingdrinking.niaaa.nih.gov/tools/worksheets-more/alcohol-consumption-tracker"
+        }
+      ],
+      "community": [
+        {
+          "description": "NIAAA's Rethinking Drinking program provides a printable tracker card for logging each drink as it happens, describing this as a way to notice drinking patterns.",
+          "source": {
+            "title": "Alcohol Consumption Tracker - Rethinking Drinking - NIAAA",
+            "url": "https://rethinkingdrinking.niaaa.nih.gov/tools/worksheets-more/alcohol-consumption-tracker"
+          }
+        }
+      ],
+      "searchNotes": "Searched for drink-tracking practices beyond the GBD epidemiology already cited in evidenceSummary; found commercial apps (DrinkControl, Sunnyside) but chose the NIH/NIAAA government source as more reputable and directly on-point."
+    },
+    "catalog:context:alcohol-free-day": {
+      "attempts": [
+        {
+          "reason": "Fetched live Harvard Health page; confirms Dry January participants track alcohol-free progress with an app.",
+          "result": "supports-description",
+          "url": "https://www.health.harvard.edu/healthy-aging-and-longevity/take-the-dry-january-challenge"
+        }
+      ],
+      "community": [
+        {
+          "description": "Harvard Health describes Dry January participants tracking their progress with a phone app such as Try Dry, which logs drinking goals and alcohol-free days.",
+          "source": {
+            "title": "Take the Dry January challenge - Harvard Health",
+            "url": "https://www.health.harvard.edu/healthy-aging-and-longevity/take-the-dry-january-challenge"
+          }
+        }
+      ],
+      "searchNotes": "The evidenceSummary already references Dry January; verified directly from Harvard Health rather than the cohort study, to source the tracking/logging practice specifically rather than the outcome research."
+    },
+    "catalog:context:nicotine": {
+      "attempts": [
+        {
+          "reason": "Fetched live Smokefree.gov (National Cancer Institute) page describing the tagging/logging feature.",
+          "result": "supports-description",
+          "url": "https://smokefree.gov/tools-tips/quitstart"
+        },
+        {
+          "reason": "Guessed URL path was wrong (404); found correct URL via search and re-fetched successfully.",
+          "result": "not-found",
+          "url": "https://smokefree.gov/quit-smoking-apps/quitstart-app"
+        }
+      ],
+      "community": [
+        {
+          "description": "Smokefree.gov's quitSTART app, developed by the National Cancer Institute, has users tag the times or places that trigger an urge to smoke as part of tracking a quit attempt.",
+          "source": {
+            "title": "quitSTART Quit Smoking App - Smokefree.gov",
+            "url": "https://smokefree.gov/tools-tips/quitstart"
+          }
+        }
+      ],
+      "searchNotes": "Looked for a government or clinical source on logging cigarette/craving occasions rather than commercial trackers (Quitly, Smoke Tracker); used Smokefree.gov, a federal smoking-cessation resource."
+    },
+    "catalog:context:routine": {
+      "attempts": [
+        {
+          "url": "https://www.sleepfoundation.org/sleep-faqs/how-to-wake-up-easier",
+          "result": "no-practice-description",
+          "reason": "Fetched directly; page describes expert-recommended morning habits (consistent wake time, avoiding snooze, morning light exposure, movement) framed as sleep-expert advice to improve alertness, not a documented independent community logging/routine-disruption practice matching this generic catalog item."
+        }
+      ],
+      "community": [],
+      "searchNotes": "This item is a generic logging-context concept (not a specific named protocol), unlike Dry January or sleep diaries; no equivalent well-known named practice or reputable guide was found describing it as a distinct community protocol. Left empty. Correction: performed a concrete fetch (Sleep Foundation) in place of the prior search-only placeholder; outcome remains empty because no suitable description of this generic routine-logging practice was verified in these checks (not a claim that no source exists anywhere)."
+    },
+    "catalog:context:sleep": {
+      "attempts": [
+        {
+          "reason": "Fetched live NSF page; confirms the documented two-week, wake/bedtime sleep-diary practice.",
+          "result": "supports-description",
+          "url": "https://www.thensf.org/nsf-sleep-diary/"
+        }
+      ],
+      "community": [
+        {
+          "description": "The National Sleep Foundation recommends keeping a daily sleep diary, filled in both at wake-up and before bed for about two weeks, to reveal patterns affecting sleep.",
+          "source": {
+            "title": "NSF Sleep Diary - National Sleep Foundation",
+            "url": "https://www.thensf.org/nsf-sleep-diary/"
+          }
+        }
+      ],
+      "searchNotes": "Searched for authoritative sleep-logging guidance beyond the consensus statement already cited in evidenceSummary; used the National Sleep Foundation's own sleep-diary tool page."
+    },
+    "catalog:exercise:bodyweight": {
+      "attempts": [],
+      "community": [
+        {
+          "description": "Training using only one's own body weight for resistance (e.g., push-ups, squats, lunges, planks) rather than free weights or machines, often emphasizing muscular endurance.",
+          "source": {
+            "author": null,
+            "title": "Body-weight Training: Don't Let a Lack of Equipment Keep You From Your Goals - ACE Fitness",
+            "url": "https://www.acefitness.org/resources/everyone/blog/7038/body-weight-training-don-t-let-a-lack-of-equipment-keep-you-from-your-goals/"
+          }
+        }
+      ],
+      "searchNotes": "ACE Fitness article fetched directly; used the comparison sentence distinguishing bodyweight training from weighted resistance training as a format description, omitting the article's specific rep/time-interval circuit prescriptions."
+    },
+    "catalog:exercise:calisthenics": {
+      "attempts": [],
+      "community": [
+        {
+          "description": "Doing calisthenics: bodyweight exercises (such as push-ups, pull-ups, squats and planks) performed with little to no equipment to build strength, endurance and coordination.",
+          "source": {
+            "title": "Calisthenics Workout Routine and Benefits - Cleveland Clinic",
+            "url": "https://health.clevelandclinic.org/calisthenics"
+          }
+        }
+      ],
+      "searchNotes": "Cleveland Clinic calisthenics article fetched directly; used the definitional sentence only, omitting the article's specific sets/reps/rest-interval recommendations to avoid dose-like prescription language."
+    },
+    "catalog:exercise:cardio-zone2": {
+      "attempts": [
+        {
+          "reason": "403 on fetch",
+          "result": "blocked",
+          "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/multimedia/target-heart-rate/vid-20464201"
+        }
+      ],
+      "community": [
+        {
+          "description": "Training in Zone 2, a moderate-intensity heart-rate zone (roughly 60-70% of estimated maximum heart rate) in which conversation remains possible, used for longer steady-state cardio sessions aimed at building aerobic endurance.",
+          "source": {
+            "title": "Exercise Heart Rate Zones Explained - Cleveland Clinic",
+            "url": "https://health.clevelandclinic.org/exercise-heart-rate-zones-explained"
+          }
+        }
+      ],
+      "searchNotes": "Cleveland Clinic heart-rate-zones article fetched directly; used its own Zone 2 definition (percentage of max heart rate + conversational-pace description), which is the training-zone's inherent definition rather than an administration schedule."
+    },
+    "catalog:exercise:climbing": {
+      "attempts": [],
+      "community": [
+        {
+          "description": "Training for rock climbing/bouldering using structured practice such as hangboard (fingerboard) sessions alongside time spent climbing, to work on specific weaknesses like grip positions or endurance.",
+          "source": {
+            "author": null,
+            "title": "Should You Train or Just Go Climbing? - Climbing (Outside)",
+            "url": "https://www.climbing.com/skills/training-value-effectiveness"
+          }
+        }
+      ],
+      "searchNotes": "Climbing magazine (Outside/Climbing.com, a long-running climbing publication) article by a climbing coach fetched directly; used the hangboard-training example sentence as a neutral description of a widely documented climbing-community training practice, avoiding the article's broader motivational/efficacy commentary."
+    },
+    "catalog:exercise:cycling": {
+      "attempts": [
+        {
+          "reason": "404 on official domain path",
+          "result": "not-found",
+          "url": "https://bikeleague.org/content/riding-group"
+        },
+        {
+          "reason": "JS-rendered page returned title only, no body text",
+          "result": "blocked",
+          "url": "https://www.cyclinguk.org/article/beginners-guide-hand-signals-and-calls-used-group-ride"
+        },
+        {
+          "reason": "403 on fetch",
+          "result": "blocked",
+          "url": "https://mobikefed.org/files/mobikefed-group-riding-guidelines.pdf"
+        },
+        {
+          "reason": "Fetched page mirrors League of American Bicyclists group-riding etiquette content, explicitly attributed",
+          "result": "supports-description",
+          "url": "https://gccfla.org/labtips.shtml"
+        }
+      ],
+      "community": [
+        {
+          "description": "Group road cyclists commonly use standardized verbal calls and hand signals, such as announcing turns, pointing out road hazards, and calling out \"car back\"/\"car up\", to communicate within a riding group.",
+          "source": {
+            "title": "10 Tips for Safe Group Riding (League of American Bicyclists program)",
+            "url": "https://gccfla.org/labtips.shtml"
+          }
+        }
+      ],
+      "searchNotes": "Official bikeleague.org pages for this content returned 404/boilerplate; used a non-commercial local bicycle club mirror (gccfla.org) that explicitly attributes content to the League of American Bicyclists program."
+    },
+    "catalog:exercise:functional-fitness": {
+      "attempts": [],
+      "community": [
+        {
+          "description": "Doing functional-training workouts built around multi-joint movement patterns (such as pushing, pulling, hinging, squatting and rotating) intended to carry over to everyday activities, rather than isolating single muscles.",
+          "source": {
+            "title": "Creating Functional-Training Programs for Every Type of Client - ACE Fitness",
+            "url": "https://www.acefitness.org/resources/pros/expert-articles/7208/creating-functional-training-programs-for-every-type-of-client/"
+          }
+        }
+      ],
+      "searchNotes": "ACE Fitness (American Council on Exercise, a professional fitness-certification body) article fetched directly; used the movement-pattern description, omitting individualized client programming specifics."
+    },
+    "catalog:exercise:hiit": {
+      "attempts": [],
+      "community": [
+        {
+          "description": "Doing a high-intensity interval training (HIIT) workout: alternating short bursts of higher-intensity aerobic exercise with lower-intensity recovery periods within the same session, using activities such as running, cycling or bodyweight exercises.",
+          "source": {
+            "title": "HIIT Workouts: They're Good for Everyone! - Cleveland Clinic",
+            "url": "https://health.clevelandclinic.org/think-you-cant-do-high-intensity-interval-training-think-again"
+          }
+        }
+      ],
+      "searchNotes": "Cleveland Clinic HIIT article fetched directly; used the core structural definition (interval alternation) rather than specific interval-second counts, heart-rate percentage targets, or weekly-frequency recommendations given later in the same article."
+    },
+    "catalog:exercise:hiking": {
+      "attempts": [
+        {
+          "reason": "Fetched American Hiking Society policy page defining foot-only hiking trails",
+          "result": "supports-description",
+          "url": "https://americanhiking.org/resources/hiking-trails-policy/"
+        }
+      ],
+      "community": [
+        {
+          "description": "Hiking is practiced on dedicated foot-only trails developed and maintained for quiet pedestrian travel away from motorized or mechanical use.",
+          "source": {
+            "title": "Hiking Trails Policy - American Hiking Society",
+            "url": "https://americanhiking.org/resources/hiking-trails-policy/"
+          }
+        }
+      ],
+      "searchNotes": "American Hiking Society national nonprofit page fetched and verified."
+    },
+    "catalog:exercise:martial-arts": {
+      "attempts": [
+        {
+          "url": "https://www.health.harvard.edu/exercise-and-fitness/the-health-benefits-of-tai-chi",
+          "result": "supports-description",
+          "reason": "Fetched page describes typical tai chi class structure; evidence.json evidenceSummary for this ID explicitly spans tai chi through karate and judo"
+        }
+      ],
+      "community": [
+        {
+          "description": "Tai chi classes, which the catalog's martial-arts category spans alongside karate and judo, typically include a warm-up, instruction/practice of named movement forms, and group practice often offered through community centers.",
+          "source": {
+            "title": "The health benefits of tai chi - Harvard Health",
+            "url": "https://www.health.harvard.edu/exercise-and-fitness/the-health-benefits-of-tai-chi"
+          }
+        }
+      ],
+      "searchNotes": "Catalog evidenceSummary for this ID explicitly covers tai chi as part of martial-arts scope, so Harvard Health tai chi class-structure description was used in place of unavailable reputable karate-specific sourcing. Correction: removed two non-fetched placeholder attempts (a bare 'health.harvard.edu (karate search)' note and a list of rejected commercial dojo-blog domains); no karate-specific reputable source was found, and commercial dojo-marketing blogs were rejected per source-quality bar, so the Harvard Health tai chi source above remains the sole real, fetched, populated source."
+    },
+    "catalog:exercise:pilates": {
+      "attempts": [],
+      "community": [
+        {
+          "description": "Practicing Pilates either on a mat (bodyweight-based) or on specialized apparatus such as a reformer, focusing on controlled movement, core engagement and breathing.",
+          "source": {
+            "title": "Pilates 101: What It Is and Health Benefits - Cleveland Clinic",
+            "url": "https://health.clevelandclinic.org/everything-you-want-to-know-about-pilates"
+          }
+        }
+      ],
+      "searchNotes": "Cleveland Clinic Pilates article (with lead yoga/movement therapist commentary) fetched directly; used the mat-vs-reformer format description only, leaving out the clinical pain-relief research discussion elsewhere in the article to avoid conflating with the trial evidence already covered by evidence.json."
+    },
+    "catalog:exercise:resistance-session": {
+      "attempts": [],
+      "community": [
+        {
+          "description": "Doing a resistance/strength-training session using external load such as free weights (barbells, dumbbells, kettlebells), weight machines, or resistance bands, where muscles work against that resistance.",
+          "source": {
+            "title": "What Is Strength Training and Its Benefits? - Cleveland Clinic",
+            "url": "https://health.clevelandclinic.org/strength-training"
+          }
+        }
+      ],
+      "searchNotes": "Cleveland Clinic strength-training article fetched directly; used the general definition and equipment-category descriptions (free weights/machines/bands), omitting the article's specific weekly-frequency and session-length recommendations."
+    },
+    "catalog:exercise:rowing": {
+      "attempts": [
+        {
+          "reason": "Fetched official Concept2 technique page describing the four stroke phases",
+          "result": "supports-description",
+          "url": "https://www.concept2.com/indoor-rowers/training/technique"
+        }
+      ],
+      "community": [
+        {
+          "description": "Indoor/erg rowing technique is commonly taught and practiced as a four-phase stroke cycle: the catch, the drive, the finish, and the recovery.",
+          "source": {
+            "title": "Rowing Technique - Concept2",
+            "url": "https://www.concept2.com/indoor-rowers/training/technique"
+          }
+        }
+      ],
+      "searchNotes": "Concept2 official technique page fetched and verified; widely used indoor-rowing community reference."
+    },
+    "catalog:exercise:running": {
+      "attempts": [
+        {
+          "reason": "Fetched RRCA national running organization page describing run-walk-run method",
+          "result": "supports-description",
+          "url": "https://www.rrca.org/education/for-runners/"
+        }
+      ],
+      "community": [
+        {
+          "description": "Beginning runners commonly use a run-walk-run method, alternating intervals of running and walking, as popularized by coach Jeff Galloway.",
+          "source": {
+            "title": "Road Runners Club of America - For Runners",
+            "url": "https://www.rrca.org/education/for-runners/"
+          }
+        }
+      ],
+      "searchNotes": "RRCA (national running organization) page fetched after an earlier 502 retry succeeded."
+    },
+    "catalog:exercise:swimming": {
+      "attempts": [
+        {
+          "reason": "Fetched page confirms coached Masters swim club/workout-group structure",
+          "result": "supports-description",
+          "url": "https://www.usms.org/about-usms/what-is-usms"
+        }
+      ],
+      "community": [
+        {
+          "description": "Adult swimmers can join local Masters Swimming clubs and workout groups that are coached and organized by US Masters Swimming local committees.",
+          "source": {
+            "title": "What is U.S. Masters Swimming? - USMS",
+            "url": "https://www.usms.org/about-usms/what-is-usms"
+          }
+        }
+      ],
+      "searchNotes": "Searched for organized adult swim community structures; USMS official page fetched and verified."
+    },
+    "catalog:exercise:team-sport": {
+      "attempts": [
+        {
+          "reason": "403 on fetch",
+          "result": "blocked",
+          "url": "https://www.ymca.org/what-we-do/healthy-living/sports-recreation"
+        },
+        {
+          "reason": "Fetched page only returned holiday-closure notice, no league description",
+          "result": "no-practice-description",
+          "url": "https://parks.virginiabeach.gov/sports/sports-leagues"
+        },
+        {
+          "reason": "400 on fetch",
+          "result": "blocked",
+          "url": "https://www.minneapolisparks.org/activities-events/sports_leagues/adult_sports_leagues/"
+        },
+        {
+          "reason": "Fetched page meta-description text describes adult recreational league structure",
+          "result": "supports-description",
+          "url": "https://www.countyhealthrankings.org/strategies-and-solutions/what-works-for-health/strategies/recreational-sports-leagues-for-adults"
+        }
+      ],
+      "community": [
+        {
+          "description": "Communities organize recreational adult sports leagues offering athletic games such as soccer, softball, kickball, and basketball at beginner, intermediate, and competitive levels.",
+          "source": {
+            "title": "Recreational sports leagues for adults - County Health Rankings & Roadmaps",
+            "url": "https://www.countyhealthrankings.org/strategies-and-solutions/what-works-for-health/strategies/recreational-sports-leagues-for-adults"
+          }
+        }
+      ],
+      "searchNotes": "County Health Rankings & Roadmaps (Univ. of Wisconsin/RWJF public health project) page description fetched and verified."
+    },
+    "catalog:exercise:walking": {
+      "attempts": [
+        {
+          "reason": "403 on fetch",
+          "result": "blocked",
+          "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/walking/art-20046261"
+        },
+        {
+          "reason": "Fetched page lists brisk-walking pace benchmark",
+          "result": "supports-description",
+          "url": "https://www.cdc.gov/physical-activity-basics/guidelines/index.html"
+        }
+      ],
+      "community": [
+        {
+          "description": "Brisk walking at a pace of about a 15-minute mile is used as a common benchmark for moderate-to-vigorous walking activity.",
+          "source": {
+            "title": "CDC - Physical Activity Basics",
+            "url": "https://www.cdc.gov/physical-activity-basics/guidelines/index.html"
+          }
+        }
+      ],
+      "searchNotes": "CDC page fetched successfully with usable pace-benchmark quote; Mayo Clinic blocked by 403."
+    },
+    "catalog:food-protocol:18-6": {
+      "attempts": [
+        {
+          "reason": "Content-farm/commercial fasting-app site; rejected as commercially dubious per task instructions despite matching 18:6 terminology exactly",
+          "result": "blocked",
+          "url": "https://freefasting.com/18-6-fasting"
+        },
+        {
+          "reason": "Low-quality content-farm domain, not a reputable clinical/reference source",
+          "result": "blocked",
+          "url": "https://scienceinsights.org/186-intermittent-fasting-what-to-eat-and-avoid/"
+        },
+        {
+          "reason": "403 on fetch despite search snippet mentioning 16:8",
+          "result": "blocked",
+          "url": "https://hopkinsdiabetesinfo.org/an-overview-of-intermittent-fasting/"
+        },
+        {
+          "reason": "Fetched successfully but only documents generic 8-hour/16-hour TRE, not specifically an 18-hour fast variant",
+          "result": "mismatched",
+          "url": "https://www.health.harvard.edu/diet-and-nutrition/time-to-try-intermittent-fasting"
+        }
+      ],
+      "community": [
+        {
+          "description": "Following a time-restricted eating pattern in which daily food intake is confined to a window of roughly 6-8 hours, with a corresponding fast of up to about 18 hours, typically spanning the evening and overnight period.",
+          "source": {
+            "title": "What is Intermittent Fasting? (Love Your Heart podcast) - Cleveland Clinic",
+            "url": "https://my.clevelandclinic.org/podcasts/love-your-heart/what-is-intermittent-fasting"
+          }
+        }
+      ],
+      "searchNotes": "Searched for reputable clinical description of 18-hour fast/6-hour eating window specifically. Most 18:6-labeled results were commercial fasting-app/content-farm sites (rejected). Used Cleveland Clinic dietitian podcast transcript which explicitly documents time-restricted eating extending fasting up to 18 hours as a known practiced variant, without dose/schedule prescription."
+    },
+    "catalog:food-protocol:calorie-protein-target": {
+      "attempts": [],
+      "community": [
+        {
+          "description": "Using a food-logging app to track daily calorie intake and macronutrients such as protein against a personal target, rather than tracking intake unaided.",
+          "source": {
+            "title": "MyFitnessPal (official site)",
+            "url": "https://www.myfitnesspal.com/"
+          }
+        }
+      ],
+      "searchNotes": "MyFitnessPal official homepage fetched directly; used as a documented example of the logging-app practice format (not as an endorsement), with no specific calorie/gram targets quoted."
+    },
+    "catalog:food-protocol:carb-cycling": {
+      "attempts": [],
+      "community": [
+        {
+          "description": "Alternating higher-carbohydrate and lower-carbohydrate eating days (for example, higher carbohydrate intake on workout days and lower intake on non-workout days), rather than eating a consistent carbohydrate level every day.",
+          "source": {
+            "title": "Carb Cycling: What It Is, How It Works, and How to Do It - Precision Nutrition",
+            "url": "https://www.precisionnutrition.com/all-about-carb-cycling"
+          }
+        }
+      ],
+      "searchNotes": "Precision Nutrition (reputable nutrition-coaching education site, not a supplement seller) fetched directly; description reflects the day-to-day structural pattern only, omitting any gram/calorie targets or specific macros from the quoted text."
+    },
+    "catalog:food-protocol:carnivore": {
+      "attempts": [],
+      "community": [
+        {
+          "description": "Following a carnivore diet consisting only of animal-sourced foods (meat, fish, eggs and limited dairy), excluding all plant foods such as fruit, vegetables, grains, legumes and nuts.",
+          "source": {
+            "title": "The Carnivore Diet: Should You Try It? - Cleveland Clinic",
+            "url": "https://health.clevelandclinic.org/the-carnivore-diet"
+          }
+        }
+      ],
+      "searchNotes": "Cleveland Clinic article (registered dietitian commentary) fetched directly; used the neutral menu-composition section rather than the benefits/risks commentary that follows in the article."
+    },
+    "catalog:food-protocol:extended-fast": {
+      "attempts": [
+        {
+          "reason": "Fetch returned raw unparsed HTML/head boilerplate, no usable body text extracted",
+          "result": "blocked",
+          "url": "https://www.healthpromoting.com/on-site-fasting"
+        }
+      ],
+      "community": [
+        {
+          "description": "Undertaking a supervised, multi-day water-only fast at a residential fasting clinic, abstaining from all food (only water) for an extended period under medical monitoring.",
+          "source": {
+            "title": "On-Site Fasting / About Water-Only Fasting - TrueNorth Health Center",
+            "url": "https://www.healthpromoting.com/about-water-only-fasting"
+          }
+        }
+      ],
+      "searchNotes": "TrueNorth Health Center (residential medical fasting clinic, not a research-chemical seller) explicitly documents a water-only multi-day fasting practice; used the clinic-description page rather than the stub on-site-fasting page. Kept description free of specific day-counts or efficacy claims beyond what is a direct quote of program description, though the source itself contains some benefit-framing language outside the quoted sentence."
+    },
+    "catalog:food-protocol:low-carb": {
+      "attempts": [],
+      "community": [
+        {
+          "description": "Following a low-carbohydrate eating pattern that limits carbohydrate intake below typical dietary levels, with stricter variants (sometimes called ketogenic) restricting carbohydrates further than more liberal low-carb approaches.",
+          "source": {
+            "title": "How low carb is low carb? - Diet Doctor",
+            "url": "https://www.dietdoctor.com/low-carb/how-low-carb-is-low-carb"
+          }
+        }
+      ],
+      "searchNotes": "Diet Doctor page fetched; it classifies low-carb into named tiers (ketogenic/moderate/liberal) by gram range, which is the diet's own structural definition rather than a prescribed per-person dose instruction. Used descriptively (naming the tiers) rather than instructing the reader to follow a specific gram target."
+    },
+    "catalog:food-protocol:omad": {
+      "attempts": [],
+      "community": [
+        {
+          "description": "Eating one meal a day (OMAD), consuming all daily food intake within a single meal/short window rather than across multiple meals.",
+          "source": {
+            "title": "What Is OMAD? Is the One Meal a Day Diet Healthy? - Healthline",
+            "url": "https://www.healthline.com/health/one-meal-a-day"
+          }
+        }
+      ],
+      "searchNotes": "Healthline OMAD page fetched directly; describes the one-meal-a-day eating pattern as practiced, distinct from clinical trial protocol. No dose/gram or calorie target quoted; description kept to the structural pattern only."
+    },
+    "catalog:food-protocol:vegan": {
+      "attempts": [],
+      "community": [
+        {
+          "description": "Following a vegan diet that excludes all animal-derived foods, including meat, fish, dairy, eggs and honey, relying entirely on plant-based foods.",
+          "source": {
+            "title": "Definition of Veganism - The Vegan Society",
+            "url": "https://www.vegansociety.com/go-vegan/definition-veganism"
+          }
+        }
+      ],
+      "searchNotes": "The Vegan Society (the organization that coined the term) official definition page fetched directly; literal quote documents the dietary practice neutrally without benefit claims in the quoted portion."
+    },
+    "catalog:food-protocol:vegetarian": {
+      "attempts": [
+        {
+          "reason": "404 on direct fetch",
+          "result": "not-found",
+          "url": "https://vegsoc.org/definitions/"
+        },
+        {
+          "reason": "DNS/transport failure, domain unreachable",
+          "result": "blocked",
+          "url": "https://vegetariansociety.org/definitions"
+        },
+        {
+          "reason": "Fetched page returned only a risks/nutrient-adequacy section, not the definitional content, despite search snippet suggesting a definition was present",
+          "result": "mismatched",
+          "url": "https://www.medicalnewstoday.com/articles/lacto-ovo-vegetarian"
+        }
+      ],
+      "community": [
+        {
+          "description": "Following a lacto-ovo vegetarian diet that excludes meat, poultry and fish but includes dairy products and eggs along with plant foods.",
+          "source": {
+            "title": "Vegetarianism: The Basic Facts - Academy of Nutrition and Dietetics (eatright.org)",
+            "url": "https://www.eatright.org/health/wellness/vegetarian-and-plant-based/vegetarianism-the-basic-facts"
+          }
+        }
+      ],
+      "searchNotes": "Academy of Nutrition and Dietetics (eatright.org, the credentialing body for U.S. registered dietitians) page fetched directly and gives a clean, quote-usable lacto-ovo definition; preferred over inaccessible Vegetarian Society (UK) domains."
+    },
+    "catalog:lab-marker:panel": {
+      "attempts": [
+        {
+          "url": "https://www.cdc.gov/cholesterol/testing/index.html",
+          "result": "mismatched",
+          "reason": "Fetched directly as a concrete reputable check for a representative named lab panel (lipid/cholesterol panel); content is clinical screening-interval guidance (every 4-6 years for healthy adults, more often with risk factors) tied to a healthcare team's testing schedule, not a documented independent community self-testing protocol, and the catalog item itself is a generic composite panel concept rather than one specific named marker."
+        }
+      ],
+      "community": [],
+      "searchNotes": "The lab-marker:panel entry is a generic composite/category entry rather than a specific named marker or substance, so no specific, attributable community protocol was sought beyond a documented search attempt confirming this structural reason for leaving it empty. Correction: replaced search-only placeholder with an actual fetched CDC cholesterol-testing page as a concrete representative check; outcome remains empty for the stated structural reason (generic composite entry) plus confirmation that the fetched content is clinical-guideline/indication information, not community practice."
+    },
+    "catalog:medication:antacid": {
+      "attempts": [],
+      "community": [
+        {
+          "description": "Antacid products such as Gaviscon are available in multiple forms, including chewable tablets, liquid sold in bottles or sachets, and a powder formulation for young children.",
+          "source": {
+            "title": "About Gaviscon - NHS",
+            "url": "https://www.nhs.uk/medicines/gaviscon/about-gaviscon/"
+          }
+        }
+      ],
+      "searchNotes": "Used NHS Gaviscon page (directly fetched, a widely available antacid brand representative of the catalogue antacid entry) for the plain list of available forms; excluded dosing/timing instructions from the same page."
+    },
+    "catalog:medication:antibiotic-course": {
+      "attempts": [
+        {
+          "reason": "CDC antibiotic-use hub page content did not render beyond a short teaser snippet via fetch (JS-rendered), no literal quotable body text about completing-the-course messaging was retrievable",
+          "result": "no-practice-description",
+          "url": "https://www.cdc.gov/antibiotic-use/index.html"
+        },
+        {
+          "reason": "Fetched; only returned a one-line snippet (antibiotics treat bacteria not viruses), no body text with a quotable community-practice statement",
+          "result": "no-practice-description",
+          "url": "https://www.cdc.gov/antibiotic-use/communication-resources/index.html"
+        },
+        {
+          "reason": "404",
+          "result": "not-found",
+          "url": "https://www.cdc.gov/antibiotic-use/took-your-last-dose.html"
+        },
+        {
+          "reason": "404",
+          "result": "not-found",
+          "url": "https://www.cdc.gov/antibiotic-use/materials-references/index.html"
+        }
+      ],
+      "community": [],
+      "searchNotes": "Searched for CDC/WHO finish-the-course patient messaging; CDC antibiotic-use pages are JS-rendered and fetch tool only returns short teaser snippets, not full body text with a quotable sentence. Left empty rather than use search-synthesis text as a substitute for an actual fetched quote."
+    },
+    "catalog:medication:antihistamine": {
+      "attempts": [],
+      "community": [
+        {
+          "description": "Antihistamines are grouped into drowsy (sedating) and non-drowsy (less sedating) types and are available in several forms, including tablets, capsules, liquids, syrups, creams, lotions, gels, eyedrops and nasal sprays.",
+          "source": {
+            "title": "Antihistamines - NHS",
+            "url": "https://www.nhs.uk/medicines/antihistamines/"
+          }
+        }
+      ],
+      "searchNotes": "Used NHS antihistamines page (directly fetched) for the drowsy/non-drowsy category split and list of available forms; excluded all dosing, timing, and interaction-advice content from the same page."
+    },
+    "catalog:medication:aspirin": {
+      "attempts": [],
+      "community": [
+        {
+          "description": "Aspirin for ongoing use is available as standard tablets and as enteric-coated tablets, with the coated form described as kinder to the stomach for people who get stomach symptoms from standard aspirin.",
+          "source": {
+            "title": "Can aspirin cause stomach problems? - British Heart Foundation",
+            "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/ask-the-experts/aspirin-stomach"
+          }
+        }
+      ],
+      "searchNotes": "Used British Heart Foundation (reputable UK charity, directly fetched) describing the plain-vs-enteric-coated tablet form distinction for aspirin; excluded all dosing/frequency and \"ask your doctor\" instructional framing, keeping only the factual form description."
+    },
+    "catalog:medication:atorvastatin": {
+      "attempts": [
+        {
+          "url": "https://www.nhs.uk/medicines/atorvastatin/",
+          "result": "no-practice-description",
+          "reason": "Fetched directly; content covers prescribed dosing, timing, and side-effect management (expert dosing/escalation guidance), not an independent non-dosing community practice fact."
+        }
+      ],
+      "community": [],
+      "searchNotes": "Searched for a non-dosing, non-efficacy community practice related to atorvastatin; found only clinical dosing-timing/statin-intolerance management guidance, which the task prohibits recasting. Left empty."
+    },
+    "catalog:medication:cagrilintide": {
+      "attempts": [
+        {
+          "url": "https://www.biospace.com/press-releases/novos-cagrisema-delivers-superior-weight-loss-and-cardiometabolic-benefits-compared-to-semaglutide-in-head-to-head-phase-3b-trial",
+          "result": "trial-only",
+          "reason": "Fetched directly; confirms cagrilintide (as CagriSema) remains investigational, NDA filed with a decision expected Q4 2026, phase 3 trial data only."
+        }
+      ],
+      "community": [],
+      "searchNotes": "Cagrilintide is an investigational compound without regulatory approval; absence of a documented non-trial community practice is the expected and legitimate outcome here. Left empty."
+    },
+    "catalog:medication:diclofenac-topical": {
+      "attempts": [
+        {
+          "reason": "404",
+          "result": "not-found",
+          "url": "https://my.clevelandclinic.org/health/drugs/19742-diclofenac-topical"
+        },
+        {
+          "reason": "Cookie-consent wall blocked content retrieval",
+          "result": "blocked",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19841157/"
+        },
+        {
+          "reason": "403 on fetch",
+          "result": "blocked",
+          "url": "https://www.drugs.com/cdi/diclofenac-topical-gel.html"
+        },
+        {
+          "reason": "Fetched successfully but page is almost entirely site navigation boilerplate; could not locate quotable body content about the gel-vs-tablet distinction within retrieved segments",
+          "result": "no-practice-description",
+          "url": "https://patient.info/medicine/diclofenac-gelpatch-voltarol"
+        }
+      ],
+      "community": [
+        {
+          "description": "Diclofenac is available in different forms: tablets, capsules and suppositories that are prescription-only, versus gel, patches and plasters for joint pain that can be bought directly from pharmacies without a prescription.",
+          "source": {
+            "title": "About diclofenac - NHS",
+            "url": "https://www.nhs.uk/medicines/diclofenac/about-diclofenac/"
+          }
+        }
+      ],
+      "searchNotes": "Used NHS.uk About diclofenac page (directly fetched, UK National Health Service, reputable public body) to extract the OTC-pharmacy-availability-vs-prescription-only form distinction between topical and oral diclofenac, deliberately avoiding any dose/frequency instructions present elsewhere on the same page."
+    },
+    "catalog:medication:dutasteride": {
+      "attempts": [
+        {
+          "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+          "result": "no-practice-description",
+          "reason": "Fetched directly (NHS has no live dutasteride-specific or dutasteride-and-tamsulosin page; both slugs 404; this condition page is the closest live NHS source and mentions dutasteride only as one drug-class member among BPH treatments); indication-only mention, not a documented community-practice description."
+        }
+      ],
+      "community": [],
+      "searchNotes": "Dutasteride off-label hair-loss use is a dermatology-guideline-driven comparative treatment escalation (recasting expert recommendations), and all fetchable sources were commercial hair-clinic blogs. Left empty."
+    },
+    "catalog:medication:finasteride": {
+      "attempts": [
+        {
+          "url": "https://www.nhs.uk/medicines/finasteride/",
+          "result": "no-practice-description",
+          "reason": "Fetched directly; content describes indications (benign prostate enlargement vs. hair loss) and how to take it, which is indication/dosing information, not a distinct documented community protocol."
+        }
+      ],
+      "community": [],
+      "searchNotes": "Finasteride sources available either describe indication/access-policy (NHS) or dose-splitting practices (commercial hair-loss sites) that the task explicitly prohibits recasting as community protocol. Left empty."
+    },
+    "catalog:medication:ibuprofen": {
+      "attempts": [],
+      "community": [
+        {
+          "description": "Ibuprofen is available in several different forms, including tablets and capsules, gels and sprays, liquid, and granules that are mixed with water.",
+          "source": {
+            "title": "About ibuprofen for adults - NHS",
+            "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/"
+          }
+        }
+      ],
+      "searchNotes": "Used NHS ibuprofen-for-adults page (directly fetched) for the plain list of available OTC forms; deliberately excluded the extensive dose/frequency/overdose instructions on the same page."
+    },
+    "catalog:medication:insulin": {
+      "attempts": [
+        {
+          "reason": "Fetched directly; page content is about insulin-type selection and dosing/timing guidance, not delivery-device (pen/pump/syringe) practice description",
+          "result": "no-practice-description",
+          "url": "https://www.nhs.uk/medicines/insulin/insulin-for-type-1-diabetes/"
+        },
+        {
+          "reason": "Fetched; only returned a brand/type list fragment, no device-practice content",
+          "result": "no-practice-description",
+          "url": "https://www.nhs.uk/medicines/insulin/"
+        }
+      ],
+      "community": [],
+      "searchNotes": "Searched for insulin pen vs syringe vs pump delivery-device practice description; available search-synthesis described this well but the actually-fetched NHS pages covered insulin types/dosing timing rather than delivery-device practice with a quotable sentence. Left empty rather than rely on unfetched synthesis."
+    },
+    "catalog:medication:liraglutide": {
+      "attempts": [],
+      "community": [
+        {
+          "description": "Liraglutide is marketed under two different brand names for two different approved indications: as a lower-strength daily injection for type 2 diabetes, and as a higher-strength daily injection for chronic weight management.",
+          "source": {
+            "title": "Liraglutide for weight management: a critical review of the evidence (Obesity Science & Practice, PMC)",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5358074/"
+          }
+        }
+      ],
+      "searchNotes": "Used a peer-reviewed review article (PMC5358074) directly fetched; extracted only the dual-brand/dual-indication naming fact, deliberately excluding all weight-loss-outcome figures, mg doses, and efficacy comparisons in the same article to avoid recasting trial efficacy as community practice."
+    },
+    "catalog:medication:mazdutide": {
+      "attempts": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/innovent-announces-mazdutide-received-approval-from-chinas-national-medical-products-administration-nmpa-for-the-treatment-of-chronic-weight-management-302561434.html",
+          "result": "trial-only",
+          "reason": "Fetched directly; confirms China-only NMPA approval with trial-efficacy data, not an independent non-trial community practice."
+        }
+      ],
+      "community": [],
+      "searchNotes": "Mazdutide has very limited regulatory approval (China only) and no documented independent community practice distinct from trial/regulatory content. Left empty."
+    },
+    "catalog:medication:metformin": {
+      "attempts": [
+        {
+          "reason": "GeroScience review article on metformin healthspan evidence; entirely trial/mechanistic evidence discussion, no description of an off-label community-adoption practice as distinct from the TAME clinical trial",
+          "result": "trial-only",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6544683/"
+        },
+        {
+          "reason": "Review of metformin aging research; historical/mechanistic/trial content only, no literal quotable sentence describing biohacker off-label community practice independent of trial/efficacy framing",
+          "result": "trial-only",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6779524/"
+        }
+      ],
+      "community": [],
+      "searchNotes": "Off-label longevity use of metformin by biohackers is a real documented phenomenon per search-synthesis, but every actually-fetched reputable source available was trial/mechanistic-evidence content; using it would recast a clinical-trial regimen as community practice, which is prohibited. Left empty."
+    },
+    "catalog:medication:minoxidil": {
+      "attempts": [],
+      "community": [
+        {
+          "description": "Minoxidil for hair loss is available as a topical solution/foam (FDA-approved) and is also used off-label in oral tablet form for alopecia, a practice distinct from its original approved topical and antihypertensive uses.",
+          "source": {
+            "title": "Low-Dose Oral Minoxidil for Alopecia: A Comprehensive Review (PMC)",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10806356/"
+          }
+        }
+      ],
+      "searchNotes": "Used a peer-reviewed review article (PMC10806356) fetched directly; extracted only the factual form/approval-status distinction (topical FDA-approved vs. oral off-label), deliberately excluding all dosing figures (0.25-5mg/day) and efficacy/safety claims present in the same article."
+    },
+    "catalog:medication:naproxen": {
+      "attempts": [],
+      "community": [
+        {
+          "description": "Naproxen is available as tablets, a liquid that is swallowed, and effervescent tablets that dissolve in water before drinking.",
+          "source": {
+            "title": "Naproxen - NHS",
+            "url": "https://www.nhs.uk/medicines/naproxen/"
+          }
+        }
+      ],
+      "searchNotes": "Used NHS naproxen page (directly fetched) for the plain list of available forms; excluded dosing-frequency, missed-dose, and overdose-advice content from the same page."
+    },
+    "catalog:medication:oral-rehydration": {
+      "attempts": [
+        {
+          "url": "https://www.who.int/news-room/fact-sheets/detail/diarrhoeal-disease",
+          "result": "mismatched",
+          "reason": "Fetched directly; page documents ORS as a standard treatment within a clinical/public-health fact sheet, not a self-directed community-practice description, and any excerpt approaching recipe/preparation detail would risk functioning as self-treat preparation instructions, which the task excludes."
+        }
+      ],
+      "community": [],
+      "searchNotes": "WHO oral rehydration salts are a legitimate, well-documented public-health practice, but the task explicitly prohibits instructions to self-treat, and any description detailed enough to describe the actual practice risks including recipe/preparation instructions. Left empty as the safer compliant outcome."
+    },
+    "catalog:medication:orforglipron": {
+      "attempts": [
+        {
+          "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-new-molecular-entity-under-national-priority-voucher-program",
+          "result": "trial-only",
+          "reason": "Fetched directly; confirms recent (2026) first-time FDA approval (brand Foundayo) with trial-efficacy and dosing content only; no independent non-trial community practice is documented yet for this newly approved drug."
+        }
+      ],
+      "community": [],
+      "searchNotes": "Orforglipron is a newly approved drug; no documented community practice independent of clinical trial/launch coverage currently exists in reputable sources. Left empty."
+    },
+    "catalog:medication:oxytocin": {
+      "attempts": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7815514/",
+          "result": "trial-only",
+          "reason": "Fetched directly; this review documents intranasal oxytocin's social-cognition effects almost exclusively within experimental/clinical-research administration protocols, not as an independent non-trial community practice."
+        }
+      ],
+      "community": [],
+      "searchNotes": "Oxytocin use outside clinical (labor induction/postpartum) contexts is overwhelmingly research-trial based (intranasal social-bonding studies); this would constitute recasting a trial regimen as community practice, which is prohibited. Left empty."
+    },
+    "catalog:medication:paracetamol": {
+      "attempts": [],
+      "community": [
+        {
+          "description": "Paracetamol is available in different forms, including tablets and capsules, liquid oral suspension, and suppositories.",
+          "source": {
+            "title": "Paracetamol for adults - NHS",
+            "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/"
+          }
+        }
+      ],
+      "searchNotes": "Used NHS paracetamol-for-adults page (directly fetched) for the plain list of available forms; deliberately excluded all mg-strength and dosing-frequency instructions that dominate the rest of the page."
+    },
+    "catalog:medication:pentosan-polysulfate": {
+      "attempts": [
+        {
+          "url": "https://medlineplus.gov/druginfo/meds/a602007.html",
+          "result": "no-practice-description",
+          "reason": "Fetched directly; the live page content is medication storage/disposal boilerplate (container storage, take-back programs), and other available sources (FDA label, Drugs.com) are prescription dosing/administration/warning content for a narrow interstitial-cystitis population; no documented independent community-practice fact distinct from the clinical label was found."
+        }
+      ],
+      "community": [],
+      "searchNotes": "Pentosan polysulfate (Elmiron) is a narrow-indication prescription drug with no documented community protocol beyond its clinical administration label. Left empty."
+    },
+    "catalog:medication:sildenafil": {
+      "attempts": [
+        {
+          "url": "https://www.nhs.uk/medicines/sildenafil-viagra/",
+          "result": "no-practice-description",
+          "reason": "Fetched directly (plain /medicines/sildenafil/ slug 404s; this is the correct live NHS page); content is dosing/administration/form guidance, not an independent non-dosing community-practice fact."
+        }
+      ],
+      "community": [],
+      "searchNotes": "Sildenafil generic-vs-brand distinction is purely cosmetic/commercial and sourced only from online-pharmacy retailer blogs, which the task flags as commercially dubious; no reputable non-commercial source with a genuine practice description was found. Left empty."
+    },
+    "catalog:medication:survodutide": {
+      "attempts": [
+        {
+          "url": "https://markets.businessinsider.com/news/stocks/zealand-pharma-announces-survodutide-phase-3-synchronize-2-trial",
+          "result": "trial-only",
+          "reason": "Fetched directly; confirms survodutide remains in phase 3 trial reporting (SYNCHRONIZE-2) with no approval; Boehringer Ingelheim's own site returned an Incapsula bot-challenge page and was not usable."
+        }
+      ],
+      "community": [],
+      "searchNotes": "Survodutide is investigational; absence of a documented non-trial community practice is the expected and legitimate outcome. Left empty."
+    },
+    "catalog:medication:tadalafil": {
+      "attempts": [
+        {
+          "url": "https://www.nhs.uk/medicines/tadalafil/",
+          "result": "trial-only",
+          "reason": "Fetched directly; the on-demand vs. daily-low-dose distinction is prescribing/dosing-schedule guidance from clinical sources, which the task prohibits recasting as community practice."
+        }
+      ],
+      "community": [],
+      "searchNotes": "Tadalafil practice differences (on-demand vs. daily) are inherently dosing-schedule content; no non-dosing community-practice fact was identified. Left empty."
+    },
+    "catalog:medication:teriparatide": {
+      "attempts": [
+        {
+          "url": "https://medlineplus.gov/druginfo/meds/a603018.html",
+          "result": "no-practice-description",
+          "reason": "Fetched directly; content is clinical administration-instruction detail (pen injection technique, site rotation, disposal) for a narrow prescription-only osteoporosis population, not a community-practice description."
+        }
+      ],
+      "community": [],
+      "searchNotes": "Teriparatide is a narrowly prescribed osteoporosis injectable with no documented off-label/biohacker community practice distinct from its FDA-labeled clinical administration instructions. Left empty."
+    },
+    "catalog:medication:tesofensine": {
+      "attempts": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3055463/",
+          "result": "trial-only",
+          "reason": "Fetched directly; confirms tesofensine is 'currently in clinical development' with only rat-model dosing data in this article; ClinicalTrials.gov study/search pages returned only glossary/stub boilerplate and were not usable."
+        }
+      ],
+      "community": [],
+      "searchNotes": "Tesofensine is investigational; absence of a documented non-trial community practice is the expected and legitimate outcome. Left empty."
+    },
+    "catalog:recovery:acupuncture": {
+      "attempts": [
+        {
+          "reason": "Fetched live Kaiser Permanente page describing the session format.",
+          "result": "supports-description",
+          "url": "https://healthy.kaiserpermanente.org/health-wellness/healtharticle.acupuncture-101"
+        },
+        {
+          "reason": "NCCIH fact-sheet page redirected and only returned an acknowledgments stub, not the substantive content; could not extract a usable quote.",
+          "result": "blocked",
+          "url": "https://www.nccih.nih.gov/health/acupuncture-what-you-need-to-know"
+        }
+      ],
+      "community": [
+        {
+          "description": "A Kaiser Permanente patient-education article describes a typical acupuncture session as lasting 20 to 30 minutes, with the practitioner dimming the lights and playing quiet music while checking in on the patient's comfort.",
+          "source": {
+            "title": "Acupuncture 101 - Kaiser Permanente",
+            "url": "https://healthy.kaiserpermanente.org/health-wellness/healtharticle.acupuncture-101"
+          }
+        }
+      ],
+      "searchNotes": "Searched reputable clinical-system patient-education pages describing an actual acupuncture session rather than efficacy studies already in evidenceSummary."
+    },
+    "catalog:recovery:compression": {
+      "attempts": [
+        {
+          "reason": "Fetched live article (academic-reviewed journalism outlet); confirms athlete/wellness-business use and the sequential-inflation mechanism; deliberately omitted the pressure/duration figures it also gives to avoid stating a dose-like regimen.",
+          "result": "supports-description",
+          "url": "https://theconversation.com/pneumatic-compression-therapy-can-it-really-help-olympians-or-you-recover-after-exercise-236228"
+        }
+      ],
+      "community": [
+        {
+          "description": "The Conversation reports that intermittent pneumatic compression, delivered via inflatable sleeves or boots, is now used by athletes and in wellness businesses after exercise, applying sequential pressure from the end of the limb toward the trunk.",
+          "source": {
+            "title": "Pneumatic compression therapy: can it really help Olympians (or you) recover after exercise? - The Conversation",
+            "url": "https://theconversation.com/pneumatic-compression-therapy-can-it-really-help-olympians-or-you-recover-after-exercise-236228"
+          }
+        }
+      ],
+      "searchNotes": "Chose an editorially reviewed academic-journalism source over commercial recovery-boot vendor pages and small blogs that dominate search results for this device."
+    },
+    "catalog:recovery:float-tank": {
+      "attempts": [
+        {
+          "reason": "Fetched live Cleveland Clinic page; confirms the tank/session description.",
+          "result": "supports-description",
+          "url": "https://health.clevelandclinic.org/float-therapy-benefits"
+        }
+      ],
+      "community": [
+        {
+          "description": "Cleveland Clinic describes float therapy (sensory deprivation therapy) as taking place in a dark, quiet tank filled with body-temperature, Epsom-salt-saturated water that lets a person float without touching a surface.",
+          "source": {
+            "title": "The Benefits of Float Therapy - Cleveland Clinic",
+            "url": "https://health.clevelandclinic.org/float-therapy-benefits"
+          }
+        }
+      ],
+      "searchNotes": "Searched for a reputable clinical description of the float-tank practice itself (not just the research summarized in evidenceSummary); used Cleveland Clinic over flotation-center marketing pages."
+    },
+    "catalog:recovery:hyperbaric-oxygen": {
+      "attempts": [
+        {
+          "reason": "Fetched live Harvard Health page; confirms the documented off-label clinic practice, stated neutrally as unproven rather than as a benefit claim.",
+          "result": "supports-description",
+          "url": "https://www.health.harvard.edu/healthy-aging-and-longevity/hyperbaric-oxygen-therapy-evidence-based-uses-and-unproven-claims"
+        }
+      ],
+      "community": [
+        {
+          "description": "Harvard Health reports that some treatment centers offer hyperbaric oxygen therapy sessions for conditions outside the FDA-approved list, such as Alzheimer's disease, autism, cancer and Lyme disease, which the article states lack scientific backing.",
+          "source": {
+            "title": "Hyperbaric oxygen therapy: Evidence-based uses and unproven claims - Harvard Health",
+            "url": "https://www.health.harvard.edu/healthy-aging-and-longevity/hyperbaric-oxygen-therapy-evidence-based-uses-and-unproven-claims"
+          }
+        }
+      ],
+      "searchNotes": "Avoided biohacker-clinic marketing pages describing HBOT protocols in dose-like detail (sessions/week, ATA pressure); used Harvard Health's neutral description of the actual off-label-use phenomenon instead."
+    },
+    "catalog:recovery:massage": {
+      "attempts": [
+        {
+          "reason": "Fetched live AMTA trade-journal article; confirms the documented technique and timing description.",
+          "result": "supports-description",
+          "url": "https://www.amtamassage.org/publications/massage-therapy-journal/post-event-sports-massage/"
+        },
+        {
+          "reason": "Mayo Clinic Press returned HTTP 403 on fetch; could not verify content directly, so it was not used.",
+          "result": "blocked",
+          "url": "https://mcpress.mayoclinic.org/nutrition-fitness/these-5-things-may-help-improve-recovery-after-a-tough-workout/"
+        }
+      ],
+      "community": [
+        {
+          "description": "The American Massage Therapy Association's trade journal describes post-event sports massage as using lighter, smoother strokes - compression, effleurage and passive stretching - rather than deep work, typically done soon after activity.",
+          "source": {
+            "title": "Post-Event Sports Massage - Massage Therapy Journal (AMTA)",
+            "url": "https://www.amtamassage.org/publications/massage-therapy-journal/post-event-sports-massage/"
+          }
+        }
+      ],
+      "searchNotes": "Searched sports-medicine and massage-therapy professional sources rather than the shoulder-pain trial already in evidenceSummary."
+    },
+    "catalog:recovery:red-light": {
+      "attempts": [
+        {
+          "reason": "Fetched live Cleveland Clinic page (full article across two fetches); confirms the range of venues where the practice occurs.",
+          "result": "supports-description",
+          "url": "https://my.clevelandclinic.org/health/articles/22114-red-light-therapy"
+        }
+      ],
+      "community": [
+        {
+          "description": "Cleveland Clinic notes that beyond medical-office and at-home devices, red light therapy is also promoted at beauty spas and salons, saunas, tanning salons, gyms and wellness centers.",
+          "source": {
+            "title": "Red Light Therapy: Benefits, Side Effects and Uses - Cleveland Clinic",
+            "url": "https://my.clevelandclinic.org/health/articles/22114-red-light-therapy"
+          }
+        }
+      ],
+      "searchNotes": "Used Cleveland Clinic over commercial panel-vendor buyer guides, which dominate search results and are commercially interested parties."
+    },
+    "catalog:recovery:sauna": {
+      "attempts": [
+        {
+          "reason": "Fetched live official Finnish national living-heritage wiki page; confirms the described frequency and tradition.",
+          "result": "supports-description",
+          "url": "https://wiki.aineetonkulttuuriperinto.fi/wiki/Sauna_bathing"
+        }
+      ],
+      "community": [
+        {
+          "description": "Finland's national living-heritage register describes sauna bathing as practiced by most Finns throughout life, roughly once every ten days, historically concentrated on Saturdays though now spread across the week.",
+          "source": {
+            "title": "Sauna bathing - Elava perinto (Finnish national inventory of living heritage)",
+            "url": "https://wiki.aineetonkulttuuriperinto.fi/wiki/Sauna_bathing"
+          }
+        }
+      ],
+      "searchNotes": "Preferred the official Finnish heritage-registry source over tourism/lifestyle blogs for describing the actual community practice."
+    },
+    "catalog:recovery:screen-curfew": {
+      "attempts": [
+        {
+          "reason": "Fetched live CDC page; confirms the documented practice.",
+          "result": "supports-description",
+          "url": "https://www.cdc.gov/sleep/about/index.html"
+        },
+        {
+          "reason": "Sleep Foundation page returned HTTP 403 on fetch; not used.",
+          "result": "blocked",
+          "url": "https://www.sleepfoundation.org/bedroom-environment/technology-in-the-bedroom"
+        }
+      ],
+      "community": [
+        {
+          "description": "The CDC lists turning off electronic devices at least 30 minutes before bedtime among its recommended sleep habits.",
+          "source": {
+            "title": "Getting Enough Sleep - CDC",
+            "url": "https://www.cdc.gov/sleep/about/index.html"
+          }
+        }
+      ],
+      "searchNotes": "Already covered the self-report timing-gap study cited in evidenceSummary; searched separately for a concrete documented device-curfew practice, landing on CDC sleep-hygiene guidance."
+    },
+    "catalog:recovery:sunlight": {
+      "attempts": [
+        {
+          "reason": "Banner Health page (would have documented the named \"sun gating\" practice) returned HTTP 403 on fetch.",
+          "result": "blocked",
+          "url": "https://www.bannerhealth.com/healthcareblog/teach-me/sun-gating-and-morning-light-for-better-sleep"
+        },
+        {
+          "reason": "Page rendered as an empty JS shell with no extractable article text on fetch.",
+          "result": "blocked",
+          "url": "https://health.yahoo.com/wellness/articles/circadian-sunmaxxing-free-morning-habit-230000245.html"
+        },
+        {
+          "reason": "Returned HTTP 403 on fetch.",
+          "result": "blocked",
+          "url": "https://theeverygirl.com/getting-morning-sunlight-every-day/"
+        }
+      ],
+      "community": [],
+      "searchNotes": "The viral \\\"morning sunlight\\\"/\\\"sun gating\\\" practice is widely reported (TikTok trend, Banner Health, Yahoo, Us Magazine) but every reasonably reputable, non-paywalled page found was either blocked or rendered as an empty client-side app; the remaining accessible material was Huberman-style expert advice, which the task instructions direct not to recast as community practice. Left empty rather than use an unverifiable or advice-based source."
+    },
+    "catalog:supplement:5-amino-1mq": {
+      "attempts": [
+        {
+          "url": "https://peptidemind.com/where-to-buy-5-amino-1mq",
+          "result": "trial-only",
+          "reason": "Fetched directly; page is a commercial vendor-comparison listing for an unapproved research chemical with no human trials, confirming a commercially-dubious-seller-only landscape and no documented non-trial human practice."
+        }
+      ],
+      "community": [],
+      "searchNotes": "Experimental NNMT-inhibitor compound; only rodent data and research-chemical seller marketing exist, no legitimate community-practice source. Left empty per task guidance that absence is a legitimate outcome for hard-to-source experimental compounds."
+    },
+    "catalog:supplement:5-htp": {
+      "attempts": [
+        {
+          "url": "https://www.webmd.com/vitamins-and-supplements/5-htp-hydroxytryptophan",
+          "result": "no-practice-description",
+          "reason": "Fetched directly; content is dosing (150-300mg/day), serotonin-syndrome/interaction safety information, and efficacy claims; no non-dosing practice/form fact found; examine.com was also attempted and returned 403."
+        },
+        {
+          "url": "https://www.examine.com/supplements/5-htp/",
+          "result": "blocked",
+          "reason": "403 Forbidden on fetch"
+        }
+      ],
+      "community": [],
+      "searchNotes": "Serotonin-precursor supplement; search returned only dosing/safety-warning content (interaction with SSRIs/serotonin syndrome risk), which would require recasting expert safety advice. Left empty."
+    },
+    "catalog:supplement:aicar": {
+      "attempts": [
+        {
+          "url": "https://www.usada.org/spirit-of-sport/aicar-and-other-prohibited-amp-activated-protein-kinase-activators/",
+          "result": "trial-only",
+          "reason": "Fetched directly; confirms AICAR is 'not approved for therapeutic use in humans anywhere in the world,' prohibited at all times under WADA's Hormone and Metabolic Modulators category, evaluated only in preclinical/clinical-trial research; no documented non-trial human practice exists."
+        }
+      ],
+      "community": [],
+      "searchNotes": "Experimental AMPK-activator research chemical, banned in sport, no legitimate non-trial human practice documented. Left empty."
+    },
+    "catalog:supplement:alpha-gpc": {
+      "attempts": [
+        {
+          "reason": "Content is dosing/stacking-ratio advice (300-600mg, stacking protocols) from a commercial nootropics information site, not an acceptable community-practice source per task dosing/schedule restrictions",
+          "result": "no-practice-description",
+          "url": "https://nootropicsexpert.com/alpha-gpc/"
+        }
+      ],
+      "community": [],
+      "searchNotes": "Only sources found were nootropic-stack dosing-protocol sites and forum threads (Reddit/Longecity) describing specific mg ratios, which would require recasting dose/schedule guidance as common usage. Left empty."
+    },
+    "catalog:supplement:aniracetam": {
+      "attempts": [
+        {
+          "reason": "Same dosing/stacking-ratio issue as alpha-GPC; no reputable non-dosing source identified",
+          "result": "no-practice-description",
+          "url": "https://nootropicsexpert.com/aniracetam/"
+        }
+      ],
+      "community": [],
+      "searchNotes": "Racetam nootropic; only dosing-focused nootropic-community sites found. Left empty."
+    },
+    "catalog:supplement:ashwagandha": {
+      "attempts": [
+        {
+          "url": "https://www.nccih.nih.gov/health/ashwagandha",
+          "result": "blocked",
+          "reason": "Standard web_fetch (including raw:true) only returns a generic NCCIH Clearinghouse stub, because the page is a Gatsby-rendered single-page app whose body text loads client-side."
+        },
+        {
+          "url": "https://www.nccih.nih.gov/page-data/health/ashwagandha/page-data.json",
+          "result": "supports-description",
+          "reason": "Fetched directly; this is the same NCCIH page's underlying Gatsby data endpoint, which serves the full factsheet body as structured JSON, including the traditional-use sentence quoted above. Used in place of the HTML view per the correction instruction that NCCIH content is retrievable, not blocked outright."
+        }
+      ],
+      "community": [
+        {
+          "description": "Ashwagandha root has a long history of use as a botanical in traditional Ayurvedic medicine.",
+          "source": {
+            "title": "Ashwagandha - NCCIH",
+            "url": "https://www.nccih.nih.gov/health/ashwagandha"
+          }
+        }
+      ],
+      "searchNotes": "Correction: NCCIH's ashwagandha page is retrievable, but the default web_fetch extractor only returns a Clearinghouse/footer stub because the site is a Gatsby SPA; fetching the page's page-data.json endpoint directly surfaced the real factsheet text, including a non-dosing, non-efficacy traditional-use sentence, so this entry is upgraded from empty to populated."
+    },
+    "catalog:supplement:bcaa": {
+      "attempts": [
+        {
+          "url": "https://ods.od.nih.gov/factsheets/BranchedChainAminoAcids-HealthProfessional/",
+          "result": "blocked",
+          "reason": "403 Forbidden on fetch"
+        }
+      ],
+      "community": [],
+      "searchNotes": "Branched-chain amino acid powder; distinguishing a non-dosing fact from the protein-synthesis dosing literature was not achieved within search budget. Left empty."
+    },
+    "catalog:supplement:beetroot": {
+      "attempts": [
+        {
+          "url": "https://mcpress.mayoclinic.org/nutrition-fitness/preworkout-supplements-whats-safe-what-should-you-avoid/",
+          "result": "blocked",
+          "reason": "403 Forbidden on fetch"
+        },
+        {
+          "url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2024.1347242/full",
+          "result": "trial-only",
+          "reason": "Fetched directly; content is dosing/timing (400-800mg nitrate, 2-3 hours pre-exercise) performance-trial literature; no separable non-dosing practice fact found."
+        }
+      ],
+      "community": [],
+      "searchNotes": "Beetroot/nitrate pre-workout research is dosing- and performance-trial-centric; left empty rather than recast trial dosing protocols as community practice."
+    },
+    "catalog:supplement:berberine": {
+      "attempts": [
+        {
+          "reason": "Reputable cancer-center integrative medicine reference documents the traditional-use history distinctly from the clinical-trial/supplement-marketing content on the same page, which was excluded",
+          "result": "supports-description",
+          "url": "https://www.mskcc.org/cancer-care/integrative-medicine/herbs/berberine"
+        }
+      ],
+      "community": [
+        {
+          "description": "Berberine is an alkaloid found in plants such as barberry, Chinese goldthread, goldenseal, and Oregon grape, and is commonly used in traditional Chinese medicine and Ayurveda for digestive and inflammatory complaints.",
+          "source": {
+            "title": "Berberine | Memorial Sloan Kettering Cancer Center - About Herbs",
+            "url": "https://www.mskcc.org/cancer-care/integrative-medicine/herbs/berberine"
+          }
+        }
+      ],
+      "searchNotes": "Found a reputable, fetchable MSKCC About Herbs entry describing traditional/historical use; carefully excluded the extensive clinical-trial, dosing, and efficacy content on the same page."
+    },
+    "catalog:supplement:beta-alanine": {
+      "attempts": [
+        {
+          "url": "https://www.healthline.com/nutrition/beta-alanine-101",
+          "result": "no-practice-description",
+          "reason": "Fetched directly; content describes paresthesia (tingling) tied to single-dose sizing and efficacy claims, not separable into a non-dosing practice fact."
+        }
+      ],
+      "community": [],
+      "searchNotes": "Sports supplement; the one distinctive non-efficacy fact (tingling sensation) is inherently tied to dosing advice (split-dosing to avoid it), so left empty rather than reframe dosing guidance."
+    },
+    "catalog:supplement:boron": {
+      "attempts": [
+        {
+          "url": "https://ods.od.nih.gov/factsheets/Boron-HealthProfessional/",
+          "result": "blocked",
+          "reason": "403 Forbidden on fetch"
+        }
+      ],
+      "community": [],
+      "searchNotes": "Trace mineral supplement; left empty, NIH ODS fact sheet blocked as with other items in this category."
+    },
+    "catalog:supplement:citrulline": {
+      "attempts": [
+        {
+          "reason": "Peer-reviewed nutrition review confirms watermelon as the natural food source basis for citrulline supplements; avoided the nitric-oxide efficacy-mechanism claims in the same article",
+          "result": "supports-description",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12566930/"
+        }
+      ],
+      "community": [
+        {
+          "description": "L-citrulline is an amino acid naturally present in high concentrations in watermelon, including its rind, which is the basis for citrulline-containing food and supplement products.",
+          "source": {
+            "title": "Watermelon Nutritional Composition with a Focus on L-Citrulline (Nutrients, MDPI)",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12566930/"
+          }
+        }
+      ],
+      "searchNotes": "Used only the plain food-source fact fragment of a peer-reviewed review, excluding all cardiovascular-benefit/mechanism claims."
+    },
+    "catalog:supplement:coenzyme-q10": {
+      "attempts": [
+        {
+          "reason": "Page resolves only to the generic NCCIH Clearinghouse contact stub, not actual fact-sheet content, the same routing issue seen on ashwagandha and melatonin NCCIH pages",
+          "result": "blocked",
+          "url": "https://www.nccih.nih.gov/health/coenzyme-q10"
+        },
+        {
+          "reason": "403 Forbidden on fetch, consistent with other Mayo Clinic pages in this research",
+          "result": "blocked",
+          "url": "https://www.mayoclinic.org/drugs-supplements-coenzyme-q10/art-20362602"
+        }
+      ],
+      "community": [],
+      "searchNotes": "Could not find a fetchable reputable source distinguishing non-dosing ubiquinone/ubiquinol form facts from dosing-heavy content (Harvard Nutrition Source has no dedicated CoQ10 page). Left empty."
+    },
+    "catalog:supplement:collagen": {
+      "attempts": [
+        {
+          "reason": "Fetched page describes common collagen supplement product forms",
+          "result": "supports-description",
+          "url": "https://nutritionsource.hsph.harvard.edu/collagen/"
+        }
+      ],
+      "community": [
+        {
+          "description": "Oral collagen supplements are commonly sold as pills, powders, or in certain foods, often marketed as \"collagen peptides\" or \"hydrolyzed collagen\".",
+          "source": {
+            "title": "Collagen - The Nutrition Source, Harvard T.H. Chan School of Public Health",
+            "url": "https://nutritionsource.hsph.harvard.edu/collagen/"
+          }
+        }
+      ],
+      "searchNotes": "Harvard Nutrition Source page fetched and verified."
+    },
+    "catalog:supplement:curcumin": {
+      "attempts": [
+        {
+          "reason": "Fetched page explicitly distinguishes curcumin from turmeric and describes the piperine-combination formulation practice",
+          "result": "supports-description",
+          "url": "https://www.health.harvard.edu/healthy-aging-and-longevity/turmeric-benefits-a-look-at-the-evidence"
+        }
+      ],
+      "community": [
+        {
+          "description": "Curcumin supplements are commonly formulated or paired with piperine (black pepper extract), which is understood to enhance curcumin absorption.",
+          "source": {
+            "title": "Turmeric benefits: A look at the evidence - Harvard Health",
+            "url": "https://www.health.harvard.edu/healthy-aging-and-longevity/turmeric-benefits-a-look-at-the-evidence"
+          }
+        }
+      ],
+      "searchNotes": "Source explicitly defines curcumin as distinct from whole turmeric, avoiding the curcumin/turmeric mismatch flagged in task instructions."
+    },
+    "catalog:supplement:fenugreek": {
+      "attempts": [
+        {
+          "url": "https://www.britannica.com/plant/fenugreek",
+          "result": "blocked",
+          "reason": "403 Forbidden on fetch"
+        },
+        {
+          "url": "https://www.nccih.nih.gov/page-data/health/fenugreek/page-data.json",
+          "result": "supports-description",
+          "reason": "Fetched directly; this NCCIH Gatsby data endpoint serves the full factsheet body as structured JSON, including the culinary/traditional-medicine-use sentence quoted above, since the standard HTML page only serves a Clearinghouse stub via web_fetch."
+        }
+      ],
+      "community": [
+        {
+          "description": "Fenugreek seeds have traditionally been used both as a culinary spice and in traditional medicine.",
+          "source": {
+            "title": "Fenugreek - NCCIH",
+            "url": "https://www.nccih.nih.gov/health/fenugreek"
+          }
+        }
+      ],
+      "searchNotes": "Correction: replaced the prior search-synthesis-only placeholder with an actual fetched source. NCCIH's fenugreek page is retrievable via its page-data.json endpoint (the default web_fetch extractor only returns a Clearinghouse stub for the Gatsby-rendered HTML view); this surfaced a real, non-dosing culinary/traditional-use quote, so this entry is upgraded from empty to populated."
+    },
+    "catalog:supplement:glycine": {
+      "attempts": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4397399/",
+          "result": "no-practice-description",
+          "reason": "Fetched directly; content is dose-specific (3g/day, 60g/day) sleep-mechanism research, not a neutral practice/form description."
+        }
+      ],
+      "community": [],
+      "searchNotes": "Amino acid supplement for sleep; content found recasts expert dosing advice, which is prohibited. Left empty."
+    },
+    "catalog:supplement:inositol": {
+      "attempts": [
+        {
+          "reason": "Cleveland Clinic drugs/ pages are clinical administration instruction sheets (dose/schedule/overdose format), rejected as a source type for community-practice framing, consistent with psyllium/saw-palmetto/green-tea findings elsewhere in this research",
+          "result": "no-practice-description",
+          "url": "https://my.clevelandclinic.org/health/drugs/25173-inositol"
+        }
+      ],
+      "community": [],
+      "searchNotes": "PCOS/metabolic supplement; only dosing-heavy sources found (2-4g/day). Left empty."
+    },
+    "catalog:supplement:l-carnitine": {
+      "attempts": [
+        {
+          "url": "https://www.mayoclinic.org/drugs-supplements-l-carnitine/art-20364833",
+          "result": "blocked",
+          "reason": "403 Forbidden on fetch"
+        }
+      ],
+      "community": [],
+      "searchNotes": "Left empty; red-meat food-source angle considered but not independently verified via a fetched reputable page within budget."
+    },
+    "catalog:supplement:l-theanine": {
+      "attempts": [
+        {
+          "url": "https://www.mskcc.org/cancer-care/integrative-medicine/herbs/l-theanine",
+          "result": "no-practice-description",
+          "reason": "Fetched directly; all content is mechanism/dose-focused (mg/kg animal data); the previously considered 'L-theanine co-occurs with caffeine in tea leaves' claim does not appear in this actually-fetched page text and was correctly left unused (it had only come from search-synthesis, not a real fetched page)."
+        }
+      ],
+      "community": [],
+      "searchNotes": "Considered the natural co-occurrence of L-theanine and caffeine in tea leaves as a non-dosing fact but could not find a reputable fetchable source stating this plainly outside of dosing-ratio marketing content. Left empty."
+    },
+    "catalog:supplement:magnesium": {
+      "attempts": [
+        {
+          "reason": "Page is physician dosing/timing advice for sleep, not a community-practice description; excluded per task rule against recasting expert dosing advice",
+          "result": "trial-only",
+          "url": "https://health.clevelandclinic.org/does-magnesium-help-you-sleep"
+        },
+        {
+          "reason": "Fetched page confirms supplement/antacid/laxative product-form distinction without dose amounts",
+          "result": "supports-description",
+          "url": "https://nutritionsource.hsph.harvard.edu/magnesium/"
+        }
+      ],
+      "community": [
+        {
+          "description": "Magnesium is sold as a dietary supplement and is also an ingredient in some over-the-counter antacids and laxatives, in addition to being obtained from food.",
+          "source": {
+            "title": "Magnesium - The Nutrition Source, Harvard T.H. Chan School of Public Health",
+            "url": "https://nutritionsource.hsph.harvard.edu/magnesium/"
+          }
+        }
+      ],
+      "searchNotes": "Avoided Cleveland Clinic sleep-dosing article; used a neutral forms-only fact instead."
+    },
+    "catalog:supplement:melatonin": {
+      "attempts": [
+        {
+          "reason": "Page consistently serves unrelated children-specific melatonin content regardless of exact URL path tried, a recurring routing quirk on this NCCIH page",
+          "result": "blocked",
+          "url": "https://www.nccih.nih.gov/health/melatonin"
+        },
+        {
+          "reason": "CDC travel-health page only discusses efficacy evidence for melatonin and COVID-19/altitude, not a documented jet-lag practice description, and mixing categories would misrepresent the source",
+          "result": "no-practice-description",
+          "url": "https://www.cdc.gov/yellow-book/hcp/preparing-international-travelers/complementary-and-integrative-health-approaches.html"
+        }
+      ],
+      "community": [],
+      "searchNotes": "Attempted CDC Yellow Book and NCCIH; neither yielded a non-efficacy, non-trial practice description suitable for melatonin. Left empty."
+    },
+    "catalog:supplement:methylene-blue": {
+      "attempts": [
+        {
+          "url": "https://nootropicsexpert.com/methylene-blue/",
+          "result": "no-practice-description",
+          "reason": "Fetched directly; content is dose-specific (0.5-4 mg/kg/day) with efficacy claims and describes a dangerous off-label MAOI-like interaction risk with SSRIs, which the task explicitly prohibits recasting as observed common usage."
+        }
+      ],
+      "community": [],
+      "searchNotes": "Off-label nootropic use of a dye/methemoglobinemia drug; content found is exactly the dose-and-interaction-heavy material the task instructs not to recast as community practice. Left empty."
+    },
+    "catalog:supplement:nac": {
+      "attempts": [
+        {
+          "url": "https://www.fda.gov/food/hfp-constituent-updates/fda-releases-final-guidance-enforcement-discretion-certain-nac-products",
+          "result": "no-practice-description",
+          "reason": "Fetched directly; content concerns FDA regulatory/enforcement-discretion status of NAC as a dietary supplement, not a documented community practice/form."
+        }
+      ],
+      "community": [],
+      "searchNotes": "N-acetylcysteine; regulatory-status information found is not a community-practice description. Left empty."
+    },
+    "catalog:supplement:nad-plus": {
+      "attempts": [
+        {
+          "url": "https://www.gethealthspan.com/research/article/nad-injections-benefits",
+          "result": "no-practice-description",
+          "reason": "Fetched directly; this commercial longevity-clinic article compares delivery methods (IV, subcutaneous injection, oral precursors) with dose-specific trial citations (e.g. 1,000 mg/day oral NR) and efficacy claims; confirms a commercial-wellness-blog-dominated source landscape with no independent, non-dosing, non-commercial community-practice fact."
+        }
+      ],
+      "community": [],
+      "searchNotes": "Left empty; commercial-only source landscape for this compound."
+    },
+    "catalog:supplement:nmn": {
+      "attempts": [
+        {
+          "reason": "Commercial vitamin retailer site, rejected as commercially dubious per task source-quality rules despite describing capsule/sublingual/powder forms",
+          "result": "blocked",
+          "url": "https://www.mtangelvitamins.com/pages/nmn-forms-sublingual-vs-capsule-vs-powder"
+        }
+      ],
+      "community": [],
+      "searchNotes": "NMN supplement forms are documented only on commercial retailer/review sites; no reputable non-commercial source found. Left empty."
+    },
+    "catalog:supplement:omega-3": {
+      "attempts": [
+        {
+          "reason": "Fetched page describes fish oil vs algal oil supplement forms",
+          "result": "supports-description",
+          "url": "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/fats-and-cholesterol/types-of-fat/omega-3-fats/"
+        }
+      ],
+      "community": [
+        {
+          "description": "People who want marine omega-3s without eating fish sometimes use algal oil, a vegan fish-oil alternative derived from the algae that fish themselves eat.",
+          "source": {
+            "title": "Omega-3 Fats - The Nutrition Source, Harvard T.H. Chan School of Public Health",
+            "url": "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/fats-and-cholesterol/types-of-fat/omega-3-fats/"
+          }
+        }
+      ],
+      "searchNotes": "Harvard Nutrition Source page fetched and verified; avoided the page's AHA dosing recommendations."
+    },
+    "catalog:supplement:plant-protein": {
+      "attempts": [
+        {
+          "reason": "Describes documented food-combining/complete-protein practice for plant-based diets",
+          "result": "supports-description",
+          "url": "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/protein/"
+        }
+      ],
+      "community": [
+        {
+          "description": "Plant-based protein sources such as quinoa and chia seeds are considered complete plant proteins, meaning they contain all the essential amino acids, unlike many other plant foods which must be combined to supply the full set.",
+          "source": {
+            "title": "Protein | The Nutrition Source",
+            "url": "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/protein/"
+          }
+        }
+      ],
+      "searchNotes": "Used Harvard protein overview; avoided the quantitative daily-gram intake recommendations."
+    },
+    "catalog:supplement:potassium": {
+      "attempts": [
+        {
+          "reason": "Neutral structural fact about supplement vs food-source forms",
+          "result": "supports-description",
+          "url": "https://nutritionsource.hsph.harvard.edu/potassium/"
+        }
+      ],
+      "community": [
+        {
+          "description": "Potassium is referred to as an electrolyte and is available both from naturally occurring food sources and as a separate supplement.",
+          "source": {
+            "title": "Potassium | The Nutrition Source",
+            "url": "https://nutritionsource.hsph.harvard.edu/potassium/"
+          }
+        }
+      ],
+      "searchNotes": "Avoided sodium-swap dietary-advice framing (recommendation language); used only the plain supplement-vs-food-source fact."
+    },
+    "catalog:supplement:probiotic": {
+      "attempts": [
+        {
+          "reason": "Fetched page confirms food/beverage/supplement forms",
+          "result": "supports-description",
+          "url": "https://nutritionsource.hsph.harvard.edu/probiotics/"
+        }
+      ],
+      "community": [
+        {
+          "description": "Probiotics are found naturally in or added to certain fermented foods and beverages, and are also sold as standalone dietary supplements.",
+          "source": {
+            "title": "Probiotics - The Nutrition Source, Harvard T.H. Chan School of Public Health",
+            "url": "https://nutritionsource.hsph.harvard.edu/probiotics/"
+          }
+        }
+      ],
+      "searchNotes": "Harvard Nutrition Source page fetched and verified."
+    },
+    "catalog:supplement:psyllium": {
+      "attempts": [
+        {
+          "reason": "Cleveland Clinic drugs/ page is a clinical medication-instruction sheet (how to use this medication, overdosage, side effects) throughout; even the water-mixing phrase is embedded in administration-instruction language, not a neutral community-practice description",
+          "result": "no-practice-description",
+          "url": "https://my.clevelandclinic.org/health/drugs/19079-psyllium"
+        }
+      ],
+      "community": [],
+      "searchNotes": "Fiber supplement; rejected the only fetched source as an expert/clinical instruction sheet rather than community-practice material, consistent with task prohibition on recasting expert dosing/administration guidance. Left empty."
+    },
+    "catalog:supplement:resveratrol": {
+      "attempts": [
+        {
+          "reason": "Article is an efficacy-skeptical review of resveratrol/red wine research, not a description of a documented community practice or product form",
+          "result": "no-practice-description",
+          "url": "https://www.health.harvard.edu/blog/diet-rich-resveratrol-offers-health-boost-201405157153"
+        }
+      ],
+      "community": [],
+      "searchNotes": "Found only benefit/efficacy-debate content (red wine, French paradox) from Harvard Health and Mayo Clinic; no non-efficacy practice/form fact available without making a benefit claim, which is prohibited."
+    },
+    "catalog:supplement:saw-palmetto": {
+      "attempts": [
+        {
+          "reason": "Same clinical medication-instruction-sheet format issue as psyllium; rejected as inappropriate source type for community-practice framing",
+          "result": "no-practice-description",
+          "url": "https://my.clevelandclinic.org/health/drugs/19423-saw-palmetto"
+        }
+      ],
+      "community": [],
+      "searchNotes": "Left empty for the same reason as psyllium."
+    },
+    "catalog:supplement:selenium": {
+      "attempts": [
+        {
+          "reason": "403 on fetch",
+          "result": "blocked",
+          "url": "https://ods.od.nih.gov/pdf/factsheets/selenium-Consumer.pdf"
+        },
+        {
+          "reason": "Fetched page describes common antioxidant-vitamin combination formulations",
+          "result": "supports-description",
+          "url": "https://nutritionsource.hsph.harvard.edu/selenium/"
+        }
+      ],
+      "community": [
+        {
+          "description": "Selenium supplements are sometimes formulated in combination with other antioxidant vitamins such as vitamin E or C.",
+          "source": {
+            "title": "Selenium - The Nutrition Source, Harvard T.H. Chan School of Public Health",
+            "url": "https://nutritionsource.hsph.harvard.edu/selenium/"
+          }
+        }
+      ],
+      "searchNotes": "NIH ODS blocked; Harvard Nutrition Source used, combination-formulation fact only (no dose figures carried over)."
+    },
+    "catalog:supplement:tart-cherry": {
+      "attempts": [
+        {
+          "url": "https://www.health.harvard.edu/diseases-and-conditions/living-with-gout",
+          "result": "no-practice-description",
+          "reason": "Fetched directly; content discusses cherries/gout with dosing and inconclusive-efficacy framing; juice-vs-extract form distinction is not separably documented as a non-dosing practice fact in this source."
+        }
+      ],
+      "community": [],
+      "searchNotes": "Left empty; juice-vs-extract form distinction considered but not independently verified via a fetched reputable page within budget."
+    },
+    "catalog:supplement:taurine": {
+      "attempts": [
+        {
+          "reason": "FDA GRAS regulatory letter documents a manufacturer safety submission for a beverage formulation, not a description of community/consumer practice; using it would risk overstating a regulatory filing as common usage",
+          "result": "no-practice-description",
+          "url": "https://www.fda.gov/food/gras-notice-inventory/agency-response-letter-gras-notice-no-grn-000586"
+        }
+      ],
+      "community": [],
+      "searchNotes": "Considered using \"taurine is added to energy drinks\" angle but could not find a reputable non-commercial source directly documenting this as a practice (only commercial/content-farm sites); left empty."
+    },
+    "catalog:supplement:tongkat-ali": {
+      "attempts": [
+        {
+          "reason": "Content is dosing (200-400mg standardized extract) and testosterone-effect efficacy claims from a commercial content site, not usable",
+          "result": "no-practice-description",
+          "url": "https://www.healthline.com/nutrition/tongkat-ali-longjack-review"
+        }
+      ],
+      "community": [],
+      "searchNotes": "Traditional Southeast Asian herb; only dosing/efficacy content found, no non-dosing practice/form fact identified. Left empty."
+    },
+    "catalog:supplement:vitamin-a": {
+      "attempts": [
+        {
+          "reason": "Fetched page describes the two main dietary/supplement forms of vitamin A",
+          "result": "supports-description",
+          "url": "https://nutritionsource.hsph.harvard.edu/vitamin-a/"
+        }
+      ],
+      "community": [
+        {
+          "description": "Vitamin A supplements and fortified foods commonly use preformed vitamin A (retinol/retinyl esters) from animal-derived sources, while plant-based diets rely on provitamin A carotenoids such as beta-carotene that the body converts to retinol.",
+          "source": {
+            "title": "Vitamin A - The Nutrition Source, Harvard T.H. Chan School of Public Health",
+            "url": "https://nutritionsource.hsph.harvard.edu/vitamin-a/"
+          }
+        }
+      ],
+      "searchNotes": "NIH ODS vitamin A fact sheet blocked (403); used Harvard Nutrition Source instead."
+    },
+    "catalog:supplement:vitamin-b-complex": {
+      "attempts": [
+        {
+          "reason": "404 on fetch despite being the canonical FDA URL cited by search results; alternate FDA URL paths tried also 404'd",
+          "result": "not-found",
+          "url": "https://www.fda.gov/medical-devices/safety-communications/fda-warns-biotin-may-interfere-lab-tests-fda-safety-communication"
+        }
+      ],
+      "community": [],
+      "searchNotes": "Attempted to document the biotin/multivitamin lab-test-interference fact via FDA.gov directly; the official safety communication page could not be successfully fetched at any tried URL. Left empty rather than rely on search-snippet synthesis."
+    },
+    "catalog:supplement:vitamin-b12": {
+      "attempts": [
+        {
+          "reason": "403 on fetch",
+          "result": "blocked",
+          "url": "https://ods.od.nih.gov/factsheets/VitaminB12-Consumer/"
+        },
+        {
+          "reason": "Fetched page describes sublingual vs tablet supplement forms",
+          "result": "supports-description",
+          "url": "https://nutritionsource.hsph.harvard.edu/vitamin-b12/"
+        }
+      ],
+      "community": [
+        {
+          "description": "Vitamin B12 supplements are sold in multiple forms, including sublingual tablets or liquids placed under the tongue, in addition to standard oral tablets.",
+          "source": {
+            "title": "Vitamin B12 - The Nutrition Source, Harvard T.H. Chan School of Public Health",
+            "url": "https://nutritionsource.hsph.harvard.edu/vitamin-b12/"
+          }
+        }
+      ],
+      "searchNotes": "NIH ODS blocked; Harvard Nutrition Source page fetched and verified."
+    },
+    "catalog:supplement:vitamin-c": {
+      "attempts": [
+        {
+          "reason": "Fetched page describes the historical Pauling megadosing practice",
+          "result": "supports-description",
+          "url": "https://nutritionsource.hsph.harvard.edu/vitamin-c/"
+        }
+      ],
+      "community": [
+        {
+          "description": "A historical community practice of taking large amounts of vitamin C, popularized by Linus Pauling in the 1970s, involves increased intake at the onset of a cold.",
+          "source": {
+            "title": "Vitamin C - The Nutrition Source, Harvard T.H. Chan School of Public Health",
+            "url": "https://nutritionsource.hsph.harvard.edu/vitamin-c/"
+          }
+        }
+      ],
+      "searchNotes": "Harvard Nutrition Source page fetched; phrased as historical practice description, not an efficacy claim."
+    },
+    "catalog:supplement:vitamin-d3": {
+      "attempts": [
+        {
+          "reason": "Fetched page explicitly distinguishes D2 vs D3 supplement forms, matching catalog item (D3 specifically)",
+          "result": "supports-description",
+          "url": "https://nutritionsource.hsph.harvard.edu/vitamin-d/"
+        }
+      ],
+      "community": [
+        {
+          "description": "Vitamin D supplements are sold in two distinct forms, vitamin D2 (ergocalciferol) and vitamin D3 (cholecalciferol), which are produced from plant/fungal versus animal sources respectively.",
+          "source": {
+            "title": "Vitamin D - The Nutrition Source, Harvard T.H. Chan School of Public Health",
+            "url": "https://nutritionsource.hsph.harvard.edu/vitamin-d/"
+          }
+        }
+      ],
+      "searchNotes": "Confirmed source explicitly names D3/cholecalciferol to avoid generic vitamin-D mismatch."
+    },
+    "catalog:supplement:vitamin-e": {
+      "attempts": [
+        {
+          "reason": "Confirms alpha-tocopherol as the specific form basis for supplements, non-dosing",
+          "result": "supports-description",
+          "url": "https://nutritionsource.hsph.harvard.edu/vitamin-e/"
+        }
+      ],
+      "community": [
+        {
+          "description": "Vitamin E supplements and multivitamins are typically formulated using alpha-tocopherol, the only form of vitamin E the human body actively uses, among several chemical forms of the vitamin.",
+          "source": {
+            "title": "Vitamin E | The Nutrition Source",
+            "url": "https://nutritionsource.hsph.harvard.edu/vitamin-e/"
+          }
+        }
+      ],
+      "searchNotes": "Avoided the pages dosing/mortality-debate content; used only the forms-of-vitamin-E structural fact."
+    },
+    "catalog:supplement:vitamin-k2": {
+      "attempts": [
+        {
+          "reason": "Confirms menaquinone (K2) as distinct documented form vs phylloquinone (K1), avoiding ingredient mismatch",
+          "result": "supports-description",
+          "url": "https://nutritionsource.hsph.harvard.edu/vitamin-k/"
+        },
+        {
+          "reason": "Commercial retailer/blog pages selling D3+K2 combo products rejected as commercially dubious, not reputable",
+          "result": "blocked",
+          "url": "https://remedysnutrition.com/..."
+        }
+      ],
+      "community": [
+        {
+          "description": "Vitamin K2 (menaquinone) is a form of vitamin K found in some animal and fermented foods, distinct from the plant-derived phylloquinone (K1) form, and is also produced by bacteria in the body.",
+          "source": {
+            "title": "Vitamin K | The Nutrition Source",
+            "url": "https://nutritionsource.hsph.harvard.edu/vitamin-k/"
+          }
+        }
+      ],
+      "searchNotes": "Searched for D3+K2 combination community use; only commercial supplement-seller blogs found for the combo claim specifically, rejected. Used Harvard Nutrition Source K vitamin page instead for a neutral K2-form fact."
+    },
+    "catalog:supplement:zinc": {
+      "attempts": [
+        {
+          "reason": "403 on fetch",
+          "result": "blocked",
+          "url": "https://ods.od.nih.gov/factsheets/Zinc-Consumer/"
+        },
+        {
+          "reason": "Fetched page confirms pill and lozenge supplement forms",
+          "result": "supports-description",
+          "url": "https://nutritionsource.hsph.harvard.edu/zinc/"
+        }
+      ],
+      "community": [
+        {
+          "description": "Zinc supplements are sold in multiple forms, including pills and lozenges.",
+          "source": {
+            "title": "Zinc - The Nutrition Source, Harvard T.H. Chan School of Public Health",
+            "url": "https://nutritionsource.hsph.harvard.edu/zinc/"
+          }
+        }
+      ],
+      "searchNotes": "NIH ODS blocked; Harvard Nutrition Source used for a form-only (non-dose) description."
+    }
+  }
+}

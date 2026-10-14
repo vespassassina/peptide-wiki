@@ -1,0 +1,48 @@
+{
+  "commit": "5b66ac030272f1802aae4c0812eef6c3fdacb082",
+  "datasets": {
+    "peptides.json": {
+      "sha256": "8a762b075d4fc509a333e6e86d70a8ed586c69e48e0a96bd4db0a8dcceb95b91",
+      "slugs": [
+        "5-amino-1mq", "ace-031", "adipotide", "ahk-cu", "aicar", "aod-9604",
+        "ara-290", "bpc-157", "bronchogen", "cagrilintide", "cardiogen", "cartalax",
+        "cerebrolysin", "chonluten", "cjc-1295", "cjc-1295-dac", "cortagen",
+        "crystagen", "dsip", "epithalon", "fgl-l", "foxo4-dri", "ghk-cu",
+        "ghrp-2", "ghrp-6", "glutathione", "gonadorelin", "hcg", "hexarelin",
+        "hgh-somatropin", "humanin", "igf-1-lr3", "ipamorelin", "kisspeptin",
+        "kpv", "leuphasyl", "liraglutide", "livagen", "ll-37", "matrixyl",
+        "mazdutide", "met-enkephalin", "mgf", "mk-677", "mots-c", "mt-1",
+        "mt-2", "nad", "ovagen", "oxytocin", "p21", "pancragen", "pe-22-28",
+        "peg-mgf", "pinealon", "pnc27", "prostamax", "pt-141", "ptd-dbm",
+        "retatrutide", "selank", "semaglutide", "semax", "sermorelin",
+        "slu-pp-332", "snap-8", "ss-31", "survodutide", "tb-500",
+        "teriparatide", "tesamorelin", "testagen", "thymalin", "thymosin-alpha-1",
+        "tirzepatide", "vesugen", "vilon", "vip", "zinc-thymulin"
+      ]
+    },
+    "stacks.json": {
+      "sha256": "ab06cf39d4cff979eaa70ed6c0a2dec4da39bc66c7f0d50ecc710526cb5f52c5",
+      "slugs": [
+        "bpc-157-tb-500", "bpc-157-tb-500-ghk-cu", "bpc-157-tb-500-ghk-cu-kpv",
+        "cagrilintide-semaglutide", "cjc-1295-ipamorelin", "retatrutide-cagrilintide",
+        "semax-selank", "tesamorelin-ipamorelin"
+      ]
+    },
+    "categories.json": {
+      "sha256": "a544048ac432be97e8d4a06fc8bdbf168fb0a131de8c4ffc1d22962f4b909203",
+      "slugs": [
+        "anti-aging", "bioregulators", "fat-loss", "fitness-muscle", "longevity",
+        "nootropics-cognitive", "recovery-healing", "sexual-health"
+      ]
+    }
+  },
+  "core_routes": [
+    "index.html", "directory.html", "glossary.html", "dosing-safety.html",
+    "calculator.html", "about.html", "favorites.html", "stacks.html"
+  ],
+  "output_roots": [
+    "index.html", "directory.html", "glossary.html", "dosing-safety.html",
+    "calculator.html", "about.html", "favorites.html", "stacks.html",
+    "categories", "peptides", "stacks", "assets", "data", "sitemap.xml", "llms.txt"
+  ]
+}

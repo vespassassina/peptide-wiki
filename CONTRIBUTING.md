@@ -23,6 +23,22 @@ Corrections and additions welcome. This is a community reference, not a personal
 3. Run `python3 generate.py` and check your change rendered correctly.
 4. Open a PR describing what changed and why. Link a source if you're correcting a factual claim.
 
+## Preserved Biometra research
+
+`research/biometra/` is a source-pinned migration bundle, not another set of
+editable peptide articles. Its manifest records authority and original hashes.
+Do not hand-edit imported files, promote intermediate/rejected audit drafts into
+accepted claims, or copy the archive into generated output.
+
+App templates/default doses/schedules stay archived; they must not become
+recommendations or calculator autofill. Keep study protocols, community accounts,
+uncertainty and differing claims separate. Historical checks do not establish
+current validity or publication suitability.
+
+Run `python3 -B -m unittest discover -s tests` before the normal build.
+See [docs/PLAN.md](docs/PLAN.md) for the approved sprint boundary and
+[docs/HANDOFF.md](docs/HANDOFF.md) before resuming the consolidation.
+
 ## Style
 
 Keep entries compact. Say the thing directly — no hedging, no filler, no "it's important to note." If evidence is weak or the compound is unstudied in humans, say that plainly instead of padding around it.

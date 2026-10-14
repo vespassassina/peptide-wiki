@@ -1,0 +1,1887 @@
+{
+  "b82-existing-sources": [
+    {
+      "url": "https://www.healthline.com/nutrition/casein-protein-is-highly-underrated",
+      "httpStatus": "200",
+      "finalURL": "https://www.healthline.com/nutrition/casein-protein-is-highly-underrated",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-existing-sources/000.txt",
+      "textLength": 14296,
+      "claims": [
+        {
+          "id": "catalog:supplement:casein-protein",
+          "description": "A nutrition guide says most people supplementing with casein use it before bed, describing 1-2 scoops (25-50 g) mixed with water as an example.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.healthline.com/nutrition/6-ways-to-do-intermittent-fasting",
+      "httpStatus": "200",
+      "finalURL": "https://www.healthline.com/nutrition/6-ways-to-do-intermittent-fasting",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-existing-sources/001.txt",
+      "textLength": 17282,
+      "claims": [
+        {
+          "id": "catalog:food-protocol:adf",
+          "description": "A nutrition guide lists alternate-day fasting among popular patterns, alternating a fasting day with a day of eating.",
+          "quoteMatched": false
+        },
+        {
+          "id": "catalog:food-protocol:16-8",
+          "description": "A nutrition guide describes the popular 16:8 pattern as a daily 16-hour fast with meals in the remaining eight-hour window.",
+          "quoteMatched": false
+        },
+        {
+          "id": "catalog:food-protocol:5-2",
+          "description": "A nutrition guide describes the 5:2 pattern as five usual eating days each week and two days limited to 500-600 kcal.",
+          "quoteMatched": false
+        },
+        {
+          "id": "catalog:food-protocol:full-day-fast",
+          "description": "A nutrition guide describes Eat Stop Eat as a 24-hour fast once or twice per week, outside a study setting.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.healthline.com/nutrition/ketogenic-diet-101",
+      "httpStatus": "200",
+      "finalURL": "https://www.healthline.com/nutrition/ketogenic-diet-101",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-existing-sources/002.txt",
+      "textLength": 26244,
+      "claims": [
+        {
+          "id": "catalog:food-protocol:keto",
+          "description": "A keto diet guide describes the standard version as roughly 70% of energy from fat, 20% from protein and 10% from carbohydrate; it also describes a cyclical variant with five keto days and two higher-carbohydrate days.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.healthline.com/nutrition/paleo-diet-meal-plan-and-menu",
+      "httpStatus": "200",
+      "finalURL": "https://www.healthline.com/nutrition/paleo-diet-meal-plan-and-menu",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-existing-sources/003.txt",
+      "textLength": 15537,
+      "claims": [
+        {
+          "id": "catalog:food-protocol:paleo",
+          "description": "A paleo diet guide describes a modern version built around unprocessed meat, fish, eggs, vegetables, fruit, nuts and seeds, generally leaving out legumes, dairy and grains; it also notes that some followers allow modern foods.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.healthline.com/nutrition/mediterranean-diet-meal-plan",
+      "httpStatus": "200",
+      "finalURL": "https://www.healthline.com/nutrition/mediterranean-diet-meal-plan",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-existing-sources/004.txt",
+      "textLength": 15727,
+      "claims": [
+        {
+          "id": "catalog:food-protocol:mediterranean",
+          "description": "A Mediterranean diet guide describes a flexible pattern of vegetables, fruits, whole grains, legumes, nuts and olive oil, with fish and seafood at least twice a week and fewer processed foods.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/breathing-exercises-for-stress/",
+      "httpStatus": "200",
+      "finalURL": "https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/breathing-exercises-for-stress/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-existing-sources/005.txt",
+      "textLength": 2025,
+      "claims": [
+        {
+          "id": "catalog:recovery:breathwork",
+          "description": "One NHS breathing practice uses a comfortable seated, standing or lying position, with gentle breaths in through the nose and out through the mouth and an optional count during each breath.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.nhs.uk/live-well/exercise/how-to-stretch-after-exercising/",
+      "httpStatus": "200",
+      "finalURL": "https://www.nhs.uk/live-well/exercise/how-to-stretch-after-exercising/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-existing-sources/006.txt",
+      "textLength": 3382,
+      "claims": [
+        {
+          "id": "catalog:recovery:stretching",
+          "description": "An NHS post-exercise stretching routine includes buttock, hamstring, inner-thigh, calf and front-of-thigh stretches, with each side stretched in turn.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.healthline.com/nutrition/creatine-loading-phase",
+      "httpStatus": "200",
+      "finalURL": "https://www.healthline.com/nutrition/creatine-loading-phase",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-existing-sources/007.txt",
+      "textLength": 12866,
+      "claims": [
+        {
+          "id": "catalog:supplement:creatine",
+          "description": "A sports-nutrition guide describes a common creatine loading pattern of 20-25 g daily for 5-7 days, divided into four or five servings, followed by 3-5 g daily for maintenance.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://health.clevelandclinic.org/what-to-know-about-cold-plunges",
+      "httpStatus": "403",
+      "finalURL": "https://health.clevelandclinic.org/what-to-know-about-cold-plunges",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-existing-sources/008.txt",
+      "textLength": 762,
+      "claims": [
+        {
+          "id": "catalog:recovery:cold-exposure",
+          "description": "Cold plunges are taken in a bath of cold tap water or water cooled further with ice, sometimes as part of a workout or wellness routine.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.mindful.org/how-to-meditate/",
+      "httpStatus": "200",
+      "finalURL": "https://www.mindful.org/how-to-meditate/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-existing-sources/009.txt",
+      "textLength": 31221,
+      "claims": [
+        {
+          "id": "catalog:recovery:meditation",
+          "description": "A mindfulness practice guide describes a short seated session of five to ten minutes, with attention on the breath and a return to it when the mind wanders.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://ggia.berkeley.edu/practice/expressive_writing",
+      "httpStatus": "200",
+      "finalURL": "https://ggia.berkeley.edu/practice/expressive_writing",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-existing-sources/010.txt",
+      "textLength": 31122,
+      "claims": [
+        {
+          "id": "catalog:recovery:journaling",
+          "description": "An expressive-writing practice describes writing freely about thoughts and feelings around an emotionally challenging experience for 20 minutes on four consecutive days, using a private notebook or digital document.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.healthline.com/nutrition/protein-shake-before-or-after-workout",
+      "httpStatus": "200",
+      "finalURL": "https://www.healthline.com/nutrition/protein-shake-before-or-after-workout",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-existing-sources/011.txt",
+      "textLength": 20116,
+      "claims": [
+        {
+          "id": "catalog:supplement:whey-protein",
+          "description": "A nutrition guide describes protein shakes as commonly used after workouts and lists whey as a powder used before or after training; powders typically contain 20-30 g of protein per scoop.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.nccih.nih.gov/health/yoga-effectiveness-and-safety",
+      "httpStatus": "200",
+      "finalURL": "https://www.nccih.nih.gov/health/yoga-effectiveness-and-safety",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-existing-sources/012.txt",
+      "textLength": 45316,
+      "claims": [
+        {
+          "id": "catalog:recovery:yoga",
+          "description": "Yoga as practiced in the United States typically combines physical postures, breathing techniques and meditation; styles range from gentle to physically demanding.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.sleepfoundation.org/napping",
+      "httpStatus": "403",
+      "finalURL": "https://www.sleepfoundation.org/napping",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-existing-sources/013.txt",
+      "textLength": 44,
+      "claims": [
+        {
+          "id": "catalog:recovery:nap",
+          "description": "One described daytime-nap pattern is a brief rest around the post-lunch dip, lasting about 20 to 30 minutes.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.healthline.com/nutrition/caffeine-and-exercise",
+      "httpStatus": "200",
+      "finalURL": "https://www.healthline.com/nutrition/caffeine-and-exercise",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-existing-sources/014.txt",
+      "textLength": 15724,
+      "claims": [
+        {
+          "id": "catalog:supplement:caffeine",
+          "description": "An exercise-nutrition guide describes caffeine supplements for athletic performance as often dosed by body weight at around 3-6 mg/kg (roughly 200-400 mg for most people).",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://ggia.berkeley.edu/practice/three-good-things",
+      "httpStatus": "200",
+      "finalURL": "https://ggia.berkeley.edu/practice/three-good-things",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-existing-sources/015.txt",
+      "textLength": 12889,
+      "claims": [
+        {
+          "id": "catalog:recovery:gratitude-therapy",
+          "description": "In the Three Good Things writing practice, participants record three things that went well that day and explain why each happened, sometimes as a before-bed reflection.",
+          "quoteMatched": false
+        }
+      ]
+    }
+  ],
+  "b82-new-sources": [
+    {
+      "url": "https://rethinkingdrinking.niaaa.nih.gov/tools/worksheets-more/alcohol-consumption-tracker",
+      "httpStatus": "200",
+      "finalURL": "https://rethinkingdrinking.niaaa.nih.gov/tools/worksheets-more/alcohol-consumption-tracker",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/000.txt",
+      "textLength": 2332,
+      "claims": [
+        {
+          "id": "catalog:context:alcohol",
+          "description": "NIAAA's Rethinking Drinking program provides a printable tracker card for logging each drink as it happens, describing this as a way to notice drinking patterns.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.health.harvard.edu/healthy-aging-and-longevity/take-the-dry-january-challenge",
+      "httpStatus": "200",
+      "finalURL": "https://www.health.harvard.edu/healthy-aging-and-longevity/take-the-dry-january-challenge",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/001.txt",
+      "textLength": 11288,
+      "claims": [
+        {
+          "id": "catalog:context:alcohol-free-day",
+          "description": "Harvard Health describes Dry January participants tracking their progress with a phone app such as Try Dry, which logs drinking goals and alcohol-free days.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://smokefree.gov/tools-tips/quitstart",
+      "httpStatus": "200",
+      "finalURL": "https://smokefree.gov/tools-tips/quitstart",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/002.txt",
+      "textLength": 4090,
+      "claims": [
+        {
+          "id": "catalog:context:nicotine",
+          "description": "Smokefree.gov's quitSTART app, developed by the National Cancer Institute, has users tag the times or places that trigger an urge to smoke as part of tracking a quit attempt.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.sleepfoundation.org/sleep-faqs/how-to-wake-up-easier",
+      "httpStatus": "200",
+      "finalURL": "https://www.sleepfoundation.org/sleep-faqs/how-to-wake-up-easier",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/094.txt",
+      "textLength": 21656,
+      "claims": []
+    },
+    {
+      "url": "https://www.thensf.org/nsf-sleep-diary/",
+      "httpStatus": "200",
+      "finalURL": "https://www.thensf.org/nsf-sleep-diary/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/003.txt",
+      "textLength": 4129,
+      "claims": [
+        {
+          "id": "catalog:context:sleep",
+          "description": "The National Sleep Foundation recommends keeping a daily sleep diary, filled in both at wake-up and before bed for about two weeks, to reveal patterns affecting sleep.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.acefitness.org/resources/everyone/blog/7038/body-weight-training-don-t-let-a-lack-of-equipment-keep-you-from-your-goals/",
+      "httpStatus": "403",
+      "finalURL": "https://www.acefitness.org/resources/everyone/blog/7038/body-weight-training-don-t-let-a-lack-of-equipment-keep-you-from-your-goals/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/004.txt",
+      "textLength": 154,
+      "claims": [
+        {
+          "id": "catalog:exercise:bodyweight",
+          "description": "Training using only one's own body weight for resistance (e.g., push-ups, squats, lunges, planks) rather than free weights or machines, often emphasizing muscular endurance.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://health.clevelandclinic.org/calisthenics",
+      "httpStatus": "403",
+      "finalURL": "https://health.clevelandclinic.org/calisthenics",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/005.txt",
+      "textLength": 762,
+      "claims": [
+        {
+          "id": "catalog:exercise:calisthenics",
+          "description": "Doing calisthenics: bodyweight exercises (such as push-ups, pull-ups, squats and planks) performed with little to no equipment to build strength, endurance and coordination.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://health.clevelandclinic.org/exercise-heart-rate-zones-explained",
+      "httpStatus": "403",
+      "finalURL": "https://health.clevelandclinic.org/exercise-heart-rate-zones-explained",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/006.txt",
+      "textLength": 762,
+      "claims": [
+        {
+          "id": "catalog:exercise:cardio-zone2",
+          "description": "Training in Zone 2, a moderate-intensity heart-rate zone (roughly 60-70% of estimated maximum heart rate) in which conversation remains possible, used for longer steady-state cardio sessions aimed at building aerobic endurance.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.climbing.com/skills/training-value-effectiveness",
+      "httpStatus": "200",
+      "finalURL": "https://www.climbing.com/skills/training-value-effectiveness?scope=anon",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/007.txt",
+      "textLength": 9785,
+      "claims": [
+        {
+          "id": "catalog:exercise:climbing",
+          "description": "Training for rock climbing/bouldering using structured practice such as hangboard (fingerboard) sessions alongside time spent climbing, to work on specific weaknesses like grip positions or endurance.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://gccfla.org/labtips.shtml",
+      "httpStatus": "200",
+      "finalURL": "https://gccfla.org/labtips.shtml",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/008.txt",
+      "textLength": 4559,
+      "claims": [
+        {
+          "id": "catalog:exercise:cycling",
+          "description": "Group road cyclists commonly use standardized verbal calls and hand signals, such as announcing turns, pointing out road hazards, and calling out \"car back\"/\"car up\", to communicate within a riding group.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.acefitness.org/resources/pros/expert-articles/7208/creating-functional-training-programs-for-every-type-of-client/",
+      "httpStatus": "403",
+      "finalURL": "https://www.acefitness.org/resources/pros/expert-articles/7208/creating-functional-training-programs-for-every-type-of-client/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/009.txt",
+      "textLength": 154,
+      "claims": [
+        {
+          "id": "catalog:exercise:functional-fitness",
+          "description": "Doing functional-training workouts built around multi-joint movement patterns (such as pushing, pulling, hinging, squatting and rotating) intended to carry over to everyday activities, rather than isolating single muscles.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://health.clevelandclinic.org/think-you-cant-do-high-intensity-interval-training-think-again",
+      "httpStatus": "403",
+      "finalURL": "https://health.clevelandclinic.org/think-you-cant-do-high-intensity-interval-training-think-again",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/010.txt",
+      "textLength": 762,
+      "claims": [
+        {
+          "id": "catalog:exercise:hiit",
+          "description": "Doing a high-intensity interval training (HIIT) workout: alternating short bursts of higher-intensity aerobic exercise with lower-intensity recovery periods within the same session, using activities such as running, cycling or bodyweight exercises.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://americanhiking.org/resources/hiking-trails-policy/",
+      "httpStatus": "200",
+      "finalURL": "https://americanhiking.org/hiking-trails-policy/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/011.txt",
+      "textLength": 10252,
+      "claims": [
+        {
+          "id": "catalog:exercise:hiking",
+          "description": "Hiking is practiced on dedicated foot-only trails developed and maintained for quiet pedestrian travel away from motorized or mechanical use.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.health.harvard.edu/exercise-and-fitness/the-health-benefits-of-tai-chi",
+      "httpStatus": "200",
+      "finalURL": "https://www.health.harvard.edu/exercise-and-fitness/the-health-benefits-of-tai-chi",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/012.txt",
+      "textLength": 13795,
+      "claims": [
+        {
+          "id": "catalog:exercise:martial-arts",
+          "description": "Tai chi classes, which the catalog's martial-arts category spans alongside karate and judo, typically include a warm-up, instruction/practice of named movement forms, and group practice often offered through community centers.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://health.clevelandclinic.org/everything-you-want-to-know-about-pilates",
+      "httpStatus": "403",
+      "finalURL": "https://health.clevelandclinic.org/everything-you-want-to-know-about-pilates",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/013.txt",
+      "textLength": 762,
+      "claims": [
+        {
+          "id": "catalog:exercise:pilates",
+          "description": "Practicing Pilates either on a mat (bodyweight-based) or on specialized apparatus such as a reformer, focusing on controlled movement, core engagement and breathing.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://health.clevelandclinic.org/strength-training",
+      "httpStatus": "403",
+      "finalURL": "https://health.clevelandclinic.org/strength-training",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/014.txt",
+      "textLength": 762,
+      "claims": [
+        {
+          "id": "catalog:exercise:resistance-session",
+          "description": "Doing a resistance/strength-training session using external load such as free weights (barbells, dumbbells, kettlebells), weight machines, or resistance bands, where muscles work against that resistance.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.concept2.com/indoor-rowers/training/technique",
+      "httpStatus": "404",
+      "finalURL": "https://www.concept2.com/indoor-rowers/training/technique",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/015.txt",
+      "textLength": 1050,
+      "claims": [
+        {
+          "id": "catalog:exercise:rowing",
+          "description": "Indoor/erg rowing technique is commonly taught and practiced as a four-phase stroke cycle: the catch, the drive, the finish, and the recovery.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.rrca.org/education/for-runners/",
+      "httpStatus": "200",
+      "finalURL": "https://www.rrca.org/education/for-runners/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/016.txt",
+      "textLength": 20198,
+      "claims": [
+        {
+          "id": "catalog:exercise:running",
+          "description": "Beginning runners commonly use a run-walk-run method, alternating intervals of running and walking, as popularized by coach Jeff Galloway.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.usms.org/about-usms/what-is-usms",
+      "httpStatus": "404",
+      "finalURL": "https://www.usms.org/about-usms/what-is-usms",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/017.txt",
+      "textLength": 3138,
+      "claims": [
+        {
+          "id": "catalog:exercise:swimming",
+          "description": "Adult swimmers can join local Masters Swimming clubs and workout groups that are coached and organized by US Masters Swimming local committees.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.countyhealthrankings.org/strategies-and-solutions/what-works-for-health/strategies/recreational-sports-leagues-for-adults",
+      "httpStatus": "200",
+      "finalURL": "https://www.countyhealthrankings.org/strategies-and-solutions/what-works-for-health/strategies/recreational-sports-leagues-for-adults",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/018.txt",
+      "textLength": 15856,
+      "claims": [
+        {
+          "id": "catalog:exercise:team-sport",
+          "description": "Communities organize recreational adult sports leagues offering athletic games such as soccer, softball, kickball, and basketball at beginner, intermediate, and competitive levels.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.cdc.gov/physical-activity-basics/guidelines/index.html",
+      "httpStatus": "200",
+      "finalURL": "https://www.cdc.gov/physical-activity-basics/guidelines/index.html",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/019.txt",
+      "textLength": 6120,
+      "claims": [
+        {
+          "id": "catalog:exercise:walking",
+          "description": "Brisk walking at a pace of about a 15-minute mile is used as a common benchmark for moderate-to-vigorous walking activity.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://my.clevelandclinic.org/podcasts/love-your-heart/what-is-intermittent-fasting",
+      "httpStatus": "403",
+      "finalURL": "https://my.clevelandclinic.org/podcasts/love-your-heart/what-is-intermittent-fasting",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/020.txt",
+      "textLength": 762,
+      "claims": [
+        {
+          "id": "catalog:food-protocol:18-6",
+          "description": "Following a time-restricted eating pattern in which daily food intake is confined to a window of roughly 6-8 hours, with a corresponding fast of up to about 18 hours, typically spanning the evening and overnight period.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.myfitnesspal.com/",
+      "httpStatus": "200",
+      "finalURL": "https://www.myfitnesspal.com/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/021.txt",
+      "textLength": 8145,
+      "claims": [
+        {
+          "id": "catalog:food-protocol:calorie-protein-target",
+          "description": "Using a food-logging app to track daily calorie intake and macronutrients such as protein against a personal target, rather than tracking intake unaided.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.precisionnutrition.com/all-about-carb-cycling",
+      "httpStatus": "200",
+      "finalURL": "https://www.precisionnutrition.com/all-about-carb-cycling",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/022.txt",
+      "textLength": 43010,
+      "claims": [
+        {
+          "id": "catalog:food-protocol:carb-cycling",
+          "description": "Alternating higher-carbohydrate and lower-carbohydrate eating days (for example, higher carbohydrate intake on workout days and lower intake on non-workout days), rather than eating a consistent carbohydrate level every day.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://health.clevelandclinic.org/the-carnivore-diet",
+      "httpStatus": "403",
+      "finalURL": "https://health.clevelandclinic.org/the-carnivore-diet",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/023.txt",
+      "textLength": 762,
+      "claims": [
+        {
+          "id": "catalog:food-protocol:carnivore",
+          "description": "Following a carnivore diet consisting only of animal-sourced foods (meat, fish, eggs and limited dairy), excluding all plant foods such as fruit, vegetables, grains, legumes and nuts.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.healthpromoting.com/about-water-only-fasting",
+      "httpStatus": "200",
+      "finalURL": "https://www.healthpromoting.com/about-water-only-fasting",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/024.txt",
+      "textLength": 9796,
+      "claims": [
+        {
+          "id": "catalog:food-protocol:extended-fast",
+          "description": "Undertaking a supervised, multi-day water-only fast at a residential fasting clinic, abstaining from all food (only water) for an extended period under medical monitoring.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.dietdoctor.com/low-carb/how-low-carb-is-low-carb",
+      "httpStatus": "200",
+      "finalURL": "https://www.dietdoctor.com/low-carb/how-low-carb-is-low-carb",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/025.txt",
+      "textLength": 17928,
+      "claims": [
+        {
+          "id": "catalog:food-protocol:low-carb",
+          "description": "Following a low-carbohydrate eating pattern that limits carbohydrate intake below typical dietary levels, with stricter variants (sometimes called ketogenic) restricting carbohydrates further than more liberal low-carb approaches.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.healthline.com/health/one-meal-a-day",
+      "httpStatus": "200",
+      "finalURL": "https://www.healthline.com/health/one-meal-a-day",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/026.txt",
+      "textLength": 19542,
+      "claims": [
+        {
+          "id": "catalog:food-protocol:omad",
+          "description": "Eating one meal a day (OMAD), consuming all daily food intake within a single meal/short window rather than across multiple meals.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.vegansociety.com/go-vegan/definition-veganism",
+      "httpStatus": "200",
+      "finalURL": "https://www.vegansociety.com/go-vegan/definition-veganism",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/027.txt",
+      "textLength": 11730,
+      "claims": [
+        {
+          "id": "catalog:food-protocol:vegan",
+          "description": "Following a vegan diet that excludes all animal-derived foods, including meat, fish, dairy, eggs and honey, relying entirely on plant-based foods.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.eatright.org/health/wellness/vegetarian-and-plant-based/vegetarianism-the-basic-facts",
+      "httpStatus": "200",
+      "finalURL": "https://www.eatright.org/health/wellness/vegetarian-and-plant-based/vegetarianism-the-basic-facts",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/028.txt",
+      "textLength": 9393,
+      "claims": [
+        {
+          "id": "catalog:food-protocol:vegetarian",
+          "description": "Following a lacto-ovo vegetarian diet that excludes meat, poultry and fish but includes dairy products and eggs along with plant foods.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.cdc.gov/cholesterol/testing/index.html",
+      "httpStatus": "200",
+      "finalURL": "https://www.cdc.gov/cholesterol/testing/index.html",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/095.txt",
+      "textLength": 8022,
+      "claims": []
+    },
+    {
+      "url": "https://www.nhs.uk/medicines/gaviscon/about-gaviscon/",
+      "httpStatus": "200",
+      "finalURL": "https://www.nhs.uk/medicines/gaviscon/about-gaviscon/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/029.txt",
+      "textLength": 1962,
+      "claims": [
+        {
+          "id": "catalog:medication:antacid",
+          "description": "Antacid products such as Gaviscon are available in multiple forms, including chewable tablets, liquid sold in bottles or sachets, and a powder formulation for young children.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.cdc.gov/antibiotic-use/index.html",
+      "httpStatus": "200",
+      "finalURL": "https://www.cdc.gov/antibiotic-use/index.html",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/030.txt",
+      "textLength": 5076,
+      "claims": []
+    },
+    {
+      "url": "https://www.cdc.gov/antibiotic-use/communication-resources/index.html",
+      "httpStatus": "200",
+      "finalURL": "https://www.cdc.gov/antibiotic-use/communication-resources/index.html",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/031.txt",
+      "textLength": 11828,
+      "claims": []
+    },
+    {
+      "url": "https://www.cdc.gov/antibiotic-use/took-your-last-dose.html",
+      "httpStatus": "404",
+      "finalURL": "https://www.cdc.gov/antibiotic-use/took-your-last-dose.html",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/032.txt",
+      "textLength": 1763,
+      "claims": []
+    },
+    {
+      "url": "https://www.cdc.gov/antibiotic-use/materials-references/index.html",
+      "httpStatus": "404",
+      "finalURL": "https://www.cdc.gov/antibiotic-use/materials-references/index.html",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/033.txt",
+      "textLength": 1763,
+      "claims": []
+    },
+    {
+      "url": "https://www.nhs.uk/medicines/antihistamines/",
+      "httpStatus": "200",
+      "finalURL": "https://www.nhs.uk/medicines/antihistamines/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/034.txt",
+      "textLength": 6599,
+      "claims": [
+        {
+          "id": "catalog:medication:antihistamine",
+          "description": "Antihistamines are grouped into drowsy (sedating) and non-drowsy (less sedating) types and are available in several forms, including tablets, capsules, liquids, syrups, creams, lotions, gels, eyedrops and nasal sprays.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/ask-the-experts/aspirin-stomach",
+      "httpStatus": "200",
+      "finalURL": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/ask-the-experts/aspirin-stomach",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/035.txt",
+      "textLength": 7359,
+      "claims": [
+        {
+          "id": "catalog:medication:aspirin",
+          "description": "Aspirin for ongoing use is available as standard tablets and as enteric-coated tablets, with the coated form described as kinder to the stomach for people who get stomach symptoms from standard aspirin.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.nhs.uk/medicines/atorvastatin/",
+      "httpStatus": "200",
+      "finalURL": "https://www.nhs.uk/medicines/atorvastatin/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/096.txt",
+      "textLength": 8136,
+      "claims": []
+    },
+    {
+      "url": "https://www.biospace.com/press-releases/novos-cagrisema-delivers-superior-weight-loss-and-cardiometabolic-benefits-compared-to-semaglutide-in-head-to-head-phase-3b-trial",
+      "httpStatus": "404",
+      "finalURL": "https://www.biospace.com/press-releases/novos-cagrisema-delivers-superior-weight-loss-and-cardiometabolic-benefits-compared-to-semaglutide-in-head-to-head-phase-3b-trial",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/097.txt",
+      "textLength": 1926,
+      "claims": []
+    },
+    {
+      "url": "https://www.nhs.uk/medicines/diclofenac/about-diclofenac/",
+      "httpStatus": "200",
+      "finalURL": "https://www.nhs.uk/medicines/diclofenac/about-diclofenac/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/036.txt",
+      "textLength": 2320,
+      "claims": [
+        {
+          "id": "catalog:medication:diclofenac-topical",
+          "description": "Diclofenac is available in different forms: tablets, capsules and suppositories that are prescription-only, versus gel, patches and plasters for joint pain that can be bought directly from pharmacies without a prescription.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+      "httpStatus": "200",
+      "finalURL": "https://www.nhs.uk/conditions/enlarged-prostate/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/098.txt",
+      "textLength": 7568,
+      "claims": []
+    },
+    {
+      "url": "https://www.nhs.uk/medicines/finasteride/",
+      "httpStatus": "200",
+      "finalURL": "https://www.nhs.uk/medicines/finasteride/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/099.txt",
+      "textLength": 1000,
+      "claims": []
+    },
+    {
+      "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/",
+      "httpStatus": "200",
+      "finalURL": "https://www.nhs.uk/medicines/ibuprofen-for-adults/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/038.txt",
+      "textLength": 9429,
+      "claims": [
+        {
+          "id": "catalog:medication:ibuprofen",
+          "description": "Ibuprofen is available in several different forms, including tablets and capsules, gels and sprays, liquid, and granules that are mixed with water.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.nhs.uk/medicines/insulin/insulin-for-type-1-diabetes/",
+      "httpStatus": "200",
+      "finalURL": "https://www.nhs.uk/medicines/insulin/insulin-for-type-1-diabetes/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/039.txt",
+      "textLength": 3730,
+      "claims": []
+    },
+    {
+      "url": "https://www.nhs.uk/medicines/insulin/",
+      "httpStatus": "200",
+      "finalURL": "https://www.nhs.uk/medicines/insulin/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/040.txt",
+      "textLength": 1657,
+      "claims": []
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5358074/",
+      "httpStatus": "200",
+      "finalURL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5358074/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/041.txt",
+      "textLength": 46094,
+      "claims": [
+        {
+          "id": "catalog:medication:liraglutide",
+          "description": "Liraglutide is marketed under two different brand names for two different approved indications: as a lower-strength daily injection for type 2 diabetes, and as a higher-strength daily injection for chronic weight management.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/innovent-announces-mazdutide-received-approval-from-chinas-national-medical-products-administration-nmpa-for-the-treatment-of-chronic-weight-management-302561434.html",
+      "httpStatus": "404",
+      "finalURL": "https://www.prnewswire.com/news-releases/innovent-announces-mazdutide-received-approval-from-chinas-national-medical-products-administration-nmpa-for-the-treatment-of-chronic-weight-management-302561434.html",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/100.txt",
+      "textLength": 9702,
+      "claims": []
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6544683/",
+      "httpStatus": "200",
+      "finalURL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6544683/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/042.txt",
+      "textLength": 48506,
+      "claims": []
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6779524/",
+      "httpStatus": "200",
+      "finalURL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6779524/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/043.txt",
+      "textLength": 58938,
+      "claims": []
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10806356/",
+      "httpStatus": "200",
+      "finalURL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10806356/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/044.txt",
+      "textLength": 57699,
+      "claims": [
+        {
+          "id": "catalog:medication:minoxidil",
+          "description": "Minoxidil for hair loss is available as a topical solution/foam (FDA-approved) and is also used off-label in oral tablet form for alopecia, a practice distinct from its original approved topical and antihypertensive uses.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.nhs.uk/medicines/naproxen/",
+      "httpStatus": "200",
+      "finalURL": "https://www.nhs.uk/medicines/naproxen/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/045.txt",
+      "textLength": 8766,
+      "claims": [
+        {
+          "id": "catalog:medication:naproxen",
+          "description": "Naproxen is available as tablets, a liquid that is swallowed, and effervescent tablets that dissolve in water before drinking.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.who.int/news-room/fact-sheets/detail/diarrhoeal-disease",
+      "httpStatus": "200",
+      "finalURL": "https://www.who.int/news-room/fact-sheets/detail/diarrhoeal-disease",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/101.txt",
+      "textLength": 11403,
+      "claims": []
+    },
+    {
+      "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-new-molecular-entity-under-national-priority-voucher-program",
+      "httpStatus": "200",
+      "finalURL": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-new-molecular-entity-under-national-priority-voucher-program",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/102.txt",
+      "textLength": 7339,
+      "claims": []
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7815514/",
+      "httpStatus": "200",
+      "finalURL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7815514/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/103.txt",
+      "textLength": 82300,
+      "claims": []
+    },
+    {
+      "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/",
+      "httpStatus": "200",
+      "finalURL": "https://www.nhs.uk/medicines/paracetamol-for-adults/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/047.txt",
+      "textLength": 7740,
+      "claims": [
+        {
+          "id": "catalog:medication:paracetamol",
+          "description": "Paracetamol is available in different forms, including tablets and capsules, liquid oral suspension, and suppositories.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://medlineplus.gov/druginfo/meds/a602007.html",
+      "httpStatus": "200",
+      "finalURL": "https://medlineplus.gov/druginfo/meds/a602007.html",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/104.txt",
+      "textLength": 7338,
+      "claims": []
+    },
+    {
+      "url": "https://www.nhs.uk/medicines/sildenafil-viagra/",
+      "httpStatus": "200",
+      "finalURL": "https://www.nhs.uk/medicines/sildenafil-viagra/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/105.txt",
+      "textLength": 7605,
+      "claims": []
+    },
+    {
+      "url": "https://markets.businessinsider.com/news/stocks/zealand-pharma-announces-survodutide-phase-3-synchronize-2-trial",
+      "httpStatus": "404",
+      "finalURL": "https://markets.businessinsider.com/news/stocks/zealand-pharma-announces-survodutide-phase-3-synchronize-2-trial",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/106.txt",
+      "textLength": 1733,
+      "claims": []
+    },
+    {
+      "url": "https://www.nhs.uk/medicines/tadalafil/",
+      "httpStatus": "200",
+      "finalURL": "https://www.nhs.uk/medicines/tadalafil/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/107.txt",
+      "textLength": 6912,
+      "claims": []
+    },
+    {
+      "url": "https://medlineplus.gov/druginfo/meds/a603018.html",
+      "httpStatus": "200",
+      "finalURL": "https://medlineplus.gov/druginfo/meds/a603018.html",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/108.txt",
+      "textLength": 10976,
+      "claims": []
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3055463/",
+      "httpStatus": "200",
+      "finalURL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3055463/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/109.txt",
+      "textLength": 59642,
+      "claims": []
+    },
+    {
+      "url": "https://healthy.kaiserpermanente.org/health-wellness/healtharticle.acupuncture-101",
+      "httpStatus": "200",
+      "finalURL": "https://healthy.kaiserpermanente.org/health-wellness/healtharticle.acupuncture-101",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/048.txt",
+      "textLength": 15554,
+      "claims": [
+        {
+          "id": "catalog:recovery:acupuncture",
+          "description": "A Kaiser Permanente patient-education article describes a typical acupuncture session as lasting 20 to 30 minutes, with the practitioner dimming the lights and playing quiet music while checking in on the patient's comfort.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://theconversation.com/pneumatic-compression-therapy-can-it-really-help-olympians-or-you-recover-after-exercise-236228",
+      "httpStatus": "200",
+      "finalURL": "https://theconversation.com/pneumatic-compression-therapy-can-it-really-help-olympians-or-you-recover-after-exercise-236228",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/049.txt",
+      "textLength": 6874,
+      "claims": [
+        {
+          "id": "catalog:recovery:compression",
+          "description": "The Conversation reports that intermittent pneumatic compression, delivered via inflatable sleeves or boots, is now used by athletes and in wellness businesses after exercise, applying sequential pressure from the end of the limb toward the trunk.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://health.clevelandclinic.org/float-therapy-benefits",
+      "httpStatus": "403",
+      "finalURL": "https://health.clevelandclinic.org/float-therapy-benefits",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/050.txt",
+      "textLength": 762,
+      "claims": [
+        {
+          "id": "catalog:recovery:float-tank",
+          "description": "Cleveland Clinic describes float therapy (sensory deprivation therapy) as taking place in a dark, quiet tank filled with body-temperature, Epsom-salt-saturated water that lets a person float without touching a surface.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.health.harvard.edu/healthy-aging-and-longevity/hyperbaric-oxygen-therapy-evidence-based-uses-and-unproven-claims",
+      "httpStatus": "200",
+      "finalURL": "https://www.health.harvard.edu/healthy-aging-and-longevity/hyperbaric-oxygen-therapy-evidence-based-uses-and-unproven-claims",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/051.txt",
+      "textLength": 9575,
+      "claims": [
+        {
+          "id": "catalog:recovery:hyperbaric-oxygen",
+          "description": "Harvard Health reports that some treatment centers offer hyperbaric oxygen therapy sessions for conditions outside the FDA-approved list, such as Alzheimer's disease, autism, cancer and Lyme disease, which the article states lack scientific backing.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.amtamassage.org/publications/massage-therapy-journal/post-event-sports-massage/",
+      "httpStatus": "200",
+      "finalURL": "https://www.amtamassage.org/publications/massage-therapy-journal/post-event-sports-massage/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/052.txt",
+      "textLength": 13782,
+      "claims": [
+        {
+          "id": "catalog:recovery:massage",
+          "description": "The American Massage Therapy Association's trade journal describes post-event sports massage as using lighter, smoother strokes - compression, effleurage and passive stretching - rather than deep work, typically done soon after activity.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://my.clevelandclinic.org/health/articles/22114-red-light-therapy",
+      "httpStatus": "403",
+      "finalURL": "https://my.clevelandclinic.org/health/articles/22114-red-light-therapy",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/053.txt",
+      "textLength": 762,
+      "claims": [
+        {
+          "id": "catalog:recovery:red-light",
+          "description": "Cleveland Clinic notes that beyond medical-office and at-home devices, red light therapy is also promoted at beauty spas and salons, saunas, tanning salons, gyms and wellness centers.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://wiki.aineetonkulttuuriperinto.fi/wiki/Sauna_bathing",
+      "httpStatus": "200",
+      "finalURL": "https://wiki.aineetonkulttuuriperinto.fi/wiki/Sauna_bathing",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/054.txt",
+      "textLength": 24549,
+      "claims": [
+        {
+          "id": "catalog:recovery:sauna",
+          "description": "Finland's national living-heritage register describes sauna bathing as practiced by most Finns throughout life, roughly once every ten days, historically concentrated on Saturdays though now spread across the week.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.cdc.gov/sleep/about/index.html",
+      "httpStatus": "200",
+      "finalURL": "https://www.cdc.gov/sleep/about/index.html",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/055.txt",
+      "textLength": 5911,
+      "claims": [
+        {
+          "id": "catalog:recovery:screen-curfew",
+          "description": "The CDC lists turning off electronic devices at least 30 minutes before bedtime among its recommended sleep habits.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.bannerhealth.com/healthcareblog/teach-me/sun-gating-and-morning-light-for-better-sleep",
+      "httpStatus": "403",
+      "finalURL": "https://www.bannerhealth.com/healthcareblog/teach-me/sun-gating-and-morning-light-for-better-sleep",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/056.txt",
+      "textLength": 759,
+      "claims": []
+    },
+    {
+      "url": "https://health.yahoo.com/wellness/articles/circadian-sunmaxxing-free-morning-habit-230000245.html",
+      "httpStatus": "200",
+      "finalURL": "https://health.yahoo.com/wellness/articles/circadian-sunmaxxing-free-morning-habit-230000245.html",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/057.txt",
+      "textLength": 15989,
+      "claims": []
+    },
+    {
+      "url": "https://theeverygirl.com/getting-morning-sunlight-every-day/",
+      "httpStatus": "403",
+      "finalURL": "https://theeverygirl.com/getting-morning-sunlight-every-day/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/058.txt",
+      "textLength": 58,
+      "claims": []
+    },
+    {
+      "url": "https://peptidemind.com/where-to-buy-5-amino-1mq",
+      "httpStatus": "200",
+      "finalURL": "https://peptidemind.com/where-to-buy-5-amino-1mq",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/110.txt",
+      "textLength": 32961,
+      "claims": []
+    },
+    {
+      "url": "https://www.webmd.com/vitamins-and-supplements/5-htp-hydroxytryptophan",
+      "httpStatus": "200",
+      "finalURL": "https://www.webmd.com/vitamins-and-supplements/5-htp-hydroxytryptophan",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/111.txt",
+      "textLength": 7803,
+      "claims": []
+    },
+    {
+      "url": "https://www.examine.com/supplements/5-htp/",
+      "httpStatus": "403",
+      "finalURL": "https://www.examine.com/supplements/5-htp/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/112.txt",
+      "textLength": 754,
+      "claims": []
+    },
+    {
+      "url": "https://www.usada.org/spirit-of-sport/aicar-and-other-prohibited-amp-activated-protein-kinase-activators/",
+      "httpStatus": "200",
+      "finalURL": "https://www.usada.org/spirit-of-sport/aicar-and-other-prohibited-amp-activated-protein-kinase-activators/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/113.txt",
+      "textLength": 7949,
+      "claims": []
+    },
+    {
+      "url": "https://nootropicsexpert.com/alpha-gpc/",
+      "httpStatus": "200",
+      "finalURL": "https://nootropicsexpert.com/alpha-gpc/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/059.txt",
+      "textLength": 39269,
+      "claims": []
+    },
+    {
+      "url": "https://nootropicsexpert.com/aniracetam/",
+      "httpStatus": "200",
+      "finalURL": "https://nootropicsexpert.com/aniracetam/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/060.txt",
+      "textLength": 37252,
+      "claims": []
+    },
+    {
+      "url": "https://www.nccih.nih.gov/health/ashwagandha",
+      "httpStatus": "200",
+      "finalURL": "https://www.nccih.nih.gov/health/ashwagandha",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/061.txt",
+      "textLength": 12710,
+      "claims": [
+        {
+          "id": "catalog:supplement:ashwagandha",
+          "description": "Ashwagandha root has a long history of use as a botanical in traditional Ayurvedic medicine.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://ods.od.nih.gov/factsheets/BranchedChainAminoAcids-HealthProfessional/",
+      "httpStatus": "403",
+      "finalURL": "https://ods.od.nih.gov/factsheets/BranchedChainAminoAcids-HealthProfessional/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/114.txt",
+      "textLength": 58,
+      "claims": []
+    },
+    {
+      "url": "https://mcpress.mayoclinic.org/nutrition-fitness/preworkout-supplements-whats-safe-what-should-you-avoid/",
+      "httpStatus": "403",
+      "finalURL": "https://mcpress.mayoclinic.org/nutrition-fitness/preworkout-supplements-whats-safe-what-should-you-avoid/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/062.txt",
+      "textLength": 290,
+      "claims": []
+    },
+    {
+      "url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2024.1347242/full",
+      "httpStatus": "200",
+      "finalURL": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2024.1347242/full",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/115.txt",
+      "textLength": 41682,
+      "claims": []
+    },
+    {
+      "url": "https://www.mskcc.org/cancer-care/integrative-medicine/herbs/berberine",
+      "httpStatus": "200",
+      "finalURL": "https://www.mskcc.org/cancer-care/integrative-medicine/herbs/berberine",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/063.txt",
+      "textLength": 27215,
+      "claims": [
+        {
+          "id": "catalog:supplement:berberine",
+          "description": "Berberine is an alkaloid found in plants such as barberry, Chinese goldthread, goldenseal, and Oregon grape, and is commonly used in traditional Chinese medicine and Ayurveda for digestive and inflammatory complaints.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.healthline.com/nutrition/beta-alanine-101",
+      "httpStatus": "200",
+      "finalURL": "https://www.healthline.com/nutrition/beta-alanine-101",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/116.txt",
+      "textLength": 12673,
+      "claims": []
+    },
+    {
+      "url": "https://ods.od.nih.gov/factsheets/Boron-HealthProfessional/",
+      "httpStatus": "403",
+      "finalURL": "https://ods.od.nih.gov/factsheets/Boron-HealthProfessional/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/117.txt",
+      "textLength": 58,
+      "claims": []
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12566930/",
+      "httpStatus": "200",
+      "finalURL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12566930/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/064.txt",
+      "textLength": 105249,
+      "claims": [
+        {
+          "id": "catalog:supplement:citrulline",
+          "description": "L-citrulline is an amino acid naturally present in high concentrations in watermelon, including its rind, which is the basis for citrulline-containing food and supplement products.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.nccih.nih.gov/health/coenzyme-q10",
+      "httpStatus": "200",
+      "finalURL": "https://www.nccih.nih.gov/health/coenzyme-q10",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/065.txt",
+      "textLength": 8686,
+      "claims": []
+    },
+    {
+      "url": "https://www.mayoclinic.org/drugs-supplements-coenzyme-q10/art-20362602",
+      "httpStatus": "403",
+      "finalURL": "https://www.mayoclinic.org/drugs-supplements-coenzyme-q10/art-20362602",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/066.txt",
+      "textLength": 255,
+      "claims": []
+    },
+    {
+      "url": "https://nutritionsource.hsph.harvard.edu/collagen/",
+      "httpStatus": "200",
+      "finalURL": "https://nutritionsource.hsph.harvard.edu/collagen/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/067.txt",
+      "textLength": 13683,
+      "claims": [
+        {
+          "id": "catalog:supplement:collagen",
+          "description": "Oral collagen supplements are commonly sold as pills, powders, or in certain foods, often marketed as \"collagen peptides\" or \"hydrolyzed collagen\".",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.health.harvard.edu/healthy-aging-and-longevity/turmeric-benefits-a-look-at-the-evidence",
+      "httpStatus": "200",
+      "finalURL": "https://www.health.harvard.edu/healthy-aging-and-longevity/turmeric-benefits-a-look-at-the-evidence",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/068.txt",
+      "textLength": 10486,
+      "claims": [
+        {
+          "id": "catalog:supplement:curcumin",
+          "description": "Curcumin supplements are commonly formulated or paired with piperine (black pepper extract), which is understood to enhance curcumin absorption.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.nccih.nih.gov/health/fenugreek",
+      "httpStatus": "200",
+      "finalURL": "https://www.nccih.nih.gov/health/fenugreek",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/118.txt",
+      "textLength": 12697,
+      "claims": [
+        {
+          "id": "catalog:supplement:fenugreek",
+          "description": "Fenugreek seeds have traditionally been used both as a culinary spice and in traditional medicine.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4397399/",
+      "httpStatus": "200",
+      "finalURL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4397399/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/119.txt",
+      "textLength": 57878,
+      "claims": []
+    },
+    {
+      "url": "https://my.clevelandclinic.org/health/drugs/25173-inositol",
+      "httpStatus": "403",
+      "finalURL": "https://my.clevelandclinic.org/health/drugs/25173-inositol",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/070.txt",
+      "textLength": 762,
+      "claims": []
+    },
+    {
+      "url": "https://www.mayoclinic.org/drugs-supplements-l-carnitine/art-20364833",
+      "httpStatus": "403",
+      "finalURL": "https://www.mayoclinic.org/drugs-supplements-l-carnitine/art-20364833",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/120.txt",
+      "textLength": 254,
+      "claims": []
+    },
+    {
+      "url": "https://www.mskcc.org/cancer-care/integrative-medicine/herbs/l-theanine",
+      "httpStatus": "200",
+      "finalURL": "https://www.mskcc.org/cancer-care/integrative-medicine/herbs/l-theanine",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/121.txt",
+      "textLength": 22050,
+      "claims": []
+    },
+    {
+      "url": "https://nutritionsource.hsph.harvard.edu/magnesium/",
+      "httpStatus": "200",
+      "finalURL": "https://nutritionsource.hsph.harvard.edu/magnesium/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/072.txt",
+      "textLength": 19607,
+      "claims": [
+        {
+          "id": "catalog:supplement:magnesium",
+          "description": "Magnesium is sold as a dietary supplement and is also an ingredient in some over-the-counter antacids and laxatives, in addition to being obtained from food.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.nccih.nih.gov/health/melatonin",
+      "httpStatus": "200",
+      "finalURL": "https://www.nccih.nih.gov/health/melatonin-what-you-need-to-know",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/073.txt",
+      "textLength": 32702,
+      "claims": []
+    },
+    {
+      "url": "https://www.cdc.gov/yellow-book/hcp/preparing-international-travelers/complementary-and-integrative-health-approaches.html",
+      "httpStatus": "200",
+      "finalURL": "https://www.cdc.gov/yellow-book/hcp/preparing-international-travelers/complementary-and-integrative-health-approaches.html",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/074.txt",
+      "textLength": 26227,
+      "claims": []
+    },
+    {
+      "url": "https://nootropicsexpert.com/methylene-blue/",
+      "httpStatus": "200",
+      "finalURL": "https://nootropicsexpert.com/methylene-blue/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/122.txt",
+      "textLength": 51807,
+      "claims": []
+    },
+    {
+      "url": "https://www.fda.gov/food/hfp-constituent-updates/fda-releases-final-guidance-enforcement-discretion-certain-nac-products",
+      "httpStatus": "200",
+      "finalURL": "https://www.fda.gov/food/hfp-constituent-updates/fda-releases-final-guidance-enforcement-discretion-certain-nac-products",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/123.txt",
+      "textLength": 6818,
+      "claims": []
+    },
+    {
+      "url": "https://www.gethealthspan.com/research/article/nad-injections-benefits",
+      "httpStatus": "200",
+      "finalURL": "https://www.gethealthspan.com/research/article/nad-injections-benefits",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/124.txt",
+      "textLength": 21954,
+      "claims": []
+    },
+    {
+      "url": "https://www.mtangelvitamins.com/pages/nmn-forms-sublingual-vs-capsule-vs-powder",
+      "httpStatus": "200",
+      "finalURL": "https://www.mtangelvitamins.com/pages/nmn-forms-sublingual-vs-capsule-vs-powder",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/075.txt",
+      "textLength": 8182,
+      "claims": []
+    },
+    {
+      "url": "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/fats-and-cholesterol/types-of-fat/omega-3-fats/",
+      "httpStatus": "200",
+      "finalURL": "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/fats-and-cholesterol/types-of-fat/omega-3-fats/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/076.txt",
+      "textLength": 22061,
+      "claims": [
+        {
+          "id": "catalog:supplement:omega-3",
+          "description": "People who want marine omega-3s without eating fish sometimes use algal oil, a vegan fish-oil alternative derived from the algae that fish themselves eat.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/protein/",
+      "httpStatus": "200",
+      "finalURL": "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/protein/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/077.txt",
+      "textLength": 35244,
+      "claims": [
+        {
+          "id": "catalog:supplement:plant-protein",
+          "description": "Plant-based protein sources such as quinoa and chia seeds are considered complete plant proteins, meaning they contain all the essential amino acids, unlike many other plant foods which must be combined to supply the full set.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://nutritionsource.hsph.harvard.edu/potassium/",
+      "httpStatus": "200",
+      "finalURL": "https://nutritionsource.hsph.harvard.edu/potassium/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/078.txt",
+      "textLength": 22079,
+      "claims": [
+        {
+          "id": "catalog:supplement:potassium",
+          "description": "Potassium is referred to as an electrolyte and is available both from naturally occurring food sources and as a separate supplement.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://nutritionsource.hsph.harvard.edu/probiotics/",
+      "httpStatus": "200",
+      "finalURL": "https://nutritionsource.hsph.harvard.edu/probiotics/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/079.txt",
+      "textLength": 19779,
+      "claims": [
+        {
+          "id": "catalog:supplement:probiotic",
+          "description": "Probiotics are found naturally in or added to certain fermented foods and beverages, and are also sold as standalone dietary supplements.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://my.clevelandclinic.org/health/drugs/19079-psyllium",
+      "httpStatus": "403",
+      "finalURL": "https://my.clevelandclinic.org/health/drugs/19079-psyllium",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/080.txt",
+      "textLength": 762,
+      "claims": []
+    },
+    {
+      "url": "https://www.health.harvard.edu/blog/diet-rich-resveratrol-offers-health-boost-201405157153",
+      "httpStatus": "200",
+      "finalURL": "https://www.health.harvard.edu/blog/diet-rich-resveratrol-offers-health-boost-201405157153",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/081.txt",
+      "textLength": 10105,
+      "claims": []
+    },
+    {
+      "url": "https://my.clevelandclinic.org/health/drugs/19423-saw-palmetto",
+      "httpStatus": "403",
+      "finalURL": "https://my.clevelandclinic.org/health/drugs/19423-saw-palmetto",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/082.txt",
+      "textLength": 762,
+      "claims": []
+    },
+    {
+      "url": "https://nutritionsource.hsph.harvard.edu/selenium/",
+      "httpStatus": "200",
+      "finalURL": "https://nutritionsource.hsph.harvard.edu/selenium/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/083.txt",
+      "textLength": 12797,
+      "claims": [
+        {
+          "id": "catalog:supplement:selenium",
+          "description": "Selenium supplements are sometimes formulated in combination with other antioxidant vitamins such as vitamin E or C.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.health.harvard.edu/diseases-and-conditions/living-with-gout",
+      "httpStatus": "200",
+      "finalURL": "https://www.health.harvard.edu/diseases-and-conditions/living-with-gout",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/125.txt",
+      "textLength": 11351,
+      "claims": []
+    },
+    {
+      "url": "https://www.fda.gov/food/gras-notice-inventory/agency-response-letter-gras-notice-no-grn-000586",
+      "httpStatus": "200",
+      "finalURL": "https://www.fda.gov/food/gras-notice-inventory/agency-response-letter-gras-notice-no-grn-000586",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/084.txt",
+      "textLength": 10644,
+      "claims": []
+    },
+    {
+      "url": "https://www.healthline.com/nutrition/tongkat-ali-longjack-review",
+      "httpStatus": "200",
+      "finalURL": "https://www.healthline.com/nutrition/tongkat-ali-longjack-review",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/085.txt",
+      "textLength": 15056,
+      "claims": []
+    },
+    {
+      "url": "https://nutritionsource.hsph.harvard.edu/vitamin-a/",
+      "httpStatus": "200",
+      "finalURL": "https://nutritionsource.hsph.harvard.edu/vitamin-a/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/086.txt",
+      "textLength": 18072,
+      "claims": [
+        {
+          "id": "catalog:supplement:vitamin-a",
+          "description": "Vitamin A supplements and fortified foods commonly use preformed vitamin A (retinol/retinyl esters) from animal-derived sources, while plant-based diets rely on provitamin A carotenoids such as beta-carotene that the body converts to retinol.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.fda.gov/medical-devices/safety-communications/fda-warns-biotin-may-interfere-lab-tests-fda-safety-communication",
+      "httpStatus": "404",
+      "finalURL": "https://www.fda.gov/medical-devices/safety-communications/fda-warns-biotin-may-interfere-lab-tests-fda-safety-communication",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/087.txt",
+      "textLength": 1942,
+      "claims": []
+    },
+    {
+      "url": "https://nutritionsource.hsph.harvard.edu/vitamin-b12/",
+      "httpStatus": "200",
+      "finalURL": "https://nutritionsource.hsph.harvard.edu/vitamin-b12/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/088.txt",
+      "textLength": 14002,
+      "claims": [
+        {
+          "id": "catalog:supplement:vitamin-b12",
+          "description": "Vitamin B12 supplements are sold in multiple forms, including sublingual tablets or liquids placed under the tongue, in addition to standard oral tablets.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://nutritionsource.hsph.harvard.edu/vitamin-c/",
+      "httpStatus": "200",
+      "finalURL": "https://nutritionsource.hsph.harvard.edu/vitamin-c/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/089.txt",
+      "textLength": 13117,
+      "claims": [
+        {
+          "id": "catalog:supplement:vitamin-c",
+          "description": "A historical community practice of taking large amounts of vitamin C, popularized by Linus Pauling in the 1970s, involves increased intake at the onset of a cold.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://nutritionsource.hsph.harvard.edu/vitamin-d/",
+      "httpStatus": "200",
+      "finalURL": "https://nutritionsource.hsph.harvard.edu/vitamin-d/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/090.txt",
+      "textLength": 51952,
+      "claims": [
+        {
+          "id": "catalog:supplement:vitamin-d3",
+          "description": "Vitamin D supplements are sold in two distinct forms, vitamin D2 (ergocalciferol) and vitamin D3 (cholecalciferol), which are produced from plant/fungal versus animal sources respectively.",
+          "quoteMatched": false
+        }
+      ]
+    },
+    {
+      "url": "https://nutritionsource.hsph.harvard.edu/vitamin-e/",
+      "httpStatus": "200",
+      "finalURL": "https://nutritionsource.hsph.harvard.edu/vitamin-e/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/091.txt",
+      "textLength": 28627,
+      "claims": [
+        {
+          "id": "catalog:supplement:vitamin-e",
+          "description": "Vitamin E supplements and multivitamins are typically formulated using alpha-tocopherol, the only form of vitamin E the human body actively uses, among several chemical forms of the vitamin.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://nutritionsource.hsph.harvard.edu/vitamin-k/",
+      "httpStatus": "200",
+      "finalURL": "https://nutritionsource.hsph.harvard.edu/vitamin-k/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/092.txt",
+      "textLength": 9735,
+      "claims": [
+        {
+          "id": "catalog:supplement:vitamin-k2",
+          "description": "Vitamin K2 (menaquinone) is a form of vitamin K found in some animal and fermented foods, distinct from the plant-derived phylloquinone (K1) form, and is also produced by bacteria in the body.",
+          "quoteMatched": true
+        }
+      ]
+    },
+    {
+      "url": "https://nutritionsource.hsph.harvard.edu/zinc/",
+      "httpStatus": "200",
+      "finalURL": "https://nutritionsource.hsph.harvard.edu/zinc/",
+      "exitCode": 0,
+      "error": "",
+      "textFile": "b82-new-sources/093.txt",
+      "textLength": 11758,
+      "claims": [
+        {
+          "id": "catalog:supplement:zinc",
+          "description": "Zinc supplements are sold in multiple forms, including pills and lozenges.",
+          "quoteMatched": true
+        }
+      ]
+    }
+  ]
+}

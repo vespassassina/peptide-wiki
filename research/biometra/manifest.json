@@ -1,0 +1,444 @@
+{
+  "authoredExport": {
+    "publication": "not-deployed",
+    "records": 210,
+    "roundTrip": "Every authored entry, including templates, PK ranges and blends, compared equal after Codable encode/decode.",
+    "sha256": "7b1a685484ea487173f81b207dd314e90e673a607e8ba5f04a1f91a1c1804af0",
+    "targetPath": "audit/catalogue-authored.json"
+  },
+  "counts": {
+    "circularWikiLinks": 30,
+    "community": 163,
+    "entries": 210,
+    "ledgerEntries": 130,
+    "links": 543,
+    "noVerifiedDescription": 71,
+    "protocols": 270,
+    "verdicts": 210,
+    "verifiedDescription": 59
+  },
+  "exporter": {
+    "canonicalisation": "Sort JSON object keys and the template.typicalRecurrence.weekdays._0 integer Set only; decode canonical bytes and compare every complete entry to the authored value.",
+    "compileInputs": [
+      {
+        "role": "domain-compilation-input",
+        "sha256": "9bd37961ac85aaecf9566c5cf9fb42604391411f956f66c7f1b3e67767a85c93",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/Administration.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "4e3760c67df52591a73427cc1859a41d21b440697dd48f381003b9d40386d525",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/AgentHarness.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "2d9c1291695e7868b721c4f372f5faee0cdbd17cf8f2501796666ea88aa3a781",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/AgentProposal.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "3759547baa9133e4baac474210f41f0f4cce828f326ea0c6701dc47585fe98d6",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/AuthMethod.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "2ced96562bfebba574ae1f0c2556f84fff5ae4e2c85e6ec776f616acaea55b5d",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/Blend.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "8ea6a3fabcc72db56730966945ce9e89153d10f42a6e45e9d53639b042af77df",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/CyclePattern.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "c63554b6a82f24a6f571ed3c839d7c85c24f8985b34b6c6583f9f82b60f098ee",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/Enumerations.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "5c6dbbfc942a7566e85c860e13f0950e4fdae6ac10cc9b1794832824c2b800a8",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/ExperimentComparison.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "19a7a306fbfce53459cd7491cbe776e07de2f3be74e9740535a31b2c85d6763c",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/Export.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "fba90ad5bf358d628d6a0da19a55c36a95405d8396fdc65e93941c5debafb30a",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/FoodIntake.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "48d3ed488a485044b5ef69169e8ee17c2864b517166d2fd45528a007185acf99",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/FreeAssistants.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "0581c65a48d3e3415890a9219c5e1bae1f391bc4bf50fa1d7f27711232db9c72",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/HalfLife.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "15b7ed27045319c86563e50b8fbdb6196f731ce7c6b59280af05b410d5d6490f",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/HealthMetrics.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "a82b1e4fd8d2653804d49a4b5f5c60ff77500210eccda0aee9ad792155d16ef2",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/HelpTopic.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "0d5e0cacc0d05cbbd65abcd6f8901069f8f86380646192597d6c6ccd4ebe3371",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/Illness.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "25966dab5beea87d536e401e3520751abf4d3db2459f3d243c4077ffef242c3e",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/ImportedDocument.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "4e61f0c252b62d54d1b7e19374e78cb24b59dcef114d358a22025bc8345dbef2",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/ItemNameMatcher.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "4e81311c55dd2b0cea5783f84b141fd6a46fb943831af2de6903e5ff8ea2c1fc",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/ItemOfTheDay.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "7ca62c6008dbb34343b1e280d6d677dd788305d1f0ebc7709b2c3fa5146ef954",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/ItemTemplate.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "ff2202e3a65626eec33867584c3a345290bd00cfaa4d6d24a588f8fb1e7844bc",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/LLMProvider.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "2766e93721b475608dc717ebf86576a5291337b0215fa65a66a721c7860873ab",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/LabAnalyteCatalog.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "dbe4c8b2cd2559ba81688f1d65945276392fc64e6fa461f812b1c201d1d05b6f",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/LabMarkers.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "9ecdd90f446a97124d0055e07422c3312c57c525da6973aa1f3727038f43c36f",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/LibraryCatalog.swift"
+      },
+      {
+        "role": "generated-compilation-dependency-not-evidence",
+        "sha256": "0e3bf1b02930acb43fc4f88d2baf41e8fece7b637430e5cab31a90ca0a231ef3",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/LibraryCatalogEvidence.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "f6467bed5b107608b863841894a2a184b315818d0f2c52a8142a3af07a7f9b61",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/LocalDate.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "ad5765c3c1aa26a4aca27b1233ee45e9cd33639c6ce954a9e58ab01956e6aab4",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/LocalTime.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "05ad755d47b3f7aa07417293fb6b0e5098b522fa5addae43a970e05d8744492e",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/LongOperationProgress.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "a61808a9e281a7fc47f034a57478d016e3aa30de4040121df82d8fcad933911d",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/MealReconciliation.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "c2182d0c207665ebf36dbbe91e051ff4f51873f4032ca5c563df0880c7c2d33b",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/ModelCapabilityTier.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "3dfa19a81c24eb1ea29a7e68c7bbcc09cec72403ab5c98ced0163f0179ef075c",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/NumericTextValidation.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "e5b32a8d3f95292716ee980a8f5bf86a8c5da285dc701320ac1eaf043cdd6e4b",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/NutritionGrouping.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "ee612f323a08330e346cf28e9970203b1ccd10a04fc359a7d08dc1d64278864d",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/OnboardingPlan.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "2012ffc2d010199d87dc8ec4a8eb6cdc8ca421af4a7ccb51a94d3e7e864fb662",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/PeptideTrackerBackup.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "7f4aae3089938c51135ee95ff91e1c255644b8a31153d0b80d28807680bec8d4",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/PersonalityDefinition.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "ed9df004c591a7b259416e8a644fa8e2dd45b0bca74a63e40e6753c2f5dbf102",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/Pharmacokinetics.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "3135b197cc3d6fec7d0a74680292758f110225454898ad3d4bb611dd1810c8f6",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/PrivacySettings.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "a22ad02873f7a88c2b386519ec5ca5098f84bec654fc8e03c48fbf5e253a0206",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/ProtocolProfile.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "c017d454ab5d120ffb72d2532d8f16d8c2ee43cf51f58a1bd091ac3f3a3b5db4",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/Reconstitution.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "6da69ccd5d7c365f391bd0d882b81ccb0d3d0634c80656f6d0a6656725183bd5",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/Recurrence.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "e7846272e0bbed8dbaa405630e153989c3aaed3fe9c6742676e6e250188cc9f1",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/RelativeExpiry.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "910668ab5d8ab8fe2fb3f6a52aba8afadf7b1ba9ca0c0412bbaf43c3e44c99a8",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/ReportComposition.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "2d6179a47cd6c0488cf7457f8f688843411d4d2a161841032a9506fcad16a8d6",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/SchedulePattern.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "c41ebc82bf919277d61e35e632bea1e5af38f71bdc536db28229a8619195701c",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/SchemaV3Decoder.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "e078c1850238be1efdb122bf7f97a0615f971068d5c8077f93c63e9c2a858dc9",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/ScreenContext.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "084805488d09b7e5a6919caa1b8b91a73368777d4533519db2c16bf6cd69e881",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/SexualHealth.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "4d0006b36c703f4ebb771090dba4187e860e448a9366d7efb4b1624280c37dcc",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/ShelfLife.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "f382bb67d0b3b94c134ef34649fe9668ae0362070cec7799a737ace9171f4d8f",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/SpearmanCorrelation.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "f61fc9e0c61430408554301dec2ee81ca76688798b8978e47395e5541a43abba",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/StockStatus.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "ee4589b879cdd1da21f001d60de28c528dcec71be040024538a576224bf2537a",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/Strings.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "ed70064cfe8d38666d912bbff1e0e9fb0aeac58d04d2f91afcc8ff890399b920",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/StructuredImport.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "1257b3288eaa0e636c922734e13ee3c0c319d477f14e44e6ac8ece690fa704fe",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/Supply.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "e4488f69adc152d7d448a097def470f69dea4065f0912ac4e4dc72c46ceb71e0",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/Titration.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "f88aff70727e45380f4766325f76a3d273931f9fe911573b4ed2c344dd0fd5a3",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/TrendAssociation.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "47f2ccca7c19ed78f4e201069dd26145c42f9ecedcfdb7d0659b695ac4ae0558",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/Units.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "20089eb4b65d7c9b2e6d8ef33f6d236a2ea3aec2e09d9535263b16ac4c023eeb",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/UsageSummary.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "922f94dd4b7766e35627d0fb50128c6933fdf1ff5f146d385ecab7fd5e5ac1d7",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/UserProfile.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "9fabfec2fa8320ef6242fcc2dbd7b4c9b987ebd790da457aa9860845fe30e62a",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/UserProfileContext.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "125a23e566d3df6a1be60715fcec2a5d3afdb763ad9a8857b7ebff2c053a4d42",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/Voice.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "518b51599c1bd49ed96275a68f008506ffe27ead87970e715cc03684382fbd6d",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/Wellbeing.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "687de38a3d4b5d4a6469f367212e96b9817b8a043fd902a66b04d14b4c92be1a",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/Workout.swift"
+      },
+      {
+        "role": "domain-compilation-input",
+        "sha256": "4d04c4e255d284b86d5f462b64ad9cdd88a67d299458c73a3283418e18c9600e",
+        "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/Workspace.swift"
+      }
+    ],
+    "sha256": "dcdb0a88a12a13bed9e3cc60a4c1454727946e673ecdefa702dde5c4d1f11207",
+    "sourceTransformation": "In a scratch copy only, replace the single 'private static let authoredEntries' with 'static let authoredEntries'. Encode authoredEntries, not builtInEntries.",
+    "version": 1
+  },
+  "files": [
+    {
+      "publication": "not-deployed",
+      "role": "canonical-evidence",
+      "sha256": "8acf37f1080a1cb0631c8ce61bdcb0be61f369aafd4344f36f031e2c7859d7d6",
+      "sourcePath": "scripts/evidence/evidence.json",
+      "targetPath": "evidence.json"
+    },
+    {
+      "publication": "not-deployed",
+      "role": "canonical-final-outcome-ledger",
+      "sha256": "924aea0251ab76038406e699fe9d7811ea2633c32cd240a06fce7b36c7e1cec9",
+      "sourcePath": "scripts/evidence/community-research.json",
+      "targetPath": "community-research.json"
+    },
+    {
+      "publication": "not-deployed",
+      "role": "original-authored-source",
+      "sha256": "9ecdd90f446a97124d0055e07422c3312c57c525da6973aa1f3727038f43c36f",
+      "sourcePath": "HealthAgentKit/Sources/HealthAgentDomain/LibraryCatalog.swift",
+      "targetPath": "audit/source/LibraryCatalog.swift"
+    },
+    {
+      "publication": "not-deployed",
+      "role": "reuse-instructions",
+      "sha256": "496e81c940e4897e59bc1193752724ac249e5c3c9605c6ff3861e0ea15104440",
+      "sourcePath": "docs/research/B-82/README.md",
+      "targetPath": "audit/B-82/README.md"
+    },
+    {
+      "publication": "not-deployed",
+      "role": "intermediate-proposals-not-approved",
+      "sha256": "cdb113ac91b1572e5be5b157f1ac344b53173c0b560398d934338c3f8f1ef2cf",
+      "sourcePath": "docs/research/B-82/candidate-research.json",
+      "targetPath": "audit/B-82/candidate-research.json"
+    },
+    {
+      "publication": "not-deployed",
+      "role": "dated-evidence-snapshot-not-current",
+      "sha256": "d9933174d67539764f1752e8cddb0c0647d25b1ccaf8f1f512818dd5792774cb",
+      "sourcePath": "docs/research/B-82/catalogue-evidence.json",
+      "targetPath": "audit/B-82/catalogue-evidence.json"
+    },
+    {
+      "publication": "not-deployed",
+      "role": "review-notes-not-article-content",
+      "sha256": "0875e75821dd6a10e607025ed9356e160df121fda2ecf76bae3baa3520623f89",
+      "sourcePath": "docs/research/B-82/existing-description-review.json",
+      "targetPath": "audit/B-82/existing-description-review.json"
+    },
+    {
+      "publication": "not-deployed",
+      "role": "historical-helper-not-executed",
+      "sha256": "155b4503630eb0ef21b0718624035b6561f65ff6ccf18d7cc1befbe033d41289",
+      "sourcePath": "docs/research/B-82/fetch_sources.py",
+      "targetPath": "audit/B-82/fetch_sources.py"
+    },
+    {
+      "publication": "not-deployed",
+      "role": "historical-inventory-absent-caches-not-imported",
+      "sha256": "1fd3e7660c664ae02bd3f4a08cd84e94f15450a317baf0209f05caedc23bac74",
+      "sourcePath": "docs/research/B-82/offline-inventory.json",
+      "targetPath": "audit/B-82/offline-inventory.json"
+    },
+    {
+      "publication": "not-deployed",
+      "role": "historical-final-editorial-overrides",
+      "sha256": "c65ed401a760cef0165e3ad5a972bc387857f42bc992f496bd94730f88835ebf",
+      "sourcePath": "docs/research/B-82/publication-overrides.json",
+      "targetPath": "audit/B-82/publication-overrides.json"
+    },
+    {
+      "publication": "not-deployed",
+      "role": "final-dated-outcome-ledger",
+      "sha256": "924aea0251ab76038406e699fe9d7811ea2633c32cd240a06fce7b36c7e1cec9",
+      "sourcePath": "docs/research/B-82/research-outcomes.json",
+      "targetPath": "audit/B-82/research-outcomes.json"
+    },
+    {
+      "publication": "not-deployed",
+      "role": "retrieval-metadata-not-claim-verification",
+      "sha256": "5a76a530298bfbf4a8c01088859ea7e861af21d82c0ab42aad7109a593952a3b",
+      "sourcePath": "docs/research/B-82/source-fetch-index.json",
+      "targetPath": "audit/B-82/source-fetch-index.json"
+    },
+    {
+      "publication": "not-deployed",
+      "role": "intermediate-review-including-rejections",
+      "sha256": "09355c52169ebded133777f96131b05ed623974340bada0d8b37b7cf19e1c27f",
+      "sourcePath": "docs/research/B-82/working-editorial-review.json",
+      "targetPath": "audit/B-82/working-editorial-review.json"
+    }
+  ],
+  "policy": {
+    "archiveReview": "Only reviewed, pinned tracked B-82 files; cached textFile/archive paths are historical references, not imported file dependencies.",
+    "audit": "Intermediate/rejected drafts and dated snapshots are not accepted article content.",
+    "circularProvenance": "Source-to-wiki backlinks are preserved but are not independent corroboration.",
+    "excluded": [
+      "ignored/untracked files",
+      "local-only archives",
+      "publisher HTML/text caches and excerpts",
+      "private health/store data",
+      "credentials"
+    ],
+    "publicOutput": "No bundle file is deployed in Sprint 1. Future public projections require explicit field allowlists.",
+    "sourceChecks": "Historical checks remain historical. No fresh verification or publication permission is conferred by migration.",
+    "templates": "Archive only; never recommendations, calculator autofill or public template objects."
+  },
+  "schemaVersion": 1,
+  "sourceCommit": "adc7684614f9439b41d91a3312b62e7982c7e20e",
+  "sourceRepository": "vespassassina/BiohackerAssistant"
+}

@@ -1,0 +1,1636 @@
+{
+  "scope": "B-82 original 130 non-peptide/hormone catalogue entries.",
+  "interpretation": "A researched-empty outcome means no suitable description was verified in the recorded checks, not that no community practice exists anywhere. Published descriptions do not establish safety or effectiveness.",
+  "entries": {
+    "catalog:medication:paracetamol": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere. The proposed text only lists available dosage forms, not a reported community routine.",
+      "checks": [
+        {
+          "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/",
+          "outcome": "no-practice-description",
+          "reason": "The proposed text only lists available dosage forms, not a reported community routine."
+        }
+      ]
+    },
+    "catalog:medication:diclofenac-topical": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere. The excerpt describes UK prescription status and available forms, not a reported community routine.",
+      "checks": [
+        {
+          "url": "https://www.nhs.uk/medicines/diclofenac/about-diclofenac/",
+          "outcome": "no-practice-description",
+          "reason": "The excerpt describes UK prescription status and available forms, not a reported community routine."
+        }
+      ]
+    },
+    "catalog:medication:antacid": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere. A product's list of available dosage forms, including a paediatric formulation, is not a reported community routine.",
+      "checks": [
+        {
+          "url": "https://www.nhs.uk/medicines/gaviscon/about-gaviscon/",
+          "outcome": "no-practice-description",
+          "reason": "A product's list of available dosage forms, including a paediatric formulation, is not a reported community routine."
+        }
+      ]
+    },
+    "catalog:supplement:glycine": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4397399/",
+          "outcome": "trial-only",
+          "reason": "The inspected PMC paper reports rat sleep experiments. Its interventions and findings were not repurposed as community practice."
+        }
+      ]
+    },
+    "catalog:supplement:casein-protein": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "Rechecked the previously published description against live source content. The live guide explicitly says most casein users consume it before bed and gives the water-mixed powder example. No efficacy statement is repeated.",
+      "checks": [
+        {
+          "url": "https://www.healthline.com/nutrition/casein-protein-is-highly-underrated",
+          "outcome": "verified-description",
+          "reason": "The live guide explicitly says most casein users consume it before bed and gives the water-mixed powder example. No efficacy statement is repeated."
+        }
+      ]
+    },
+    "catalog:supplement:magnesium": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere. The excerpt only lists food and medicinal product sources, not a community supplementation routine.",
+      "checks": [
+        {
+          "url": "https://nutritionsource.hsph.harvard.edu/magnesium/",
+          "outcome": "no-practice-description",
+          "reason": "The excerpt only lists food and medicinal product sources, not a community supplementation routine."
+        }
+      ]
+    },
+    "catalog:supplement:vitamin-b12": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere. The excerpt lists dosage forms and disputed absorption claims, not a community routine.",
+      "checks": [
+        {
+          "url": "https://nutritionsource.hsph.harvard.edu/vitamin-b12/",
+          "outcome": "no-practice-description",
+          "reason": "The excerpt lists dosage forms and disputed absorption claims, not a community routine."
+        }
+      ]
+    },
+    "catalog:supplement:vitamin-e": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere. The excerpt concerns a chemical form's physiological identity, not a documented supplementation routine.",
+      "checks": [
+        {
+          "url": "https://nutritionsource.hsph.harvard.edu/vitamin-e/",
+          "outcome": "no-practice-description",
+          "reason": "The excerpt concerns a chemical form's physiological identity, not a documented supplementation routine."
+        }
+      ]
+    },
+    "catalog:supplement:boron": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://ods.od.nih.gov/factsheets/Boron-HealthProfessional/",
+          "outcome": "blocked",
+          "reason": "Independent direct retrieval returned HTTP 403. No description was verified from this inaccessible response."
+        }
+      ]
+    },
+    "catalog:supplement:ashwagandha": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "The independently retrieved full NIH page contains a traditional-use report, not just navigation. Like the berberine description, this records a historical medicinal tradition without repeating indications, recommendations or claimed benefits.",
+      "checks": [
+        {
+          "url": "https://www.nccih.nih.gov/health/ashwagandha",
+          "outcome": "verified-description",
+          "reason": "The background section explicitly records longstanding medicinal-plant use, especially in Ayurvedic medicine. Current promotional indications and trial results were not repurposed."
+        }
+      ]
+    },
+    "catalog:food-protocol:18-6": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://my.clevelandclinic.org/podcasts/love-your-heart/what-is-intermittent-fasting",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: A Cleveland Clinic podcast includes an 18-hour daily fast among time-restricted eating patterns, corresponding to a six-hour eating window."
+        }
+      ]
+    },
+    "catalog:food-protocol:adf": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "Rechecked the previously published description against live source content. The live guide lists alternate-day fasting and describes fasting every other day; no efficacy or adherence claim is repeated.",
+      "checks": [
+        {
+          "url": "https://www.healthline.com/nutrition/6-ways-to-do-intermittent-fasting",
+          "outcome": "verified-description",
+          "reason": "The live guide lists alternate-day fasting and describes fasting every other day; no efficacy or adherence claim is repeated."
+        }
+      ]
+    },
+    "catalog:food-protocol:keto": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "Rechecked the previously published description against live source content. The live guide documents both the stated standard macro proportions and a cyclical variant. The description reports those versions, not health outcomes.",
+      "checks": [
+        {
+          "url": "https://www.healthline.com/nutrition/ketogenic-diet-101",
+          "outcome": "verified-description",
+          "reason": "The live guide documents both the stated standard macro proportions and a cyclical variant. The description reports those versions, not health outcomes."
+        }
+      ]
+    },
+    "catalog:food-protocol:paleo": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "Rechecked the previously published description against live source content. The live guide lists the food groups in the description, identifies grains, dairy and legumes as restricted groups, and discusses flexible modern variants.",
+      "checks": [
+        {
+          "url": "https://www.healthline.com/nutrition/paleo-diet-meal-plan-and-menu",
+          "outcome": "verified-description",
+          "reason": "The live guide lists the food groups in the description, identifies grains, dairy and legumes as restricted groups, and discusses flexible modern variants."
+        }
+      ]
+    },
+    "catalog:food-protocol:mediterranean": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "Rechecked the previously published description against live source content. The live guide describes the stated food pattern and includes fish and seafood at least twice weekly. No outcome claims are repeated.",
+      "checks": [
+        {
+          "url": "https://www.healthline.com/nutrition/mediterranean-diet-meal-plan",
+          "outcome": "verified-description",
+          "reason": "The live guide describes the stated food pattern and includes fish and seafood at least twice weekly. No outcome claims are repeated."
+        }
+      ]
+    },
+    "catalog:exercise:cardio-zone2": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://health.clevelandclinic.org/exercise-heart-rate-zones-explained",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: A Cleveland Clinic guide describes Zone 2 cardio as moderate-intensity activity during which conversation remains possible, in contrast to higher-intensity zones."
+        }
+      ]
+    },
+    "catalog:exercise:calisthenics": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://health.clevelandclinic.org/calisthenics",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: A Cleveland Clinic guide describes calisthenics as whole-body resistance exercises relying on body weight with little or no equipment."
+        }
+      ]
+    },
+    "catalog:exercise:swimming": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://www.usms.org/about-usms/what-is-usms",
+          "outcome": "not-found",
+          "reason": "The initial citation returned HTTP 404. The description was checked against the current canonical page before publication."
+        },
+        {
+          "url": "https://www.usms.org/about/what-is-us-masters-swimming",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: US Masters Swimming describes adult swimming clubs and workout groups organised through local swimming committees."
+        }
+      ]
+    },
+    "catalog:exercise:hiking": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://americanhiking.org/resources/hiking-trails-policy/",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: The American Hiking Society describes foot-only trails as one setting for hiking, managed for pedestrian travel away from motorised vehicles."
+        }
+      ]
+    },
+    "catalog:recovery:sauna": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://wiki.aineetonkulttuuriperinto.fi/wiki/Sauna_bathing",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: Finland's living-heritage register describes sauna bathing traditionally on Saturdays, with the practice now spread across other days too."
+        }
+      ]
+    },
+    "catalog:recovery:breathwork": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "Rechecked the previously published description against live source content. The live NHS practice contains seated, standing and lying options, nasal inhalation, oral exhalation and optional counting. Its suggested duration is not repeated.",
+      "checks": [
+        {
+          "url": "https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/breathing-exercises-for-stress/",
+          "outcome": "verified-description",
+          "reason": "The live NHS practice contains seated, standing and lying options, nasal inhalation, oral exhalation and optional counting. Its suggested duration is not repeated."
+        }
+      ]
+    },
+    "catalog:recovery:stretching": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "Rechecked the previously published description against live source content. The live NHS routine contains the named lower-body stretches with sides repeated in turn. Stretch durations and benefit claims are not repeated.",
+      "checks": [
+        {
+          "url": "https://www.nhs.uk/live-well/exercise/how-to-stretch-after-exercising/",
+          "outcome": "verified-description",
+          "reason": "The live NHS routine contains the named lower-body stretches with sides repeated in turn. Stretch durations and benefit claims are not repeated."
+        }
+      ]
+    },
+    "catalog:recovery:sunlight": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://www.bannerhealth.com/healthcareblog/teach-me/sun-gating-and-morning-light-for-better-sleep",
+          "outcome": "blocked",
+          "reason": "Independent direct retrieval returned HTTP 403. No description was verified from this inaccessible response."
+        },
+        {
+          "url": "https://health.yahoo.com/wellness/articles/circadian-sunmaxxing-free-morning-habit-230000245.html",
+          "outcome": "no-practice-description",
+          "reason": "This retrieved source was checked, but no suitable community description was independently verified. Research regimens, expert advice, product identity and efficacy claims were not repurposed."
+        },
+        {
+          "url": "https://theeverygirl.com/getting-morning-sunlight-every-day/",
+          "outcome": "blocked",
+          "reason": "Independent direct retrieval returned HTTP 403. No description was verified from this inaccessible response."
+        }
+      ]
+    },
+    "catalog:recovery:compression": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://theconversation.com/pneumatic-compression-therapy-can-it-really-help-olympians-or-you-recover-after-exercise-236228",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: The Conversation reports recovery boots used by athletes and wellness businesses, with inflatable sleeves applying pressure sequentially from the ends of the limbs towards the trunk."
+        }
+      ]
+    },
+    "catalog:medication:aspirin": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere. The excerpt is expert advice about an enteric-coated product and includes a claimed stomach benefit; it does not document observed community use.",
+      "checks": [
+        {
+          "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/ask-the-experts/aspirin-stomach",
+          "outcome": "no-practice-description",
+          "reason": "The excerpt is expert advice about an enteric-coated product and includes a claimed stomach benefit; it does not document observed community use."
+        }
+      ]
+    },
+    "catalog:medication:antibiotic-course": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://www.cdc.gov/antibiotic-use/index.html",
+          "outcome": "no-practice-description",
+          "reason": "This retrieved source was checked, but no suitable community description was independently verified. Research regimens, expert advice, product identity and efficacy claims were not repurposed."
+        },
+        {
+          "url": "https://www.cdc.gov/antibiotic-use/communication-resources/index.html",
+          "outcome": "no-practice-description",
+          "reason": "This retrieved source was checked, but no suitable community description was independently verified. Research regimens, expert advice, product identity and efficacy claims were not repurposed."
+        },
+        {
+          "url": "https://www.cdc.gov/antibiotic-use/took-your-last-dose.html",
+          "outcome": "not-found",
+          "reason": "Independent direct retrieval returned HTTP 404. No description was verified at this attempted address."
+        },
+        {
+          "url": "https://www.cdc.gov/antibiotic-use/materials-references/index.html",
+          "outcome": "not-found",
+          "reason": "Independent direct retrieval returned HTTP 404. No description was verified at this attempted address."
+        }
+      ]
+    },
+    "catalog:medication:oral-rehydration": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://www.who.int/news-room/fact-sheets/detail/diarrhoeal-disease",
+          "outcome": "no-practice-description",
+          "reason": "This retrieved source was checked, but no suitable community description was independently verified. Research regimens, expert advice, product identity and efficacy claims were not repurposed."
+        }
+      ]
+    },
+    "catalog:supplement:creatine": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "Rechecked the previously published description against live source content. The live guide explicitly calls the loading sequence a common approach and distinguishes it from maintenance. The retained text attributes the sequence to the guide rather than prescribing it.",
+      "checks": [
+        {
+          "url": "https://www.healthline.com/nutrition/creatine-loading-phase",
+          "outcome": "verified-description",
+          "reason": "The live guide explicitly calls the loading sequence a common approach and distinguishes it from maintenance. The retained text attributes the sequence to the guide rather than prescribing it."
+        }
+      ]
+    },
+    "catalog:supplement:bcaa": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://ods.od.nih.gov/factsheets/BranchedChainAminoAcids-HealthProfessional/",
+          "outcome": "blocked",
+          "reason": "Independent direct retrieval returned HTTP 403. No description was verified from this inaccessible response."
+        }
+      ]
+    },
+    "catalog:supplement:plant-protein": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere. The food-protein excerpt about quinoa and chia does not document a routine for the catalogue's plant-protein supplement.",
+      "checks": [
+        {
+          "url": "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/protein/",
+          "outcome": "no-practice-description",
+          "reason": "The food-protein excerpt about quinoa and chia does not document a routine for the catalogue's plant-protein supplement."
+        }
+      ]
+    },
+    "catalog:supplement:vitamin-a": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere. The excerpt describes chemical forms and food sources, not a community routine.",
+      "checks": [
+        {
+          "url": "https://nutritionsource.hsph.harvard.edu/vitamin-a/",
+          "outcome": "no-practice-description",
+          "reason": "The excerpt describes chemical forms and food sources, not a community routine."
+        }
+      ]
+    },
+    "catalog:supplement:vitamin-c": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere. The proposed onset-of-cold timing is unsupported by the quote, and megadose promotion is not suitable practice content.",
+      "checks": [
+        {
+          "url": "https://nutritionsource.hsph.harvard.edu/vitamin-c/",
+          "outcome": "no-practice-description",
+          "reason": "The proposed onset-of-cold timing is unsupported by the quote, and megadose promotion is not suitable practice content."
+        }
+      ]
+    },
+    "catalog:supplement:vitamin-k2": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere. The excerpt concerns food and bacterial origins of menaquinones, not a community routine.",
+      "checks": [
+        {
+          "url": "https://nutritionsource.hsph.harvard.edu/vitamin-k/",
+          "outcome": "no-practice-description",
+          "reason": "The excerpt concerns food and bacterial origins of menaquinones, not a community routine."
+        }
+      ]
+    },
+    "catalog:supplement:tongkat-ali": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://www.healthline.com/nutrition/tongkat-ali-longjack-review",
+          "outcome": "no-practice-description",
+          "reason": "This retrieved source was checked, but no suitable community description was independently verified. Research regimens, expert advice, product identity and efficacy claims were not repurposed."
+        }
+      ]
+    },
+    "catalog:supplement:omega-3": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/fats-and-cholesterol/types-of-fat/omega-3-fats/",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: The Harvard Nutrition Source describes algal oil as a vegan alternative to fish oil for omega-3 supplementation."
+        }
+      ]
+    },
+    "catalog:food-protocol:omad": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://www.healthline.com/health/one-meal-a-day",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: A Healthline guide describes one-meal-a-day eating as concentrating daily food intake into one meal rather than several meals."
+        }
+      ]
+    },
+    "catalog:food-protocol:extended-fast": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere. The proposed source is a commercial fasting clinic's promotional page; its supporting excerpt makes benefit claims rather than independently documenting the proposed community routine.",
+      "checks": [
+        {
+          "url": "https://www.healthpromoting.com/about-water-only-fasting",
+          "outcome": "no-practice-description",
+          "reason": "The proposed source is a commercial fasting clinic's promotional page; its supporting excerpt makes benefit claims rather than independently documenting the proposed community routine."
+        }
+      ]
+    },
+    "catalog:food-protocol:low-carb": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://www.dietdoctor.com/low-carb/how-low-carb-is-low-carb",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: A Diet Doctor guide distinguishes stricter ketogenic eating from moderate and more liberal low-carbohydrate patterns."
+        }
+      ]
+    },
+    "catalog:food-protocol:vegan": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://www.vegansociety.com/go-vegan/definition-veganism",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: The Vegan Society describes vegan eating as excluding animal-derived foods, including meat, fish, dairy, eggs and honey."
+        }
+      ]
+    },
+    "catalog:food-protocol:carb-cycling": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://www.precisionnutrition.com/all-about-carb-cycling",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: A Precision Nutrition guide describes carb cycling as alternating higher-carbohydrate workout days with lower-carbohydrate non-workout days."
+        }
+      ]
+    },
+    "catalog:exercise:hiit": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://health.clevelandclinic.org/think-you-cant-do-high-intensity-interval-training-think-again",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: A Cleveland Clinic guide describes HIIT sessions as repeated higher-intensity activity intervals alternated with lower-intensity recovery."
+        }
+      ]
+    },
+    "catalog:exercise:running": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://www.rrca.org/education/for-runners/",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: The Road Runners Club of America describes run-walk-run sessions with alternating running and walking intervals, attributing the method to Jeff Galloway."
+        }
+      ]
+    },
+    "catalog:exercise:walking": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://www.cdc.gov/physical-activity-basics/guidelines/index.html",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: CDC's activity guide lists brisk walking as an example of moderate-intensity physical activity."
+        }
+      ]
+    },
+    "catalog:exercise:functional-fitness": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://www.acefitness.org/resources/pros/expert-articles/7208/creating-functional-training-programs-for-every-type-of-client/",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: An American Council on Exercise guide describes functional sessions organised around combinations of movement patterns, including hinging, squatting, pushing and pulling."
+        }
+      ]
+    },
+    "catalog:recovery:cold-exposure": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "Rechecked the previously published description against live source content. The web-fetch tool retrieved the live Cleveland Clinic article and its description of cold tap water or added ice in a workout/wellness context. Direct curl was blocked; no source access barrier was bypassed and no temperature or safety-duration advice is repeated.",
+      "checks": [
+        {
+          "url": "https://health.clevelandclinic.org/what-to-know-about-cold-plunges",
+          "outcome": "verified-description",
+          "reason": "The web-fetch tool retrieved the live Cleveland Clinic article and its description of cold tap water or added ice in a workout/wellness context. Direct curl was blocked; no source access barrier was bypassed and no temperature or safety-duration advice is repeated."
+        }
+      ]
+    },
+    "catalog:recovery:meditation": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "Rechecked the previously published description against live source content. The live Mindful guide describes a short seated practice with attention to breathing and returning attention when distracted. The text attributes the practice to this guide, not a measured population frequency.",
+      "checks": [
+        {
+          "url": "https://www.mindful.org/how-to-meditate/",
+          "outcome": "verified-description",
+          "reason": "The live Mindful guide describes a short seated practice with attention to breathing and returning attention when distracted. The text attributes the practice to this guide, not a measured population frequency."
+        }
+      ]
+    },
+    "catalog:recovery:massage": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://www.amtamassage.org/publications/massage-therapy-journal/post-event-sports-massage/",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: An American Massage Therapy Association account of post-event sports massage describes lighter strokes such as compression and effleurage with passive stretching, rather than deep massage."
+        }
+      ]
+    },
+    "catalog:recovery:journaling": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "Rechecked the previously published description against live source content. The live Berkeley practice describes private expressive writing about a challenging emotional experience on four consecutive days. Its benefit claims are not repeated.",
+      "checks": [
+        {
+          "url": "https://ggia.berkeley.edu/practice/expressive_writing",
+          "outcome": "verified-description",
+          "reason": "The live Berkeley practice describes private expressive writing about a challenging emotional experience on four consecutive days. Its benefit claims are not repeated."
+        }
+      ]
+    },
+    "catalog:context:routine": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://www.sleepfoundation.org/sleep-faqs/how-to-wake-up-easier",
+          "outcome": "no-practice-description",
+          "reason": "The inspected guide gives expert recommendations for waking routines; those recommendations were not presented as observations of community practice."
+        }
+      ]
+    },
+    "catalog:medication:ibuprofen": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere. The proposed text only lists available dosage forms; no community routine is documented.",
+      "checks": [
+        {
+          "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/",
+          "outcome": "no-practice-description",
+          "reason": "The proposed text only lists available dosage forms; no community routine is documented."
+        }
+      ]
+    },
+    "catalog:medication:naproxen": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere. The proposed text only lists available dosage forms, not a reported community routine.",
+      "checks": [
+        {
+          "url": "https://www.nhs.uk/medicines/naproxen/",
+          "outcome": "no-practice-description",
+          "reason": "The proposed text only lists available dosage forms, not a reported community routine."
+        }
+      ]
+    },
+    "catalog:medication:antihistamine": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere. The proposed text only lists medication classes and available dosage forms, not a reported community routine.",
+      "checks": [
+        {
+          "url": "https://www.nhs.uk/medicines/antihistamines/",
+          "outcome": "no-practice-description",
+          "reason": "The proposed text only lists medication classes and available dosage forms, not a reported community routine."
+        }
+      ]
+    },
+    "catalog:supplement:taurine": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://www.fda.gov/food/gras-notice-inventory/agency-response-letter-gras-notice-no-grn-000586",
+          "outcome": "no-practice-description",
+          "reason": "This retrieved source was checked, but no suitable community description was independently verified. Research regimens, expert advice, product identity and efficacy claims were not repurposed."
+        }
+      ]
+    },
+    "catalog:supplement:whey-protein": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "Rechecked the previously published description against live source content. The live guide describes shakes between meals or around workouts and specifies the powder's usual protein content per scoop. The description does not assert a superior training time.",
+      "checks": [
+        {
+          "url": "https://www.healthline.com/nutrition/protein-shake-before-or-after-workout",
+          "outcome": "verified-description",
+          "reason": "The live guide describes shakes between meals or around workouts and specifies the powder's usual protein content per scoop. The description does not assert a superior training time."
+        }
+      ]
+    },
+    "catalog:supplement:collagen": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere. The excerpt describes product forms and absorption beliefs, not an observed or named community routine.",
+      "checks": [
+        {
+          "url": "https://nutritionsource.hsph.harvard.edu/collagen/",
+          "outcome": "no-practice-description",
+          "reason": "The excerpt describes product forms and absorption beliefs, not an observed or named community routine."
+        }
+      ]
+    },
+    "catalog:supplement:vitamin-b-complex": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://www.fda.gov/medical-devices/safety-communications/fda-warns-biotin-may-interfere-lab-tests-fda-safety-communication",
+          "outcome": "not-found",
+          "reason": "Independent direct retrieval returned HTTP 404. No description was verified at this attempted address."
+        }
+      ]
+    },
+    "catalog:supplement:vitamin-d3": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere. The excerpt distinguishes chemical forms and origins, not a community routine.",
+      "checks": [
+        {
+          "url": "https://nutritionsource.hsph.harvard.edu/vitamin-d/",
+          "outcome": "no-practice-description",
+          "reason": "The excerpt distinguishes chemical forms and origins, not a community routine."
+        }
+      ]
+    },
+    "catalog:supplement:zinc": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere. The excerpt lists product forms, not a community routine.",
+      "checks": [
+        {
+          "url": "https://nutritionsource.hsph.harvard.edu/zinc/",
+          "outcome": "no-practice-description",
+          "reason": "The excerpt lists product forms, not a community routine."
+        }
+      ]
+    },
+    "catalog:supplement:fenugreek": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "The full public NIH page was independently retrieved and inspected. It reports historical culinary and medicinal use of the seeds; promoted indications, safety assertions and clinical results were not imported.",
+      "checks": [
+        {
+          "url": "https://www.nccih.nih.gov/health/fenugreek",
+          "outcome": "verified-description",
+          "reason": "The background section explicitly records seeds used as a spice and traditional medicine. The description does not turn the page's promoted uses into verified benefits."
+        }
+      ]
+    },
+    "catalog:food-protocol:16-8": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "Rechecked the previously published description against live source content. The live guide explicitly describes a popular daily 16-hour fast and eight-hour eating window.",
+      "checks": [
+        {
+          "url": "https://www.healthline.com/nutrition/6-ways-to-do-intermittent-fasting",
+          "outcome": "verified-description",
+          "reason": "The live guide explicitly describes a popular daily 16-hour fast and eight-hour eating window."
+        }
+      ]
+    },
+    "catalog:food-protocol:5-2": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "Rechecked the previously published description against live source content. The live guide describes five usual eating days and two restricted days. The description identifies the named pattern, not a recommendation to adopt it.",
+      "checks": [
+        {
+          "url": "https://www.healthline.com/nutrition/6-ways-to-do-intermittent-fasting",
+          "outcome": "verified-description",
+          "reason": "The live guide describes five usual eating days and two restricted days. The description identifies the named pattern, not a recommendation to adopt it."
+        }
+      ]
+    },
+    "catalog:food-protocol:carnivore": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://health.clevelandclinic.org/the-carnivore-diet",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: A Cleveland Clinic guide describes carnivore eating around meat, fish, eggs and limited dairy, excluding plant foods."
+        }
+      ]
+    },
+    "catalog:food-protocol:vegetarian": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://www.eatright.org/health/wellness/vegetarian-and-plant-based/vegetarianism-the-basic-facts",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: The Academy of Nutrition and Dietetics describes lacto-ovo vegetarian eating as including dairy and eggs alongside plant foods while excluding meat, poultry and fish."
+        }
+      ]
+    },
+    "catalog:exercise:resistance-session": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://health.clevelandclinic.org/strength-training",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: A Cleveland Clinic guide describes resistance sessions using free weights, machines or resistance bands, with muscles working against an external load."
+        }
+      ]
+    },
+    "catalog:exercise:bodyweight": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://www.acefitness.org/resources/everyone/blog/7038/body-weight-training-don-t-let-a-lack-of-equipment-keep-you-from-your-goals/",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: An American Council on Exercise guide describes bodyweight sessions using exercises such as push-ups, squats, lunges and planks without external weights."
+        }
+      ]
+    },
+    "catalog:exercise:cycling": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://gccfla.org/labtips.shtml",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: A cycling club guide describes group-riding calls such as 'car back' and 'car up', alongside hand signals for turns and road hazards."
+        }
+      ]
+    },
+    "catalog:exercise:rowing": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://www.concept2.com/indoor-rowers/training/technique",
+          "outcome": "not-found",
+          "reason": "The initial citation returned HTTP 404. The description was checked against the current canonical page before publication."
+        },
+        {
+          "url": "https://www.concept2.com/training/rowing-technique",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: Concept2's indoor rowing guide describes a four-part stroke: the catch, drive, finish and recovery."
+        }
+      ]
+    },
+    "catalog:exercise:martial-arts": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://www.health.harvard.edu/exercise-and-fitness/the-health-benefits-of-tai-chi",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: One Harvard Health guide describes a tai chi class combining a warm-up with instruction and practice of movement forms."
+        }
+      ]
+    },
+    "catalog:recovery:red-light": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://my.clevelandclinic.org/health/articles/22114-red-light-therapy",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: Cleveland Clinic describes red light therapy promoted at beauty salons, gyms and wellness centres as well as in medical-office and at-home contexts."
+        }
+      ]
+    },
+    "catalog:recovery:yoga": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "Rechecked the previously published description against live source content. The live NCCIH page explicitly describes the postures, breathing and meditation emphasis of US practice and its range of styles. Trial results are not repeated.",
+      "checks": [
+        {
+          "url": "https://www.nccih.nih.gov/health/yoga-effectiveness-and-safety",
+          "outcome": "verified-description",
+          "reason": "The live NCCIH page explicitly describes the postures, breathing and meditation emphasis of US practice and its range of styles. Trial results are not repeated."
+        }
+      ]
+    },
+    "catalog:recovery:nap": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "The original Sleep Foundation page returned HTTP 403 through both retrieval methods. The replacement describes observed siestas, not a recommended nap duration or an intervention.",
+      "checks": [
+        {
+          "url": "https://www.sleepfoundation.org/napping",
+          "outcome": "blocked",
+          "reason": "Direct retrieval and the web-fetch tool both returned HTTP 403; no claim was retained from this inaccessible page."
+        },
+        {
+          "url": "https://www.nhlbi.nih.gov/news/2023/researchers-study-how-daytime-naps-may-influence-health",
+          "outcome": "verified-description",
+          "reason": "The live NIH report explicitly describes observed regular midday siestas in a Spanish adult cohort, often four days a week. Its health-outcome associations are not repeated."
+        }
+      ]
+    },
+    "catalog:recovery:float-tank": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://health.clevelandclinic.org/float-therapy-benefits",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: A Cleveland Clinic guide describes float therapy in a dark, quiet tank with a shallow pool of salt-saturated water."
+        }
+      ]
+    },
+    "catalog:lab-marker:panel": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://www.cdc.gov/cholesterol/testing/index.html",
+          "outcome": "no-practice-description",
+          "reason": "The inspected CDC page explains cholesterol-panel contents and preparation advice. No community testing schedule was imported."
+        }
+      ]
+    },
+    "catalog:medication:finasteride": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://www.nhs.uk/medicines/finasteride/",
+          "outcome": "no-practice-description",
+          "reason": "This retrieved source was checked, but no suitable community description was independently verified. Research regimens, expert advice, product identity and efficacy claims were not repurposed."
+        }
+      ]
+    },
+    "catalog:medication:dutasteride": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+          "outcome": "no-practice-description",
+          "reason": "This retrieved source was checked, but no suitable community description was independently verified. Research regimens, expert advice, product identity and efficacy claims were not repurposed."
+        }
+      ]
+    },
+    "catalog:medication:sildenafil": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://www.nhs.uk/medicines/sildenafil-viagra/",
+          "outcome": "no-practice-description",
+          "reason": "This retrieved source was checked, but no suitable community description was independently verified. Research regimens, expert advice, product identity and efficacy claims were not repurposed."
+        }
+      ]
+    },
+    "catalog:medication:tadalafil": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://www.nhs.uk/medicines/tadalafil/",
+          "outcome": "no-practice-description",
+          "reason": "This retrieved source was checked, but no suitable community description was independently verified. Research regimens, expert advice, product identity and efficacy claims were not repurposed."
+        }
+      ]
+    },
+    "catalog:medication:teriparatide": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://medlineplus.gov/druginfo/meds/a603018.html",
+          "outcome": "no-practice-description",
+          "reason": "This retrieved source was checked, but no suitable community description was independently verified. Research regimens, expert advice, product identity and efficacy claims were not repurposed."
+        }
+      ]
+    },
+    "catalog:medication:oxytocin": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7815514/",
+          "outcome": "trial-only",
+          "reason": "The inspected review concerns experimental intranasal administration and research methods; it does not establish a non-study community routine."
+        }
+      ]
+    },
+    "catalog:supplement:aicar": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://www.usada.org/spirit-of-sport/aicar-and-other-prohibited-amp-activated-protein-kinase-activators/",
+          "outcome": "no-practice-description",
+          "reason": "The inspected anti-doping article discusses prohibited-substance use, safety warnings and research mechanisms. No usage protocol was imported from it."
+        }
+      ]
+    },
+    "catalog:supplement:5-amino-1mq": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://peptidemind.com/where-to-buy-5-amino-1mq",
+          "outcome": "no-practice-description",
+          "reason": "The inspected page promotes research-chemical vendors and product purchasing. It was not accepted as a trustworthy practice source."
+        }
+      ]
+    },
+    "catalog:supplement:aniracetam": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://nootropicsexpert.com/aniracetam/",
+          "outcome": "no-practice-description",
+          "reason": "This retrieved source was checked, but no suitable community description was independently verified. Research regimens, expert advice, product identity and efficacy claims were not repurposed."
+        }
+      ]
+    },
+    "catalog:medication:tesofensine": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3055463/",
+          "outcome": "trial-only",
+          "reason": "The inspected PMC paper reports rat experiments. Animal interventions and mechanistic findings were not repurposed as human community practice."
+        }
+      ]
+    },
+    "catalog:medication:pentosan-polysulfate": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://medlineplus.gov/druginfo/meds/a602007.html",
+          "outcome": "no-practice-description",
+          "reason": "This retrieved source was checked, but no suitable community description was independently verified. Research regimens, expert advice, product identity and efficacy claims were not repurposed."
+        }
+      ]
+    },
+    "catalog:supplement:methylene-blue": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://nootropicsexpert.com/methylene-blue/",
+          "outcome": "no-practice-description",
+          "reason": "The inspected commercial nootropic guide includes product promotion, benefit claims and dosing advice. No protocol was imported from it."
+        }
+      ]
+    },
+    "catalog:supplement:nad-plus": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://www.gethealthspan.com/research/article/nad-injections-benefits",
+          "outcome": "no-practice-description",
+          "reason": "The inspected clinic page promotes treatment products and benefit claims, with prescriptive selection and administration advice. No protocol was imported."
+        }
+      ]
+    },
+    "catalog:medication:minoxidil": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10806356/",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: A clinical review reports off-label oral minoxidil use for alopecia alongside established topical formulations, without supplying a dosing routine here."
+        }
+      ]
+    },
+    "catalog:medication:cagrilintide": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://www.biospace.com/press-releases/novos-cagrisema-delivers-superior-weight-loss-and-cardiometabolic-benefits-compared-to-semaglutide-in-head-to-head-phase-3b-trial",
+          "outcome": "not-found",
+          "reason": "Independent direct retrieval returned HTTP 404. No description was verified at this attempted address."
+        }
+      ]
+    },
+    "catalog:medication:liraglutide": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere. The quoted brand and indication identity does not establish community practice; the proposed injection-schedule wording goes beyond that excerpt.",
+      "checks": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5358074/",
+          "outcome": "no-practice-description",
+          "reason": "The quoted brand and indication identity does not establish community practice; the proposed injection-schedule wording goes beyond that excerpt."
+        }
+      ]
+    },
+    "catalog:medication:survodutide": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://markets.businessinsider.com/news/stocks/zealand-pharma-announces-survodutide-phase-3-synchronize-2-trial",
+          "outcome": "not-found",
+          "reason": "Independent direct retrieval returned HTTP 404. No description was verified at this attempted address."
+        }
+      ]
+    },
+    "catalog:medication:mazdutide": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/innovent-announces-mazdutide-received-approval-from-chinas-national-medical-products-administration-nmpa-for-the-treatment-of-chronic-weight-management-302561434.html",
+          "outcome": "not-found",
+          "reason": "Independent direct retrieval returned HTTP 404. No description was verified at this attempted address."
+        }
+      ]
+    },
+    "catalog:medication:orforglipron": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-new-molecular-entity-under-national-priority-voucher-program",
+          "outcome": "no-practice-description",
+          "reason": "The inspected FDA announcement reports regulatory and clinical-trial information. Those facts were not repurposed as community practice."
+        }
+      ]
+    },
+    "catalog:supplement:caffeine": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "The original numerical amounts were presented by the page as recommendations and study-based amounts. The revised description retains explicit consumption forms without implying an observed common dose.",
+      "checks": [
+        {
+          "url": "https://www.healthline.com/nutrition/caffeine-and-exercise",
+          "outcome": "verified-description",
+          "reason": "The live page names regular intake through coffee, energy drinks and caffeinated soda, and separately discusses caffeine anhydrous supplements. Dose and efficacy recommendations were excluded."
+        }
+      ]
+    },
+    "catalog:supplement:melatonin": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://www.nccih.nih.gov/health/melatonin",
+          "outcome": "no-practice-description",
+          "reason": "This retrieved source was checked, but no suitable community description was independently verified. Research regimens, expert advice, product identity and efficacy claims were not repurposed."
+        },
+        {
+          "url": "https://www.cdc.gov/yellow-book/hcp/preparing-international-travelers/complementary-and-integrative-health-approaches.html",
+          "outcome": "no-practice-description",
+          "reason": "This retrieved source was checked, but no suitable community description was independently verified. Research regimens, expert advice, product identity and efficacy claims were not repurposed."
+        }
+      ]
+    },
+    "catalog:supplement:l-theanine": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://www.mskcc.org/cancer-care/integrative-medicine/herbs/l-theanine",
+          "outcome": "no-practice-description",
+          "reason": "The inspected reference discusses food sources, purported uses, research and clinical cautions. No trial or expert suggestion was recast as community practice."
+        }
+      ]
+    },
+    "catalog:supplement:nac": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://www.fda.gov/food/hfp-constituent-updates/fda-releases-final-guidance-enforcement-discretion-certain-nac-products",
+          "outcome": "no-practice-description",
+          "reason": "The inspected FDA page explains a regulatory enforcement policy for products, not a reported community routine."
+        }
+      ]
+    },
+    "catalog:supplement:curcumin": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere. The excerpt advises a piperine combination to increase absorption; this must not become a claim about observed common use or a benefit assertion.",
+      "checks": [
+        {
+          "url": "https://www.health.harvard.edu/healthy-aging-and-longevity/turmeric-benefits-a-look-at-the-evidence",
+          "outcome": "no-practice-description",
+          "reason": "The excerpt advises a piperine combination to increase absorption; this must not become a claim about observed common use or a benefit assertion."
+        }
+      ]
+    },
+    "catalog:supplement:berberine": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://www.mskcc.org/cancer-care/integrative-medicine/herbs/berberine",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: Memorial Sloan Kettering's reference describes berberine-containing plants used in traditional Chinese medicine and Ayurveda; this records traditional use, not established clinical benefit."
+        }
+      ]
+    },
+    "catalog:supplement:coenzyme-q10": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://www.nccih.nih.gov/health/coenzyme-q10",
+          "outcome": "no-practice-description",
+          "reason": "This retrieved source was checked, but no suitable community description was independently verified. Research regimens, expert advice, product identity and efficacy claims were not repurposed."
+        },
+        {
+          "url": "https://www.mayoclinic.org/drugs-supplements-coenzyme-q10/art-20362602",
+          "outcome": "blocked",
+          "reason": "Independent direct retrieval returned HTTP 403. No description was verified from this inaccessible response."
+        }
+      ]
+    },
+    "catalog:supplement:beta-alanine": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://www.healthline.com/nutrition/beta-alanine-101",
+          "outcome": "no-practice-description",
+          "reason": "This retrieved source was checked, but no suitable community description was independently verified. Research regimens, expert advice, product identity and efficacy claims were not repurposed."
+        }
+      ]
+    },
+    "catalog:supplement:citrulline": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere. The excerpt establishes an ingredient's presence in watermelon, not a community supplementation routine.",
+      "checks": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12566930/",
+          "outcome": "no-practice-description",
+          "reason": "The excerpt establishes an ingredient's presence in watermelon, not a community supplementation routine."
+        }
+      ]
+    },
+    "catalog:supplement:l-carnitine": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://www.mayoclinic.org/drugs-supplements-l-carnitine/art-20364833",
+          "outcome": "blocked",
+          "reason": "Independent direct retrieval returned HTTP 403. No description was verified from this inaccessible response."
+        }
+      ]
+    },
+    "catalog:supplement:alpha-gpc": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://nootropicsexpert.com/alpha-gpc/",
+          "outcome": "no-practice-description",
+          "reason": "This retrieved source was checked, but no suitable community description was independently verified. Research regimens, expert advice, product identity and efficacy claims were not repurposed."
+        }
+      ]
+    },
+    "catalog:supplement:inositol": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://my.clevelandclinic.org/health/drugs/25173-inositol",
+          "outcome": "blocked",
+          "reason": "Independent direct retrieval returned HTTP 403. No description was verified from this inaccessible response."
+        }
+      ]
+    },
+    "catalog:supplement:probiotic": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere. The excerpt lists food and product sources without documenting a community routine.",
+      "checks": [
+        {
+          "url": "https://nutritionsource.hsph.harvard.edu/probiotics/",
+          "outcome": "no-practice-description",
+          "reason": "The excerpt lists food and product sources without documenting a community routine."
+        }
+      ]
+    },
+    "catalog:supplement:psyllium": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://my.clevelandclinic.org/health/drugs/19079-psyllium",
+          "outcome": "blocked",
+          "reason": "Independent direct retrieval returned HTTP 403. No description was verified from this inaccessible response."
+        }
+      ]
+    },
+    "catalog:supplement:selenium": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere. The excerpt describes product formulations and promotional claims rather than a community routine.",
+      "checks": [
+        {
+          "url": "https://nutritionsource.hsph.harvard.edu/selenium/",
+          "outcome": "no-practice-description",
+          "reason": "The excerpt describes product formulations and promotional claims rather than a community routine."
+        }
+      ]
+    },
+    "catalog:supplement:potassium": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere. The excerpt only establishes mineral and supplement identity, not a community routine.",
+      "checks": [
+        {
+          "url": "https://nutritionsource.hsph.harvard.edu/potassium/",
+          "outcome": "no-practice-description",
+          "reason": "The excerpt only establishes mineral and supplement identity, not a community routine."
+        }
+      ]
+    },
+    "catalog:supplement:5-htp": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://www.webmd.com/vitamins-and-supplements/5-htp-hydroxytryptophan",
+          "outcome": "no-practice-description",
+          "reason": "This retrieved source was checked, but no suitable community description was independently verified. Research regimens, expert advice, product identity and efficacy claims were not repurposed."
+        },
+        {
+          "url": "https://www.examine.com/supplements/5-htp/",
+          "outcome": "blocked",
+          "reason": "Independent direct retrieval returned HTTP 403. No description was verified from this inaccessible response."
+        }
+      ]
+    },
+    "catalog:supplement:nmn": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://www.mtangelvitamins.com/pages/nmn-forms-sublingual-vs-capsule-vs-powder",
+          "outcome": "no-practice-description",
+          "reason": "The inspected vendor page compares and recommends its supplement product forms. Product marketing was not accepted as a community usage report."
+        }
+      ]
+    },
+    "catalog:supplement:resveratrol": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://www.health.harvard.edu/blog/diet-rich-resveratrol-offers-health-boost-201405157153",
+          "outcome": "no-practice-description",
+          "reason": "This retrieved source was checked, but no suitable community description was independently verified. Research regimens, expert advice, product identity and efficacy claims were not repurposed."
+        }
+      ]
+    },
+    "catalog:supplement:tart-cherry": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://www.health.harvard.edu/diseases-and-conditions/living-with-gout",
+          "outcome": "no-practice-description",
+          "reason": "The inspected gout guide gives clinical and lifestyle advice rather than an independently verified tart-cherry community routine."
+        }
+      ]
+    },
+    "catalog:supplement:saw-palmetto": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://my.clevelandclinic.org/health/drugs/19423-saw-palmetto",
+          "outcome": "blocked",
+          "reason": "Independent direct retrieval returned HTTP 403. No description was verified from this inaccessible response."
+        }
+      ]
+    },
+    "catalog:supplement:beetroot": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://mcpress.mayoclinic.org/nutrition-fitness/preworkout-supplements-whats-safe-what-should-you-avoid/",
+          "outcome": "blocked",
+          "reason": "Independent direct retrieval returned HTTP 403. No description was verified from this inaccessible response."
+        },
+        {
+          "url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2024.1347242/full",
+          "outcome": "trial-only",
+          "reason": "The inspected review compares dietary nitrate interventions and exercise outcomes. Trial regimens were not repurposed as community practice."
+        }
+      ]
+    },
+    "catalog:medication:insulin": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://www.nhs.uk/medicines/insulin/insulin-for-type-1-diabetes/",
+          "outcome": "no-practice-description",
+          "reason": "This retrieved source was checked, but no suitable community description was independently verified. Research regimens, expert advice, product identity and efficacy claims were not repurposed."
+        },
+        {
+          "url": "https://www.nhs.uk/medicines/insulin/",
+          "outcome": "no-practice-description",
+          "reason": "This retrieved source was checked, but no suitable community description was independently verified. Research regimens, expert advice, product identity and efficacy claims were not repurposed."
+        }
+      ]
+    },
+    "catalog:medication:metformin": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6544683/",
+          "outcome": "no-practice-description",
+          "reason": "This retrieved source was checked, but no suitable community description was independently verified. Research regimens, expert advice, product identity and efficacy claims were not repurposed."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6779524/",
+          "outcome": "no-practice-description",
+          "reason": "This retrieved source was checked, but no suitable community description was independently verified. Research regimens, expert advice, product identity and efficacy claims were not repurposed."
+        }
+      ]
+    },
+    "catalog:medication:atorvastatin": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere.",
+      "checks": [
+        {
+          "url": "https://www.nhs.uk/medicines/atorvastatin/",
+          "outcome": "no-practice-description",
+          "reason": "This retrieved source was checked, but no suitable community description was independently verified. Research regimens, expert advice, product identity and efficacy claims were not repurposed."
+        }
+      ]
+    },
+    "catalog:context:sleep": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://www.thensf.org/nsf-sleep-diary/",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: The National Sleep Foundation's sleep diary has separate entries for waking and before bed, recorded daily."
+        }
+      ]
+    },
+    "catalog:context:alcohol": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://rethinkingdrinking.niaaa.nih.gov/tools/worksheets-more/alcohol-consumption-tracker",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: NIAAA's Rethinking Drinking programme describes a printable four-week calendar card for recording individual drinks."
+        }
+      ]
+    },
+    "catalog:context:nicotine": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://smokefree.gov/tools-tips/quitstart",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: Smokefree.gov's quitSTART app includes tags for times or places associated with smoking urges as part of tracking a quit attempt."
+        }
+      ]
+    },
+    "catalog:context:alcohol-free-day": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://www.health.harvard.edu/healthy-aging-and-longevity/take-the-dry-january-challenge",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: A Harvard Health guide to Dry January describes using the Try Dry app to record drinking and personal goals."
+        }
+      ]
+    },
+    "catalog:food-protocol:calorie-protein-target": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://www.myfitnesspal.com/",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: MyFitnessPal describes food logging that records calories and macronutrients, including protein, against personal goals."
+        }
+      ]
+    },
+    "catalog:exercise:pilates": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://health.clevelandclinic.org/everything-you-want-to-know-about-pilates",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: A Cleveland Clinic guide describes Pilates routines performed on a mat or on apparatus such as a reformer."
+        }
+      ]
+    },
+    "catalog:exercise:climbing": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://www.climbing.com/skills/training-value-effectiveness",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: A Climbing magazine article illustrates hangboard practice for particular grip positions alongside time spent climbing."
+        }
+      ]
+    },
+    "catalog:exercise:team-sport": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://www.countyhealthrankings.org/strategies-and-solutions/what-works-for-health/strategies/recreational-sports-leagues-for-adults",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: A County Health Rankings description of adult recreational leagues lists soccer, softball, kickball and basketball at different playing levels."
+        }
+      ]
+    },
+    "catalog:recovery:acupuncture": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://healthy.kaiserpermanente.org/health-wellness/healtharticle.acupuncture-101",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: A Kaiser Permanente patient guide describes an acupuncture appointment with dimmed lights, quiet music and the practitioner checking on the person's comfort."
+        }
+      ]
+    },
+    "catalog:recovery:hyperbaric-oxygen": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "An attributed practice description was verified without importing the source's benefit claims, recommendations or assumptions about prevalence.",
+      "checks": [
+        {
+          "url": "https://www.health.harvard.edu/healthy-aging-and-longevity/hyperbaric-oxygen-therapy-evidence-based-uses-and-unproven-claims",
+          "outcome": "verified-description",
+          "reason": "Independently read the live source and checked this limited, attributed description: Harvard Health reports some treatment centres marketing hyperbaric oxygen for uses beyond FDA-cleared indications, distinguishing those claims from established medical uses."
+        }
+      ]
+    },
+    "catalog:recovery:gratitude-therapy": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "Rechecked the previously published description against live source content. The live Berkeley Three Good Things practice contains a written record of three good events and explanations of why they occurred. The source also discusses a before-bed reflection.",
+      "checks": [
+        {
+          "url": "https://ggia.berkeley.edu/practice/three-good-things",
+          "outcome": "verified-description",
+          "reason": "The live Berkeley Three Good Things practice contains a written record of three good events and explanations of why they occurred. The source also discusses a before-bed reflection."
+        }
+      ]
+    },
+    "catalog:recovery:screen-curfew": {
+      "checkedOn": "2026-10-06",
+      "status": "no-verified-description",
+      "notes": "No suitable community description was independently verified in these checks. The entry remains empty; this does not establish that no practice exists elsewhere. The quoted timing is a CDC expert recommendation, not a report of an observed community routine.",
+      "checks": [
+        {
+          "url": "https://www.cdc.gov/sleep/about/index.html",
+          "outcome": "no-practice-description",
+          "reason": "The quoted timing is a CDC expert recommendation, not a report of an observed community routine."
+        }
+      ]
+    },
+    "catalog:food-protocol:full-day-fast": {
+      "checkedOn": "2026-10-06",
+      "status": "verified-description",
+      "notes": "Rechecked the previously published description against live source content. The live guide explicitly describes Eat Stop Eat as a 24-hour fast once or twice per week, outside an intervention-trial description.",
+      "checks": [
+        {
+          "url": "https://www.healthline.com/nutrition/6-ways-to-do-intermittent-fasting",
+          "outcome": "verified-description",
+          "reason": "The live guide explicitly describes Eat Stop Eat as a 24-hour fast once or twice per week, outside an intervention-trial description."
+        }
+      ]
+    }
+  }
+}

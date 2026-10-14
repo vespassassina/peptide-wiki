@@ -1,0 +1,83 @@
+{
+  "catalog:recovery:nap": {
+    "community": [
+      {
+        "description": "An observational report describes midday siestas among adults in Spain, with regular nappers often reporting four days a week.",
+        "source": {
+          "title": "Researchers study how daytime naps may influence health - NHLBI",
+          "url": "https://www.nhlbi.nih.gov/news/2023/researchers-study-how-daytime-naps-may-influence-health"
+        }
+      }
+    ],
+    "notes": "The original Sleep Foundation page returned HTTP 403 through both retrieval methods. The replacement describes observed siestas, not a recommended nap duration or an intervention.",
+    "checks": [
+      {
+        "url": "https://www.sleepfoundation.org/napping",
+        "outcome": "blocked",
+        "reason": "Direct retrieval and the web-fetch tool both returned HTTP 403; no claim was retained from this inaccessible page."
+      },
+      {
+        "url": "https://www.nhlbi.nih.gov/news/2023/researchers-study-how-daytime-naps-may-influence-health",
+        "outcome": "verified-description",
+        "reason": "The live NIH report explicitly describes observed regular midday siestas in a Spanish adult cohort, often four days a week. Its health-outcome associations are not repeated."
+      }
+    ]
+  },
+  "catalog:supplement:ashwagandha": {
+    "community": [
+      {
+        "description": "NCCIH describes ashwagandha as a medicinal plant historically used in traditional Ayurvedic practice.",
+        "source": {
+          "title": "Ashwagandha: Usefulness and Safety - NCCIH",
+          "url": "https://www.nccih.nih.gov/health/ashwagandha"
+        }
+      }
+    ],
+    "notes": "The independently retrieved full NIH page contains a traditional-use report, not just navigation. Like the berberine description, this records a historical medicinal tradition without repeating indications, recommendations or claimed benefits.",
+    "checks": [
+      {
+        "url": "https://www.nccih.nih.gov/health/ashwagandha",
+        "outcome": "verified-description",
+        "reason": "The background section explicitly records longstanding medicinal-plant use, especially in Ayurvedic medicine. Current promotional indications and trial results were not repurposed."
+      }
+    ]
+  },
+  "catalog:supplement:fenugreek": {
+    "community": [
+      {
+        "description": "NCCIH describes fenugreek seeds historically used as a culinary spice and in traditional medicine.",
+        "source": {
+          "title": "Fenugreek - NCCIH",
+          "url": "https://www.nccih.nih.gov/health/fenugreek"
+        }
+      }
+    ],
+    "notes": "The full public NIH page was independently retrieved and inspected. It reports historical culinary and medicinal use of the seeds; promoted indications, safety assertions and clinical results were not imported.",
+    "checks": [
+      {
+        "url": "https://www.nccih.nih.gov/health/fenugreek",
+        "outcome": "verified-description",
+        "reason": "The background section explicitly records seeds used as a spice and traditional medicine. The description does not turn the page's promoted uses into verified benefits."
+      }
+    ]
+  },
+  "catalog:supplement:caffeine": {
+    "community": [
+      {
+        "description": "An exercise-nutrition guide describes regular caffeine intake through coffee, energy drinks and caffeinated soft drinks, alongside caffeine anhydrous supplements.",
+        "source": {
+          "title": "How Caffeine Improves Exercise Performance - Healthline",
+          "url": "https://www.healthline.com/nutrition/caffeine-and-exercise"
+        }
+      }
+    ],
+    "notes": "The original numerical amounts were presented by the page as recommendations and study-based amounts. The revised description retains explicit consumption forms without implying an observed common dose.",
+    "checks": [
+      {
+        "url": "https://www.healthline.com/nutrition/caffeine-and-exercise",
+        "outcome": "verified-description",
+        "reason": "The live page names regular intake through coffee, energy drinks and caffeinated soda, and separately discusses caffeine anhydrous supplements. Dose and efficacy recommendations were excluded."
+      }
+    ]
+  }
+}

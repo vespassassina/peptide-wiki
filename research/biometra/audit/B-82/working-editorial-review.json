@@ -1,0 +1,262 @@
+{
+  "catalog:context:alcohol": {
+    "decision": "retain-if-verified",
+    "description": "NIAAA's Rethinking Drinking programme describes a printable four-week calendar card for recording individual drinks."
+  },
+  "catalog:context:alcohol-free-day": {
+    "decision": "retain-if-verified",
+    "description": "A Harvard Health guide to Dry January describes using the Try Dry app to record drinking and personal goals."
+  },
+  "catalog:context:nicotine": {
+    "decision": "retain-if-verified",
+    "description": "Smokefree.gov's quitSTART app includes tags for times or places associated with smoking urges as part of tracking a quit attempt."
+  },
+  "catalog:context:sleep": {
+    "decision": "retain-if-verified",
+    "description": "The National Sleep Foundation's sleep diary has separate entries for waking and before bed, recorded daily."
+  },
+  "catalog:exercise:bodyweight": {
+    "decision": "retain-if-verified",
+    "description": "An American Council on Exercise guide describes bodyweight sessions using exercises such as push-ups, squats, lunges and planks without external weights."
+  },
+  "catalog:exercise:calisthenics": {
+    "decision": "retain-if-verified",
+    "description": "A Cleveland Clinic guide describes calisthenics as whole-body resistance exercises relying on body weight with little or no equipment."
+  },
+  "catalog:exercise:cardio-zone2": {
+    "decision": "retain-if-verified",
+    "description": "A Cleveland Clinic guide describes Zone 2 cardio as moderate-intensity activity during which conversation remains possible, in contrast to higher-intensity zones."
+  },
+  "catalog:exercise:climbing": {
+    "decision": "retain-if-verified",
+    "description": "A Climbing magazine article illustrates hangboard practice for particular grip positions alongside time spent climbing."
+  },
+  "catalog:exercise:cycling": {
+    "decision": "retain-if-verified",
+    "description": "A cycling club guide describes group-riding calls such as 'car back' and 'car up', alongside hand signals for turns and road hazards."
+  },
+  "catalog:exercise:functional-fitness": {
+    "decision": "retain-if-verified",
+    "description": "An American Council on Exercise guide describes functional sessions organised around combinations of movement patterns, including hinging, squatting, pushing and pulling."
+  },
+  "catalog:exercise:hiit": {
+    "decision": "retain-if-verified",
+    "description": "A Cleveland Clinic guide describes HIIT sessions as repeated higher-intensity activity intervals alternated with lower-intensity recovery."
+  },
+  "catalog:exercise:hiking": {
+    "decision": "retain-if-verified",
+    "description": "The American Hiking Society describes foot-only trails as one setting for hiking, managed for pedestrian travel away from motorised vehicles."
+  },
+  "catalog:exercise:martial-arts": {
+    "decision": "retain-if-verified",
+    "description": "One Harvard Health guide describes a tai chi class combining a warm-up with instruction and practice of movement forms."
+  },
+  "catalog:exercise:pilates": {
+    "decision": "retain-if-verified",
+    "description": "A Cleveland Clinic guide describes Pilates routines performed on a mat or on apparatus such as a reformer."
+  },
+  "catalog:exercise:resistance-session": {
+    "decision": "retain-if-verified",
+    "description": "A Cleveland Clinic guide describes resistance sessions using free weights, machines or resistance bands, with muscles working against an external load."
+  },
+  "catalog:exercise:rowing": {
+    "decision": "retain-if-verified",
+    "sourceOverride": {
+      "title": "Indoor Rowing Technique - Concept2",
+      "url": "https://www.concept2.com/training/rowing-technique"
+    },
+    "description": "Concept2's indoor rowing guide describes a four-part stroke: the catch, drive, finish and recovery."
+  },
+  "catalog:exercise:running": {
+    "decision": "retain-if-verified",
+    "description": "The Road Runners Club of America describes run-walk-run sessions with alternating running and walking intervals, attributing the method to Jeff Galloway."
+  },
+  "catalog:exercise:swimming": {
+    "decision": "retain-if-verified",
+    "sourceOverride": {
+      "title": "What is U.S. Masters Swimming? - U.S. Masters Swimming",
+      "url": "https://www.usms.org/about/what-is-us-masters-swimming"
+    },
+    "description": "US Masters Swimming describes adult swimming clubs and workout groups organised through local swimming committees."
+  },
+  "catalog:exercise:team-sport": {
+    "decision": "retain-if-verified",
+    "description": "A County Health Rankings description of adult recreational leagues lists soccer, softball, kickball and basketball at different playing levels."
+  },
+  "catalog:exercise:walking": {
+    "decision": "retain-if-verified",
+    "description": "CDC's activity guide lists brisk walking as an example of moderate-intensity physical activity."
+  },
+  "catalog:food-protocol:18-6": {
+    "decision": "retain-if-verified",
+    "description": "A Cleveland Clinic podcast includes an 18-hour daily fast among time-restricted eating patterns, corresponding to a six-hour eating window."
+  },
+  "catalog:food-protocol:calorie-protein-target": {
+    "decision": "retain-if-verified",
+    "description": "MyFitnessPal describes food logging that records calories and macronutrients, including protein, against personal goals."
+  },
+  "catalog:food-protocol:carb-cycling": {
+    "decision": "retain-if-verified",
+    "description": "A Precision Nutrition guide describes carb cycling as alternating higher-carbohydrate workout days with lower-carbohydrate non-workout days."
+  },
+  "catalog:food-protocol:carnivore": {
+    "decision": "retain-if-verified",
+    "description": "A Cleveland Clinic guide describes carnivore eating around meat, fish, eggs and limited dairy, excluding plant foods."
+  },
+  "catalog:food-protocol:extended-fast": {
+    "decision": "reject",
+    "reason": "The proposed source is a commercial fasting clinic's promotional page; its supporting excerpt makes benefit claims rather than independently documenting the proposed community routine."
+  },
+  "catalog:food-protocol:low-carb": {
+    "decision": "retain-if-verified",
+    "description": "A Diet Doctor guide distinguishes stricter ketogenic eating from moderate and more liberal low-carbohydrate patterns."
+  },
+  "catalog:food-protocol:omad": {
+    "decision": "retain-if-verified",
+    "description": "A Healthline guide describes one-meal-a-day eating as concentrating daily food intake into one meal rather than several meals."
+  },
+  "catalog:food-protocol:vegan": {
+    "decision": "retain-if-verified",
+    "description": "The Vegan Society describes vegan eating as excluding animal-derived foods, including meat, fish, dairy, eggs and honey."
+  },
+  "catalog:food-protocol:vegetarian": {
+    "decision": "retain-if-verified",
+    "description": "The Academy of Nutrition and Dietetics describes lacto-ovo vegetarian eating as including dairy and eggs alongside plant foods while excluding meat, poultry and fish."
+  },
+  "catalog:medication:antacid": {
+    "decision": "reject",
+    "reason": "A product's list of available dosage forms, including a paediatric formulation, is not a reported community routine."
+  },
+  "catalog:medication:antihistamine": {
+    "decision": "reject",
+    "reason": "The proposed text only lists medication classes and available dosage forms, not a reported community routine."
+  },
+  "catalog:medication:aspirin": {
+    "decision": "reject",
+    "reason": "The excerpt is expert advice about an enteric-coated product and includes a claimed stomach benefit; it does not document observed community use."
+  },
+  "catalog:medication:diclofenac-topical": {
+    "decision": "reject",
+    "reason": "The excerpt describes UK prescription status and available forms, not a reported community routine."
+  },
+  "catalog:medication:ibuprofen": {
+    "decision": "reject",
+    "reason": "The proposed text only lists available dosage forms; no community routine is documented."
+  },
+  "catalog:medication:liraglutide": {
+    "decision": "reject",
+    "reason": "The quoted brand and indication identity does not establish community practice; the proposed injection-schedule wording goes beyond that excerpt."
+  },
+  "catalog:medication:minoxidil": {
+    "decision": "retain-if-verified",
+    "description": "A clinical review reports off-label oral minoxidil use for alopecia alongside established topical formulations, without supplying a dosing routine here."
+  },
+  "catalog:medication:naproxen": {
+    "decision": "reject",
+    "reason": "The proposed text only lists available dosage forms, not a reported community routine."
+  },
+  "catalog:medication:paracetamol": {
+    "decision": "reject",
+    "reason": "The proposed text only lists available dosage forms, not a reported community routine."
+  },
+  "catalog:recovery:acupuncture": {
+    "decision": "retain-if-verified",
+    "description": "A Kaiser Permanente patient guide describes an acupuncture appointment with dimmed lights, quiet music and the practitioner checking on the person's comfort."
+  },
+  "catalog:recovery:compression": {
+    "decision": "retain-if-verified",
+    "description": "The Conversation reports recovery boots used by athletes and wellness businesses, with inflatable sleeves applying pressure sequentially from the ends of the limbs towards the trunk."
+  },
+  "catalog:recovery:float-tank": {
+    "decision": "retain-if-verified",
+    "description": "A Cleveland Clinic guide describes float therapy in a dark, quiet tank with a shallow pool of salt-saturated water."
+  },
+  "catalog:recovery:hyperbaric-oxygen": {
+    "decision": "retain-if-verified",
+    "description": "Harvard Health reports some treatment centres marketing hyperbaric oxygen for uses beyond FDA-cleared indications, distinguishing those claims from established medical uses."
+  },
+  "catalog:recovery:massage": {
+    "decision": "retain-if-verified",
+    "description": "An American Massage Therapy Association account of post-event sports massage describes lighter strokes such as compression and effleurage with passive stretching, rather than deep massage."
+  },
+  "catalog:recovery:red-light": {
+    "decision": "retain-if-verified",
+    "description": "Cleveland Clinic describes red light therapy promoted at beauty salons, gyms and wellness centres as well as in medical-office and at-home contexts."
+  },
+  "catalog:recovery:sauna": {
+    "decision": "retain-if-verified",
+    "description": "Finland's living-heritage register describes sauna bathing traditionally on Saturdays, with the practice now spread across other days too."
+  },
+  "catalog:recovery:screen-curfew": {
+    "decision": "reject",
+    "reason": "The quoted timing is a CDC expert recommendation, not a report of an observed community routine."
+  },
+  "catalog:supplement:berberine": {
+    "decision": "retain-if-verified",
+    "description": "Memorial Sloan Kettering's reference describes berberine-containing plants used in traditional Chinese medicine and Ayurveda; this records traditional use, not established clinical benefit."
+  },
+  "catalog:supplement:citrulline": {
+    "decision": "reject",
+    "reason": "The excerpt establishes an ingredient's presence in watermelon, not a community supplementation routine."
+  },
+  "catalog:supplement:collagen": {
+    "decision": "reject",
+    "reason": "The excerpt describes product forms and absorption beliefs, not an observed or named community routine."
+  },
+  "catalog:supplement:curcumin": {
+    "decision": "reject",
+    "reason": "The excerpt advises a piperine combination to increase absorption; this must not become a claim about observed common use or a benefit assertion."
+  },
+  "catalog:supplement:magnesium": {
+    "decision": "reject",
+    "reason": "The excerpt only lists food and medicinal product sources, not a community supplementation routine."
+  },
+  "catalog:supplement:omega-3": {
+    "decision": "retain-if-verified",
+    "description": "The Harvard Nutrition Source describes algal oil as a vegan alternative to fish oil for omega-3 supplementation."
+  },
+  "catalog:supplement:plant-protein": {
+    "decision": "reject",
+    "reason": "The food-protein excerpt about quinoa and chia does not document a routine for the catalogue's plant-protein supplement."
+  },
+  "catalog:supplement:potassium": {
+    "decision": "reject",
+    "reason": "The excerpt only establishes mineral and supplement identity, not a community routine."
+  },
+  "catalog:supplement:probiotic": {
+    "decision": "reject",
+    "reason": "The excerpt lists food and product sources without documenting a community routine."
+  },
+  "catalog:supplement:selenium": {
+    "decision": "reject",
+    "reason": "The excerpt describes product formulations and promotional claims rather than a community routine."
+  },
+  "catalog:supplement:vitamin-a": {
+    "decision": "reject",
+    "reason": "The excerpt describes chemical forms and food sources, not a community routine."
+  },
+  "catalog:supplement:vitamin-b12": {
+    "decision": "reject",
+    "reason": "The excerpt lists dosage forms and disputed absorption claims, not a community routine."
+  },
+  "catalog:supplement:vitamin-c": {
+    "decision": "reject",
+    "reason": "The proposed onset-of-cold timing is unsupported by the quote, and megadose promotion is not suitable practice content."
+  },
+  "catalog:supplement:vitamin-d3": {
+    "decision": "reject",
+    "reason": "The excerpt distinguishes chemical forms and origins, not a community routine."
+  },
+  "catalog:supplement:vitamin-e": {
+    "decision": "reject",
+    "reason": "The excerpt concerns a chemical form's physiological identity, not a documented supplementation routine."
+  },
+  "catalog:supplement:vitamin-k2": {
+    "decision": "reject",
+    "reason": "The excerpt concerns food and bacterial origins of menaquinones, not a community routine."
+  },
+  "catalog:supplement:zinc": {
+    "decision": "reject",
+    "reason": "The excerpt lists product forms, not a community routine."
+  }
+}
