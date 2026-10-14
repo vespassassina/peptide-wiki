@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Generates the Peptide Wiki static HTML site, styled with artifactkit
-(https://github.com/vespassassina/artifactkit) — peptides.json / categories.json
-are the data; this script renders the ak-* component vocabulary around them."""
-import json, os, html, shutil, re
+"""Build Biohacker Wiki from preserved legacy data and pinned Biometra research."""
+import json, os, html, shutil, re, sys, tempfile
 from datetime import date
+from pathlib import Path
+from library import load_library, KIND_LABELS, TIER_LABELS
+from scripts.import_biometra import ImportFailure
 
-SITE_DOMAIN = "https://peptide-wiki.local"
+SITE_DOMAIN = "https://vespassassina.github.io/peptide-wiki"
 FAVICON = ('<link rel="icon" href="data:image/svg+xml,'
            '%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E'
            '%3Ctext y=%22.9em%22 font-size=%2280%22%3E%F0%9F%A7%AC%3C/text%3E%3C/svg%3E">')
@@ -32,8 +33,12 @@ with open(os.path.join(SRC, "stacks.json")) as f:
     STACKS = json.load(f)
 
 TODAY = date.today().isoformat()
-SITE_NAME = "Peptide Wiki"
-SITE_DESC = "A reference on commonly discussed peptides: mechanism, research status, dosing protocols from the literature and from self-experimentation communities, and safety notes."
+SITE_NAME = "Biohacker Wiki"
+SITE_DESC = "A source-attributed reference on peptides, medications, supplements, food, exercise and recovery. Read what was studied, what people report, and what remains uncertain."
+LIBRARY = None
+
+def script_json(value):
+    return json.dumps(value, ensure_ascii=False).replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026").replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")
 
 # custom line icons per category, replacing plain emoji. viewBox 0 0 24 24,
 # sized and colored via CSS (currentColor / .cat-icon*).
@@ -178,8 +183,8 @@ def site_nav(active=""):
         <li><a href="/about.html"{cur("about")}>About</a></li>
       </ul>
       <form class="site-search" role="search" action="/directory.html" method="get">
-        <label for="topSearch" class="visually-hidden">Search peptides</label>
-        <input class="ak-input" type="search" id="topSearch" name="q" placeholder="Search peptides…" autocomplete="off">
+        <label for="topSearch" class="visually-hidden">Search the library</label>
+        <input class="ak-input" type="search" id="topSearch" name="q" placeholder="Search the library…" autocomplete="off">
         <button class="ak-btn" type="submit">Search</button>
       </form>
     </nav>
@@ -189,7 +194,7 @@ def site_nav(active=""):
 def site_footer():
     return f'''<footer class="ak-footer">
   <p><strong>Not medical advice.</strong> This wiki summarizes published research, regulatory status and self-reported community experience for informational purposes only. Many compounds described here are unapproved research chemicals with limited or no human safety data. Consult a licensed physician before starting, stopping or combining any of these substances. See <a href="/about.html">about &amp; disclaimer</a>.</p>
-  <p class="ak-small">Last updated {TODAY} · styled with <a href="https://github.com/vespassassina/artifactkit">artifactkit</a> · machine-readable index: <a href="/data/peptides.json">/data/peptides.json</a> · <a href="/sitemap.xml">/sitemap.xml</a> · <a href="/llms.txt">/llms.txt</a></p>
+  <p class="ak-small">Built {TODAY}; historical research is not newly verified. Biometra checks dated 2026-10-06 retain their original scope. · styled with <a href="https://github.com/vespassassina/artifactkit">artifactkit</a> · <a href="/data/library.json">full library data</a> · <a href="/data/peptides.json">legacy peptide data</a> · <a href="/sitemap.xml">sitemap</a> · <a href="/llms.txt">llms.txt</a></p>
 </footer>'''
 
 def breadcrumbs(items):
@@ -199,8 +204,8 @@ def breadcrumbs(items):
             lis.append(f'<li><a href="{esc(href)}">{esc(label)}</a></li>')
         else:
             lis.append(f'<li aria-current="page">{esc(label)}</li>')
-        ld_items.append({"@type": "ListItem", "position": i, "name": label, **({"item": "https://peptide-wiki.local" + href} if href else {})})
-    ld = json.dumps({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": ld_items})
+        ld_items.append({"@type": "ListItem", "position": i, "name": label, **({"item": SITE_DOMAIN + href} if href else {})})
+    ld = script_json({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": ld_items})
     return f'<ol class="ak-breadcrumb">{"".join(lis)}</ol>\n<script type="application/ld+json">{ld}</script>'
 
 def page(title, description, active, body, canonical="", page_id="page", extra_scripts=""):
@@ -209,7 +214,7 @@ def page(title, description, active, body, canonical="", page_id="page", extra_s
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{esc(title)} · {esc(SITE_NAME)}</title>
+<title>{esc(title if title == SITE_NAME else title + " · " + SITE_NAME)}</title>
 <meta name="description" content="{esc(description)}">
 <link rel="canonical" href="{esc(SITE_DOMAIN + canonical)}">
 {FAVICON}
@@ -227,7 +232,7 @@ def page(title, description, active, body, canonical="", page_id="page", extra_s
 {site_footer()}
 <script src="/assets/core.js"></script>
 <script src="/assets/site.js"></script>
-<script>ak.init({{ id: "peptide-wiki-{esc(page_id)}", title: {json.dumps(title)} }});</script>
+<script>ak.init({{ id: "peptide-wiki-{esc(page_id)}", title: {script_json(title)} }});</script>
 {extra_scripts}
 </body>
 </html>'''
@@ -243,8 +248,11 @@ def category_badges(cats):
 def fav_button(key, label):
     return f'<button type="button" class="ak-btn fav-toggle" data-fav-key="{esc(key)}" aria-pressed="false"><span class="fav-star" aria-hidden="true">☆</span> <span class="fav-label">Add to favorites</span></button>'
 
-def related_list(slugs):
-    items = [f'<li><a href="/peptides/{s}.html" rel="related">{esc(PEPTIDES[s]["name"])}</a></li>' for s in slugs if s in PEPTIDES]
+def related_list(keys):
+    items = [
+        f'<li><a href="{esc(LIBRARY["entries"][key]["path"])}" rel="related">{esc(LIBRARY["entries"][key]["title"])}</a></li>'
+        for key in keys
+    ]
     return f'<ul class="chip-list">{"".join(items)}</ul>' if items else "<p class=\"ak-small\">None listed.</p>"
 
 def dosing_table(protocols):
@@ -294,15 +302,94 @@ def mixing_block(p):
             parts.append(f'<h3>Reported as a combination to avoid</h3>{peptide_chip_list(m["reported_avoid"])}')
     return "".join(parts)
 
+def conflict_block(entry):
+    return "".join(
+        f'<aside class="research-warning" role="note"><h2>Unresolved source difference</h2><p>{esc(item["text"])}</p><p class="ak-small">State: {esc(item["status"])} · Origins: {esc("; ".join(item["origins"]))}</p></aside>'
+        for item in entry["conflicts"]
+    )
+
+def source_link(source):
+    circular = source["url"].startswith("https://vespassassina.github.io/peptide-wiki/")
+    note = ' <span class="ak-small">(wiki-origin reference; not independent corroboration)</span>' if circular else ""
+    author = f' — {esc(source["author"])}' if source.get("author") else ""
+    return f'<a href="{esc(source["url"])}" rel="noopener">{esc(source["title"])}</a>{author}{note}'
+
+def research_block(entry):
+    if not entry["research"]:
+        return '<p class="ak-small">Legacy wiki record. No Biometra research attachment; absence is not a finding of no evidence.</p>'
+    parts = ['<section class="ak-section research-section" id="biometra"><h2>Biometra research</h2><p class="research-status">Historical source snapshot. Not freshly verified, not a recommendation. Study findings, community accounts and app defaults are not interchangeable.</p>']
+    if entry.get("legacy"):
+        parts.append('<p>Legacy wiki wording and the source account below are preserved independently. Their claims may differ; attachment does not resolve disagreement or establish current approval.</p>')
+    for research in entry["research"]:
+        verdict = research["verdict"]
+        parts += [
+            f'<h3>{esc(research["title"])}</h3><p>{esc(research["summary"])}</p>',
+            f'<p><strong>Evidence category:</strong> {esc(TIER_LABELS[research["evidenceTier"]])}. This describes the source category, not approval or certainty.</p>',
+            f'<p><strong>Regulatory statement in source:</strong> {esc(verdict.get("approvalStatus") or "Not separately recorded; do not infer approval from the evidence category.")}</p>',
+            f'<p>{esc(research["evidenceSummary"])}</p>',
+            f'<h3>What the source supports</h3>{ul(verdict["benefits"])}',
+            f'<h3>Risks and limits</h3>{ul(verdict["risks"])}<p><strong>Source bottom line:</strong> {esc(verdict["bottomLine"])}</p>',
+            f'<p class="research-status"><strong>Uncertainty:</strong> {esc(research["uncertainty"])}</p>',
+            '<h3>Study protocols — reports, not instructions</h3>',
+        ]
+        for study in research["protocols"]:
+            parts.append(f'''<article class="research-study">
+<h4>{esc(study["population"])}</h4>
+<dl><dt>Reported regimen</dt><dd>{esc(study["regimen"])}</dd><dt>Duration</dt><dd>{esc(study["duration"])}</dd><dt>Reported outcome</dt><dd>{esc(study["outcome"])}</dd><dt>Source</dt><dd>{source_link(study["source"])}</dd></dl>
+<details><summary>Claim provenance</summary><p class="ak-small">{esc("; ".join(study["origins"]))}</p></details></article>''')
+        if not research["protocols"]:
+            parts.append('<p>No study protocol recorded in this snapshot. This does not establish that no study exists.</p>')
+        parts.append('<h3>Community and practice descriptions</h3><p class="ak-small">Accounts of a practice are not evidence of safety or effectiveness.</p>')
+        for community in research["community"]:
+            parts.append(f'<blockquote class="research-account"><p>{esc(community["description"])}</p><p>{source_link(community["source"])}</p></blockquote>')
+        finding = research["communityFinding"]
+        if finding:
+            parts.append(f'<details class="research-finding"><summary>Historical research outcome: {esc(finding["status"])} · {esc(finding["checkedOn"])}</summary><p>{esc(finding["notes"])}</p><ul>')
+            for check in finding["checks"]:
+                parts.append(f'<li><a href="{esc(check["url"])}" rel="noopener">{esc(check["url"])}</a>: {esc(check["outcome"])} — {esc(check["reason"])}</li>')
+            parts.append('</ul></details>')
+        elif not research["community"]:
+            parts.append('<p>No community description recorded. This entry has no final B-82 outcome record; it is not a researched-empty finding.</p>')
+        parts.append('<h3>Pharmacokinetic context</h3>')
+        pk = research.get("pk")
+        if pk:
+            value = f'{pk["lowerHours"]:g}–{pk["upperHours"]:g}' if "lowerHours" in pk else f'{pk["hours"]:g}'
+            parts.append(f'<p><strong>Historical half-life estimate: {esc(value)} hours.</strong> {esc(pk.get("source") or "No specific source note recorded.")} Population/route context and estimates may differ. This is not a schedule or a verified human dosing rule.</p>')
+        else:
+            parts.append('<p>No half-life recorded in this source snapshot. No value has been inferred.</p>')
+        parts.append('<h3>Source references</h3><ul>')
+        seen = set()
+        for source in research["links"] + research["originalLinks"]:
+            if (source["url"], source["title"]) not in seen:
+                parts.append(f'<li>{source_link(source)}</li>')
+                seen.add((source["url"], source["title"]))
+        parts.append(f'</ul><details><summary>Snapshot provenance</summary><p>Source ID: {esc(research["id"])}. Commit: <code>{esc(research["sourceCommit"])}</code>. Review state: {esc(research["reviewState"])}. Authored links are retained separately from the canonical evidence links in the public data. App templates/defaults and rejected drafts are archived, not deployed.</p></details>')
+    parts.append('</section>')
+    return "".join(parts)
+
+def library_page(entry):
+    crumbs = breadcrumbs([("Home", "/index.html"), (KIND_LABELS[entry["kind"]], f'/kinds/{entry["kind"]}.html'), (entry["title"], None)])
+    structured = script_json({"@context": "https://schema.org", "@type": "Article", "name": entry["title"], "description": entry["summary"], "url": SITE_DOMAIN + entry["path"]})
+    body = f'''{crumbs}<article><header class="ak-pagehead"><div><h1>{esc(entry["title"])}</h1><p class="ak-lede">{esc(entry["summary"])}</p><p>{esc(KIND_LABELS[entry["kind"]])}</p></div><div class="ak-meta">{fav_button(entry["id"], entry["title"])}</div></header>
+{conflict_block(entry)}<div class="ak-prose">{research_block(entry)}<section><h2>Related entries and components</h2>{related_list(entry["related"])}</section></div></article><script type="application/ld+json">{structured}</script>'''
+    return page(entry["title"], entry["summary"], "", body, canonical=entry["path"], page_id=entry["id"].replace(":", "-"))
+
+def kind_page(kind):
+    members = [entry for entry in LIBRARY["entries"].values() if entry["kind"] == kind]
+    members.sort(key=lambda entry: entry["title"].casefold())
+    items = "".join(f'<li><a href="{esc(entry["path"])}">{esc(entry["title"])}</a><p>{esc(entry["summary"])}</p></li>' for entry in members)
+    body = f'{breadcrumbs([("Home", "/index.html"), (KIND_LABELS[kind], None)])}<header class="ak-pagehead"><div><h1>{esc(KIND_LABELS[kind])}</h1><p class="ak-lede">{len(members)} source-attributed entries. Evidence and regulatory status vary; read each entry’s uncertainty.</p></div></header><ul class="research-index">{items}</ul>'
+    return page(KIND_LABELS[kind], "Browse " + KIND_LABELS[kind].lower(), "directory", body, canonical=f"/kinds/{kind}.html", page_id="kind-" + kind)
+
 def peptide_page(slug, p):
     cats = p["categories"]
     primary_cat = cats[0]
     aliases = ", ".join(p.get("aliases", [])) or "—"
-    jsonld = json.dumps({
+    jsonld = script_json({
         "@context": "https://schema.org", "@type": "MedicalWebPage", "name": p["name"],
         "alternateName": p.get("aliases", []), "description": p["tagline"],
         "about": {"@type": "Drug", "name": p["name"], "alternateName": p.get("aliases", [])},
-        "medicalAudience": "Patient", "lastReviewed": TODAY,
+        "medicalAudience": "Patient",
     })
     crumbs = breadcrumbs([("Home", "/index.html"), (CATEGORIES[primary_cat]["name"], f"/categories/{primary_cat}.html"), (p["name"], None)])
     body = f'''{crumbs}
@@ -315,11 +402,12 @@ def peptide_page(slug, p):
     <p class="peptide-pills">{pill(slug)} {category_badges(cats)}</p>
   </div>
   <div class="ak-meta">
-    <span class="ak-asof">Reviewed {TODAY}</span>
+    <span class="ak-asof">Historical reference · not reverified</span>
     {fav_button(f"peptide:{slug}", p["name"])}
   </div>
 </header>
 
+{conflict_block(LIBRARY["entries"]["peptide:" + slug])}
 <dl class="peptide-quickfacts">
   <div><dt>Full name</dt><dd>{esc(p["full_name"])}</dd></div>
   <div><dt>Also known as</dt><dd>{esc(aliases)}</dd></div>
@@ -331,6 +419,7 @@ def peptide_page(slug, p):
   <nav class="ak-toc" aria-label="On this page">
     <p class="ak-eyebrow">On this page</p>
     <ul class="ak-nav">
+      {'<li><a href="#biometra">Biometra research</a></li>' if LIBRARY["entries"]["peptide:" + slug]["research"] else ''}
       <li><a href="#origin">Origin</a></li>
       <li><a href="#mechanism">Mechanism</a></li>
       <li><a href="#research">Research summary</a></li>
@@ -340,13 +429,15 @@ def peptide_page(slug, p):
       <li><a href="#side-effects">Side effects</a></li>
       <li><a href="#safety">Safety notes</a></li>
       <li><a href="#community">Community &amp; reddit notes</a></li>
-      <li><a href="#related">Related peptides</a></li>
+      <li><a href="#related">Related entries</a></li>
       {'<li><a href="#stacks">Used in stacks</a></li>' if slug in PEPTIDE_STACKS else ''}
       {'<li><a href="#mixing">Mixing compatibility</a></li>' if p.get("mixing_notes") or p.get("mixing_caution") else ''}
     </ul>
   </nav>
 
   <article class="ak-prose">
+    {research_block(LIBRARY["entries"]["peptide:" + slug])}
+    <h2>Preserved legacy wiki account</h2>
     <section id="origin" class="ak-section"><h2>Origin</h2><p>{esc(p["origin"])}</p></section>
     <section id="mechanism" class="ak-section"><h2>Mechanism</h2><p>{esc(p["mechanism"])}</p></section>
 
@@ -355,7 +446,7 @@ def peptide_page(slug, p):
       <div class="ak-exhibit">
         <p class="ak-eyebrow">Evidence</p>
         <p class="ak-takeaway">{esc(p["research_summary"])}</p>
-        <p class="ak-source">Evidence tier: {pill(slug)} — see the <a href="/about.html">methodology note</a> for how this is assessed.</p>
+        <p class="ak-source">Legacy status label: {pill(slug)} — not a rating of evidence for every claim. See <a href="/about.html">methodology</a>.</p>
       </div>
     </section>
 
@@ -368,7 +459,7 @@ def peptide_page(slug, p):
 
     <section id="dosing" class="ak-section">
       <h2>Dosing protocols reported in the literature &amp; community</h2>
-      <p class="ak-small">These are protocols reported by compounding pharmacies, published trials, or self-experimentation communities — not a prescription. Start low, especially for anything new.</p>
+      <p class="ak-small">These are preserved protocols reported by compounding pharmacies, published trials, or self-experimentation communities — not a prescription or recommendation.</p>
       {dosing_table(p["dosing_protocols"])}
     </section>
 
@@ -386,7 +477,7 @@ def peptide_page(slug, p):
       </details>
     </section>
 
-    <section id="related" class="ak-section"><h2>Related peptides</h2>{related_list(p.get("related", []))}</section>
+    <section id="related" class="ak-section"><h2>Related entries</h2>{related_list(LIBRARY["entries"]["peptide:" + slug]["related"])}</section>
 
     {f'<section id="stacks" class="ak-section"><h2>Used in stacks</h2><p class="ak-small">Community combinations that include {esc(p["name"])} — see each stack page for the combination-specific rationale and evidence.</p>{stack_chip_list(PEPTIDE_STACKS.get(slug, []))}</section>' if slug in PEPTIDE_STACKS else ''}
 
@@ -420,7 +511,7 @@ def category_page(cslug, c):
 </li>''' for s in members
     )
     crumbs = breadcrumbs([("Home", "/index.html"), (c["name"], None)])
-    ld = json.dumps({
+    ld = script_json({
         "@context": "https://schema.org", "@type": "CollectionPage", "name": c["name"], "description": c["summary"],
         "hasPart": [{"@type": "MedicalWebPage", "name": PEPTIDES[s]["name"], "url": f"/peptides/{s}.html"} for s in members]
     })
@@ -469,9 +560,9 @@ def stack_page(slug, s):
     crumbs = breadcrumbs([("Home", "/index.html"), ("Stacks", "/stacks.html"), (s["title"], None)])
     aka = s.get("aka", [])
     aka_line = f'<p class="ak-small">Also known as: {esc(", ".join(aka))}</p>' if aka else ""
-    jsonld = json.dumps({
+    jsonld = script_json({
         "@context": "https://schema.org", "@type": "MedicalWebPage", "name": s["title"],
-        "alternateName": aka, "description": s["tagline"], "lastReviewed": TODAY,
+        "alternateName": aka, "description": s["tagline"],
     })
     body = f'''{crumbs}
 <article itemscope itemtype="https://schema.org/MedicalWebPage" data-stack-slug="{esc(slug)}">
@@ -484,12 +575,13 @@ def stack_page(slug, s):
     <p class="peptide-pills"><span class="ak-pill {cls}">{esc(label)}</span></p>
   </div>
   <div class="ak-meta">
-    <span class="ak-asof">Reviewed {TODAY}</span>
+    <span class="ak-asof">Historical reference · not reverified</span>
     {fav_button(f"stack:{slug}", s["title"])}
   </div>
 </header>
 
 <div class="ak-banner"><strong>Not a recommendation.</strong> This page explains why a combination is discussed together in research or community circles — it is not an endorsement of stacking these compounds. See each component's own page for full detail, dosing and safety notes.</div>
+{f'<aside class="research-warning"><h2>Unresolved source difference</h2><p>{esc(LIBRARY["stackConflicts"][slug])}</p></aside>' if slug in LIBRARY["stackConflicts"] else ''}
 
 <h2 class="ak-sechead"><span class="ak-n">COMPONENTS</span> in this stack</h2>
 {stack_component_cards(s["component_slugs"])}
@@ -558,37 +650,37 @@ def home_page():
   </a>
 </li>''' for c in CATEGORIES
     )
-    n_approved = sum(1 for s in ALL_SLUGS if tier(s)[0] == "ak-pill-ok")
-    n_research = sum(1 for s in ALL_SLUGS if tier(s)[0] == "ak-pill-off")
-    ld = json.dumps({
+    kind_links = []
+    for kind, label in KIND_LABELS.items():
+        count = sum(entry["kind"] == kind for entry in LIBRARY["entries"].values())
+        kind_links.append(f'<li><a href="/kinds/{kind}.html">{esc(label)}</a><span>{count} {"entry" if count == 1 else "entries"}</span></li>')
+    kind_links = "".join(kind_links)
+    ld = script_json({
         "@context": "https://schema.org", "@type": "WebSite", "name": SITE_NAME, "description": SITE_DESC, "url": "/index.html",
-        "potentialAction": {"@type": "SearchAction", "target": "/directory.html?q={search_term}", "query-input": "required name=search_term"}
+        "potentialAction": {"@type": "SearchAction", "target": SITE_DOMAIN + "/directory.html?q={search_term}", "query-input": "required name=search_term"}
     })
     body = f'''<section class="hero">
-  <p class="ak-eyebrow">Peptide reference</p>
   <h1>{esc(SITE_NAME)}</h1>
   <p class="ak-lede">{esc(SITE_DESC)}</p>
   <form class="hero-search" role="search" action="/directory.html" method="get">
-    <label for="heroSearch" class="visually-hidden">Search peptides</label>
-    <input class="ak-input" type="search" id="heroSearch" name="q" placeholder="Search by name, e.g. BPC-157…" autocomplete="off">
+    <label for="heroSearch" class="visually-hidden">Search the full library</label>
+    <input class="ak-input" type="search" id="heroSearch" name="q" placeholder="Search, e.g. BPC-157, caffeine or sleep…" autocomplete="off">
     <button class="ak-btn ak-btn-primary" type="submit">Search</button>
   </form>
 </section>
 
-<div class="ak-kpis ak-cols-4">
-  <div class="ak-kpi"><span class="ak-k">Peptides catalogued</span><span class="ak-v">{len(PEPTIDES)}</span></div>
-  <div class="ak-kpi"><span class="ak-k">Benefit categories</span><span class="ak-v">{len(CATEGORIES)}</span></div>
-  <div class="ak-kpi"><span class="ak-k">FDA-approved drugs</span><span class="ak-v">{n_approved}</span><span class="ak-d">included for comparison</span></div>
-  <div class="ak-kpi"><span class="ak-k">Research chemicals</span><span class="ak-v">{n_research}</span><span class="ak-d">no regulatory approval</span></div>
-</div>
+<p class="library-scope"><strong>{len(LIBRARY["entries"])} reference entries</strong> · 210 imported Biometra records · 79 preserved legacy entries · 8 stacks. Overlapping identities are mapped; these counts are not independent studies.</p>
+<h2>Explore the library</h2>
+<ul class="kind-index">{kind_links}</ul>
+<p class="research-status">This is a historical research consolidation, not fresh clinical verification. Study reports, community descriptions and regulatory statements stay distinct. App defaults and rejected drafts are not published here.</p>
 
-<h2 class="ak-sechead"><span class="ak-n">BROWSE</span> by benefit</h2>
+<h2 class="ak-sechead">Legacy library by benefit</h2>
 <ul class="card-grid">{cat_cards}</ul>
 
 <div class="ak-exhibit">
   <p class="ak-eyebrow">How this wiki is organized</p>
-  <p>Every peptide has one canonical <a href="/directory.html">leaf page</a> with full detail: origin, mechanism, a plain-language research summary, reported benefits, dosing protocols pulled from compounding-pharmacy guides and published trials, side effects, safety notes, and a clearly-labelled community/anecdotal-experience section sourced from self-experimentation communities. Category hub pages summarize and link to the peptides relevant to that goal — a peptide can appear in more than one category (GHK-Cu, for example, is both an anti-aging and a recovery peptide) but its full detail lives in exactly one place.</p>
-  <p class="ak-source">For machines: every page carries JSON-LD structured data (MedicalWebPage/CollectionPage plus BreadcrumbList), and the whole dataset is available as flat JSON at <a href="/data/peptides.json">/data/peptides.json</a> and <a href="/data/categories.json">/data/categories.json</a>, with a sitemap at <a href="/sitemap.xml">/sitemap.xml</a> and an <a href="/llms.txt">/llms.txt</a> summary for LLM agents.</p>
+  <p>The <a href="/directory.html">full directory</a> combines the original wiki with all 210 Biometra catalogue records. Exact active-identity matches share their existing page; narrower fragments and premixed products remain distinct when equivalence is uncertain. Each study keeps its population, regimen, duration, outcome and source. Community descriptions and dated negative findings are labelled separately, and conflicting accounts are retained rather than averaged.</p>
+  <p class="ak-source">The <a href="/data/library.json">public library JSON</a> retains source associations and occurrence provenance, without app templates or rejected drafts. Original endpoints remain at <a href="/data/peptides.json">peptides.json</a>, <a href="/data/categories.json">categories.json</a> and <a href="/data/stacks.json">stacks.json</a>. See the <a href="/sitemap.xml">sitemap</a> and <a href="/llms.txt">llms.txt</a>.</p>
 </div>
 
 <h2 class="ak-sechead"><span class="ak-n">START</span> here</h2>
@@ -597,7 +689,7 @@ def home_page():
   <li><a href="/calculator.html">Reconstitution &amp; dose calculator</a> — work out concentration and draw volume for your own vial, with a live 1 mL and 2 mL syringe readout.</li>
   <li><a href="/stacks.html">Peptide stacks</a> — commonly combined peptides, with rationale, evidence level and links back to each component.</li>
   <li><a href="/glossary.html">Glossary</a> — GHRP, GHRH, DAC, half-life and other recurring terms explained once.</li>
-  <li><a href="/directory.html">Full directory</a> — every peptide in one sortable, filterable table.</li>
+  <li><a href="/directory.html">Full directory</a> — every reference entry in one sortable, filterable table.</li>
   <li><a href="/about.html">About &amp; disclaimer</a> — sourcing, limitations, and why this is not medical advice.</li>
 </ul>
 
@@ -611,51 +703,69 @@ def home_page():
 # ---------- directory page ----------
 def directory_page():
     rows = []
-    for s in ALL_SLUGS:
-        p = PEPTIDES[s]
-        cls, label = tier(s)
-        cat_badges = "".join(f'<a class="ak-badge" href="/categories/{c}.html">{esc(CATEGORIES[c]["name"])}</a> ' for c in p["categories"])
-        rows.append(f'''<tr>
-<td data-v="{esc(p["name"])}"><a href="/peptides/{s}.html">{esc(p["name"])}</a><br><span class="ak-small">{esc(", ".join(p.get("aliases", [])[:2]))}</span></td>
-<td>{cat_badges}</td>
-<td>{esc(p["tagline"])}</td>
-<td data-v="{esc(label)}"><span class="ak-pill {cls}">{esc(label)}</span></td>
+    for entry in sorted(LIBRARY["entries"].values(), key=lambda entry: entry["title"].casefold()):
+        labels = [TIER_LABELS[research["evidenceTier"]] for research in entry["research"]]
+        label = ", ".join(dict.fromkeys(labels)) or "Legacy account"
+        search = entry["title"] + " " + " ".join(entry["aliases"]) + " " + json.dumps(entry.get("legacy", {}), ensure_ascii=False)
+        search += " " + json.dumps(entry["research"], ensure_ascii=False)
+        rows.append(f'''<tr data-kind="{esc(entry["kind"])}" data-search="{esc(search.casefold())}">
+<td data-v="{esc(entry["title"])}"><a href="{esc(entry["path"])}">{esc(entry["title"])}</a><br><span class="ak-small">{esc(", ".join(entry["aliases"]))}</span></td>
+<td>{esc(KIND_LABELS[entry["kind"]])}</td>
+<td>{esc(entry["summary"])}</td>
+<td data-v="{esc(label)}">{esc(label)}</td>
 </tr>''')
+    options = "".join(f'<option value="{kind}">{esc(label)}</option>' for kind, label in KIND_LABELS.items())
     body = f'''{breadcrumbs([("Home", "/index.html"), ("Directory", None)])}
 <header class="ak-pagehead">
   <div>
     <p class="ak-eyebrow">Reference</p>
-    <h1>Full peptide directory</h1>
-    <p class="ak-lede">All {len(PEPTIDES)} peptides in this wiki. Filter by name or alias, or click a column header to sort.</p>
+    <h1>Full library directory</h1>
+    <p class="ak-lede">Search all {len(LIBRARY["entries"])} entries by name, alias, status or accepted research text. Filter by kind, or sort by name and evidence category.</p>
   </div>
-  <div class="ak-meta">{len(PEPTIDES)} entries</div>
+  <div class="ak-meta">{len(LIBRARY["entries"])} entries</div>
 </header>
 <div class="ak-toolbar dir-controls">
   <label for="dirFilter" class="visually-hidden">Filter directory</label>
-  <input class="ak-input" type="search" id="dirFilter" placeholder="Filter by name, alias or status…" autocomplete="off">
+  <input class="ak-input" type="search" id="dirFilter" placeholder="Search names, aliases or research…" autocomplete="off">
+  <label for="kindFilter" class="visually-hidden">Filter by kind</label>
+  <select class="ak-select" id="kindFilter"><option value="">All kinds</option>{options}</select>
 </div>
-<div class="ak-tblwrap">
+<p class="ak-small">On narrow screens, scroll the table horizontally to read all columns.</p>
+<div class="ak-tblwrap" tabindex="0" role="region" aria-label="Scrollable reference directory">
 <table class="ak-table" id="directoryTable">
-<caption class="ak-vh">Peptide directory</caption>
+<caption class="ak-vh">Biohacker Wiki reference directory</caption>
 <thead><tr>
-  <th scope="col" data-sort="s">Peptide</th>
-  <th scope="col">Categories</th>
+  <th scope="col" data-sort="s">Entry</th>
+  <th scope="col">Kind</th>
   <th scope="col">Summary</th>
-  <th scope="col" data-sort="s">Status</th>
+  <th scope="col" data-sort="s">Evidence category</th>
 </tr></thead>
 <tbody>{"".join(rows)}</tbody>
 </table>
 </div>
-<p class="ak-empty" id="noResults" data-ak-empty hidden>No peptides match your filter.</p>'''
+<p class="ak-empty" id="noResults" role="status" hidden>No entries match. Clear the search or select another kind.</p><p id="resultCount" role="status" class="ak-small"></p>'''
     extra = '''<script>
 (function(){
-  var t = ak.table(document.getElementById('directoryTable'), { filterInput: '#dirFilter' });
+  ak.table(document.getElementById('directoryTable'), {});
+  var input = document.getElementById('dirFilter');
+  var kind = document.getElementById('kindFilter');
+  var rows = Array.from(document.querySelectorAll('#directoryTable tbody tr'));
   var params = new URLSearchParams(window.location.search);
-  var q = params.get('q');
-  if (q) { document.getElementById('dirFilter').value = q; t.filter(q); }
+  input.value = params.get('q') || '';
+  if (params.get('kind')) kind.value = params.get('kind');
+  function filter(){
+    var q = input.value.toLocaleLowerCase().trim(), count = 0;
+    rows.forEach(function(row){
+      row.hidden = (kind.value && row.dataset.kind !== kind.value) || row.dataset.search.indexOf(q) === -1;
+      if (!row.hidden) count++;
+    });
+    document.getElementById('noResults').hidden = count !== 0;
+    document.getElementById('resultCount').textContent = count + ' matching entries';
+  }
+  input.addEventListener('input', filter); kind.addEventListener('change', filter); filter();
 })();
 </script>'''
-    return page("Full directory", "Every peptide in this wiki, sortable and filterable by name, alias and status.", "directory", body, canonical="/directory.html", page_id="directory", extra_scripts=extra)
+    return page("Full directory", "All reference entries, filterable by name, kind and accepted research.", "directory", body, canonical="/directory.html", page_id="directory", extra_scripts=extra)
 
 # ---------- glossary ----------
 GLOSSARY = [
@@ -973,13 +1083,17 @@ def about_page():
 <header class="ak-pagehead"><div><p class="ak-eyebrow">Reference</p><h1>About &amp; disclaimer</h1></div></header>
 <article class="ak-prose">
 <section class="ak-section"><h2>What this is</h2>
-<p>A self-contained reference on commonly discussed peptides, organized by the benefit people most often seek them for (recovery, anti-aging, longevity, fat loss, fitness, sexual health, cognition). It combines: published pharmacology and clinical-trial research where it exists, regulatory/approval status, dosing protocols reported by compounding pharmacies and self-experimentation communities, and anecdotal community experience, kept clearly labelled and separated from the clinical-evidence sections.</p>
+<p>Biohacker Wiki combines this preserved legacy account with all 210 authored Biometra catalogue records across eight kinds. The repository and Pages URL remain unchanged. Exact active-identity matches retain old routes; narrower fragments and premixed products stay distinct where equivalence is uncertain.</p>
+<p>Imported research is a historical snapshot, not newly verified clinical guidance. B-82 checks dated 2026-10-06 retain their original scope: 59 suitable descriptions and 71 bounded empty outcomes. Source-to-wiki backlinks are circular provenance, not independent corroboration. App defaults and rejected drafts remain in the non-deployed archive. Fresh suitability/rights review and separate owner approval are required before new public republication; neither is claimed by this local build.</p>
+<p>The full library covers peptides, medications and hormones, supplements, food and fasting, exercise, recovery practices, context and habits, and lab markers. The original peptide benefit categories remain available. Published study reports, regulatory statements and community accounts stay attributable and separate.</p>
 </section>
 <section class="ak-section"><h2>This is not medical advice</h2>
 <div class="ak-banner ak-banner-bad">Nothing on this site is a recommendation to use, or a guide to using, any specific substance. Many peptides described here are unapproved research chemicals sold "not for human consumption," with limited to no human safety or efficacy data at the doses commonly self-administered. Always consult a licensed physician before starting, stopping, or combining any of these substances.</div>
 </section>
-<section class="ak-section"><h2>Evidence-tier legend</h2>
-<p>Every peptide carries one status pill, used consistently across the directory, category pages and leaf pages:</p>
+<section class="ak-section"><h2>Evidence categories and regulatory status</h2>
+<p>Imported source categories are regulator/guideline, systematic review, clinical study, preclinical, or reference only. These describe a source category, not a numerical ranking, current approval, human efficacy or safety. Read each study's population, route and limitations. Missing study protocols, absent community records and dated researched-empty findings are different states.</p>
+<h3>Legacy regulatory/status labels</h3>
+<p>The following editorial labels remain on legacy peptide pages and benefit categories. They are not fresh regulatory checks or evidence ratings. Approval for one indication does not establish suitability for another:</p>
 <p>
 <span class="ak-pill ak-pill-ok">Approved drug</span> — genuine FDA (or comparable) drug approval, backed by real trials, for at least one indication.<br>
 <span class="ak-pill ak-pill-info">Approved abroad / formerly approved</span> — real drug approval exists, but not from the FDA, or the branded product was later discontinued for commercial reasons.<br>
@@ -1001,35 +1115,32 @@ def about_page():
 </ul>
 </section>
 </article>'''
-    return page("About & disclaimer", "Methodology, sourcing and the disclaimer governing this peptide wiki.", "about", body, canonical="/about.html", page_id="about")
+    return page("About & disclaimer", "Methodology, historical provenance and the disclaimer governing Biohacker Wiki.", "about", body, canonical="/about.html", page_id="about")
 
 # ---------- favorites (client-side, cookie-backed) ----------
 def favorites_page():
-    peptide_index = [
-        {"slug": s, "name": PEPTIDES[s]["name"], "tagline": PEPTIDES[s]["tagline"],
-         "pillClass": tier(s)[0], "pillLabel": tier(s)[1]}
-        for s in ALL_SLUGS
-    ]
-    stack_index = [
-        {"slug": s, "title": STACKS[s]["title"], "tagline": STACKS[s]["tagline"],
-         "pillClass": EVIDENCE_LEVEL_PILL.get(STACKS[s]["evidence_level"], ("ak-pill-off", ""))[0],
-         "pillLabel": EVIDENCE_LEVEL_PILL.get(STACKS[s]["evidence_level"], ("", "Unclear"))[1]}
-        for s in ALL_STACK_SLUGS
+    favorite_index = [
+        {"id": entry["id"], "title": entry["title"], "summary": entry["summary"],
+         "path": entry["path"], "kind": KIND_LABELS[entry["kind"]]}
+        for entry in sorted(LIBRARY["entries"].values(), key=lambda entry: entry["title"].casefold())
+    ] + [
+        {"id": "stack:" + slug, "title": stack["title"], "summary": stack["tagline"],
+         "path": f"/stacks/{slug}.html", "kind": "Stack"}
+        for slug, stack in STACKS.items()
     ]
     body = f'''{breadcrumbs([("Home", "/index.html"), ("Favorites", None)])}
 <header class="ak-pagehead">
   <div>
     <p class="ak-eyebrow">Your list</p>
     <h1>★ Favorites</h1>
-    <p class="ak-lede">Peptides and stacks you've starred, kept in a cookie in this browser. Nothing is sent anywhere — clearing cookies or switching browsers clears this list.</p>
+    <p class="ak-lede">Reference entries and stacks you've starred, kept in this browser. Existing peptide and stack selections are retained. Clearing cookies or switching browsers clears this list.</p>
   </div>
 </header>
 <div id="favoritesRoot">
   <p class="ak-small">Loading…</p>
 </div>
-<script type="application/json" id="pwPeptideIndex">{json.dumps(peptide_index)}</script>
-<script type="application/json" id="pwStackIndex">{json.dumps(stack_index)}</script>'''
-    return page("Favorites", "Peptides and stacks you've starred, saved in a browser cookie.", "favorites", body, canonical="/favorites.html", page_id="favorites")
+<script type="application/json" id="pwFavoriteIndex">{script_json(favorite_index)}</script>'''
+    return page("Favorites", "Reference entries and stacks you've starred, saved in this browser.", "favorites", body, canonical="/favorites.html", page_id="favorites")
 
 def write(path, content):
     full = os.path.join(OUT, path)
@@ -1056,7 +1167,18 @@ SITE_JS = """
 window.ak = window.ak || {};
 (function(){
   var COOKIE = 'pw_favorites';
+  var siteRoot = new URL('../', document.currentScript.src);
   var MAX_AGE = 60 * 60 * 24 * 400; // ~400 days, the practical cap most browsers allow
+
+  function report(message){
+    var notice = document.getElementById('favoriteError');
+    if (!notice) {
+      notice = document.createElement('p'); notice.id = 'favoriteError';
+      notice.className = 'research-warning'; notice.setAttribute('role', 'alert');
+      document.getElementById('main').prepend(notice);
+    }
+    notice.textContent = message;
+  }
 
   function readFavorites(){
     try {
@@ -1064,23 +1186,32 @@ window.ak = window.ak || {};
       if (!match) return [];
       var raw = decodeURIComponent(match.split('=').slice(1).join('='));
       var parsed = JSON.parse(raw);
-      return Array.isArray(parsed) ? parsed : [];
-    } catch (e) { return []; }
+      if (!Array.isArray(parsed) || !parsed.every(function(k){ return typeof k === 'string'; })) {
+        report('Saved favorites have an invalid format. No selections were changed. Clear this site’s favorites cookie to reset it.');
+        return null;
+      }
+      return parsed;
+    } catch (e) {
+      report('Saved favorites could not be read. No selections were changed. Check browser cookie settings or clear this site’s favorites cookie.');
+      return null;
+    }
   }
 
   function writeFavorites(list){
-    try {
-      document.cookie = COOKIE + '=' + encodeURIComponent(JSON.stringify(list)) + '; path=/; max-age=' + MAX_AGE + '; samesite=lax';
-    } catch (e) {}
+    document.cookie = COOKIE + '=' + encodeURIComponent(JSON.stringify(list)) + '; path=/; max-age=' + MAX_AGE + '; samesite=lax';
+    var saved = readFavorites();
+    if (!saved || JSON.stringify(saved) !== JSON.stringify(list)) throw new Error('Cookie was not saved');
   }
 
-  function isFav(key){ return readFavorites().indexOf(key) !== -1; }
+  function isFav(key){ var list = readFavorites(); return list !== null && list.indexOf(key) !== -1; }
 
   function toggleFav(key){
     var list = readFavorites();
+    if (list === null) return null;
     var i = list.indexOf(key);
     if (i === -1) { list.push(key); } else { list.splice(i, 1); }
-    writeFavorites(list);
+    try { writeFavorites(list); }
+    catch (e) { report('Favorites could not be saved. Enable cookies for this site and retry; the change was not confirmed.'); return null; }
     return list.indexOf(key) !== -1;
   }
 
@@ -1099,7 +1230,8 @@ window.ak = window.ak || {};
       var key = btn.getAttribute('data-fav-key');
       setButtonState(btn, isFav(key));
       btn.addEventListener('click', function(){
-        setButtonState(btn, toggleFav(key));
+        var state = toggleFav(key);
+        if (state !== null) setButtonState(btn, state);
       });
     });
   });
@@ -1107,51 +1239,36 @@ window.ak = window.ak || {};
   ak.renderFavorites = function(){
     var root = document.getElementById('favoritesRoot');
     if (!root) return;
-    var peptideIndexEl = document.getElementById('pwPeptideIndex');
-    var stackIndexEl = document.getElementById('pwStackIndex');
-    var peptideIndex = peptideIndexEl ? JSON.parse(peptideIndexEl.textContent) : [];
-    var stackIndex = stackIndexEl ? JSON.parse(stackIndexEl.textContent) : [];
+    var index = JSON.parse(document.getElementById('pwFavoriteIndex').textContent);
     var favs = readFavorites();
-    var favPeptides = favs.filter(function(k){ return k.indexOf('peptide:') === 0; })
-      .map(function(k){ return k.slice(8); });
-    var favStacks = favs.filter(function(k){ return k.indexOf('stack:') === 0; })
-      .map(function(k){ return k.slice(6); });
-    var peptides = peptideIndex.filter(function(p){ return favPeptides.indexOf(p.slug) !== -1; });
-    var stacks = stackIndex.filter(function(s){ return favStacks.indexOf(s.slug) !== -1; });
-
-    if (peptides.length === 0 && stacks.length === 0) {
-      root.innerHTML = '<p class="ak-empty">No favorites yet. Open any peptide or stack page and click "Add to favorites".</p>';
+    if (favs === null) { root.textContent = 'Favorites unavailable. See the error above.'; return; }
+    var items = index.filter(function(item){ return favs.indexOf(item.id) !== -1; });
+    root.replaceChildren();
+    if (!items.length) {
+      root.textContent = favs.length ? 'No saved keys match this catalogue. Your keys were retained in the cookie.' : 'No favorites yet. Open any entry or stack and select Add to favorites.';
       return;
     }
-
-    function card(href, title, tagline, pillClass, pillLabel){
-      return '<li><a class="card-link" href="' + href + '"><h3>' + title + '</h3><p>' + tagline +
-        '</p><span class="ak-pill ' + pillClass + '">' + pillLabel + '</span></a></li>';
+    var list = document.createElement('ul'); list.className = 'research-index';
+    items.forEach(function(item){
+      var li = document.createElement('li'), a = document.createElement('a'), p = document.createElement('p');
+      a.href = new URL(item.path.replace(/^\\//, ''), siteRoot).href;
+      a.textContent = item.title; p.textContent = item.kind + ' — ' + item.summary;
+      li.append(a, p); list.append(li);
+    });
+    root.append(list);
+    var unknown = favs.filter(function(key){ return !index.some(function(item){ return item.id === key; }); });
+    if (unknown.length) {
+      var note = document.createElement('p');
+      note.textContent = unknown.length + ' saved keys are not in this catalogue; they were retained in your cookie.';
+      root.append(note);
     }
-
-    var html = '';
-    if (peptides.length) {
-      html += '<h2 class="ak-sechead"><span class="ak-n">PEPTIDES</span></h2><ul class="card-grid">';
-      peptides.forEach(function(p){
-        html += card('/peptides/' + p.slug + '.html', p.name, p.tagline, p.pillClass, p.pillLabel);
-      });
-      html += '</ul>';
-    }
-    if (stacks.length) {
-      html += '<h2 class="ak-sechead"><span class="ak-n">STACKS</span></h2><ul class="card-grid">';
-      stacks.forEach(function(s){
-        html += card('/stacks/' + s.slug + '.html', s.title, s.tagline, s.pillClass, s.pillLabel);
-      });
-      html += '</ul>';
-    }
-    root.innerHTML = html;
   };
 
   document.addEventListener('DOMContentLoaded', function(){ ak.renderFavorites(); });
 })();
 """
 
-def main():
+def build():
     if os.path.exists(OUT):
         shutil.rmtree(OUT)
     os.makedirs(OUT, exist_ok=True)
@@ -1170,6 +1287,11 @@ def main():
     write("stacks.html", stacks_index_page())
     for slug, s in STACKS.items():
         write(f"stacks/{slug}.html", stack_page(slug, s))
+    for entry in LIBRARY["entries"].values():
+        if entry["id"].startswith("library:"):
+            write(entry["path"].lstrip("/"), library_page(entry))
+    for kind in KIND_LABELS:
+        write(f"kinds/{kind}.html", kind_page(kind))
 
     # vendor artifactkit assets + our site chrome
     os.makedirs(os.path.join(OUT, "assets"), exist_ok=True)
@@ -1181,16 +1303,25 @@ def main():
     write("data/peptides.json", json.dumps(PEPTIDES, indent=2))
     write("data/categories.json", json.dumps(CATEGORIES, indent=2))
     write("data/stacks.json", json.dumps(STACKS, indent=2))
-    sitemap_urls = ["/index.html", "/directory.html", "/glossary.html", "/dosing-safety.html", "/about.html", "/stacks.html"]
+    write("data/library.json", json.dumps(LIBRARY, indent=2, ensure_ascii=False))
+    sitemap_urls = ["/index.html", "/directory.html", "/glossary.html", "/dosing-safety.html", "/about.html", "/stacks.html", "/favorites.html", "/calculator.html"]
     sitemap_urls += [f"/categories/{c}.html" for c in CATEGORIES]
     sitemap_urls += [f"/peptides/{s}.html" for s in ALL_SLUGS]
     sitemap_urls += [f"/stacks/{s}.html" for s in ALL_STACK_SLUGS]
+    sitemap_urls += [entry["path"] for entry in LIBRARY["entries"].values() if entry["id"].startswith("library:")]
+    sitemap_urls += [f"/kinds/{kind}.html" for kind in KIND_LABELS]
     write("data/sitemap.json", json.dumps({"site": SITE_NAME, "generated": TODAY, "pages": sitemap_urls, "categories": {c: CAT_PEPTIDES.get(c, []) for c in CATEGORIES}}, indent=2))
 
-    xml_urls = "".join(f"<url><loc>{u}</loc></url>" for u in sitemap_urls)
+    xml_urls = "".join(f"<url><loc>{SITE_DOMAIN}{u}</loc></url>" for u in sitemap_urls)
     write("sitemap.xml", f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{xml_urls}</urlset>')
 
-    lines = [f"# {SITE_NAME}", "", SITE_DESC, "", "## Categories"]
+    lines = [f"# {SITE_NAME}", "", SITE_DESC, "", "Historical snapshot; not freshly verified. Fresh suitability/rights review required before republication.", "", "## Full library (data/library.json)"]
+    for entry in sorted(LIBRARY["entries"].values(), key=lambda entry: entry["title"].casefold()):
+        lines.append(f'- {entry["title"]} ({SITE_DOMAIN}{entry["path"]}) — {entry["summary"]}')
+    lines += ["", "## Kinds"]
+    for kind, label in KIND_LABELS.items():
+        lines.append(f"- {label} ({SITE_DOMAIN}/kinds/{kind}.html)")
+    lines += ["", "## Legacy benefit categories"]
     for c, cc in CATEGORIES.items():
         lines.append(f"- {cc['name']} (/categories/{c}.html): {cc['summary']}")
     lines += ["", "## Peptides (machine-readable data at /data/peptides.json)"]
@@ -1203,7 +1334,34 @@ def main():
     lines += ["", "## Notes for agents", "Every page has JSON-LD structured data (MedicalWebPage/CollectionPage + BreadcrumbList).", "Flat JSON dataset: /data/peptides.json, /data/categories.json, /data/stacks.json, /data/sitemap.json", "This is not medical advice — see /about.html."]
     write("llms.txt", "\n".join(lines))
 
-    print(f"Generated {len(PEPTIDES)} peptide pages, {len(CATEGORIES)} category pages, plus core pages into {OUT}")
+    print(f"Generated {len(LIBRARY['entries'])} reference entries, {len(STACKS)} stacks and {len(CATEGORIES)} legacy categories")
+
+def main():
+    global LIBRARY, OUT
+    LIBRARY = load_library(Path(SRC))
+    destination = Path(OUT)
+    if destination.is_symlink():
+        raise ValueError("Build output is a symlink; choose a normal output directory. Nothing was replaced.")
+    destination = destination.absolute()
+    original_out = OUT
+    with tempfile.TemporaryDirectory(prefix=".wiki-build-", dir=destination.parent) as directory:
+        stage, backup = Path(directory) / "site", Path(directory) / "previous"
+        try:
+            OUT = str(stage)
+            build()
+            if destination.exists():
+                destination.rename(backup)
+            try:
+                stage.rename(destination)
+            except OSError:
+                if backup.exists():
+                    backup.rename(destination)
+                raise
+        finally:
+            OUT = original_out
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except (ImportFailure, OSError, ValueError) as error:
+        sys.exit(f"Build failed: {error}. Fix the input and retry; previous output was retained.")

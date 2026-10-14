@@ -1,5 +1,32 @@
 # Decisions
 
+## 2026-10-14 Render historical research with an explicit deployment boundary
+
+Build the broader site from the public projection, never by copying source/audit
+directories. Keep all original JSON endpoints and routes; add kind browsing,
+full-library search, new-entity favorites, a broad catalogue export and complete
+absolute sitemap. Retain the repository and Pages URL. Historical check dates
+remain historical; build time is not a medical review.
+
+Validate first, render into a temporary sibling directory, and replace output
+only after success. Generate favorite cards with DOM/textContent and derive
+links from the script's base URL. Malformed or unwritable cookies show explicit
+errors instead of pretending a selection was saved. Keep the original calculator
+inputs/arithmetic, with no imported defaults.
+
+Normal generation remains Python stdlib-only. Optional browser verification
+uses Playwright 1.64.1 and its downloaded Chromium in session scratch only,
+after the existing environment reported no Playwright. It provides actual
+viewport and light/dark emulation, keyboard/flow checks and screenshots without
+adding a production dependency, changing system settings or calling external
+sites. A loopback-only server is created and closed by the checker. CSS-only
+iframe theme forcing was not used as the final verification evidence.
+
+Retain artifactkit. The new longer research exposed its fixed mobile sidebar
+and compressed directory columns: stack the sidebar at narrow widths and keep
+the directory table readable in a labelled keyboard-focusable scroll region.
+No new fonts, visual framework or runtime dependency is introduced.
+
 ## 2026-10-14 Map exact identities without resolving clinical disagreements
 
 The user authorised autonomous completion of the remaining approved scope,

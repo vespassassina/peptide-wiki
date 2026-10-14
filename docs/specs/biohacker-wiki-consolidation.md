@@ -1,7 +1,8 @@
 # Biohacker Wiki consolidation
 
-Approved scope: all 210 Biometra catalogue records, with implementation approved
-one sprint at a time. Only Sprint 1 is currently authorised.
+Approved scope: all 210 Biometra catalogue records. After Sprint 1 review, the
+user explicitly authorised autonomous completion of the remaining scope.
+The original sprint-stop boundary is superseded; the publication boundary is not.
 
 ## Goal and boundaries
 
@@ -93,8 +94,10 @@ claim byte-identical preservation after redaction.
 
 Every source ID gets one recorded disposition. Existing matching entities retain
 their legacy `/peptides/` route; genuinely new entities use `/library/` routes.
-Keep source IDs even across differing source kinds. Never merge solely by name
-or suffix. The final entity count depends on adjudication, not 79 + 210.
+The completed mapping has 44 legacy attachments and 166 new entries: 245
+canonical entities. Keep source IDs even across differing source kinds. Never
+merge solely by name or suffix. The final count reflects identity adjudication,
+not simply 79 + 210.
 
 Keep molecule/fragment, ester, formulation, route and DAC/no-DAC distinctions.
 Do not equate a premixed product to a community stack. Ambiguous matches remain
@@ -185,5 +188,6 @@ Check browser flows at 375/768/1440 CSS pixels, light/dark, keyboard/menu/search
 old/new favorites, no-results and conflict states. Test local HTTP root and the
 Pages subpath; preserve documented file-open behaviour with its cookie limits.
 The existing calculator must remain unchanged and unfilled by imported defaults.
-Record actual commands, results, screenshots and skipped checks. Stop after each
-approved sprint for review and re-planning.
+Record actual commands, results, screenshots and skipped checks. The initial
+sprint-stop boundary was superseded by explicit user-directed autonomous
+continuation. The completed local evidence is in [the plan](../PLAN.md).

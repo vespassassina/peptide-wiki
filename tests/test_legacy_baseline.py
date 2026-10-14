@@ -43,16 +43,13 @@ class LegacyBaselineTests(unittest.TestCase):
                     json.loads((output / "data" / name).read_text()),
                     json.loads((ROOT / name).read_text()),
                 )
-            self.assertEqual(routes, sorted(expected_routes))
+            self.assertLessEqual(set(expected_routes), set(routes))
             for name, prefix in (("peptides.json", "peptide"), ("stacks.json", "stack")):
                 for slug in baseline["datasets"][name]["slugs"]:
                     page = output / f"{prefix}s/{slug}.html"
                     self.assertIn(f'data-fav-key="{prefix}:{slug}"', page.read_text())
             self.assertIn("'pw_favorites'", (output / "assets/site.js").read_text())
-            self.assertEqual(
-                sorted(p.name for p in output.iterdir()),
-                sorted(baseline["output_roots"]),
-            )
+            self.assertLessEqual(set(baseline["output_roots"]), {p.name for p in output.iterdir()})
             self.assertFalse((output / "research").exists())
             self.assertNotIn("catalog:context:sleep", (output / "llms.txt").read_text())
 

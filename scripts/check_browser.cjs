@@ -1,0 +1,181 @@
+/* Optional verification only; normal builds do not depend on Playwright. */
+const assert = require('node:assert/strict');
+const fs = require('node:fs/promises');
+const http = require('node:http');
+const path = require('node:path');
+const { pathToFileURL } = require('node:url');
+const { chromium } = require('playwright');
+
+async function main() {
+  const [artifactDirectory] = process.argv.slice(2);
+  assert(artifactDirectory, 'Usage: node scripts/check_browser.cjs /scratch/screenshots');
+  const root = path.resolve('out');
+  assert((await fs.stat(root)).isDirectory(), 'Build out/ before browser verification');
+  await fs.mkdir(artifactDirectory, { recursive: true });
+  const server = http.createServer(async (request, response) => {
+    if (request.method !== 'GET') { response.writeHead(405).end(); return; }
+    let pathname = new URL(request.url, 'http://localhost').pathname;
+    if (pathname.startsWith('/peptide-wiki/')) pathname = pathname.slice('/peptide-wiki'.length);
+    if (pathname === '/') pathname = '/index.html';
+    const file = path.resolve(root, '.' + pathname);
+    if (!file.startsWith(root + path.sep)) { response.writeHead(403).end(); return; }
+    try {
+      const data = await fs.readFile(file);
+      const types = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript',
+        '.json': 'application/json', '.xml': 'application/xml', '.txt': 'text/plain' };
+      response.setHeader('Content-Type', (types[path.extname(file)] || 'application/octet-stream') + '; charset=utf-8');
+      response.end(data);
+    } catch (error) {
+      if (error.code === 'ENOENT' || error.code === 'EISDIR') response.writeHead(404).end();
+      else { console.error(error); response.writeHead(500).end(); }
+    }
+  });
+  await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
+  const origin = 'http://127.0.0.1:' + server.address().port;
+  let browser;
+  const results = [], errors = [];
+  async function capture(page, name) {
+    await page.screenshot({ path: path.join(artifactDirectory, name + '.png') });
+  }
+  async function noOverflow(page) {
+    assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth),
+      'Unexpected horizontal page overflow: ' + page.url());
+  }
+  try {
+    browser = await chromium.launch();
+    for (const width of [375, 768, 1440]) {
+      for (const colorScheme of ['light', 'dark']) {
+        const context = await browser.newContext({ viewport: { width, height: 960 }, colorScheme });
+        await context.route('**/*', route => new URL(route.request().url()).origin === origin
+          ? route.continue() : route.abort());
+        const page = await context.newPage();
+        page.on('pageerror', error => errors.push(error.message));
+        for (const prefix of ['', '/peptide-wiki']) {
+          const url = suffix => origin + prefix + suffix;
+          const suffix = width + '-' + colorScheme + (prefix ? '-pages' : '-root');
+          await page.goto(url('/index.html'));
+          assert.equal(await page.title(), 'Biohacker Wiki');
+          assert.equal(await page.evaluate(() => matchMedia('(prefers-color-scheme: dark)').matches), colorScheme === 'dark');
+          await noOverflow(page);
+          if (prefix) await capture(page, 'home-' + suffix);
+          if (width < 861) {
+            const menu = page.getByRole('button', { name: 'Menu', exact: true });
+            await menu.focus();
+            await page.keyboard.press('Enter');
+            assert.equal(await menu.getAttribute('aria-expanded'), 'true');
+            await page.keyboard.press('Tab');
+            assert.equal(await page.evaluate(() => document.activeElement.textContent), 'Home');
+            if (width === 375 && colorScheme === 'light' && prefix) await capture(page, 'mobile-menu');
+            await menu.click();
+          }
+          await page.getByRole('searchbox', { name: 'Search the full library', exact: true }).fill('caffeine');
+          await page.getByRole('searchbox', { name: 'Search the full library', exact: true }).press('Enter');
+          await page.waitForURL('**/directory.html?q=caffeine');
+          assert(await page.getByRole('link', { name: 'Caffeine', exact: true }).isVisible());
+          await page.locator('#kindFilter').selectOption('supplement');
+          assert(await page.getByRole('link', { name: 'Caffeine', exact: true }).isVisible());
+          await noOverflow(page);
+          if (width === 375 && colorScheme === 'light' && prefix) await capture(page, 'directory-filter');
+          await page.locator('#dirFilter').fill('not-a-library-entry-zzzz');
+          assert(await page.locator('#noResults').isVisible());
+          assert.equal(await page.locator('#resultCount').textContent(), '0 matching entries');
+          if (width === 768 && colorScheme === 'dark' && prefix) await capture(page, 'directory-empty');
+          await page.locator('#dirFilter').fill('');
+          await page.locator('#kindFilter').selectOption('');
+          assert.equal(await page.locator('#resultCount').textContent(), '245 matching entries');
+          await page.locator('th[data-sort]').first().focus();
+          await page.keyboard.press('Enter');
+          assert.equal(await page.locator('th[data-sort]').first().getAttribute('aria-sort'), 'ascending');
+          await page.locator('#dirFilter').fill('</script><img src=x onerror=alert(1)>');
+          assert(await page.locator('#noResults').isVisible());
+          assert.equal(await page.locator('img').count(), 0);
+          for (const [route, key] of [
+            ['/peptides/bpc-157.html', 'peptide:bpc-157'],
+            ['/stacks/bpc-157-tb-500.html', 'stack:bpc-157-tb-500'],
+            ['/library/supplement-caffeine.html', 'library:supplement-caffeine'],
+          ]) {
+            await page.goto(url(route));
+            const button = page.locator('[data-fav-key="' + key + '"]');
+            const wasSaved = await button.getAttribute('aria-pressed') === 'true';
+            await button.click();
+            if (wasSaved) await button.click();
+            assert.equal(await button.getAttribute('aria-pressed'), 'true');
+            await noOverflow(page);
+          }
+          await page.goto(url('/favorites.html'));
+          const caffeine = page.locator('#favoritesRoot a').filter({ hasText: /^Caffeine$/ });
+          assert.equal(await caffeine.getAttribute('href'), url('/library/supplement-caffeine.html'));
+          assert.equal(await page.locator('#favoritesRoot a').count(), 3);
+          if (width === 1440 && colorScheme === 'light' && prefix) await capture(page, 'favorites');
+          await caffeine.click();
+          assert.equal(await page.locator('.fav-toggle').getAttribute('aria-pressed'), 'true');
+          await page.locator('.fav-toggle').click();
+          await page.goto(url('/favorites.html'));
+          assert.equal(await page.locator('#favoritesRoot a').count(), 2);
+          await page.goto(url('/peptides/bpc-157.html'));
+          assert((await page.locator('.research-warning').innerText()).includes('Half-life estimates differ'));
+          await page.locator('#biometra').scrollIntoViewIfNeeded();
+          await noOverflow(page);
+          if (width === 1440 && colorScheme === 'light' && prefix) await capture(page, 'bpc-research');
+          await page.goto(url('/library/medication-paracetamol.html'));
+          const finding = page.locator('.research-finding');
+          await finding.locator('summary').click();
+          assert((await finding.innerText()).includes('2026-10-06'));
+          assert((await finding.innerText()).includes('No suitable community description'));
+          await noOverflow(page);
+          if (width === 375 && colorScheme === 'dark' && prefix) await capture(page, 'bounded-empty-finding');
+          await page.goto(url('/library/context-sleep.html'));
+          assert(await page.locator('.research-account').count() > 0);
+          await noOverflow(page);
+          await page.goto(url('/calculator.html'));
+          assert.equal(await page.locator('#calcMg').inputValue(), '5');
+          assert.equal(await page.locator('#calcWater').inputValue(), '2');
+          assert.equal(await page.locator('#calcDose').inputValue(), '250');
+          assert((await page.locator('#calcDoseText').innerText()).includes('0.1'));
+          if (width === 768 && colorScheme === 'light' && prefix) await capture(page, 'calculator-unchanged');
+          await page.locator('#calcWater').fill('0');
+          assert.equal(await page.locator('#calcConcText').innerText(), 'Enter a vial amount and water volume above.');
+          assert.equal(await page.locator('#calcDoseText').innerText(), '—');
+          await noOverflow(page);
+          await page.goto(url('/about.html'));
+          assert((await page.locator('body').innerText()).includes('Fresh suitability/rights review'));
+          await noOverflow(page);
+          results.push({ width, colorScheme, prefix: prefix || '/', passed: true });
+        }
+        await context.clearCookies();
+        await context.addCookies([{ name: 'pw_favorites', value: '%7Bbroken', url: origin }]);
+        await page.goto(origin + '/peptide-wiki/favorites.html');
+        assert(await page.locator('#favoriteError').isVisible());
+        if (width === 375 && colorScheme === 'light') await capture(page, 'malformed-favorites');
+        await context.clearCookies();
+        await page.goto(origin + '/peptide-wiki/library/supplement-caffeine.html');
+        await page.evaluate(() => Object.defineProperty(document, 'cookie', {
+          get: () => '', set: () => { throw new Error('Blocked at browser cookie boundary'); },
+        }));
+        await page.locator('.fav-toggle').click();
+        assert((await page.locator('#favoriteError').innerText()).includes('could not be saved'));
+        assert.equal(await page.locator('.fav-toggle').getAttribute('aria-pressed'), 'false');
+        await context.close();
+      }
+    }
+    const context = await browser.newContext();
+    const page = await context.newPage();
+    await page.goto(pathToFileURL(path.resolve('out/index.html')).href);
+    assert(await page.locator('h1').isVisible());
+    await page.getByRole('link', { name: 'Peptides', exact: true }).click();
+    assert(await page.locator('.research-index').isVisible());
+    await context.close();
+    assert.deepEqual(errors, [], 'Uncaught browser errors');
+    await fs.writeFile(path.join(artifactDirectory, 'results.json'), JSON.stringify({
+      browser: browser.version(), results, uncaughtErrors: errors, fileLinks: 'passed',
+      cookieFailure: 'explicit error; no success state', externalRequests: 'blocked',
+    }, null, 2) + '\n');
+    console.log('Passed 12 root/subpath × viewport/theme flows, file links and cookie-failure checks.');
+    console.log('Screenshots and results: ' + path.resolve(artifactDirectory));
+  } finally {
+    if (browser) await browser.close();
+    await new Promise(resolve => server.close(resolve));
+  }
+}
+
+main().catch(error => { console.error(error); process.exitCode = 1; });

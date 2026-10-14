@@ -1,4 +1,4 @@
-/* Peptide Wiki — site chrome layered on top of artifactkit's theme/components.
+/* Biohacker Wiki — site chrome layered on top of artifactkit's theme/components.
    Everything here reads artifactkit tokens (--ak-*, --t-*) — no literal colours,
    so it re-themes automatically if the markers in theme.css change. */
 
@@ -18,7 +18,7 @@
 }
 .site-topbar-inner{
   max-width:var(--ak-maxw); margin:0 auto;
-  display:flex; align-items:center; gap:var(--ak-s5);
+  display:flex; align-items:center; gap:var(--ak-s5); flex-wrap:wrap;
   padding:var(--ak-s3) var(--ak-s6);
 }
 .site-brand{
@@ -120,6 +120,39 @@
 
 .visually-hidden{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap }
 
+/* Research keeps its source context close to the claim. */
+.kind-index{ list-style:none; padding:0; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:0 var(--ak-s6) }
+.kind-index li{ border-bottom:1px solid var(--ak-rule); padding:var(--ak-s3) 0; display:flex; justify-content:space-between; gap:var(--ak-s3) }
+.kind-index span{ white-space:nowrap; color:var(--ak-ink-muted); font-size:12px }
+.research-index{ list-style:none; padding:0 }
+.research-index li{ padding:var(--ak-s4) 0; border-bottom:1px solid var(--ak-rule) }
+.research-index p{ margin:var(--ak-s2) 0 0; max-width:72ch }
+.research-warning{ border:1px solid var(--ak-rule-mid); padding:var(--ak-s4); margin:var(--ak-s5) 0; background:var(--ak-surface); overflow-wrap:anywhere }
+.research-warning h2{ margin-top:0; font-size:20px }
+.research-status{ padding:var(--ak-s3) 0; border-top:1px solid var(--ak-rule); border-bottom:1px solid var(--ak-rule) }
+.research-section{ max-width:75ch; overflow-wrap:anywhere }
+.research-study{ padding:var(--ak-s4) 0; border-bottom:1px solid var(--ak-rule) }
+.research-study h4{ margin:0 0 var(--ak-s3) }
+.research-study dt{ font-weight:600 }
+.research-study dd{ margin:0 0 var(--ak-s3) }
+.research-account{ margin:var(--ak-s4) 0; padding:var(--ak-s3); border:1px solid var(--ak-rule) }
+.research-finding{ margin:var(--ak-s4) 0 }
+.research-finding summary{ cursor:pointer }
+.research-finding li, .citation-list li{ overflow-wrap:anywhere }
+.dir-controls{ flex-wrap:wrap }
+.dir-controls input{ flex:1; min-width:180px }
+#directoryTable{ min-width:700px }
+#directoryTable td:first-child{ min-width:140px }
+#directoryTable td:nth-child(2){ min-width:140px }
+#directoryTable td:nth-child(3){ min-width:240px }
+[hidden]{ display:none !important }
+@media (max-width:600px){
+  .ak-pagehead{ flex-wrap:wrap }
+  .ak-meta{ align-items:flex-start }
+  .peptide-quickfacts dd{ display:block; margin:0 0 var(--ak-s3) }
+  .ak-wrap{ overflow-wrap:anywhere }
+}
+
 /* ── footer: centered disclaimer ────────────────────────────────────── */
 .ak-footer{ text-align:center }
 .ak-footer p{ max-width:640px; margin-left:auto; margin-right:auto }
@@ -151,3 +184,13 @@
 .pw-syringe-svg{ width:100%; height:auto; display:block; margin:var(--ak-s2) 0 }
 .pw-syringe-readout{ font-weight:700; font-size:14.5px; margin:6px 0 2px }
 .fav-star{ font-size:14px }
+
+.ak-sidebar > *{ min-width:0 }
+.ak-toc{ top:140px }
+.ak-section[id]{ scroll-margin-top:160px }
+@media (max-width:860px){
+  .ak-sidebar{ grid-template-columns:minmax(0,1fr) }
+  .ak-toc{ position:static }
+  .ak-meta{ align-items:flex-start }
+  .ak-section[id]{ scroll-margin-top:80px }
+}

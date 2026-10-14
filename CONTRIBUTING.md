@@ -36,8 +36,21 @@ uncertainty and differing claims separate. Historical checks do not establish
 current validity or publication suitability.
 
 Run `python3 -B -m unittest discover -s tests` before the normal build.
-See [docs/PLAN.md](docs/PLAN.md) for the approved sprint boundary and
-[docs/HANDOFF.md](docs/HANDOFF.md) before resuming the consolidation.
+Identity changes belong in `research/mapping.json`, with an explicit reason.
+Every source ID must have exactly one disposition. Keep uncertain variants
+separate and related. Do not merge protocols from different populations,
+collapse contradictory claims or count wiki-origin backlinks as independent
+corroboration. The complete public-field projection lives in `library.py`.
+
+The legacy JSON exports, URLs and favorite keys are compatibility contracts.
+Adding broader entries must not remove them. Change generated routes, search,
+favorites and machine outputs together, and extend behavioural tests.
+
+See [docs/PLAN.md](docs/PLAN.md) for the completed scope and actual verification.
+The [README](README.md#checks) documents optional screenshot/browser checks.
+Normal builds remain offline and Python-only. Fresh source-suitability/rights
+checks and owner permission are required before any new public republication;
+import/build success is not publication approval.
 
 ## Style
 
