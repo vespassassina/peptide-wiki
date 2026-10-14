@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "adc7684614f9439b41d91a3312b62e7982c7e20e",
+  "matchReason": "Explicit active-identity matches reviewed against authored titles and legacy full names/aliases. Source-specific formulation, population, protocols and uncertainty remain attributed; this is not a clinical reconciliation.",
+  "legacyMatches": {
+    "catalog:peptide:adipotide": "adipotide",
+    "catalog:peptide:aod-9604": "aod-9604",
+    "catalog:peptide:bpc-157": "bpc-157",
+    "catalog:peptide:cerebrolysin": "cerebrolysin",
+    "catalog:peptide:cjc-1295": "cjc-1295",
+    "catalog:peptide:cjc-1295-dac": "cjc-1295-dac",
+    "catalog:peptide:dsip": "dsip",
+    "catalog:peptide:epitalon": "epithalon",
+    "catalog:peptide:ghk-cu": "ghk-cu",
+    "catalog:peptide:ghrp-2": "ghrp-2",
+    "catalog:peptide:ghrp-6": "ghrp-6",
+    "catalog:peptide:gonadorelin": "gonadorelin",
+    "catalog:peptide:hexarelin": "hexarelin",
+    "catalog:peptide:humanin": "humanin",
+    "catalog:peptide:igf-1-lr3": "igf-1-lr3",
+    "catalog:peptide:ipamorelin": "ipamorelin",
+    "catalog:peptide:kpv": "kpv",
+    "catalog:peptide:ll-37": "ll-37",
+    "catalog:peptide:melanotan-2": "mt-2",
+    "catalog:peptide:mots-c": "mots-c",
+    "catalog:peptide:pt-141": "pt-141",
+    "catalog:peptide:retatrutide": "retatrutide",
+    "catalog:peptide:selank": "selank",
+    "catalog:peptide:semaglutide": "semaglutide",
+    "catalog:peptide:semax": "semax",
+    "catalog:peptide:sermorelin": "sermorelin",
+    "catalog:peptide:ss-31": "ss-31",
+    "catalog:peptide:tesamorelin": "tesamorelin",
+    "catalog:peptide:thymalin": "thymalin",
+    "catalog:peptide:thymosin-alpha-1": "thymosin-alpha-1",
+    "catalog:peptide:tirzepatide": "tirzepatide",
+    "catalog:peptide:vip": "vip",
+    "catalog:hormone:hcg": "hcg",
+    "catalog:hormone:hgh": "hgh-somatropin",
+    "catalog:hormone:mk-677": "mk-677",
+    "catalog:medication:teriparatide": "teriparatide",
+    "catalog:medication:oxytocin": "oxytocin",
+    "catalog:medication:cagrilintide": "cagrilintide",
+    "catalog:medication:liraglutide": "liraglutide",
+    "catalog:medication:survodutide": "survodutide",
+    "catalog:medication:mazdutide": "mazdutide",
+    "catalog:supplement:aicar": "aicar",
+    "catalog:supplement:5-amino-1mq": "5-amino-1mq",
+    "catalog:supplement:nad-plus": "nad"
+  },
+  "newEntities": {
+    "context": ["alcohol", "alcohol-free-day", "nicotine", "routine", "sleep"],
+    "exercise": ["bodyweight", "calisthenics", "cardio-zone2", "climbing", "cycling", "functional-fitness", "hiit", "hiking", "martial-arts", "pilates", "resistance-session", "rowing", "running", "swimming", "team-sport", "walking"],
+    "food-protocol": ["16-8", "18-6", "5-2", "adf", "calorie-protein-target", "carb-cycling", "carnivore", "extended-fast", "full-day-fast", "keto", "low-carb", "mediterranean", "omad", "paleo", "vegan", "vegetarian"],
+    "hormone": ["anastrozole", "andarine", "boldenone-undecylenate", "cabergoline", "clomiphene-citrate", "dhea", "drostanolone", "enclomiphene", "estradiol", "exemestane", "gw-501516", "letrozole", "levothyroxine", "lgd-4033", "liothyronine", "mesterolone", "methandienone", "methenolone", "mk-2866", "nandrolone-decanoate", "oxandrolone", "oxymetholone", "pregnenolone", "progesterone", "rad140", "sr9009", "stanozolol", "sustanon-250", "tamoxifen", "testosterone-cypionate", "testosterone-decanoate", "testosterone-enanthate", "testosterone-gel", "testosterone-isocaproate", "testosterone-phenylpropionate", "testosterone-propionate", "testosterone-undecanoate", "trenbolone", "trestolone", "turinabol", "yk-11"],
+    "lab-marker": ["panel"],
+    "medication": ["antacid", "antibiotic-course", "antihistamine", "aspirin", "atorvastatin", "diclofenac-topical", "dutasteride", "finasteride", "ibuprofen", "insulin", "metformin", "minoxidil", "naproxen", "oral-rehydration", "orforglipron", "paracetamol", "pentosan-polysulfate", "sildenafil", "tadalafil", "tesofensine"],
+    "peptide": ["cjc-ipamorelin-blend", "dihexa", "kisspeptin-10", "tb-500"],
+    "recovery": ["acupuncture", "breathwork", "cold-exposure", "compression", "float-tank", "gratitude-therapy", "hyperbaric-oxygen", "journaling", "massage", "meditation", "nap", "red-light", "sauna", "screen-curfew", "stretching", "sunlight", "yoga"],
+    "supplement": ["5-htp", "alpha-gpc", "aniracetam", "ashwagandha", "bcaa", "beetroot", "berberine", "beta-alanine", "boron", "caffeine", "casein-protein", "citrulline", "coenzyme-q10", "collagen", "creatine", "curcumin", "fenugreek", "glycine", "inositol", "l-carnitine", "l-theanine", "magnesium", "melatonin", "methylene-blue", "nac", "nmn", "omega-3", "plant-protein", "potassium", "probiotic", "psyllium", "resveratrol", "saw-palmetto", "selenium", "tart-cherry", "taurine", "tongkat-ali", "vitamin-a", "vitamin-b-complex", "vitamin-b12", "vitamin-c", "vitamin-d3", "vitamin-e", "vitamin-k2", "whey-protein", "zinc"]
+  },
+  "variants": {
+    "catalog:peptide:tb-500": {
+      "related": ["peptide:tb-500"],
+      "reason": "Biometra names the thymosin beta-4 fragment specifically. The legacy page covers ambiguous products sold as TB-500, including full thymosin beta-4. Keep a distinct fragment page; do not transfer full-molecule trial or PK findings to the fragment."
+    },
+    "catalog:peptide:kisspeptin-10": {
+      "related": ["peptide:kisspeptin"],
+      "reason": "Biometra identifies KP-10 specifically; the legacy article covers KP-10 and related KISS1 fragments. Preserve the narrower identity separately rather than extrapolating findings across fragments."
+    }
+  },
+  "conflicts": {
+    "peptide:bpc-157": [
+      {
+        "status": "unresolved",
+        "origins": ["peptides.json#/bpc-157/research_summary", "audit/catalogue-authored.json#catalog:peptide:bpc-157/template/halfLife"],
+        "text": "Half-life estimates differ: the legacy summary reports approximately 40 minutes from an in-vitro plasma-stability study; the Biometra template reports 4-6 hours with a preclinical source note. These are not interchangeable measurements. Both accounts are retained; neither is newly verified here."
+      }
+    ],
+    "peptide:tb-500": [
+      {
+        "status": "identity-uncertain",
+        "origins": ["peptides.json#/tb-500/full_name", "audit/catalogue-authored.json#catalog:peptide:tb-500"],
+        "text": "This legacy article covers products sold under an ambiguous TB-500 name. The separate Biometra fragment entry is narrower. Full thymosin beta-4 trial results and its reported PK must not be assumed to apply to that fragment."
+      }
+    ],
+    "peptide:cjc-1295": [
+      {
+        "status": "unresolved",
+        "origins": ["peptides.json#/cjc-1295/full_name", "peptides.json#/cjc-1295/variant_note", "audit/catalogue-authored.json#catalog:peptide:cjc-1295"],
+        "text": "The legacy full name/aliases mention both DAC and no-DAC, while its variant note and Biometra identity identify no-DAC. The no-DAC research is attached here; the long-acting DAC variant keeps its separate page. Original wording is preserved, not treated as equivalence."
+      }
+    ]
+  },
+  "stackConflicts": {
+    "bpc-157-tb-500": "The preserved rationale cites a direct rat combination study, but the preserved mechanism/PK paragraph says no study measured the two together. These statements conflict. No human combination efficacy or safety is established by this migration."
+  }
+}
