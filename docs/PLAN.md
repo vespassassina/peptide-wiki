@@ -178,8 +178,27 @@ recommended-regimen review status. Hostile warning text remains escaped.
 Legacy JSON, CI and the immutable import bundle are unchanged; generated output
 contains no research/audit directory or app template fields.
 
-Next: fast-forward the unchanged remote default branch, push without force,
-wait for Pages and verify the real public deployment, including exclusion URLs.
+The release was fast-forwarded and pushed to `main` as `f20cc4c`, without force,
+repository rename, CI changes or a PR. The
+[Pages deployment](https://github.com/vespassassina/peptide-wiki/actions/runs/38780821040)
+completed successfully.
+
+Actual published verification at
+`https://vespassassina.github.io/peptide-wiki/` byte-matched all 290 output files,
+including all 277 HTML pages, assets and JSON exports. The live catalogue has
+245 entries, all 210 imported research records and 888 source-availability
+records. App-default fields are absent. Six audit/default paths returned HTTP
+404, including the original evidence/export, rejected drafts and review reports.
+The report and per-file hashes are session `files/published-check.json`.
+
+All six real-site Chromium flows passed at 375/714/1440 px in light/dark modes:
+navigation sizing/Escape, directory search, favorite persistence and base URL,
+collapsed/open source limitations and unchanged calculator defaults. No
+uncaught errors were recorded. Eleven published-site screenshots and results
+are in session `files/published-browser/`. The optional embedded app-browser
+preview timed out; independent HTTP and real-browser verification succeeded.
+The pending handoff is removed because the release work is complete.
+
 Native devices and other browser engines are not tested. Clinical, regulatory,
 efficacy, safety, PK and dose revalidation remain explicitly unperformed, not
 release promises.

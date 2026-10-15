@@ -13,7 +13,7 @@ statements and uncertainty stay separate. Imported research is a historical
 snapshot, not fresh clinical verification. Conflicting accounts are retained,
 not averaged. The site/project name changes; `vespassassina/peptide-wiki` does not.
 
-The owner has authorised publication. The 2026-10-15 suitability/rights review
+Published at the unchanged URL above. The 2026-10-15 suitability/rights review
 covers an explicitly historical reference, not clinical certification. Unverified
 community accounts are collapsed and labelled; identified source-support gaps
 remain visible. Publication uses the existing GitHub Pages workflow and URL.
