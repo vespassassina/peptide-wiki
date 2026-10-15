@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "checkedOn": "2026-10-15",
+  "sourceCommit": "adc7684614f9439b41d91a3312b62e7982c7e20e",
+  "releaseCandidateCommit": "ac57f27",
+  "result": "blocked-incomplete-review",
+  "scope": {
+    "communityDescriptions": 163,
+    "uniqueCommunityUrls": 142,
+    "reviewedUniqueCommunityUrls": 5,
+    "remainingUniqueCommunityUrls": 137,
+    "clinicalAndRegulatoryClaims": "Not freshly verified by this partial review."
+  },
+  "rights": {
+    "targetRepository": "vespassassina/peptide-wiki",
+    "targetVisibility": "public",
+    "targetLicence": "MIT",
+    "sourceRepository": "vespassassina/BiohackerAssistant",
+    "sourceVisibility": "private",
+    "sourceLicenceReportedByGitHub": null,
+    "sourceLicenceEndpointStatus": 404,
+    "ownerPublicationInstruction": "merge, push and publish",
+    "conclusion": "The owner's instruction authorises the requested publication operation. A missing repository licence is not proof of either permission or infringement. It does not establish rights to third-party material. No publisher pages, images or excerpts were added to this review artifact; no blanket rights clearance is claimed."
+  },
+  "checks": [
+    {
+      "sourceId": "catalog:context:sleep",
+      "field": "community/0",
+      "url": "https://www.thensf.org/nsf-sleep-diary/",
+      "availability": "retrieved",
+      "claimMatch": "The current page describes daily diary entries on waking and before bed, matching the bounded imported practice description.",
+      "population": "General sleep-diary users; not evidence of a clinical treatment outcome.",
+      "suitability": "Suitable as an attributed description of a practice, not evidence of effectiveness.",
+      "result": "bounded-description-supported",
+      "thirdPartyContentStored": false
+    },
+    {
+      "sourceId": "catalog:supplement:ashwagandha",
+      "field": "community/0",
+      "url": "https://www.nccih.nih.gov/health/ashwagandha",
+      "availability": "HTTP 200; full HTML parsed in memory after the simplified extractor returned only the clearinghouse footer.",
+      "claimMatch": "The full page retains discussion of traditional Ayurvedic use, consistent with the bounded imported historical-use description.",
+      "population": "Traditional-use context; not a population-specific efficacy claim.",
+      "suitability": "Suitable for attributed historical-use context only; this check does not approve efficacy or dosing.",
+      "result": "bounded-description-supported",
+      "thirdPartyContentStored": false
+    },
+    {
+      "sourceId": "catalog:hormone:dhea",
+      "field": "community/0",
+      "url": "https://www.swansonvitamins.com/p/swanson-ultra-dhea-50-mg-120-caps",
+      "availability": "retrieved",
+      "claimMatch": "The current product label supports the imported reference to a 50 mg capsule taken daily. The imported additional statement about adjustment to 100 mg was not verified in the retrieved current label.",
+      "population": "A supplement vendor's product label, not an independent clinical or community cohort.",
+      "suitability": "Unresolved. This is a commercial product page, conflicting with the target contribution policy against vendor links. The additional regimen assertion needs source clarification.",
+      "result": "publication-blocker",
+      "thirdPartyContentStored": false
+    },
+    {
+      "sourceId": "catalog:peptide:igf-1-lr3",
+      "field": "community/0",
+      "url": "https://www.peptidedosingprotocols.com/protocol/igf-1-lr3",
+      "availability": "retrieved",
+      "claimMatch": "The retrieved FAQ discusses overlapping community dose and cycle ranges, but this partial review did not establish support for the imported staged progression across successive cycles.",
+      "population": "Unvalidated research-community protocol accounts, not a validated human clinical regimen.",
+      "suitability": "Not cleared as independent evidence or as a recommended protocol; remaining context needs review.",
+      "result": "partial-match-not-cleared",
+      "thirdPartyContentStored": false
+    },
+    {
+      "sourceId": "catalog:peptide:igf-1-lr3",
+      "field": "community/1",
+      "url": "https://peptideinitiative.com/peptides/protocols/igf-1-lr3-protocol",
+      "finalUrl": "https://peptideinitiative.com/peptides/protocols/igf-1-lr3",
+      "availability": "HTTP 200 after redirect; full HTML parsed in memory.",
+      "claimMatch": "Full-page retrieval contains relevant range, route and timing terms omitted by the simplified extractor. Term presence alone does not establish the full imported claim.",
+      "population": "Community protocol context; the page also references animal research, which must not be conflated with validated human use.",
+      "suitability": "Full claim and population review incomplete.",
+      "result": "not-cleared",
+      "thirdPartyContentStored": false
+    }
+  ],
+  "policyLookups": [
+    {
+      "url": "https://www.nccih.nih.gov/health/copyright",
+      "availability": "HTTP 404",
+      "result": "No rights conclusion; an unavailable guessed policy URL is not a licence determination."
+    },
+    {
+      "url": "https://www.thensf.org/terms-and-conditions/",
+      "availability": "HTTP 404",
+      "result": "No rights conclusion; an unavailable guessed policy URL is not a licence determination."
+    }
+  ],
+  "publicOutput": "not-deployed",
+  "limitations": [
+    "This is a partial release review, not certification of medical accuracy or rights.",
+    "Imported evidence and audit files remain unchanged.",
+    "No merge, push, PR or deployment has occurred."
+  ]
+}
