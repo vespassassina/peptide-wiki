@@ -1,0 +1,2854 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "adc7684614f9439b41d91a3312b62e7982c7e20e",
+  "checkedOn": "2026-10-15",
+  "scope": "All 142 unique URLs attached to 163 canonical community descriptions.",
+  "result": "availability-review-complete-not-publication-clearance",
+  "publicOutput": "not-deployed",
+  "publisherContentStored": false,
+  "checks": [
+    {
+      "url": "https://americanhiking.org/resources/hiking-trails-policy/",
+      "checkedAt": "2026-10-15T17:24:48.620595+00:00",
+      "claimLocations": [
+        "catalog:exercise:hiking/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://americanhiking.org/hiking-trails-policy/",
+      "contentType": "text/html",
+      "responseBytesRead": 363184,
+      "bodySha256": "e86e780e4b09cd6165596f9182a97144852e9a07401a7fbb2920e2a495d10ff1",
+      "title": "Hiking Trails Position Statement - American Hiking Society",
+      "extractedTextCharacters": 12550,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://bowtiedloon.substack.com/p/forms-of-testosterone-replacement",
+      "checkedAt": "2026-10-15T17:24:48.620869+00:00",
+      "claimLocations": [
+        "catalog:hormone:testosterone-cypionate/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://bowtiedloon.substack.com/p/forms-of-testosterone-replacement",
+      "contentType": "text/html",
+      "responseBytesRead": 111009,
+      "bodySha256": "dd5ba5961c9dd6dc77ff7c36539b26cd34a50189852c2405ad23b76b1757a0e0",
+      "title": "Forms of Testosterone Replacement Therapy (TRT)",
+      "extractedTextCharacters": 8482,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://cjc-1295.com/article/cjc-1295-sermorelin-dosing-administration-safety",
+      "checkedAt": "2026-10-15T17:24:48.620934+00:00",
+      "claimLocations": [
+        "catalog:peptide:sermorelin/community/0",
+        "catalog:peptide:cjc-ipamorelin-blend/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://cjc-1295.com/article/cjc-1295-sermorelin-dosing-administration-safety",
+      "contentType": "text/html",
+      "responseBytesRead": 55709,
+      "bodySha256": "a968951b67726547bc61ca0c3aff17889d65d1f24876474b2a65d08cb6240810",
+      "title": "CJC-1295 and Sermorelin Dosing Compared | cjc-1295.com",
+      "extractedTextCharacters": 13109,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://enhancedpeptides.com/andarine-s4-the-complete-guide/",
+      "checkedAt": "2026-10-15T17:24:48.620981+00:00",
+      "claimLocations": [
+        "catalog:hormone:andarine/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://enhancedpeptides.com/andarine-s4-the-complete-guide/",
+      "contentType": "text/html",
+      "responseBytesRead": 240002,
+      "bodySha256": "d8ecb14eca55a58efef93f56ff26cf02fbdc0e07fc238be872cb47834acfb31b",
+      "title": "Andarine S4 - Guide to Effects, Dosing, Cycles and Side Effects",
+      "extractedTextCharacters": 29445,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://formblends.com/articles/peptide-hub/peptides-kpv-dosage",
+      "checkedAt": "2026-10-15T17:24:48.621041+00:00",
+      "claimLocations": [
+        "catalog:peptide:kpv/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://formblends.com/articles/peptide-hub/peptides-kpv-dosage",
+      "contentType": "text/html",
+      "responseBytesRead": 257959,
+      "bodySha256": "df43462f023c5ea9919bd7920f1ee4840246fb1a68cf49768f29a5d7b480d934",
+      "title": "KPV Peptide Dosage: Protocol, Dose Per Day & Evidence | FormBlends",
+      "extractedTextCharacters": 34081,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://forums.phoenixrising.me/threads/thymosin-alpha-1.61531/",
+      "checkedAt": "2026-10-15T17:24:48.621110+00:00",
+      "claimLocations": [
+        "catalog:peptide:thymosin-alpha-1/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://forums.phoenixrising.me/threads/thymosin-alpha-1.61531/",
+      "contentType": "text/html",
+      "responseBytesRead": 160364,
+      "bodySha256": "59620f2be300f44170526a980df5c651555155fca6fc105c05fb261ea485d114",
+      "title": "Thymosin Alpha 1 | Phoenix Rising ME/CFS Forums",
+      "extractedTextCharacters": 41664,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://gccfla.org/labtips.shtml",
+      "checkedAt": "2026-10-15T17:24:48.893319+00:00",
+      "claimLocations": [
+        "catalog:exercise:cycling/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://gccfla.org/labtips.shtml",
+      "contentType": "text/html",
+      "responseBytesRead": 9870,
+      "bodySha256": "1d7e9b667ae707ee30e4032de5de4dcb5bfb6ae296620735186c2324ee5d5260",
+      "title": "10 Tips for Safe Group Riding",
+      "extractedTextCharacters": 5085,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://ggia.berkeley.edu/practice/expressive_writing",
+      "checkedAt": "2026-10-15T17:24:48.988851+00:00",
+      "claimLocations": [
+        "catalog:recovery:journaling/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://ggia.berkeley.edu/practice/expressive_writing",
+      "contentType": "text/html",
+      "responseBytesRead": 122043,
+      "bodySha256": "ff4228c1b6aa292622fbcf62e581c73a45c3631b316022b7553c6fbae2b751c1",
+      "title": "Expressive Writing | Practice\n         | Greater Good in Action",
+      "extractedTextCharacters": 55904,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://ggia.berkeley.edu/practice/three-good-things",
+      "checkedAt": "2026-10-15T17:24:49.006412+00:00",
+      "claimLocations": [
+        "catalog:recovery:gratitude-therapy/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://ggia.berkeley.edu/practice/three-good-things",
+      "contentType": "text/html",
+      "responseBytesRead": 100303,
+      "bodySha256": "d66c4168c77c90884666c211fde0dec68394e25e766eaa9dc38a6b24a11c97c5",
+      "title": "Three Good Things | Practice\n         | Greater Good in Action",
+      "extractedTextCharacters": 38325,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://health.clevelandclinic.org/calisthenics",
+      "checkedAt": "2026-10-15T17:24:49.356111+00:00",
+      "claimLocations": [
+        "catalog:exercise:calisthenics/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://health.clevelandclinic.org/calisthenics",
+      "contentType": "text/html",
+      "responseBytesRead": 379405,
+      "bodySha256": "cc1159919657ff91c92426079848ba239807625fb5fc47844cf7e38ddbf0d528",
+      "title": "Calisthenics Workout Routine and Benefits",
+      "extractedTextCharacters": 13562,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://health.clevelandclinic.org/everything-you-want-to-know-about-pilates",
+      "checkedAt": "2026-10-15T17:24:49.542490+00:00",
+      "claimLocations": [
+        "catalog:exercise:pilates/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://health.clevelandclinic.org/everything-you-want-to-know-about-pilates",
+      "contentType": "text/html",
+      "responseBytesRead": 398029,
+      "bodySha256": "139b6342b0d368403618494b0ca8f44b7257ec9d60081e95336aaf37f49e38df",
+      "title": "Pilates: What It Is and Health Benefits",
+      "extractedTextCharacters": 16854,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://health.clevelandclinic.org/exercise-heart-rate-zones-explained",
+      "checkedAt": "2026-10-15T17:24:49.652740+00:00",
+      "claimLocations": [
+        "catalog:exercise:cardio-zone2/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://health.clevelandclinic.org/exercise-heart-rate-zones-explained",
+      "contentType": "text/html",
+      "responseBytesRead": 401550,
+      "bodySha256": "4c5d633f0a76d88b53d79924c7267915474ec654c251f0c23fd4f2ee8800c917",
+      "title": "What Are the Five Heart Rate Zones?",
+      "extractedTextCharacters": 12043,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://health.clevelandclinic.org/float-therapy-benefits",
+      "checkedAt": "2026-10-15T17:24:49.764663+00:00",
+      "claimLocations": [
+        "catalog:recovery:float-tank/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://health.clevelandclinic.org/float-therapy-benefits",
+      "contentType": "text/html",
+      "responseBytesRead": 348237,
+      "bodySha256": "fac0cf71734c1b3d44c260ad88dac36aee85883349eb3e1765dc73483ac414cc",
+      "title": "Sensory Deprivation Tank Benefits and Risks",
+      "extractedTextCharacters": 9415,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://health.clevelandclinic.org/strength-training",
+      "checkedAt": "2026-10-15T17:24:50.108771+00:00",
+      "claimLocations": [
+        "catalog:exercise:resistance-session/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://health.clevelandclinic.org/strength-training",
+      "contentType": "text/html",
+      "responseBytesRead": 379085,
+      "bodySha256": "55d8393ad416d739c81a9e294aaef0f17afbb8d34e7da762c658d1a182630e3c",
+      "title": "What Is Strength Training and Its Benefits?",
+      "extractedTextCharacters": 11615,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://health.clevelandclinic.org/the-carnivore-diet",
+      "checkedAt": "2026-10-15T17:24:50.228474+00:00",
+      "claimLocations": [
+        "catalog:food-protocol:carnivore/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://health.clevelandclinic.org/the-carnivore-diet",
+      "contentType": "text/html",
+      "responseBytesRead": 353046,
+      "bodySha256": "df758a05d15863adc4b85a5f2085f9e5ca578cc86f4d2587a0edf16b0779b67b",
+      "title": "Carnivore Diet: What Is It and Is It Healthy?",
+      "extractedTextCharacters": 10455,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://health.clevelandclinic.org/think-you-cant-do-high-intensity-interval-training-think-again",
+      "checkedAt": "2026-10-15T17:24:50.336994+00:00",
+      "claimLocations": [
+        "catalog:exercise:hiit/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://health.clevelandclinic.org/think-you-cant-do-high-intensity-interval-training-think-again",
+      "contentType": "text/html",
+      "responseBytesRead": 363963,
+      "bodySha256": "68fe95d3abb151f82f69c677270351ccd0463e73ede0ecaaded3f130c805badf",
+      "title": "HIIT Workouts: They’re Good for Everyone!",
+      "extractedTextCharacters": 11763,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://health.clevelandclinic.org/what-to-know-about-cold-plunges",
+      "checkedAt": "2026-10-15T17:24:50.442895+00:00",
+      "claimLocations": [
+        "catalog:recovery:cold-exposure/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://health.clevelandclinic.org/what-to-know-about-cold-plunges",
+      "contentType": "text/html",
+      "responseBytesRead": 353186,
+      "bodySha256": "42974094b60feae9f07ac566f0bb58cc2a238a02c7c9e46b1a654a78ed20bc49",
+      "title": "Health Benefits of Cold Plunges",
+      "extractedTextCharacters": 11291,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://healthunlocked.com/thyroiduk/posts/147796886/splitting-t3-dose",
+      "checkedAt": "2026-10-15T17:24:50.546983+00:00",
+      "claimLocations": [
+        "catalog:hormone:liothyronine/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://healthunlocked.com/thyroiduk/posts/147796886/splitting-t3-dose",
+      "contentType": "text/html",
+      "responseBytesRead": 333569,
+      "bodySha256": "3dbe9e58d2046d2d56b51aa665cdb8c1f133da5210838bcd033ecd995dc9d2b8",
+      "title": "Splitting T3 dose | Thyroid UK | HealthUnlocked",
+      "extractedTextCharacters": 9462,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://healthy.kaiserpermanente.org/health-wellness/healtharticle.acupuncture-101",
+      "checkedAt": "2026-10-15T17:24:50.607846+00:00",
+      "claimLocations": [
+        "catalog:recovery:acupuncture/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://healthy.kaiserpermanente.org/health-wellness/healtharticle.acupuncture-101",
+      "contentType": "text/html",
+      "responseBytesRead": 333415,
+      "bodySha256": "4c8fb249f5e54aec6ec09643879534ee00250720afaf2ec98f7480d102edba0d",
+      "title": "How acupuncture works and what to expect  | Kaiser Permanente Health article | Kaiser Permanente",
+      "extractedTextCharacters": 65961,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://insidebodybuilding.com/ostarine-mk-2866/",
+      "checkedAt": "2026-10-15T17:24:50.642678+00:00",
+      "claimLocations": [
+        "catalog:hormone:mk-2866/community/0",
+        "catalog:hormone:mk-2866/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://insidebodybuilding.com/ostarine-mk-2866/",
+      "contentType": "text/html",
+      "responseBytesRead": 218864,
+      "bodySha256": "c524689bba282aa49419500ea38fae347e6ca330a5acf4578fefcf9eb4995fc9",
+      "title": "Ostarine (MK-2866): Results, Before and After Pictures, Dosages",
+      "extractedTextCharacters": 43642,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://knowyourpeptide.com/blog/semax-dosage-guide-nasal-injection-reconstitution-protocol",
+      "checkedAt": "2026-10-15T17:24:51.117642+00:00",
+      "claimLocations": [
+        "catalog:peptide:semax/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://knowyourpeptide.com/blog/semax-dosage-guide-nasal-injection-reconstitution-protocol",
+      "contentType": "text/html",
+      "responseBytesRead": 72791,
+      "bodySha256": "22886cd3491c2d8a2922615a8784d6744ec0c438d23931cedcaccdf1cf5bb942",
+      "title": "Semax Dosage Guide: Nasal and Injection Administration, Reconstitution, and Dosing Protocol | Know Your Peptide",
+      "extractedTextCharacters": 5332,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://muscleandbrawn.com/anabolics/testosterone-enanthate-cycle/",
+      "checkedAt": "2026-10-15T17:24:51.764353+00:00",
+      "claimLocations": [
+        "catalog:hormone:testosterone-enanthate/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "availability": "http-error",
+      "httpStatus": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://muscleandbrawn.com/sarms/andarine-s4/",
+      "checkedAt": "2026-10-15T17:24:51.802577+00:00",
+      "claimLocations": [
+        "catalog:hormone:andarine/community/2"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "availability": "http-error",
+      "httpStatus": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://my.clevelandclinic.org/health/articles/22114-red-light-therapy",
+      "checkedAt": "2026-10-15T17:24:51.836943+00:00",
+      "claimLocations": [
+        "catalog:recovery:red-light/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://my.clevelandclinic.org/health/articles/22114-red-light-therapy",
+      "contentType": "text/html",
+      "responseBytesRead": 308237,
+      "bodySha256": "3691ef4e4deb177b46777e9d86a655fefc258d2cc74694da07b69e1675803b4e",
+      "title": "Red Light Therapy: Benefits, Side Effects & Uses",
+      "extractedTextCharacters": 15692,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://my.clevelandclinic.org/podcasts/love-your-heart/what-is-intermittent-fasting",
+      "checkedAt": "2026-10-15T17:24:51.852399+00:00",
+      "claimLocations": [
+        "catalog:food-protocol:18-6/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://my.clevelandclinic.org/podcasts/love-your-heart/what-is-intermittent-fasting",
+      "contentType": "text/html",
+      "responseBytesRead": 254158,
+      "bodySha256": "6959b0eea118918d43b2dd0ed0ae13863416aa72afec0406a6d0034345e0fa78",
+      "title": "What is Intermittent Fasting?",
+      "extractedTextCharacters": 15156,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/fats-and-cholesterol/types-of-fat/omega-3-fats/",
+      "checkedAt": "2026-10-15T17:24:52.144072+00:00",
+      "claimLocations": [
+        "catalog:supplement:omega-3/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/fats-and-cholesterol/types-of-fat/omega-3-fats/",
+      "contentType": "text/html",
+      "responseBytesRead": 115879,
+      "bodySha256": "008989e8a6a58500faf0fdf93cdda95e029be201fab1390e327a20b9a2a500a1",
+      "title": "Omega-3 Fatty Acids: An Essential Contribution • The Nutrition Source Healthy Oils Water Vegetables Fruits Healthy Protein Whole Grains Stay Active",
+      "extractedTextCharacters": 24486,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://peptideinitiative.com/peptides/dsip",
+      "checkedAt": "2026-10-15T17:24:52.245274+00:00",
+      "claimLocations": [
+        "catalog:peptide:dsip/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://peptideinitiative.com/peptides/dsip",
+      "contentType": "text/html",
+      "responseBytesRead": 336922,
+      "bodySha256": "2168a6d2483933d4a9b79637a63456a24f15971794701de3511d2cae8942cc9d",
+      "title": "DSIP (Delta Sleep-Inducing Peptide) Dosage, Safety &… | Peptide Initiative",
+      "extractedTextCharacters": 33262,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://peptideinitiative.com/peptides/protocols/igf-1-lr3-protocol",
+      "checkedAt": "2026-10-15T17:24:52.437611+00:00",
+      "claimLocations": [
+        "catalog:peptide:igf-1-lr3/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://peptideinitiative.com/peptides/protocols/igf-1-lr3",
+      "contentType": "text/html",
+      "responseBytesRead": 277823,
+      "bodySha256": "4bc64a5b44888abc7bcfccae8629207f8cab22001fbada84ac484278ebcbc09e",
+      "title": "IGF-1 LR3 Injection Dosage & Protocol | Peptide Initiative",
+      "extractedTextCharacters": 19288,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://peptideinitiative.com/peptides/protocols/ss-31",
+      "checkedAt": "2026-10-15T17:24:52.590681+00:00",
+      "claimLocations": [
+        "catalog:peptide:ss-31/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://peptideinitiative.com/peptides/protocols/ss-31",
+      "contentType": "text/html",
+      "responseBytesRead": 291712,
+      "bodySha256": "ac61df58525f30ff9d7b33a6b560487808c293f1ff3c4310cbd5049dc7219888",
+      "title": "SS-31 (Elamipretide) Injection Dosage & Protocol | Peptide Initiative",
+      "extractedTextCharacters": 23487,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://peptideinitiative.com/peptides/protocols/vip-vasoactive-intestinal-peptide",
+      "checkedAt": "2026-10-15T17:24:52.598645+00:00",
+      "claimLocations": [
+        "catalog:peptide:vip/community/2"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://peptideinitiative.com/peptides/protocols/vip-vasoactive-intestinal-peptide",
+      "contentType": "text/html",
+      "responseBytesRead": 302948,
+      "bodySha256": "255e52f6a290ade0653ac81f3ee8b27293c9209e08f7b9af50c326c2991f5e84",
+      "title": "VIP (Vasoactive Intestinal Peptide) Injection Dosage &… | Peptide Initiative",
+      "extractedTextCharacters": 22606,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://peptidemind.com/peptides/adipotide",
+      "checkedAt": "2026-10-15T17:24:53.062301+00:00",
+      "claimLocations": [
+        "catalog:peptide:adipotide/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://peptidemind.com/peptides/adipotide",
+      "contentType": "text/html",
+      "responseBytesRead": 818384,
+      "bodySha256": "5051287eb14040b94e4b81c97cbc99218344a35eebd21136dd1fe2193683af69",
+      "title": "Adipotide Peptide Dosage Guide, Benefits & Side Effects | Peptide Mind",
+      "extractedTextCharacters": 16203,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://peptidesexplorer.com/blog/dsip-peptide-dosage",
+      "checkedAt": "2026-10-15T17:24:53.143260+00:00",
+      "claimLocations": [
+        "catalog:peptide:dsip/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://peptidesexplorer.com/blog/dsip-peptide-dosage",
+      "contentType": "text/html",
+      "responseBytesRead": 215380,
+      "bodySha256": "4c390275332478fba14c920299dc4fb439d45c2725ab4149ce9f9f254a75ae06",
+      "title": "DSIP Peptide Dosage: Sleep Protocols | PeptidesExplorer",
+      "extractedTextCharacters": 30449,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://peptidesexplorer.com/blog/humanin-peptide",
+      "checkedAt": "2026-10-15T17:24:53.310745+00:00",
+      "claimLocations": [
+        "catalog:peptide:humanin/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://peptidesexplorer.com/blog/humanin-peptide",
+      "contentType": "text/html",
+      "responseBytesRead": 128228,
+      "bodySha256": "f242885a0c44af6325e61e039afceadabfb541db6576635ad3e45709f9276bd5",
+      "title": "Humanin Peptide: Benefits, Dosing, Safety | PeptidesExplorer",
+      "extractedTextCharacters": 13258,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://peptiq.io/blog/cerebrolysin-nootropic-peptide-guide",
+      "checkedAt": "2026-10-15T17:24:53.551603+00:00",
+      "claimLocations": [
+        "catalog:peptide:cerebrolysin/community/1",
+        "catalog:peptide:cerebrolysin/community/2"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://peptiq.io/blog/cerebrolysin-nootropic-peptide-guide",
+      "contentType": "text/html",
+      "responseBytesRead": 206846,
+      "bodySha256": "2caae4184038dba14fff6b7fd639d7880f2e8d8bba3189ed7530028c138fe01d",
+      "title": "Cerebrolysin: Dosing, Reconstitution, and What to Expect | PeptIQ",
+      "extractedTextCharacters": 14217,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://peptiq.io/blog/ghk-cu-dosing-guide",
+      "checkedAt": "2026-10-15T17:24:53.560784+00:00",
+      "claimLocations": [
+        "catalog:peptide:ghk-cu/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://peptiq.io/blog/ghk-cu-dosing-guide",
+      "contentType": "text/html",
+      "responseBytesRead": 223882,
+      "bodySha256": "cd4dbbfa9efaac14f56abf5b6a1caa75590e3e44caf6a4480d0aa169393b7725",
+      "title": "GHK-Cu Dosage: Injection Per Day, Frequency & Chart | PeptIQ",
+      "extractedTextCharacters": 16391,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10806356/",
+      "checkedAt": "2026-10-15T17:24:53.569827+00:00",
+      "claimLocations": [
+        "catalog:medication:minoxidil/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10806356/",
+      "contentType": "text/html",
+      "responseBytesRead": 220105,
+      "bodySha256": "488fa383b04cc377142c154c2371cb881f95a63122320acba2ef61fef975e1c2",
+      "title": "Low-Dose Oral Minoxidil for Alopecia: A Comprehensive Review - PMC\n         Lock",
+      "extractedTextCharacters": 75987,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5686655/",
+      "checkedAt": "2026-10-15T17:24:53.614117+00:00",
+      "claimLocations": [
+        "catalog:hormone:testosterone-cypionate/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5686655/",
+      "contentType": "text/html",
+      "responseBytesRead": 141196,
+      "bodySha256": "3a47185fad557b82ad5c5b4eb1e7ce33c461ae14601c6a2ee8b0d5f3fe7f0d68",
+      "title": "Serum Testosterone Concentrations Remain Stable Between Injections in Patients Receiving Subcutaneous Testosterone - PMC\n         Lock",
+      "extractedTextCharacters": 47177,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://projectclear.com/nandrolone-decanoate-how-to-take-it-safely-and-effectively/",
+      "checkedAt": "2026-10-15T17:24:53.622861+00:00",
+      "claimLocations": [
+        "catalog:hormone:nandrolone-decanoate/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://projectclear.com/nandrolone-decanoate-how-to-take-it-safely-and-effectively/",
+      "contentType": "text/html",
+      "responseBytesRead": 92091,
+      "bodySha256": "c2ffc399aa411b01be6a6c0039f5563b02d9e8b8fb55dd02c2482b3e3d7256bc",
+      "title": "Nandrolone Decanoate: How to Take It Safely and Effectively | Project Clear",
+      "extractedTextCharacters": 7184,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://rethinkingdrinking.niaaa.nih.gov/tools/worksheets-more/alcohol-consumption-tracker",
+      "checkedAt": "2026-10-15T17:24:53.806495+00:00",
+      "claimLocations": [
+        "catalog:context:alcohol/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://rethinkingdrinking.niaaa.nih.gov/tools/worksheets-more/alcohol-consumption-tracker",
+      "contentType": "text/html",
+      "responseBytesRead": 37519,
+      "bodySha256": "ed75ebcf83666978d8eab7acd3e72d845ae046a60e3aaedc37fb274bc371022d",
+      "title": "Alcohol Consumption Tracker | Rethinking Drinking | NIAAA",
+      "extractedTextCharacters": 12174,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://smokefree.gov/tools-tips/quitstart",
+      "checkedAt": "2026-10-15T17:24:53.878559+00:00",
+      "claimLocations": [
+        "catalog:context:nicotine/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://smokefree.gov/tools-tips/quitstart",
+      "contentType": "text/html",
+      "responseBytesRead": 46323,
+      "bodySha256": "e1a835e71df9cb52e9f4873627b8c244c0338c180dc968a1e174c6edba2965ad",
+      "title": "quitSTART Quit Smoking App | Smokefree",
+      "extractedTextCharacters": 12097,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://swolverine.com/blogs/blog/dianabol-dosage-guide-how-much-dbol-should-you-take-per-day",
+      "checkedAt": "2026-10-15T17:24:54.000133+00:00",
+      "claimLocations": [
+        "catalog:hormone:methandienone/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://swolverine.com/blogs/blog/dianabol-dosage-guide-how-much-dbol-should-you-take-per-day",
+      "contentType": "text/html",
+      "responseBytesRead": 648697,
+      "bodySha256": "e40398cb9777cc4a89980e0b88200525c758e86c0d62c337ee6702fafd6305ad",
+      "title": "Dianabol Dosage Guide: How Much Dbol Should You Take For Muscle Gains  – Swolverine",
+      "extractedTextCharacters": 26355,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://swolverine.com/blogs/blog/hexarelin-for-beginners-dosage-benefits-and-peptide-stacking-guide",
+      "checkedAt": "2026-10-15T17:24:54.030768+00:00",
+      "claimLocations": [
+        "catalog:peptide:hexarelin/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://swolverine.com/blogs/blog/hexarelin-for-beginners-dosage-benefits-and-peptide-stacking-guide",
+      "contentType": "text/html",
+      "responseBytesRead": 655273,
+      "bodySha256": "929cc2205209b141b733b627cdb585c6854b10cce988b08cee0a014d76c29a15",
+      "title": "Hexarelin For Beginners: Dosage, Benefits, and Peptide Stacking Guide – Swolverine",
+      "extractedTextCharacters": 28069,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://swolverine.com/blogs/blog/ipamorelin-dosage-guide-optimal-protocols-for-recovery-and-muscle-growth",
+      "checkedAt": "2026-10-15T17:24:54.189486+00:00",
+      "claimLocations": [
+        "catalog:peptide:ipamorelin/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://swolverine.com/blogs/blog/ipamorelin-dosage-guide-optimal-protocols-for-recovery-and-muscle-growth",
+      "contentType": "text/html",
+      "responseBytesRead": 637923,
+      "bodySha256": "b4aca077283882c17b81d1e82b840c62918e2028c3cebc724ac6e8e4b1d845c7",
+      "title": "Ipamorelin Dosage Guide: Optimal Protocols for Recovery and Muscle Growth – Swolverine",
+      "extractedTextCharacters": 23794,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://swolverine.com/blogs/blog/s4-andarine-guide-for-beginners-benefits-risks-dosage-amp-stacks",
+      "checkedAt": "2026-10-15T17:24:54.240125+00:00",
+      "claimLocations": [
+        "catalog:hormone:andarine/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://swolverine.com/blogs/blog/s4-andarine-guide-for-beginners-benefits-risks-dosage-amp-stacks",
+      "contentType": "text/html",
+      "responseBytesRead": 652186,
+      "bodySha256": "aaac834e2f915069bddea88e53f3f219e65359538d7da1b968c9a6350b7cf031",
+      "title": "S4 (Andarine) Guide for Beginners: Benefits, Risks, Dosage and Stacks – Swolverine",
+      "extractedTextCharacters": 27012,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://swolverine.com/blogs/blog/tb-500-dosage-guide-how-much-should-you-take-for-recovery-and-injury-repair",
+      "checkedAt": "2026-10-15T17:24:54.371000+00:00",
+      "claimLocations": [
+        "catalog:peptide:tb-500/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://swolverine.com/blogs/blog/tb-500-dosage-guide-how-much-should-you-take-for-recovery-and-injury-repair",
+      "contentType": "text/html",
+      "responseBytesRead": 641112,
+      "bodySha256": "28dbe1134b72642c0c51c4048949067acdc25092792717177b9b43721c99e8a6",
+      "title": "TB‑500 Dosage Guide: How Much Should You Take for Recovery and Injury  – Swolverine",
+      "extractedTextCharacters": 24365,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://swolverine.com/blogs/blog/turinabol-for-beginners-cycle-dosage-and-what-to-expect",
+      "checkedAt": "2026-10-15T17:24:54.435347+00:00",
+      "claimLocations": [
+        "catalog:hormone:turinabol/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://swolverine.com/blogs/blog/turinabol-for-beginners-cycle-dosage-and-what-to-expect",
+      "contentType": "text/html",
+      "responseBytesRead": 686454,
+      "bodySha256": "f790cc6dfe5e86f6248a11c3b5aa2da8c23e97d11e8e93c98eed151b41fa5eda",
+      "title": "Turinabol for Beginners: Cycle, Dosage, and What to Expect – Swolverine",
+      "extractedTextCharacters": 35012,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://swolverine.com/blogs/blog/unlocking-gains-the-ultimate-guide-to-a-turinabol-cycle-for-maximum-muscle-growth",
+      "checkedAt": "2026-10-15T17:24:54.621546+00:00",
+      "claimLocations": [
+        "catalog:hormone:turinabol/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://swolverine.com/blogs/blog/unlocking-gains-the-ultimate-guide-to-a-turinabol-cycle-for-maximum-muscle-growth",
+      "contentType": "text/html",
+      "responseBytesRead": 654282,
+      "bodySha256": "56315ae97b41f7b5ee4091364cd42b2588daabccb0679fb0a1f089772a1edb10",
+      "title": "Turinabol Cycle Guide: Dosage, Stacking, Side Effects, and PCT – Swolverine",
+      "extractedTextCharacters": 27350,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://swolverine.com/blogs/blog/unlocking-the-power-of-trenbolone-enanthate-benefits-risks-and-expert-tips-for-bodybuilders",
+      "checkedAt": "2026-10-15T17:24:54.635435+00:00",
+      "claimLocations": [
+        "catalog:hormone:trenbolone/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://swolverine.com/blogs/blog/unlocking-the-power-of-trenbolone-enanthate-benefits-risks-and-expert-tips-for-bodybuilders",
+      "contentType": "text/html",
+      "responseBytesRead": 659633,
+      "bodySha256": "589726c3f5b947eddca122e544e7119ee05354b56fb12b0d36fdf2ee0f7983b4",
+      "title": "Trenbolone Enanthate: Benefits, Dosage, Side Effects, and Cycle Guide – Swolverine",
+      "extractedTextCharacters": 28471,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://tau.amegroups.org/article/view/11328/13164",
+      "checkedAt": "2026-10-15T17:24:54.742330+00:00",
+      "claimLocations": [
+        "catalog:hormone:testosterone-gel/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://tau.amegroups.org/article/view/11328/13164",
+      "contentType": "text/html",
+      "responseBytesRead": 94772,
+      "bodySha256": "d7673e6ccf614a06e537e226a6c982145580a2228547e97795ace47a45b1a394",
+      "title": "Pharmacology of testosterone replacement therapy preparations - Shoskes - Translational Andrology and Urology Pharmacology of testosterone replacement therapy preparations",
+      "extractedTextCharacters": 49815,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://theconversation.com/pneumatic-compression-therapy-can-it-really-help-olympians-or-you-recover-after-exercise-236228",
+      "checkedAt": "2026-10-15T17:24:54.755609+00:00",
+      "claimLocations": [
+        "catalog:recovery:compression/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://theconversation.com/pneumatic-compression-therapy-can-it-really-help-olympians-or-you-recover-after-exercise-236228",
+      "contentType": "text/html",
+      "responseBytesRead": 176649,
+      "bodySha256": "b022f7605b149ff458e15623607b8fb2f00606bb425968bbeed94f5756c126bb",
+      "title": "Pneumatic compression therapy – can it really help Olympians (or you) recover after exercise?",
+      "extractedTextCharacters": 12203,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://themenshealthclinic.co.uk/microdosing-trt-the-future-of-testosterone-replacement-therapy/",
+      "checkedAt": "2026-10-15T17:24:54.771766+00:00",
+      "claimLocations": [
+        "catalog:hormone:testosterone-undecanoate/community/0",
+        "catalog:hormone:testosterone-undecanoate/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://themenshealthclinic.co.uk/microdosing-trt-the-future-of-testosterone-replacement-therapy/",
+      "contentType": "text/html",
+      "responseBytesRead": 138436,
+      "bodySha256": "a71944c8afb7daca43855286e3c61ccc4dc88af94c78ff623495fe6b0c5c81d5",
+      "title": "Microdosing TRT – The Future of Testosterone Replacement Therapy  - The Men’s Health Clinic",
+      "extractedTextCharacters": 58150,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://thepeptidecatalog.com/articles/epitalon-dosing-guide",
+      "checkedAt": "2026-10-15T17:24:54.795349+00:00",
+      "claimLocations": [
+        "catalog:peptide:epitalon/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://thepeptidecatalog.com/articles/epitalon-dosing-guide",
+      "contentType": "text/html",
+      "responseBytesRead": 231066,
+      "bodySha256": "40af9109159982db802a3dbabb8009b63b8bc5410d12e22669c10ead72ec5085",
+      "title": "Epitalon Dosage Chart: 2mg/Day for 20 Days, 3x/Year (2026)",
+      "extractedTextCharacters": 15267,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://weightandhealthcare.substack.com/p/zepbound-tirzepatide-for-weight-loss",
+      "checkedAt": "2026-10-15T17:24:54.948542+00:00",
+      "claimLocations": [
+        "catalog:peptide:tirzepatide/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://weightandhealthcare.substack.com/p/zepbound-tirzepatide-for-weight-loss",
+      "contentType": "text/html",
+      "responseBytesRead": 191143,
+      "bodySha256": "b2f8c5aaaa5dc07062f5fc35c15de34da8b00891cb8a054def001a4ac9d03766",
+      "title": "Zepbound/Mounjaro (Tirzepatide) for Weight Loss - Part 1",
+      "extractedTextCharacters": 17764,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://wiki.aineetonkulttuuriperinto.fi/wiki/Sauna_bathing",
+      "checkedAt": "2026-10-15T17:24:54.954806+00:00",
+      "claimLocations": [
+        "catalog:recovery:sauna/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://wiki.aineetonkulttuuriperinto.fi/wiki/Sauna_bathing",
+      "contentType": "text/html",
+      "responseBytesRead": 85504,
+      "bodySha256": "dfac40a5487587be334c8be707b77b6da585a7301a01c2e7b020c64be53fb3e2",
+      "title": "Sauna bathing – Elävän perinnön wikiluettelo",
+      "extractedTextCharacters": 27817,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.acefitness.org/resources/everyone/blog/7038/body-weight-training-don-t-let-a-lack-of-equipment-keep-you-from-your-goals/",
+      "checkedAt": "2026-10-15T17:24:55.016641+00:00",
+      "claimLocations": [
+        "catalog:exercise:bodyweight/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.acefitness.org/resources/everyone/blog/7038/body-weight-training-don-t-let-a-lack-of-equipment-keep-you-from-your-goals/",
+      "contentType": "text/html",
+      "responseBytesRead": 139257,
+      "bodySha256": "d5f9179ab24339ef18db44368d623e72d77590c81b1bac5a64f036380b233a6a",
+      "title": "Body-weight Training: Don’t Let a Lack of Equipment Keep You From Your Goals Asset 19 angle-down-bold angle-left-bold angle-right-bold angle-up-bold Asset 10 certifications Asset 14 close-bold close Asset 8 Asset 12 menu Asset 18 Asset 17 Asset 6 Ass",
+      "extractedTextCharacters": 29694,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.acefitness.org/resources/pros/expert-articles/7208/creating-functional-training-programs-for-every-type-of-client/",
+      "checkedAt": "2026-10-15T17:24:55.127926+00:00",
+      "claimLocations": [
+        "catalog:exercise:functional-fitness/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.acefitness.org/resources/pros/expert-articles/7208/creating-functional-training-programs-for-every-type-of-client/",
+      "contentType": "text/html",
+      "responseBytesRead": 149384,
+      "bodySha256": "29d3a3f9df007e2d621e6702816f170cd10739e0da7f9efa1ca1901e76f8ef89",
+      "title": "ACE Fitness | Creating Functional-training Programs for Every Type of Client Asset 19 angle-down-bold angle-left-bold angle-right-bold angle-up-bold Asset 10 certifications Asset 14 close-bold close Asset 8 Asset 12 menu Asset 18 Asset 17 Asset 6 Ass",
+      "extractedTextCharacters": 35139,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.amtamassage.org/publications/massage-therapy-journal/post-event-sports-massage/",
+      "checkedAt": "2026-10-15T17:24:55.269433+00:00",
+      "claimLocations": [
+        "catalog:recovery:massage/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.amtamassage.org/publications/massage-therapy-journal/post-event-sports-massage/",
+      "contentType": "text/html",
+      "responseBytesRead": 72586,
+      "bodySha256": "587342828e244829baa3172c84e11419af8aa82f7ebccaa9065a0122439df714",
+      "title": "Post-Event Sports Massage | Massage Therapy Journal",
+      "extractedTextCharacters": 34940,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.anasci.org/threads/experience-with-hcg.28857/",
+      "checkedAt": "2026-10-15T17:24:55.492158+00:00",
+      "claimLocations": [
+        "catalog:hormone:hcg/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.anasci.org/threads/experience-with-hcg.28857/",
+      "contentType": "text/html",
+      "responseBytesRead": 150029,
+      "bodySha256": "3d45796fcc6142dae291cbe127c5c7ba309ed01556e0468800ca03c77c560c9c",
+      "title": "Experience with hcg? | Anabolic Steroids Discussion and Bodybuilding Forum Thread starter Start date",
+      "extractedTextCharacters": 31147,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.bhrcenter.com/aod-9604-dosage-guide-complete-protocol-for-safe-administration/",
+      "checkedAt": "2026-10-15T17:24:56.080699+00:00",
+      "claimLocations": [
+        "catalog:peptide:aod-9604/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.bhrcenter.com/aod-9604-dosage-guide-complete-protocol-for-safe-administration/",
+      "contentType": "text/html",
+      "responseBytesRead": 319163,
+      "bodySha256": "6e9d780ba2a71e77877b702e1fef73bb67198d92676d449f325224592552be03",
+      "title": "AOD-9604 Dosage Guide: Charts, Protocols and Reconstitution AOD-9604 Dosage Guide: Charts, Protocols and Reconstitution",
+      "extractedTextCharacters": 62213,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.bhrcenter.com/semax-selank-dosage-stacking-guide/",
+      "checkedAt": "2026-10-15T17:24:56.289972+00:00",
+      "claimLocations": [
+        "catalog:peptide:semax/community/2",
+        "catalog:peptide:selank/community/2"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.bhrcenter.com/semax-selank-dosage-stacking-guide/",
+      "contentType": "text/html",
+      "responseBytesRead": 287002,
+      "bodySha256": "39400b5847d67b0c8fc002c17262ec8e44816192c3a75815c4189a317f0a7c93",
+      "title": "Semax & Selank Dosage Guide: Charts, Reconstitution & Stacking Semax & Selank Dosage Guide: Charts, Reconstitution & Stacking",
+      "extractedTextCharacters": 41523,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.biomogging.com/compounds/enclomiphene",
+      "checkedAt": "2026-10-15T17:24:56.349604+00:00",
+      "claimLocations": [
+        "catalog:hormone:enclomiphene/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.biomogging.com/compounds/enclomiphene",
+      "contentType": "text/html",
+      "responseBytesRead": 542490,
+      "bodySha256": "aa84da2f11f75c12f5f716a7827ae09bf66e32f664b6d1426e42d5fe565505a2",
+      "title": "Enclomiphene Dosage & Protocol — PCT, Natural TRT, Stack | Biomogging",
+      "extractedTextCharacters": 26705,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.biomogging.com/compounds/liothyronine",
+      "checkedAt": "2026-10-15T17:24:56.356170+00:00",
+      "claimLocations": [
+        "catalog:hormone:liothyronine/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.biomogging.com/compounds/liothyronine",
+      "contentType": "text/html",
+      "responseBytesRead": 529729,
+      "bodySha256": "951e2f9330f3b2307aa457e7e992afdd24d6ccc27f2918258a5097a65c370665",
+      "title": "Liothyronine (T3) Cycle — Dosage, Contest Prep & GH Stack | Biomogging",
+      "extractedTextCharacters": 27676,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.biomogging.com/compounds/sustanon-250",
+      "checkedAt": "2026-10-15T17:24:56.379004+00:00",
+      "claimLocations": [
+        "catalog:hormone:sustanon-250/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.biomogging.com/compounds/sustanon-250",
+      "contentType": "text/html",
+      "responseBytesRead": 564213,
+      "bodySha256": "666fed38cb0959fc4b30905aef93b7ed9ec62cbd427eaca15748ba9a63947aec",
+      "title": "Sustanon 250 Cycle Guide — Dosage, Protocol & PCT | Biomogging",
+      "extractedTextCharacters": 31433,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.biomogging.com/compounds/trestolone",
+      "checkedAt": "2026-10-15T17:24:56.512906+00:00",
+      "claimLocations": [
+        "catalog:hormone:trestolone/community/0",
+        "catalog:hormone:trestolone/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.biomogging.com/compounds/trestolone",
+      "contentType": "text/html",
+      "responseBytesRead": 537301,
+      "bodySha256": "62f05725334076134e26ee2e13e9fe7d45fc8ce626f4eb7a8ef1ebeb4078b085",
+      "title": "Trestolone Cycle Guide — MENT Dosage, PCT & Stacks | Biomogging",
+      "extractedTextCharacters": 28905,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.cdc.gov/physical-activity-basics/guidelines/index.html",
+      "checkedAt": "2026-10-15T17:24:56.602437+00:00",
+      "claimLocations": [
+        "catalog:exercise:walking/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "availability": "http-error",
+      "httpStatus": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.climbing.com/skills/training-value-effectiveness",
+      "checkedAt": "2026-10-15T17:24:56.680601+00:00",
+      "claimLocations": [
+        "catalog:exercise:climbing/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.climbing.com/skills/training-value-effectiveness?scope=anon",
+      "contentType": "text/html",
+      "responseBytesRead": 366135,
+      "bodySha256": "e169ba29cc90bfc551dcd3fce04c7ea41d719d5d18800925940c632dfdca8593",
+      "title": "Should You Train or Just Go Climbing? - Climbing Facebook Icon Instagram Icon",
+      "extractedTextCharacters": 16672,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.concept2.com/training/rowing-technique",
+      "checkedAt": "2026-10-15T17:24:56.695658+00:00",
+      "claimLocations": [
+        "catalog:exercise:rowing/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.concept2.com/training/rowing-technique",
+      "contentType": "text/html",
+      "responseBytesRead": 335511,
+      "bodySha256": "7495603e0a1c59532f99c97b748b69c666cab3c45ecc4e5c0525fcf187bb8bf5",
+      "title": "Indoor Rowing Technique on the Concept2 RowErg",
+      "extractedTextCharacters": 2713,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.countyhealthrankings.org/strategies-and-solutions/what-works-for-health/strategies/recreational-sports-leagues-for-adults",
+      "checkedAt": "2026-10-15T17:24:56.771884+00:00",
+      "claimLocations": [
+        "catalog:exercise:team-sport/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.countyhealthrankings.org/strategies-and-solutions/what-works-for-health/strategies/recreational-sports-leagues-for-adults",
+      "contentType": "text/html",
+      "responseBytesRead": 100808,
+      "bodySha256": "be8a36b205a8aa0613c18f77531bf5bca594ad5b16dad242df7b2f7631b91585",
+      "title": "Recreational sports leagues for adults | County Health Rankings & Roadmaps",
+      "extractedTextCharacters": 28871,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.dietdoctor.com/low-carb/how-low-carb-is-low-carb",
+      "checkedAt": "2026-10-15T17:24:56.852898+00:00",
+      "claimLocations": [
+        "catalog:food-protocol:low-carb/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.dietdoctor.com/low-carb/how-low-carb-is-low-carb",
+      "contentType": "text/html",
+      "responseBytesRead": 999707,
+      "bodySha256": "5acce32d3efb8319d1375fe7feb4749330f3c915f32cef9d38fed749f23a3d94",
+      "title": "Carbs on Low Carb: How Low Carb Is Low Carb? — Diet Doctor",
+      "extractedTextCharacters": 19021,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.doctronic.ai/blog/calcium-and-levothyroxine/",
+      "checkedAt": "2026-10-15T17:24:56.853151+00:00",
+      "claimLocations": [
+        "catalog:hormone:levothyroxine/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.doctronic.ai/blog/calcium-and-levothyroxine/",
+      "contentType": "text/html",
+      "responseBytesRead": 236463,
+      "bodySha256": "8c4c13e4c98ad3095b7dd32f14ad68596d90eecc01d7388bcae5995b5df09d72",
+      "title": "Levothyroxine and Calcium: Timing Guide for Safe Use (2026) - Doctronic",
+      "extractedTextCharacters": 70462,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.eatright.org/health/wellness/vegetarian-and-plant-based/vegetarianism-the-basic-facts",
+      "checkedAt": "2026-10-15T17:24:56.933920+00:00",
+      "claimLocations": [
+        "catalog:food-protocol:vegetarian/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.eatright.org/health/wellness/vegetarian-and-plant-based/vegetarianism-the-basic-facts",
+      "contentType": "text/html",
+      "responseBytesRead": 184100,
+      "bodySha256": "9bc74a85beba5c65a93c5d089c9c5a92a292da4ba840baeae31e81004dd043f2",
+      "title": "Vegetarianism: The Basic Facts",
+      "extractedTextCharacters": 106353,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.elitefitness.com/articles/proviron-mesterolone/",
+      "checkedAt": "2026-10-15T17:24:57.459872+00:00",
+      "claimLocations": [
+        "catalog:hormone:mesterolone/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.elitefitness.com/articles/proviron-mesterolone/",
+      "contentType": "text/html",
+      "responseBytesRead": 239132,
+      "bodySha256": "4f59977efbe1b4ebc0766ae7a673ac289739be611d6fe3c607e5527f37af02a2",
+      "title": "Proviron - Articles and Blog - EliteFitness.com",
+      "extractedTextCharacters": 11108,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.elitefitness.com/forum/anabolic-steroids/melanotan-ii-maintenance-dose-753493.html",
+      "checkedAt": "2026-10-15T17:24:57.730392+00:00",
+      "claimLocations": [
+        "catalog:peptide:melanotan-2/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.elitefitness.com/forum/threads/melanotan-ii-maintenance-dose.753493/",
+      "contentType": "text/html",
+      "responseBytesRead": 197046,
+      "bodySha256": "9bb8fac026f45a3a4e673e876f50212a65fce2264fdba326d6dc86f85681de03",
+      "title": "Melanotan II maintenance dose? | EliteFitness.com Bodybuilding Forums Thread starter Start date",
+      "extractedTextCharacters": 37324,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.elitefitness.com/forum/threads/anastrozole-dosage-200mg-trt.1333113/",
+      "checkedAt": "2026-10-15T17:24:57.882131+00:00",
+      "claimLocations": [
+        "catalog:hormone:anastrozole/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.elitefitness.com/forum/threads/anastrozole-dosage-200mg-trt.1333113/",
+      "contentType": "text/html",
+      "responseBytesRead": 115753,
+      "bodySha256": "9c0a6aaad8c5f3de016f416b1685259143af029a755bd6b8a7954565c9fe75b7",
+      "title": "Anastrozole Dosage 200Mg TRT | EliteFitness.com Bodybuilding Forums Thread starter Start date",
+      "extractedTextCharacters": 20542,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.elitefitness.com/forum/threads/best-ways-to-mix-and-dose-bpc-157.1514654/",
+      "checkedAt": "2026-10-15T17:24:58.083879+00:00",
+      "claimLocations": [
+        "catalog:peptide:bpc-157/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.elitefitness.com/forum/threads/best-ways-to-mix-and-dose-bpc-157.1514654/",
+      "contentType": "text/html",
+      "responseBytesRead": 121131,
+      "bodySha256": "1c18321bac79b0039331447941a953e1ac2acc60d331a1c74072978e4cb70bc9",
+      "title": "best ways to mix and dose bpc-157! | EliteFitness.com Bodybuilding Forums Thread starter Start date Tags",
+      "extractedTextCharacters": 19747,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.elitefitness.com/forum/threads/cjc-and-ipamorelin-stack-for-lean-gains.1517933/",
+      "checkedAt": "2026-10-15T17:24:58.091060+00:00",
+      "claimLocations": [
+        "catalog:peptide:ipamorelin/community/1",
+        "catalog:peptide:cjc-1295/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.elitefitness.com/forum/threads/cjc-and-ipamorelin-stack-for-lean-gains.1517933/",
+      "contentType": "text/html",
+      "responseBytesRead": 116569,
+      "bodySha256": "8e24bd163cf3c8260d98fceaee084296a748499d96198d5fff099f21c5bc469e",
+      "title": "CJC and ipamorelin stack for lean gains | EliteFitness.com Bodybuilding Forums Thread starter Start date Tags",
+      "extractedTextCharacters": 18705,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.elitefitness.com/forum/threads/get-my-tan-on.1005673/",
+      "checkedAt": "2026-10-15T17:24:58.181896+00:00",
+      "claimLocations": [
+        "catalog:peptide:melanotan-2/community/2"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.elitefitness.com/forum/threads/get-my-tan-on.1005673/",
+      "contentType": "text/html",
+      "responseBytesRead": 259393,
+      "bodySha256": "f4e2d48025a24d6965d02626350ad2a0fba2d1277d94d6f00a0fbf89c44181b0",
+      "title": "Get my tan on | EliteFitness.com Bodybuilding Forums Thread starter Start date",
+      "extractedTextCharacters": 53317,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.elitefitness.com/forum/threads/ghrp-2-proper-dosing.1516518/",
+      "checkedAt": "2026-10-15T17:24:58.259330+00:00",
+      "claimLocations": [
+        "catalog:peptide:ghrp-2/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.elitefitness.com/forum/threads/ghrp-2-proper-dosing.1516518/",
+      "contentType": "text/html",
+      "responseBytesRead": 93251,
+      "bodySha256": "f1a67ffd11b591383cc1a909119e11dfa2a2f3dbd2b2db438ee401b2fd4119ce",
+      "title": "GHRP-2 proper dosing | EliteFitness.com Bodybuilding Forums Thread starter Start date Tags",
+      "extractedTextCharacters": 15074,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.elitefitness.com/forum/threads/how-do-you-run-proviron.1490647/",
+      "checkedAt": "2026-10-15T17:24:58.266678+00:00",
+      "claimLocations": [
+        "catalog:hormone:mesterolone/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.elitefitness.com/forum/threads/how-do-you-run-proviron.1490647/",
+      "contentType": "text/html",
+      "responseBytesRead": 109897,
+      "bodySha256": "a7bf1c8d3c76727b10f9df20d899027dbe4451fbacf48c1dd3ba094bb5a95645",
+      "title": "How do you run proviron? | EliteFitness.com Bodybuilding Forums Thread starter Start date",
+      "extractedTextCharacters": 19127,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.elitefitness.com/forum/threads/how-should-i-use-semaglutide-to-cut-down.1516722/",
+      "checkedAt": "2026-10-15T17:24:58.299993+00:00",
+      "claimLocations": [
+        "catalog:peptide:semaglutide/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.elitefitness.com/forum/threads/how-should-i-use-semaglutide-to-cut-down.1516722/",
+      "contentType": "text/html",
+      "responseBytesRead": 115765,
+      "bodySha256": "960401b2ddd6906da10dfa97c5abc17ba94a396c8573e3c452214a678e903568",
+      "title": "How should I use Semaglutide  to cut down? | EliteFitness.com Bodybuilding Forums Thread starter Start date Tags",
+      "extractedTextCharacters": 18971,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.elitefitness.com/forum/threads/ipamorelin-and-cjc-1295.739383/",
+      "checkedAt": "2026-10-15T17:24:58.446530+00:00",
+      "claimLocations": [
+        "catalog:peptide:ipamorelin/community/2",
+        "catalog:peptide:cjc-1295/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.elitefitness.com/forum/threads/ipamorelin-and-cjc-1295.739383/",
+      "contentType": "text/html",
+      "responseBytesRead": 208591,
+      "bodySha256": "393f8ed5c63be3528b2f676993a0cdcfab7a96a32e57d1e3cad8029a3d286103",
+      "title": "Ipamorelin and CJC 1295 | EliteFitness.com Bodybuilding Forums Thread starter Start date",
+      "extractedTextCharacters": 42760,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.elitefitness.com/forum/threads/melanotan-ii-dosage.494208/",
+      "checkedAt": "2026-10-15T17:24:58.453600+00:00",
+      "claimLocations": [
+        "catalog:peptide:melanotan-2/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.elitefitness.com/forum/threads/melanotan-ii-dosage.494208/",
+      "contentType": "text/html",
+      "responseBytesRead": 210737,
+      "bodySha256": "f12c7eea7fa428fe4c5d21e2246bc301792fe74b36bda1961b6067f34d9a2127",
+      "title": "melanotan II dosage? | EliteFitness.com Bodybuilding Forums Thread starter Start date",
+      "extractedTextCharacters": 55395,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.elitefitness.com/forum/threads/proper-use-of-retatrutide.1513961/",
+      "checkedAt": "2026-10-15T17:24:58.461114+00:00",
+      "claimLocations": [
+        "catalog:peptide:retatrutide/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.elitefitness.com/forum/threads/proper-use-of-retatrutide.1513961/",
+      "contentType": "text/html",
+      "responseBytesRead": 156088,
+      "bodySha256": "58921b33e4c1bb7cbf0464107373480eed7c9415527f74cd914909b3ab14b315",
+      "title": "proper use of retatrutide | EliteFitness.com Bodybuilding Forums Thread starter Start date Tags",
+      "extractedTextCharacters": 25998,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.elitefitness.com/forum/threads/retatrutide-protocol-and-tips.1514576/",
+      "checkedAt": "2026-10-15T17:24:58.484144+00:00",
+      "claimLocations": [
+        "catalog:peptide:retatrutide/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.elitefitness.com/forum/threads/retatrutide-protocol-and-tips.1514576/",
+      "contentType": "text/html",
+      "responseBytesRead": 120633,
+      "bodySha256": "e7312b20bcd35c78ec5349aeb5f0f72461249e90d7ab44074ac3240a57fd828b",
+      "title": "retatrutide protocol and tips | EliteFitness.com Bodybuilding Forums Thread starter Start date Tags",
+      "extractedTextCharacters": 19541,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.elitefitness.com/forum/threads/tesamorelin-proper-dosage-for-fat-dude.1512747/",
+      "checkedAt": "2026-10-15T17:24:58.676948+00:00",
+      "claimLocations": [
+        "catalog:peptide:tesamorelin/community/0",
+        "catalog:peptide:tesamorelin/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.elitefitness.com/forum/threads/tesamorelin-proper-dosage-for-fat-dude.1512747/",
+      "contentType": "text/html",
+      "responseBytesRead": 161312,
+      "bodySha256": "530e1d3ce7ed91dff34bb90133b24c50896fbe5375638d95c5dcc99839196dc3",
+      "title": "tesamorelin proper dosage for fat dude | EliteFitness.com Bodybuilding Forums Thread starter Start date Tags",
+      "extractedTextCharacters": 26533,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.elitefitness.com/steroid_profiles/Clomid-Clomiphene-Citrate.html",
+      "checkedAt": "2026-10-15T17:24:58.693955+00:00",
+      "claimLocations": [
+        "catalog:hormone:clomiphene-citrate/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.elitefitness.com/steroid_profiles/Clomid-Clomiphene-Citrate.html",
+      "contentType": "text/html",
+      "responseBytesRead": 23088,
+      "bodySha256": "0b1d7d255d0aec5bb1ca1dd9df908c5bd40ed693fcb04e078177ae79ecd87a88",
+      "title": "Clomid - Clomiphene Citrate",
+      "extractedTextCharacters": 8156,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.elitefitness.com/steroid_profiles/Nolvadex-Tamoxifen-Citrate.html",
+      "checkedAt": "2026-10-15T17:24:58.701855+00:00",
+      "claimLocations": [
+        "catalog:hormone:tamoxifen/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.elitefitness.com/steroid_profiles/Nolvadex-Tamoxifen-Citrate.html",
+      "contentType": "text/html",
+      "responseBytesRead": 23018,
+      "bodySha256": "098336cf5664236c7674b4578ea434878c25ee07d8000db05558602e2a8291db",
+      "title": "Nolvadex - Tamoxifen Citrate",
+      "extractedTextCharacters": 8781,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.folxhealth.com/library/estrogen-patches-for-hormone-replacement-therapy-what-where-and-how",
+      "checkedAt": "2026-10-15T17:24:58.733166+00:00",
+      "claimLocations": [
+        "catalog:hormone:estradiol/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.folxhealth.com/library/estrogen-patches-for-hormone-replacement-therapy-what-where-and-how",
+      "contentType": "text/html",
+      "responseBytesRead": 130603,
+      "bodySha256": "5ea058fd2c208a1d8fdf8a2c678dd591d5612a9ad318847d31172f7fd4f4b007",
+      "title": "Estrogen Patches for Hormone Replacement Therapy",
+      "extractedTextCharacters": 12237,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.health.harvard.edu/exercise-and-fitness/the-health-benefits-of-tai-chi",
+      "checkedAt": "2026-10-15T17:24:58.808338+00:00",
+      "claimLocations": [
+        "catalog:exercise:martial-arts/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.health.harvard.edu/exercise-and-fitness/the-health-benefits-of-tai-chi",
+      "contentType": "text/html",
+      "responseBytesRead": 204328,
+      "bodySha256": "f0b19add57ae5c19fe9de898ab0c6c93bee9ff101bf182c20a2e88c7364680ad",
+      "title": "The Health Benefits of Tai Chi - Harvard Health Publishing - Harvard Health",
+      "extractedTextCharacters": 33365,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.health.harvard.edu/healthy-aging-and-longevity/hyperbaric-oxygen-therapy-evidence-based-uses-and-unproven-claims",
+      "checkedAt": "2026-10-15T17:24:58.830606+00:00",
+      "claimLocations": [
+        "catalog:recovery:hyperbaric-oxygen/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.health.harvard.edu/healthy-aging-and-longevity/hyperbaric-oxygen-therapy-evidence-based-uses-and-unproven-claims",
+      "contentType": "text/html",
+      "responseBytesRead": 199286,
+      "bodySha256": "80383cbd0d6e56b7e994c7ae661e898a554c701ac9878dac4a01c5db118c7725",
+      "title": "Hyperbaric oxygen therapy: Evidence-based uses and unproven claims - Harvard Health",
+      "extractedTextCharacters": 28939,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.health.harvard.edu/healthy-aging-and-longevity/take-the-dry-january-challenge",
+      "checkedAt": "2026-10-15T17:24:58.860079+00:00",
+      "claimLocations": [
+        "catalog:context:alcohol-free-day/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.health.harvard.edu/healthy-aging-and-longevity/take-the-dry-january-challenge",
+      "contentType": "text/html",
+      "responseBytesRead": 203281,
+      "bodySha256": "25b17e0fac9b0a8d9abf83113f536a4ecbe03cea121c7e830e22d6e7743e64e0",
+      "title": "Take the Dry January challenge - Harvard Health",
+      "extractedTextCharacters": 31079,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.healthline.com/health/one-meal-a-day",
+      "checkedAt": "2026-10-15T17:24:58.939689+00:00",
+      "claimLocations": [
+        "catalog:food-protocol:omad/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.healthline.com/health/one-meal-a-day",
+      "contentType": "text/html",
+      "responseBytesRead": 465096,
+      "bodySha256": "62a46a45473b2fcca6c735b2e3282e4b2b66c8db7536d5bfcef7e93a3b02bac6",
+      "title": "One Meal a Day Diet: Benefits, Risks, and More Healthline",
+      "extractedTextCharacters": 19784,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.healthline.com/nutrition/6-ways-to-do-intermittent-fasting",
+      "checkedAt": "2026-10-15T17:24:59.494274+00:00",
+      "claimLocations": [
+        "catalog:food-protocol:adf/community/0",
+        "catalog:food-protocol:16-8/community/0",
+        "catalog:food-protocol:5-2/community/0",
+        "catalog:food-protocol:full-day-fast/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.healthline.com/nutrition/6-ways-to-do-intermittent-fasting",
+      "contentType": "text/html",
+      "responseBytesRead": 442917,
+      "bodySha256": "4893d433ceaecaa9cfda02304621598ef1a96cd3a6d36831c82076fba8ab0270",
+      "title": "Intermittent Fasting Methods Reviewed: Pros and Cons Healthline",
+      "extractedTextCharacters": 18172,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.healthline.com/nutrition/caffeine-and-exercise",
+      "checkedAt": "2026-10-15T17:24:59.536028+00:00",
+      "claimLocations": [
+        "catalog:supplement:caffeine/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.healthline.com/nutrition/caffeine-and-exercise",
+      "contentType": "text/html",
+      "responseBytesRead": 416500,
+      "bodySha256": "4ff46b2cfb09b4365d1f16ef53745345f06d3e78c6bb6d2617f32f427f5d134e",
+      "title": "How Caffeine Improves Exercise Performance Healthline",
+      "extractedTextCharacters": 15858,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.healthline.com/nutrition/casein-protein-is-highly-underrated",
+      "checkedAt": "2026-10-15T17:24:59.543510+00:00",
+      "claimLocations": [
+        "catalog:supplement:casein-protein/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.healthline.com/nutrition/casein-protein-is-highly-underrated",
+      "contentType": "text/html",
+      "responseBytesRead": 422848,
+      "bodySha256": "a769eb7c850487114c60fe0758364ef777fd0473eb3ddbfe7ed80b4f37437e4e",
+      "title": "Why Casein Is One of The Best Proteins You Can Take Healthline",
+      "extractedTextCharacters": 14400,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.healthline.com/nutrition/creatine-loading-phase",
+      "checkedAt": "2026-10-15T17:24:59.813388+00:00",
+      "claimLocations": [
+        "catalog:supplement:creatine/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.healthline.com/nutrition/creatine-loading-phase",
+      "contentType": "text/html",
+      "responseBytesRead": 446859,
+      "bodySha256": "395f9aab776a9c3263846a61fb9dd86e572fcb407cf876da8d607c15f9dffde4",
+      "title": "Creatine Loading Phase: Research, Benefits, Safety, and How To Healthline",
+      "extractedTextCharacters": 13008,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.healthline.com/nutrition/ketogenic-diet-101",
+      "checkedAt": "2026-10-15T17:24:59.824147+00:00",
+      "claimLocations": [
+        "catalog:food-protocol:keto/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.healthline.com/nutrition/ketogenic-diet-101",
+      "contentType": "text/html",
+      "responseBytesRead": 773623,
+      "bodySha256": "1930b7d02c2e71e6b9b6121c4268d84e7676db2f51f6d8128446e3b057cc0e76",
+      "title": "The Ketogenic Diet: A Detailed Beginner's Guide to Keto Healthline",
+      "extractedTextCharacters": 23564,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.healthline.com/nutrition/mediterranean-diet-meal-plan",
+      "checkedAt": "2026-10-15T17:24:59.834784+00:00",
+      "claimLocations": [
+        "catalog:food-protocol:mediterranean/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.healthline.com/nutrition/mediterranean-diet-meal-plan",
+      "contentType": "text/html",
+      "responseBytesRead": 901863,
+      "bodySha256": "76a767eabb3b86ee5de0ab265adc9718ce78cf46dadf05acc0517e50fd05ec06",
+      "title": "Mediterranean Diet 101: Meal Plan, Benefits, Foods, Video, and Snacks Healthline",
+      "extractedTextCharacters": 15278,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.healthline.com/nutrition/paleo-diet-meal-plan-and-menu",
+      "checkedAt": "2026-10-15T17:25:00.169790+00:00",
+      "claimLocations": [
+        "catalog:food-protocol:paleo/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.healthline.com/nutrition/paleo-diet-meal-plan-and-menu",
+      "contentType": "text/html",
+      "responseBytesRead": 453805,
+      "bodySha256": "a634be18977c08b4f4ab1eda95ba01f6c5e1d9a60cbaca454b89ec3953ddca94",
+      "title": "A Beginner's Guide to the Paleo Diet, Plus Recipe Ideas Healthline",
+      "extractedTextCharacters": 15003,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.healthline.com/nutrition/protein-shake-before-or-after-workout",
+      "checkedAt": "2026-10-15T17:25:00.314472+00:00",
+      "claimLocations": [
+        "catalog:supplement:whey-protein/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.healthline.com/nutrition/protein-shake-before-or-after-workout",
+      "contentType": "text/html",
+      "responseBytesRead": 540990,
+      "bodySha256": "e30e4888906f0bb60979d69141d1819e1778f1c8c5d776f7e674d12613cae03c",
+      "title": "Should You Have a Protein Shake Before or After Your Workout? Healthline",
+      "extractedTextCharacters": 20289,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.innerbody.com/thymosin-beta-4-and-tb-500",
+      "checkedAt": "2026-10-15T17:25:00.396070+00:00",
+      "claimLocations": [
+        "catalog:peptide:tb-500/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.innerbody.com/thymosin-beta-4-and-tb-500",
+      "contentType": "text/html",
+      "responseBytesRead": 331848,
+      "bodySha256": "14815c75c8295e0e79f2e8b1caac8774cbd39a1e8883e7d64ea4534aa3f9f609",
+      "title": "TB4 and TB-500 Peptide Therapy | What to Know in 2026",
+      "extractedTextCharacters": 28939,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.joinmidi.com/post/low-dose-progesterone",
+      "checkedAt": "2026-10-15T17:25:00.429036+00:00",
+      "claimLocations": [
+        "catalog:hormone:progesterone/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.joinmidi.com/post/low-dose-progesterone",
+      "contentType": "text/html",
+      "responseBytesRead": 347477,
+      "bodySha256": "bd3cfd7852a64302625dca3c1242b76832c1aefe58802995df6f13c5d3dd134a",
+      "title": "What Is The Lowest Dose of Progesterone For HRT?",
+      "extractedTextCharacters": 23403,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.klearmindclinics.com/blog/semax-dosing-guide",
+      "checkedAt": "2026-10-15T17:25:00.476651+00:00",
+      "claimLocations": [
+        "catalog:peptide:semax/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.klearmindclinics.com/blog/semax-dosing-guide",
+      "contentType": "text/html",
+      "responseBytesRead": 48496,
+      "bodySha256": "1f6c91f5cb94c398e430a959171e5ac49d45159644d5cf825f82a8294c7c14ee",
+      "title": "Semax Dosing Guide: Dosage, Safety & Side Effects",
+      "extractedTextCharacters": 18292,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.mindful.org/how-to-meditate/",
+      "checkedAt": "2026-10-15T17:25:00.552257+00:00",
+      "claimLocations": [
+        "catalog:recovery:meditation/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.mindful.org/how-to-meditate/",
+      "contentType": "text/html",
+      "responseBytesRead": 1100505,
+      "bodySha256": "c115d82142506c637ef2a2b079ef06d833a3ccd426d47ed8504f68b258a8fc04",
+      "title": "Learn How to Meditate: A Mindful Guide to Transform Your Life",
+      "extractedTextCharacters": 32270,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.mskcc.org/cancer-care/integrative-medicine/herbs/berberine",
+      "checkedAt": "2026-10-15T17:25:00.583544+00:00",
+      "claimLocations": [
+        "catalog:supplement:berberine/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.mskcc.org/cancer-care/integrative-medicine/herbs/berberine",
+      "contentType": "text/html",
+      "responseBytesRead": 264159,
+      "bodySha256": "137360fbd13ed7bc7d11528581a49a6af7a768a73802cf888cdd96167a365610",
+      "title": "Berberine | Memorial Sloan Kettering Cancer Center Memorial Sloan Kettering Cancer Center Memorial Sloan Kettering Cancer Center",
+      "extractedTextCharacters": 59666,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.myfitnesspal.com/",
+      "checkedAt": "2026-10-15T17:25:00.677671+00:00",
+      "claimLocations": [
+        "catalog:food-protocol:calorie-protein-target/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.myfitnesspal.com/",
+      "contentType": "text/html",
+      "responseBytesRead": 959676,
+      "bodySha256": "ac7632f07aa42a9c2dbe4bc408d9063457438e4bc64c2766c518600d6a730324",
+      "title": "Calorie Tracker & BMR Calculator to Reach Your Goals | MyFitnessPal",
+      "extractedTextCharacters": 8180,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.nccih.nih.gov/health/ashwagandha",
+      "checkedAt": "2026-10-15T17:25:00.784215+00:00",
+      "claimLocations": [
+        "catalog:supplement:ashwagandha/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.nccih.nih.gov/health/ashwagandha",
+      "contentType": "text/html",
+      "responseBytesRead": 520010,
+      "bodySha256": "f8436b2219867fb41b01c5bfdb0460e8ce25c7e3cdfc6becc3fcad343a4c45d7",
+      "title": "Ashwagandha: Usefulness and Safety | NCCIH National Center for Complementary and Integrative Health National Center for Complementary and Integrative Health Email Facebook X X Facebook LinkedIn YouTube Subscribe to our email update X Facebook LinkedI",
+      "extractedTextCharacters": 12806,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.nccih.nih.gov/health/fenugreek",
+      "checkedAt": "2026-10-15T17:25:00.936820+00:00",
+      "claimLocations": [
+        "catalog:supplement:fenugreek/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.nccih.nih.gov/health/fenugreek",
+      "contentType": "text/html",
+      "responseBytesRead": 519410,
+      "bodySha256": "87c7867f97989ee842e1d4ad1cbb21470130ec4f16f77dd5800a4bba317b9cfc",
+      "title": "Fenugreek: Usefulness and Safety | NCCIH National Center for Complementary and Integrative Health National Center for Complementary and Integrative Health Email Facebook X X Facebook LinkedIn YouTube Subscribe to our email update X Facebook LinkedIn ",
+      "extractedTextCharacters": 12792,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.nccih.nih.gov/health/yoga-effectiveness-and-safety",
+      "checkedAt": "2026-10-15T17:25:01.586043+00:00",
+      "claimLocations": [
+        "catalog:recovery:yoga/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.nccih.nih.gov/health/yoga-effectiveness-and-safety",
+      "contentType": "text/html",
+      "responseBytesRead": 653707,
+      "bodySha256": "dd76c51ecb5c3024088490aa1b7cb84cd7a64992e8909e398676471be9eb45d1",
+      "title": "Yoga: Effectiveness and Safety | NCCIH National Center for Complementary and Integrative Health National Center for Complementary and Integrative Health Email Facebook X X Facebook LinkedIn YouTube Subscribe to our email update X Facebook LinkedIn Yo",
+      "extractedTextCharacters": 45606,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.nhlbi.nih.gov/news/2023/researchers-study-how-daytime-naps-may-influence-health",
+      "checkedAt": "2026-10-15T17:25:01.619298+00:00",
+      "claimLocations": [
+        "catalog:recovery:nap/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.nhlbi.nih.gov/news/2023/researchers-study-how-daytime-naps-may-influence-health",
+      "contentType": "text/html",
+      "responseBytesRead": 72531,
+      "bodySha256": "f29b49e73191c85abec63946925fef7dd5b9ea04be8ee5db59f956a96de36299",
+      "title": "Researchers study how daytime naps may influence health | NHLBI, NIH",
+      "extractedTextCharacters": 27479,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.nhs.uk/live-well/exercise/how-to-stretch-after-exercising/",
+      "checkedAt": "2026-10-15T17:25:01.732514+00:00",
+      "claimLocations": [
+        "catalog:recovery:stretching/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.nhs.uk/live-well/exercise/how-to-stretch-after-exercising/",
+      "contentType": "text/html",
+      "responseBytesRead": 43948,
+      "bodySha256": "0e185b08ba07fe92d4c7c09a1c9692839955500fbbe1e9f6294c555cd329e1e5",
+      "title": "How to stretch after exercising - NHS NHS",
+      "extractedTextCharacters": 13361,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/breathing-exercises-for-stress/",
+      "checkedAt": "2026-10-15T17:25:01.840380+00:00",
+      "claimLocations": [
+        "catalog:recovery:breathwork/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/breathing-exercises-for-stress/",
+      "contentType": "text/html",
+      "responseBytesRead": 24445,
+      "bodySha256": "dde517998267158e88060adb8968f74b8e62477007b703358d4821306ddc4207",
+      "title": "Breathing exercises for stress - NHS NHS",
+      "extractedTextCharacters": 6556,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.pathtopeptides.com/dihexa-protocol.html",
+      "checkedAt": "2026-10-15T17:25:01.879905+00:00",
+      "claimLocations": [
+        "catalog:peptide:dihexa/community/0",
+        "catalog:peptide:dihexa/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.pathtopeptides.com/dihexa-protocol.html",
+      "contentType": "text/html",
+      "responseBytesRead": 36054,
+      "bodySha256": "43018b7cba1ea516dd74307df50062eb375e40ca08d8e0395a35758d3570bd71",
+      "title": "Dihexa Protocol Guide — Dosing, Reconstitution & Administration | Path To Peptides",
+      "extractedTextCharacters": 7923,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.pathtopeptides.com/hgh-somatropin-protocol.html",
+      "checkedAt": "2026-10-15T17:25:01.958695+00:00",
+      "claimLocations": [
+        "catalog:hormone:hgh/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.pathtopeptides.com/hgh-somatropin-protocol.html",
+      "contentType": "text/html",
+      "responseBytesRead": 40957,
+      "bodySha256": "14e0757083635944046960eee069e7986e9018133ec0c29ad32264f73f3b2933",
+      "title": "HGH (Somatropin) Protocol Guide — Dosing & Administration | Path To Peptides",
+      "extractedTextCharacters": 7625,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.pathtopeptides.com/mk-677-protocol.html",
+      "checkedAt": "2026-10-15T17:25:01.974387+00:00",
+      "claimLocations": [
+        "catalog:hormone:mk-677/community/0",
+        "catalog:hormone:mk-677/community/1",
+        "catalog:hormone:mk-677/community/2"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.pathtopeptides.com/mk-677-protocol.html",
+      "contentType": "text/html",
+      "responseBytesRead": 42248,
+      "bodySha256": "d6591bafee6c8eef84fc85ad09db41e3fc2570c770883e7ca7bea115320f4fdc",
+      "title": "MK-677 (Ibutamoren) Protocol Guide — Dosing & Monitoring | Path To Peptides",
+      "extractedTextCharacters": 6677,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.pathtopeptides.com/sr-9009-protocol.html",
+      "checkedAt": "2026-10-15T17:25:02.080852+00:00",
+      "claimLocations": [
+        "catalog:hormone:sr9009/community/0",
+        "catalog:hormone:sr9009/community/1",
+        "catalog:hormone:sr9009/community/2"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.pathtopeptides.com/sr-9009-protocol.html",
+      "contentType": "text/html",
+      "responseBytesRead": 35840,
+      "bodySha256": "848cbec29cbd306d05ba26bcc538bb632544ba1247e9c0eaa88ae694dd17b03a",
+      "title": "SR-9009 (Stenabolic) Protocol Guide — Dosing & Administration | Path To Peptides",
+      "extractedTextCharacters": 6180,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.pathtopeptides.com/thymalin-protocol.html",
+      "checkedAt": "2026-10-15T17:25:02.277097+00:00",
+      "claimLocations": [
+        "catalog:peptide:thymalin/community/0",
+        "catalog:peptide:thymalin/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.pathtopeptides.com/thymalin-protocol.html",
+      "contentType": "text/html",
+      "responseBytesRead": 34931,
+      "bodySha256": "1ba7ab9f0e7b988204c990c3a498524483088f12518829bf6be16d664deece5a",
+      "title": "Thymalin Protocol Guide — Dosing, Reconstitution & Administration | Path To Peptides",
+      "extractedTextCharacters": 5925,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.peptidedosage.org/peptides/gonadorelin/dosage",
+      "checkedAt": "2026-10-15T17:25:02.280521+00:00",
+      "claimLocations": [
+        "catalog:peptide:gonadorelin/community/0",
+        "catalog:peptide:gonadorelin/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.peptidedosage.org/peptides/gonadorelin/dosage",
+      "contentType": "text/html",
+      "responseBytesRead": 166116,
+      "bodySha256": "858586bf853b7990a830941d8d35230e82b0f906dde856e9ec451cdb8625a4ad",
+      "title": "Gonadorelin Dosage Chart, Schedule & Reconstitution Protocol Syringe drawn to 0.0 of 100 units",
+      "extractedTextCharacters": 29620,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.peptidedosingprotocols.com/protocol/aod-9604",
+      "checkedAt": "2026-10-15T17:25:02.313490+00:00",
+      "claimLocations": [
+        "catalog:peptide:aod-9604/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.peptidedosingprotocols.com/protocol/aod-9604",
+      "contentType": "text/html",
+      "responseBytesRead": 667880,
+      "bodySha256": "c296a12106f9dd346bf83790dd72b235b17ea8fa23563b34c7fb3522296fae7d",
+      "title": "AOD-9604 Dosage Chart & Reconstitution Guide (2026)",
+      "extractedTextCharacters": 43645,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.peptidedosingprotocols.com/protocol/bremelanotide-pt-141",
+      "checkedAt": "2026-10-15T17:25:02.324553+00:00",
+      "claimLocations": [
+        "catalog:peptide:pt-141/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.peptidedosingprotocols.com/protocol/bremelanotide-pt-141",
+      "contentType": "text/html",
+      "responseBytesRead": 616868,
+      "bodySha256": "ce1c8648e837eefeaba8c66cedb1ecb18e98bc33f17179fdda57f70b8bdb010a",
+      "title": "PT-141 (bremelanotide) Dosage Guide: Timing, Protocol & Side Effects (2026)",
+      "extractedTextCharacters": 39657,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.peptidedosingprotocols.com/protocol/cerebrolysin",
+      "checkedAt": "2026-10-15T17:25:02.470377+00:00",
+      "claimLocations": [
+        "catalog:peptide:cerebrolysin/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.peptidedosingprotocols.com/protocol/cerebrolysin",
+      "contentType": "text/html",
+      "responseBytesRead": 488720,
+      "bodySha256": "5aec9b5c7e98108a7259c56dacddd44d7eda0af2e928e5d4a4cc70c338b88a9c",
+      "title": "Cerebrolysin Dosing Guide: Brain Peptide Protocol (2026)",
+      "extractedTextCharacters": 29028,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.peptidedosingprotocols.com/protocol/ghk-cu",
+      "checkedAt": "2026-10-15T17:25:02.499199+00:00",
+      "claimLocations": [
+        "catalog:peptide:ghk-cu/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.peptidedosingprotocols.com/protocol/ghk-cu",
+      "contentType": "text/html",
+      "responseBytesRead": 589385,
+      "bodySha256": "189d509c8e8c2909cbd1dccc99b441a5aa95ef4a72fe81a0f020c1aca63e14ed",
+      "title": "GHK-Cu Peptide Dosing Guide: Skin, Hair & Safety (2026)",
+      "extractedTextCharacters": 35169,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.peptidedosingprotocols.com/protocol/igf-1-lr3",
+      "checkedAt": "2026-10-15T17:25:02.506633+00:00",
+      "claimLocations": [
+        "catalog:peptide:igf-1-lr3/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.peptidedosingprotocols.com/protocol/igf-1-lr3",
+      "contentType": "text/html",
+      "responseBytesRead": 759345,
+      "bodySha256": "4a118bcb4c2007f81acc4281a6f5a07d79fc9bacb1878a8dcb9dafa9b30de66a",
+      "title": "IGF-1 LR3 Peptide Dosage Guide: Cycle, Side Effects & Safety (2026)",
+      "extractedTextCharacters": 52695,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.peptidedosingprotocols.com/protocol/ll-37",
+      "checkedAt": "2026-10-15T17:25:02.537497+00:00",
+      "claimLocations": [
+        "catalog:peptide:ll-37/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.peptidedosingprotocols.com/protocol/ll-37",
+      "contentType": "text/html",
+      "responseBytesRead": 497926,
+      "bodySha256": "5e75922dec13b9e8ecaa21d631e1144f58ed72aa920176d1b8f48933b0e2e309",
+      "title": "LL-37 Peptide Protocol Guide | Peptide Dosing Protocols",
+      "extractedTextCharacters": 25926,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.peptidedosingprotocols.com/protocol/mots-c",
+      "checkedAt": "2026-10-15T17:25:02.659194+00:00",
+      "claimLocations": [
+        "catalog:peptide:mots-c/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.peptidedosingprotocols.com/protocol/mots-c",
+      "contentType": "text/html",
+      "responseBytesRead": 631872,
+      "bodySha256": "583db5f77973505eb30fd2660573a9cf43e6e2f69982d19698121a4c8304d857",
+      "title": "MOTS-c Peptide Dosing Guide: Protocol, Reconstitution & Metabolism (2026)",
+      "extractedTextCharacters": 38762,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.peptidedosingprotocols.com/protocol/selank",
+      "checkedAt": "2026-10-15T17:25:02.711431+00:00",
+      "claimLocations": [
+        "catalog:peptide:selank/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.peptidedosingprotocols.com/protocol/selank",
+      "contentType": "text/html",
+      "responseBytesRead": 684980,
+      "bodySha256": "566c6950ab5090366c73f2901dd775c6b1ab1e7fa42449b1b66e4227daaa80b9",
+      "title": "Selank Dosage Guide & Chart: Injection, SubQ & Nasal (2026)",
+      "extractedTextCharacters": 42041,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.peptidedosingprotocols.com/protocol/sermorelin",
+      "checkedAt": "2026-10-15T17:25:02.724083+00:00",
+      "claimLocations": [
+        "catalog:peptide:sermorelin/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.peptidedosingprotocols.com/protocol/sermorelin",
+      "contentType": "text/html",
+      "responseBytesRead": 725543,
+      "bodySha256": "c8c91c23687e85567b782fa03f2963decc17bc46160d65a1e06432a4cd9d4506",
+      "title": "Sermorelin Peptide Dosing Guide: Nightly GHRH Schedule & Side Effects (2026)",
+      "extractedTextCharacters": 45780,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.peptidedosingprotocols.com/protocol/thymosin-alpha-1",
+      "checkedAt": "2026-10-15T17:25:02.778201+00:00",
+      "claimLocations": [
+        "catalog:peptide:thymosin-alpha-1/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.peptidedosingprotocols.com/protocol/thymosin-alpha-1",
+      "contentType": "text/html",
+      "responseBytesRead": 679340,
+      "bodySha256": "7744f6e0cc1af48b0b841078688efd6aff77d3b4056125d6a3f3d17e86851097",
+      "title": "Thymosin Alpha-1 (TA1) Peptide Guide: Dosage, Reconstitution & Side Effects",
+      "extractedTextCharacters": 42608,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.peptidedosingprotocols.com/protocol/vip",
+      "checkedAt": "2026-10-15T17:25:02.836314+00:00",
+      "claimLocations": [
+        "catalog:peptide:vip/community/0",
+        "catalog:peptide:vip/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.peptidedosingprotocols.com/protocol/vip",
+      "contentType": "text/html",
+      "responseBytesRead": 478562,
+      "bodySha256": "1f33de80d9a5d8399c4d0505ac24fdba40c465e99517afd6349b7bf5f09a4f87",
+      "title": "VIP Peptide Dosing Guide: Vasoactive Intestinal Peptide Protocol (2026)",
+      "extractedTextCharacters": 25955,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.peptideprotocolwiki.com/peptides/selank/community",
+      "checkedAt": "2026-10-15T17:25:02.942556+00:00",
+      "claimLocations": [
+        "catalog:peptide:selank/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.peptideprotocolwiki.com/peptides/selank/community",
+      "contentType": "text/html",
+      "responseBytesRead": 158853,
+      "bodySha256": "c2b1d689701b90cdc3cdd21ac45fdfcfb8f45c8625a20fffae5da0c4b3e4079f",
+      "title": "Selank Community Protocols & Anecdotal Reports | Peptide Protocol Wiki",
+      "extractedTextCharacters": 12767,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.peptideprotocolwiki.com/peptides/ss-31/community",
+      "checkedAt": "2026-10-15T17:25:02.959656+00:00",
+      "claimLocations": [
+        "catalog:peptide:ss-31/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.peptideprotocolwiki.com/peptides/ss-31/community",
+      "contentType": "text/html",
+      "responseBytesRead": 152390,
+      "bodySha256": "7f8357d85f496e2f375f3bb614f936f20fc8711768771c2665fecfbb302ccfe6",
+      "title": "SS-31 Community Protocols & Anecdotal Reports | Peptide Protocol Wiki",
+      "extractedTextCharacters": 12162,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.perfectb.com/cjc-1295-ipamorelin-dosage-protocol/",
+      "checkedAt": "2026-10-15T17:25:02.967551+00:00",
+      "claimLocations": [
+        "catalog:peptide:cjc-ipamorelin-blend/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.perfectb.com/cjc-1295-ipamorelin-dosage-protocol/",
+      "contentType": "text/html",
+      "responseBytesRead": 144831,
+      "bodySha256": "ed7b9f3a8b454881f1d5239f4d1dfc7bf1a40c536d071763ccb48556da78449a",
+      "title": "CJC-1295/Ipamorelin Dosage: Dosing & Cycle Guide | Perfect B",
+      "extractedTextCharacters": 42253,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.perfectb.com/epithalon-dosage-protocol/",
+      "checkedAt": "2026-10-15T17:25:03.010081+00:00",
+      "claimLocations": [
+        "catalog:peptide:epitalon/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.perfectb.com/epithalon-dosage-protocol/",
+      "contentType": "text/html",
+      "responseBytesRead": 109090,
+      "bodySha256": "dedeb89f7c51ee0203c38b1b09e6d660f583fc57f1aeaea9c3f7259a9593afd3",
+      "title": "Epithalon Dosage: 10-Day Cycle & Schedule | Perfect B",
+      "extractedTextCharacters": 23270,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.perfectb.com/mots-c-dosage-protocol/",
+      "checkedAt": "2026-10-15T17:25:03.131695+00:00",
+      "claimLocations": [
+        "catalog:peptide:mots-c/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.perfectb.com/mots-c-dosage-protocol/",
+      "contentType": "text/html",
+      "responseBytesRead": 153864,
+      "bodySha256": "0e5d5d6112c62af22f7bb05bab5682773921b1a26eb099c6be72210c4ddb702b",
+      "title": "MOTS-c Dosage Chart: mg, Units & Cycle Schedule",
+      "extractedTextCharacters": 47793,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.precisionnutrition.com/all-about-carb-cycling",
+      "checkedAt": "2026-10-15T17:25:03.317177+00:00",
+      "claimLocations": [
+        "catalog:food-protocol:carb-cycling/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.precisionnutrition.com/all-about-carb-cycling",
+      "contentType": "text/html",
+      "responseBytesRead": 214285,
+      "bodySha256": "8cf9baffb088774c15243d766ff0a68840e527305ab82d72867da58eeb946b67",
+      "title": "Carb Cycling: What It Is, How It Works, and How to Do It [Free PDF Guide]",
+      "extractedTextCharacters": 47446,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.realpeptides.co/ll-37-reddit-reviews-community-user-insights/",
+      "checkedAt": "2026-10-15T17:25:03.543577+00:00",
+      "claimLocations": [
+        "catalog:peptide:ll-37/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.realpeptides.co/ll-37-reddit-reviews-community-user-insights/",
+      "contentType": "text/html",
+      "responseBytesRead": 178427,
+      "bodySha256": "4627584bd6cefd01011ec5b0f5f7f986a4f5f8097aa239f2bae81c61f4a86544",
+      "title": "LL-37 Reddit Reviews Community — User Insights Explained | Real Peptides",
+      "extractedTextCharacters": 28514,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.rrca.org/education/for-runners/",
+      "checkedAt": "2026-10-15T17:25:03.570612+00:00",
+      "claimLocations": [
+        "catalog:exercise:running/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.rrca.org/education/for-runners/",
+      "contentType": "text/html",
+      "responseBytesRead": 367130,
+      "bodySha256": "bcb2c7e0738b0cfa5aaea0b4e1a52ef074078000e48797e51456af77a4dbadc6",
+      "title": "For Runners - Road Runners Club of America",
+      "extractedTextCharacters": 27983,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.seekpeptides.com/blog/articles/ghrp-6-peptide-complete-guide",
+      "checkedAt": "2026-10-15T17:25:03.935399+00:00",
+      "claimLocations": [
+        "catalog:peptide:ghrp-6/community/0",
+        "catalog:peptide:ghrp-6/community/1"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.seekpeptides.com/blog/articles/ghrp-6-peptide-complete-guide",
+      "contentType": "text/html",
+      "responseBytesRead": 401482,
+      "bodySha256": "395f95c183a90ea60a6f2810647b23111fbafc887bc96964b0f06ad0bd6eeae1",
+      "title": "GHRP-6 peptide: complete guide to benefits, dosage, and protocols - SeekPeptides",
+      "extractedTextCharacters": 47953,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.swansonvitamins.com/p/swanson-ultra-dhea-50-mg-120-caps",
+      "checkedAt": "2026-10-15T17:25:03.940704+00:00",
+      "claimLocations": [
+        "catalog:hormone:dhea/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.swansonvitamins.com/p/swanson-ultra-dhea-50-mg-120-caps",
+      "contentType": "text/html",
+      "responseBytesRead": 1028687,
+      "bodySha256": "4bbdb79f0fbdca02525314bc1fea5af6ef6d48f373eae189eecfc77518ec58df",
+      "title": "Swanson Vitamins DHEA 50 mg Vegan Capsule Hormonal Support\n Swanson Rewards Logo Swanson Cares logo Visa PayPal Mastercard Apple Pay American Express",
+      "extractedTextCharacters": 35340,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.thensf.org/nsf-sleep-diary/",
+      "checkedAt": "2026-10-15T17:25:03.954752+00:00",
+      "claimLocations": [
+        "catalog:context:sleep/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.thensf.org/nsf-sleep-diary/",
+      "contentType": "text/html",
+      "responseBytesRead": 195770,
+      "bodySha256": "e86137ce086ebcbd285c5d5f80007a37ce70813a917708e4888d888145c5bf81",
+      "title": "NSF Sleep Diary - National Sleep Foundation Close Search icon/search Close Search icon/search Instagram Facebook Twitter LinkedIn Youtube",
+      "extractedTextCharacters": 8060,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.usms.org/about/what-is-us-masters-swimming",
+      "checkedAt": "2026-10-15T17:25:04.380739+00:00",
+      "claimLocations": [
+        "catalog:exercise:swimming/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.usms.org/about/what-is-us-masters-swimming",
+      "contentType": "text/html",
+      "responseBytesRead": 89153,
+      "bodySha256": "de627f6f25caeae5b40f3f660141bed38e3f2249e6f70dffb39b64512d739873",
+      "title": "What is U.S. Masters Swimming? | U.S. Masters Swimming",
+      "extractedTextCharacters": 25254,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    },
+    {
+      "url": "https://www.vegansociety.com/go-vegan/definition-veganism",
+      "checkedAt": "2026-10-15T17:25:04.689594+00:00",
+      "claimLocations": [
+        "catalog:food-protocol:vegan/community/0"
+      ],
+      "claimMatch": "not-cleared-by-availability-check",
+      "population": "Requires claim-level review; no human/animal equivalence inferred.",
+      "suitability": "not-cleared",
+      "publisherContentStored": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.vegansociety.com/go-vegan/definition-veganism",
+      "contentType": "text/html",
+      "responseBytesRead": 129059,
+      "bodySha256": "0f43e0e9e8ebdabd41e6dc75bf0fd5f932d4faea397b1728f0b3cc3830a7c5d3",
+      "title": "Go Vegan | What is Veganism? | Understanding Veganism",
+      "extractedTextCharacters": 24223,
+      "availability": "retrieved-html",
+      "note": "Retrieval/title alone does not verify claims, population, suitability or rights."
+    }
+  ]
+}

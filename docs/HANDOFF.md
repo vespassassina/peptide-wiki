@@ -18,10 +18,18 @@ Release preflight confirmed:
 
 No merge, push or publication was performed.
 
+The owner's follow-up menu request is complete locally in `8377775`. The mobile
+navigation now opens on its own full-width row, scrolls vertically on short
+screens, closes on Escape/outside clicks/focus exit, resets at the breakpoint,
+and remains available without JavaScript. All 32 Python tests and the actual
+277-page build passed. Chromium passed 18 menu cases plus the existing 12 full
+flows; 18 screenshots and `results.json` are under session `files/menu-check/`.
+Native-device/other-browser and published-site checks remain unperformed.
+
 ## Live review findings
 
 A fresh partial review is recorded in `research/publication-review.json`.
-Five of 142 unique community-source URLs were examined. The sleep-diary and
+Five of 142 unique community-source URLs received substantive examination. The sleep-diary and
 bounded traditional-use examples are supported in their limited contexts.
 The simplified NIH extractor omitted the main article, so the full HTML was
 parsed in memory instead; no publisher text was persisted.
@@ -41,6 +49,21 @@ third-party material. No blanket clearance or infringement finding is inferred
 from the absent source licence. No publisher pages, images or excerpts have
 been added.
 
+Availability checks are now complete for all 142 unique community-source URLs,
+covering 163 description locations. `research/community-live-checks.json`
+records 139 retrieved HTML responses and three HTTP 403 responses:
+
+- `https://muscleandbrawn.com/anabolics/testosterone-enanthate-cycle/`
+- `https://muscleandbrawn.com/sarms/andarine-s4/`
+- `https://www.cdc.gov/physical-activity-basics/guidelines/index.html`
+
+No access barriers were bypassed. This report contains response identities,
+titles, sizes and hashes, not publisher pages or excerpts. Every check remains
+explicitly uncleared for claim matching and suitability; availability is not
+approval. The report is excluded from the generated site. Its 142 unique URLs
+and 163 claim locations were checked against the report, and the built output
+still contains exactly 277 HTML pages with no research directory.
+
 ## Blocked and next
 
 The fresh suitability/rights review is not complete. The source audit README
@@ -59,6 +82,7 @@ rights or verification. Then check remote changes, merge and push using normal
 non-destructive Git/GitHub operations, wait for Pages deployment and verify the
 published site and audit/default exclusions. Never force-push `main`.
 
-No server or browser-verification helper remains running. Prior screenshots and
-full local evidence are referenced in `docs/PLAN.md`. Remove this handoff when
-the publication task is complete.
+No server or browser-verification helper remains running. Optional Playwright
+1.64.1 and Chromium remain in session `files/menu-tooling/` for release checks;
+they are not repository dependencies. Screenshots and full local evidence are
+referenced in `docs/PLAN.md`. Remove this handoff when publication is complete.
