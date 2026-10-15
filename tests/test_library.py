@@ -2,6 +2,7 @@ import copy
 import json
 from pathlib import Path
 import unittest
+from unittest.mock import patch
 
 import library
 
@@ -65,6 +66,28 @@ class LibraryTests(unittest.TestCase):
         self.assertEqual(self.catalogue["sourceCounts"]["protocols"], 270)
         self.assertEqual(self.catalogue["sourceCounts"]["community"], 163)
 
+    def test_source_availability_covers_urls_without_publishing_retrieved_content(self):
+        urls = {occurrence["url"] for source in self.catalogue["sources"].values()
+                for occurrence in source["occurrences"]}
+        availability = self.catalogue["sourceAvailability"]
+        self.assertEqual(set(availability), urls)
+        for check in availability.values():
+            self.assertLessEqual(set(check), {"checkedOn", "status", "httpStatus"})
+            self.assertNotIn("verified", check["status"])
+
+    def test_missing_or_duplicate_availability_record_fails_closed(self):
+        original = library.read_json
+        for mutation in ("missing", "duplicate"):
+            report = original(ROOT / "research/citations-live-checks.json")
+            if mutation == "missing":
+                report["checks"].pop()
+            else:
+                report["checks"].append(copy.deepcopy(report["checks"][0]))
+            with self.subTest(mutation=mutation):
+                with patch("library.read_json", side_effect=lambda path: report if path.name == "citations-live-checks.json" else original(path)):
+                    with self.assertRaises(ValueError):
+                        library.load_library(ROOT)
+
     def test_exact_claim_deduplication_keeps_different_populations(self):
         first = {"population": "Mice", "regimen": "Reported", "source": {"url": "https://example.org"}}
         second = {**first, "population": "Adults"}
@@ -72,6 +95,45 @@ class LibraryTests(unittest.TestCase):
         self.assertEqual(len(claims), 2)
         self.assertEqual(claims[0]["origins"], ["fixture/0", "fixture/1"])
         self.assertEqual(claims[1]["population"], "Adults")
+
+    def test_publication_review_covers_every_import_without_certifying_clinical_claims(self):
+        reviewed = []
+        for entry in self.catalogue["entries"].values():
+            for research in entry["research"]:
+                review = research["publicationReview"]
+                self.assertEqual(review["status"], "historical-reference-only")
+                self.assertEqual(review["clinicalVerification"], "not-performed")
+                self.assertEqual(review["checkedOn"], "2026-10-15")
+                self.assertEqual(len(review["community"]), sum(
+                    len(claim["origins"]) for claim in research["community"]
+                ))
+                reviewed.append(research["id"])
+        self.assertEqual(len(reviewed), 210)
+        dhea = self.catalogue["entries"]["library:hormone-dhea"]["research"][0]
+        self.assertIn("100 mg", " ".join(dhea["publicationReview"]["notices"]))
+        self.assertEqual(dhea["publicationReview"]["community"][0]["result"], "disputed-support")
+        self.assertIn("historical", self.catalogue["publication"].lower())
+
+    def test_incomplete_or_mismatched_publication_review_fails_closed(self):
+        original = library.read_json
+        for mutation in ("missing-entry", "wrong-source", "missing-claim", "wrong-citation", "medical-approval", "bad-date"):
+            report = original(ROOT / "research/publication-review.json")
+            if mutation == "missing-entry":
+                report["entryReviews"].pop("catalog:context:sleep")
+            elif mutation == "wrong-source":
+                report["sourceCommit"] = "unrelated"
+            elif mutation == "missing-claim":
+                report["entryReviews"]["catalog:context:sleep"]["community"] = []
+            elif mutation == "wrong-citation":
+                report["entryReviews"]["catalog:context:sleep"]["community"][0]["url"] = "https://example.org"
+            elif mutation == "medical-approval":
+                report["entryReviews"]["catalog:context:sleep"]["community"][0]["result"] = "recommended-regimen"
+            else:
+                report["checkedOn"] = "2026-02-30"
+            with self.subTest(mutation=mutation):
+                with patch("library.read_json", side_effect=lambda path: report if path.name == "publication-review.json" else original(path)):
+                    with self.assertRaises(ValueError):
+                        library.load_library(ROOT)
 
     def test_every_canonical_field_and_claim_origin_survives_projection(self):
         raw = json.loads((ROOT / "research/biometra/evidence.json").read_text())

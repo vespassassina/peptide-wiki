@@ -13,7 +13,7 @@ Corrections and additions welcome. This is a community reference, not a personal
 ## What's not
 
 - Sourcing claims from vendor marketing copy or forum anecdotes presented as fact. Cite a study, a review, or say plainly it's community-reported and unverified.
-- Naming or linking specific vendors anywhere in the content. This is a reference site, not a storefront directory.
+- Vendor recommendations, affiliate links or purchasing directories. The pinned import retains its original commercial-source citations only as labelled historical provenance, not endorsement or independent clinical evidence.
 - Dosing advice framed as a recommendation rather than "here's what's reported." This site describes what people do and what evidence exists — it doesn't tell anyone what to do.
 
 ## How
@@ -51,6 +51,19 @@ The [README](README.md#checks) documents optional screenshot/browser checks.
 Normal builds remain offline and Python-only. Fresh source-suitability/rights
 checks and owner permission are required before any new public republication;
 import/build success is not publication approval.
+
+The 2026-10-15 publication review covers historical-reference suitability, not
+fresh medical verification. All 210 imports have explicit dispositions. Community
+accounts are collapsed by default, identified as authored paraphrases rather than
+quotations, and linked to their limitations. Known support, formulation, route
+and unit issues remain visible; do not remove their warnings while retaining the
+claims. New or changed claims need their own source review.
+
+`research/publication-review.json` records the review and rights boundary.
+`research/citations-live-checks.json` records all 888 citation URL checks,
+including failures and access barriers. Retrieval is not verification. These
+audit reports are not deployed; only allowlisted dispositions and source-health
+metadata enter the public projection. Builds fail on incomplete coverage.
 
 ## Style
 

@@ -139,3 +139,47 @@ cover 375/714 px in light/dark modes; inspected 714 px light and 375 px dark
 against the reproduced broken layout. Native-device/other-browser tests and
 public-site checks remain unperformed. The publication review is separate;
 passing navigation checks does not clear research claims or reuse rights.
+
+## 2026-10-15 Authorised historical-publication release
+
+The owner requested merge, push and publication and directed autonomous
+completion. Complete the fresh suitability/rights review as a historical
+reference, not an independent clinical certification. The approved source and
+archive boundaries remain unchanged.
+
+All 163 community descriptions were read; structured coverage reconciles all
+210 entries, 270 study population/regimen/outcome/source records and 210
+uncertainty fields. The initial five live claim readings remain in the audit.
+All 888 registered citation URL identities have dated availability dispositions:
+660 HTML, 23 non-HTML, 57 HTTP errors, three request failures, three response
+limits, 114 possible barriers and 28 circular-provenance URLs. Availability is
+not source support or verification. Failed TLS/redirect checks were not bypassed.
+
+Every imported account has a review disposition. Known DHEA support, blend/
+formulation, population, route and unit limitations precede the affected
+original wording. Community accounts are collapsed and identified as authored
+paraphrases rather than quotations. Commercial citations are preserved only as
+historical provenance under the approved lossless-import scope, never vendor
+recommendations. Publisher originals, private data and app defaults stay
+excluded. Builds reject missing, duplicate, mismatched or medically approving
+review records.
+
+Actual pre-release evidence: 37 tests passed without skips; offline generation
+with an empty tool PATH produced 277 pages; JavaScript syntax and whitespace
+checks passed. Chromium passed 18 menu cases and all 12 root/Pages-base flows,
+including collapsed/open warning accounts. Twenty-two PNGs and `results.json`
+are in session `023e5684-81e6-4e42-ae5d-d8b4f27f282b`, under
+`files/release-check/`. Confirmed mobile dark and desktop light account views
+after moving specific limitations before the imported wording.
+
+Adversarial checks reject missing entries/claims/citation checks, duplicate
+checks, wrong source/citation identities, invalid dates and an attempted
+recommended-regimen review status. Hostile warning text remains escaped.
+Legacy JSON, CI and the immutable import bundle are unchanged; generated output
+contains no research/audit directory or app template fields.
+
+Next: fast-forward the unchanged remote default branch, push without force,
+wait for Pages and verify the real public deployment, including exclusion URLs.
+Native devices and other browser engines are not tested. Clinical, regulatory,
+efficacy, safety, PK and dose revalidation remain explicitly unperformed, not
+release promises.

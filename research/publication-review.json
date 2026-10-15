@@ -1,101 +1,2657 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "checkedOn": "2026-10-15",
   "sourceCommit": "adc7684614f9439b41d91a3312b62e7982c7e20e",
-  "releaseCandidateCommit": "ac57f27",
-  "result": "blocked-incomplete-review",
+  "result": "historical-publication-suitable-with-limitations",
+  "clinicalVerification": "not-performed",
   "scope": {
-    "communityDescriptions": 163,
-    "uniqueCommunityUrls": 142,
-    "reviewedUniqueCommunityUrls": 5,
-    "remainingUniqueCommunityUrls": 137,
-    "clinicalAndRegulatoryClaims": "Not freshly verified by this partial review."
+    "catalogueRecords": 210,
+    "structuredStudyReports": 270,
+    "communityDescriptionsRead": 163,
+    "communityUrlAvailabilityChecks": 142,
+    "allCitationUrlAvailabilityChecks": 888,
+    "liveClaimReadings": "Five initial readings retained below; these do not establish comprehensive clinical verification.",
+    "studyPopulationReview": "All 270 reports retain their non-empty population, regimen, duration, outcome and citation fields. This is a context/projection audit, not a fresh verification of 270 studies.",
+    "clinicalAndRegulatoryClaims": "Not certified current, effective, approved or safe. PK and community regimens are not dosing guidance."
   },
-  "rights": {
-    "targetRepository": "vespassassina/peptide-wiki",
-    "targetVisibility": "public",
-    "targetLicence": "MIT",
-    "sourceRepository": "vespassassina/BiohackerAssistant",
-    "sourceVisibility": "private",
-    "sourceLicenceReportedByGitHub": null,
-    "sourceLicenceEndpointStatus": 404,
+  "rightsDecision": {
     "ownerPublicationInstruction": "merge, push and publish",
-    "conclusion": "The owner's instruction authorises the requested publication operation. A missing repository licence is not proof of either permission or infringement. It does not establish rights to third-party material. No publisher pages, images or excerpts were added to this review artifact; no blanket rights clearance is claimed."
+    "authoredMaterial": "The owner's source handoff identifies the included checked-in research as authored material, and the owner explicitly requests publication into their public repository.",
+    "thirdPartyMaterial": "Publish citations and bibliographic metadata, not publisher pages, images, excerpts or ignored caches. Source and target repository ownership does not grant rights to third-party full text.",
+    "licensing": "The target MIT licence covers the repository's authored work, not the external works cited. A private source repository without a detected licence is not itself a finding of infringement or a bar to the owner's instructed publication."
   },
-  "checks": [
-    {
-      "sourceId": "catalog:context:sleep",
-      "field": "community/0",
-      "url": "https://www.thensf.org/nsf-sleep-diary/",
-      "availability": "retrieved",
-      "claimMatch": "The current page describes daily diary entries on waking and before bed, matching the bounded imported practice description.",
-      "population": "General sleep-diary users; not evidence of a clinical treatment outcome.",
-      "suitability": "Suitable as an attributed description of a practice, not evidence of effectiveness.",
-      "result": "bounded-description-supported",
-      "thirdPartyContentStored": false
-    },
-    {
-      "sourceId": "catalog:supplement:ashwagandha",
-      "field": "community/0",
-      "url": "https://www.nccih.nih.gov/health/ashwagandha",
-      "availability": "HTTP 200; full HTML parsed in memory after the simplified extractor returned only the clearinghouse footer.",
-      "claimMatch": "The full page retains discussion of traditional Ayurvedic use, consistent with the bounded imported historical-use description.",
-      "population": "Traditional-use context; not a population-specific efficacy claim.",
-      "suitability": "Suitable for attributed historical-use context only; this check does not approve efficacy or dosing.",
-      "result": "bounded-description-supported",
-      "thirdPartyContentStored": false
-    },
-    {
-      "sourceId": "catalog:hormone:dhea",
-      "field": "community/0",
-      "url": "https://www.swansonvitamins.com/p/swanson-ultra-dhea-50-mg-120-caps",
-      "availability": "retrieved",
-      "claimMatch": "The current product label supports the imported reference to a 50 mg capsule taken daily. The imported additional statement about adjustment to 100 mg was not verified in the retrieved current label.",
-      "population": "A supplement vendor's product label, not an independent clinical or community cohort.",
-      "suitability": "Unresolved. This is a commercial product page, conflicting with the target contribution policy against vendor links. The additional regimen assertion needs source clarification.",
-      "result": "publication-blocker",
-      "thirdPartyContentStored": false
-    },
-    {
-      "sourceId": "catalog:peptide:igf-1-lr3",
-      "field": "community/0",
-      "url": "https://www.peptidedosingprotocols.com/protocol/igf-1-lr3",
-      "availability": "retrieved",
-      "claimMatch": "The retrieved FAQ discusses overlapping community dose and cycle ranges, but this partial review did not establish support for the imported staged progression across successive cycles.",
-      "population": "Unvalidated research-community protocol accounts, not a validated human clinical regimen.",
-      "suitability": "Not cleared as independent evidence or as a recommended protocol; remaining context needs review.",
-      "result": "partial-match-not-cleared",
-      "thirdPartyContentStored": false
-    },
-    {
-      "sourceId": "catalog:peptide:igf-1-lr3",
-      "field": "community/1",
-      "url": "https://peptideinitiative.com/peptides/protocols/igf-1-lr3-protocol",
-      "finalUrl": "https://peptideinitiative.com/peptides/protocols/igf-1-lr3",
-      "availability": "HTTP 200 after redirect; full HTML parsed in memory.",
-      "claimMatch": "Full-page retrieval contains relevant range, route and timing terms omitted by the simplified extractor. Term presence alone does not establish the full imported claim.",
-      "population": "Community protocol context; the page also references animal research, which must not be conflated with validated human use.",
-      "suitability": "Full claim and population review incomplete.",
-      "result": "not-cleared",
-      "thirdPartyContentStored": false
-    }
+  "publicationCriteria": [
+    "Historical reference only: no claim of fresh clinical, regulatory, dose, efficacy or safety verification.",
+    "Read all 163 community descriptions; retain original claims with individual review dispositions, and make unverified accounts explicit, collapsed by default and separate from studies.",
+    "Flag identified support, formulation, route, population and unit limitations without rewriting the immutable source.",
+    "Preserve all 210 identities, 270 study reports, 163 community descriptions, citations and 130 dated findings; never treat circular provenance as independent evidence.",
+    "Retain commercial citations solely as labelled historical provenance under the approved lossless-import scope; no vendor recommendations, affiliate links or purchasing directory.",
+    "Publish only allowlisted fields. Keep app defaults, templates, rejected drafts and the provenance/audit files out of generated output.",
+    "Record URL availability separately, including failures, without bypassing barriers or equating retrieval with source support."
   ],
-  "policyLookups": [
-    {
-      "url": "https://www.nccih.nih.gov/health/copyright",
-      "availability": "HTTP 404",
-      "result": "No rights conclusion; an unavailable guessed policy URL is not a licence determination."
-    },
-    {
-      "url": "https://www.thensf.org/terms-and-conditions/",
-      "availability": "HTTP 404",
-      "result": "No rights conclusion; an unavailable guessed policy URL is not a licence determination."
-    }
+  "knownLimitations": [
+    "Source availability is not clinical claim validation. Inaccessible citations remain historical references, not confirmed current sources.",
+    "The historical-source release does not endorse every imported claim. Unverified account wording is retained for traceability, not asserted as fact.",
+    "Two bounded diary/traditional-use matches are not efficacy or dosing approvals.",
+    "No third-party licence clearance or medical certification is claimed."
   ],
-  "publicOutput": "not-deployed",
-  "limitations": [
-    "This is a partial release review, not certification of medical accuracy or rights.",
-    "Imported evidence and audit files remain unchanged.",
-    "No merge, push, PR or deployment has occurred."
-  ]
+  "citationAvailabilityResults": {
+    "retrieved-html": 660,
+    "retrieved-non-html": 23,
+    "http-error": 57,
+    "request-failed": 3,
+    "response-limit-exceeded": 3,
+    "possible-access-barrier": 114,
+    "circular-provenance-not-independently-retrieved": 28
+  },
+  "availabilityNotes": [
+    "All 888 registered citation URL identities are covered. The 142 same-day community checks were reused with their original timestamps.",
+    "Errors and possible barriers are not fresh source support. Two patent-host TLS certificate failures and an unsafe DOI redirect were not bypassed.",
+    "Hashes identify only retrieved bytes; capped responses are partial, not complete publisher snapshots. No publisher body or excerpt is stored.",
+    "The 28 unique wiki URLs represent circular provenance, not independently retrieved corroboration."
+  ],
+  "entryReviews": {
+    "catalog:hormone:testosterone-cypionate": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:hormone:testosterone-cypionate/community/0",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5686655/",
+          "claimMatch": "The first community citation is a clinical article, not a community dosing guideline. Its study population and route must not be generalised to the imported claim of standard intramuscular TRT dosing. The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "population-and-route-limited"
+        },
+        {
+          "origin": "evidence.json#/catalog:hormone:testosterone-cypionate/community/1",
+          "url": "https://bowtiedloon.substack.com/p/forms-of-testosterone-replacement",
+          "claimMatch": "The first community citation is a clinical article, not a community dosing guideline. Its study population and route must not be generalised to the imported claim of standard intramuscular TRT dosing. The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "population-and-route-limited"
+        }
+      ],
+      "notices": [
+        "The first community citation is a clinical article, not a community dosing guideline. Its study population and route must not be generalised to the imported claim of standard intramuscular TRT dosing."
+      ]
+    },
+    "catalog:hormone:sustanon-250": {
+      "protocolCount": 0,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:hormone:sustanon-250/community/0",
+          "url": "https://www.biomogging.com/compounds/sustanon-250",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:hormone:hgh": {
+      "protocolCount": 4,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:hormone:hgh/community/0",
+          "url": "https://www.pathtopeptides.com/hgh-somatropin-protocol.html",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:medication:paracetamol": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:medication:diclofenac-topical": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:medication:antacid": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:hormone:liothyronine": {
+      "protocolCount": 3,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:hormone:liothyronine/community/0",
+          "url": "https://www.biomogging.com/compounds/liothyronine",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:hormone:liothyronine/community/1",
+          "url": "https://healthunlocked.com/thyroiduk/posts/147796886/splitting-t3-dose",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:hormone:progesterone": {
+      "protocolCount": 3,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:hormone:progesterone/community/0",
+          "url": "https://www.joinmidi.com/post/low-dose-progesterone",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:supplement:glycine": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:casein-protein": {
+      "protocolCount": 3,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:supplement:casein-protein/community/0",
+          "url": "https://www.healthline.com/nutrition/casein-protein-is-highly-underrated",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:supplement:magnesium": {
+      "protocolCount": 2,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:vitamin-b12": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:vitamin-e": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:boron": {
+      "protocolCount": 2,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:ashwagandha": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:supplement:ashwagandha/community/0",
+          "url": "https://www.nccih.nih.gov/health/ashwagandha",
+          "claimMatch": "The earlier live reading supports only the bounded diary/traditional-use description; it does not establish effectiveness or a medical regimen.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "bounded-description-supported"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:food-protocol:18-6": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:food-protocol:18-6/community/0",
+          "url": "https://my.clevelandclinic.org/podcasts/love-your-heart/what-is-intermittent-fasting",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:food-protocol:adf": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:food-protocol:adf/community/0",
+          "url": "https://www.healthline.com/nutrition/6-ways-to-do-intermittent-fasting",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:food-protocol:keto": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:food-protocol:keto/community/0",
+          "url": "https://www.healthline.com/nutrition/ketogenic-diet-101",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:food-protocol:paleo": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:food-protocol:paleo/community/0",
+          "url": "https://www.healthline.com/nutrition/paleo-diet-meal-plan-and-menu",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:food-protocol:mediterranean": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:food-protocol:mediterranean/community/0",
+          "url": "https://www.healthline.com/nutrition/mediterranean-diet-meal-plan",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:exercise:cardio-zone2": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:exercise:cardio-zone2/community/0",
+          "url": "https://health.clevelandclinic.org/exercise-heart-rate-zones-explained",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:exercise:calisthenics": {
+      "protocolCount": 0,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:exercise:calisthenics/community/0",
+          "url": "https://health.clevelandclinic.org/calisthenics",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:exercise:swimming": {
+      "protocolCount": 3,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:exercise:swimming/community/0",
+          "url": "https://www.usms.org/about/what-is-us-masters-swimming",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:exercise:hiking": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:exercise:hiking/community/0",
+          "url": "https://americanhiking.org/resources/hiking-trails-policy/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:recovery:sauna": {
+      "protocolCount": 3,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:recovery:sauna/community/0",
+          "url": "https://wiki.aineetonkulttuuriperinto.fi/wiki/Sauna_bathing",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:recovery:breathwork": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:recovery:breathwork/community/0",
+          "url": "https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/breathing-exercises-for-stress/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:recovery:stretching": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:recovery:stretching/community/0",
+          "url": "https://www.nhs.uk/live-well/exercise/how-to-stretch-after-exercising/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:recovery:sunlight": {
+      "protocolCount": 3,
+      "community": [],
+      "notices": []
+    },
+    "catalog:recovery:compression": {
+      "protocolCount": 3,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:recovery:compression/community/0",
+          "url": "https://theconversation.com/pneumatic-compression-therapy-can-it-really-help-olympians-or-you-recover-after-exercise-236228",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:peptide:igf-1-lr3": {
+      "protocolCount": 4,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:igf-1-lr3/community/0",
+          "url": "https://www.peptidedosingprotocols.com/protocol/igf-1-lr3",
+          "claimMatch": "The initial live check did not establish the full staged escalation/cycling claims. Relevant terms alone do not verify a protocol. Community accounts and animal research do not establish a validated human regimen. The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "partial-match-unverified"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:igf-1-lr3/community/1",
+          "url": "https://peptideinitiative.com/peptides/protocols/igf-1-lr3-protocol",
+          "claimMatch": "The initial live check did not establish the full staged escalation/cycling claims. Relevant terms alone do not verify a protocol. Community accounts and animal research do not establish a validated human regimen. The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "partial-match-unverified"
+        }
+      ],
+      "notices": [
+        "The initial live check did not establish the full staged escalation/cycling claims. Relevant terms alone do not verify a protocol. Community accounts and animal research do not establish a validated human regimen."
+      ]
+    },
+    "catalog:peptide:ll-37": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:ll-37/community/0",
+          "url": "https://www.peptidedosingprotocols.com/protocol/ll-37",
+          "claimMatch": "The imported accounts differ substantially in quantities and schedules. They are unvalidated community claims, not a combined range or evidence that any reported amount is safe. The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:ll-37/community/1",
+          "url": "https://www.realpeptides.co/ll-37-reddit-reviews-community-user-insights/",
+          "claimMatch": "The imported accounts differ substantially in quantities and schedules. They are unvalidated community claims, not a combined range or evidence that any reported amount is safe. The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": [
+        "The imported accounts differ substantially in quantities and schedules. They are unvalidated community claims, not a combined range or evidence that any reported amount is safe."
+      ]
+    },
+    "catalog:peptide:tb-500": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:tb-500/community/0",
+          "url": "https://swolverine.com/blogs/blog/tb-500-dosage-guide-how-much-should-you-take-for-recovery-and-injury-repair",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:tb-500/community/1",
+          "url": "https://www.innerbody.com/thymosin-beta-4-and-tb-500",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:peptide:cjc-1295-dac": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:peptide:tirzepatide": {
+      "protocolCount": 3,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:tirzepatide/community/0",
+          "url": "https://weightandhealthcare.substack.com/p/zepbound-tirzepatide-for-weight-loss",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:peptide:sermorelin": {
+      "protocolCount": 4,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:sermorelin/community/0",
+          "url": "https://cjc-1295.com/article/cjc-1295-sermorelin-dosing-administration-safety",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:sermorelin/community/1",
+          "url": "https://www.peptidedosingprotocols.com/protocol/sermorelin",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:peptide:ghrp-6": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:ghrp-6/community/0",
+          "url": "https://www.seekpeptides.com/blog/articles/ghrp-6-peptide-complete-guide",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:ghrp-6/community/1",
+          "url": "https://www.seekpeptides.com/blog/articles/ghrp-6-peptide-complete-guide",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:peptide:thymosin-alpha-1": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:thymosin-alpha-1/community/0",
+          "url": "https://forums.phoenixrising.me/threads/thymosin-alpha-1.61531/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:thymosin-alpha-1/community/1",
+          "url": "https://www.peptidedosingprotocols.com/protocol/thymosin-alpha-1",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:peptide:melanotan-2": {
+      "protocolCount": 0,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:melanotan-2/community/0",
+          "url": "https://www.elitefitness.com/forum/anabolic-steroids/melanotan-ii-maintenance-dose-753493.html",
+          "claimMatch": "The historical forum's syringe-unit examples depend on a particular preparation. Do not reuse their unit-to-mass assumptions for a different vial or concentration. The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:melanotan-2/community/1",
+          "url": "https://www.elitefitness.com/forum/threads/melanotan-ii-dosage.494208/",
+          "claimMatch": "The historical forum's syringe-unit examples depend on a particular preparation. Do not reuse their unit-to-mass assumptions for a different vial or concentration. The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:melanotan-2/community/2",
+          "url": "https://www.elitefitness.com/forum/threads/get-my-tan-on.1005673/",
+          "claimMatch": "The historical forum's syringe-unit examples depend on a particular preparation. Do not reuse their unit-to-mass assumptions for a different vial or concentration. The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": [
+        "The historical forum's syringe-unit examples depend on a particular preparation. Do not reuse their unit-to-mass assumptions for a different vial or concentration."
+      ]
+    },
+    "catalog:hormone:testosterone-enanthate": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:hormone:testosterone-enanthate/community/0",
+          "url": "https://muscleandbrawn.com/anabolics/testosterone-enanthate-cycle/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:hormone:testosterone-gel": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:hormone:testosterone-gel/community/0",
+          "url": "https://tau.amegroups.org/article/view/11328/13164",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:hormone:hcg": {
+      "protocolCount": 3,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:hormone:hcg/community/0",
+          "url": "https://www.anasci.org/threads/experience-with-hcg.28857/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:medication:aspirin": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:medication:antibiotic-course": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:medication:oral-rehydration": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:hormone:anastrozole": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:hormone:anastrozole/community/0",
+          "url": "https://www.elitefitness.com/forum/threads/anastrozole-dosage-200mg-trt.1333113/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:supplement:creatine": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:supplement:creatine/community/0",
+          "url": "https://www.healthline.com/nutrition/creatine-loading-phase",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:supplement:bcaa": {
+      "protocolCount": 2,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:plant-protein": {
+      "protocolCount": 2,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:vitamin-a": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:vitamin-c": {
+      "protocolCount": 2,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:vitamin-k2": {
+      "protocolCount": 2,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:tongkat-ali": {
+      "protocolCount": 2,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:omega-3": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:supplement:omega-3/community/0",
+          "url": "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/fats-and-cholesterol/types-of-fat/omega-3-fats/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:food-protocol:omad": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:food-protocol:omad/community/0",
+          "url": "https://www.healthline.com/health/one-meal-a-day",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:food-protocol:extended-fast": {
+      "protocolCount": 2,
+      "community": [],
+      "notices": []
+    },
+    "catalog:food-protocol:low-carb": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:food-protocol:low-carb/community/0",
+          "url": "https://www.dietdoctor.com/low-carb/how-low-carb-is-low-carb",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:food-protocol:vegan": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:food-protocol:vegan/community/0",
+          "url": "https://www.vegansociety.com/go-vegan/definition-veganism",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:food-protocol:carb-cycling": {
+      "protocolCount": 3,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:food-protocol:carb-cycling/community/0",
+          "url": "https://www.precisionnutrition.com/all-about-carb-cycling",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:exercise:hiit": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:exercise:hiit/community/0",
+          "url": "https://health.clevelandclinic.org/think-you-cant-do-high-intensity-interval-training-think-again",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:exercise:running": {
+      "protocolCount": 0,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:exercise:running/community/0",
+          "url": "https://www.rrca.org/education/for-runners/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:exercise:walking": {
+      "protocolCount": 3,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:exercise:walking/community/0",
+          "url": "https://www.cdc.gov/physical-activity-basics/guidelines/index.html",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:exercise:functional-fitness": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:exercise:functional-fitness/community/0",
+          "url": "https://www.acefitness.org/resources/pros/expert-articles/7208/creating-functional-training-programs-for-every-type-of-client/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:recovery:cold-exposure": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:recovery:cold-exposure/community/0",
+          "url": "https://health.clevelandclinic.org/what-to-know-about-cold-plunges",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:recovery:meditation": {
+      "protocolCount": 3,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:recovery:meditation/community/0",
+          "url": "https://www.mindful.org/how-to-meditate/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:recovery:massage": {
+      "protocolCount": 3,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:recovery:massage/community/0",
+          "url": "https://www.amtamassage.org/publications/massage-therapy-journal/post-event-sports-massage/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:recovery:journaling": {
+      "protocolCount": 3,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:recovery:journaling/community/0",
+          "url": "https://ggia.berkeley.edu/practice/expressive_writing",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:context:routine": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:peptide:bpc-157": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:bpc-157/community/0",
+          "url": "https://www.elitefitness.com/forum/threads/best-ways-to-mix-and-dose-bpc-157.1514654/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:peptide:kisspeptin-10": {
+      "protocolCount": 3,
+      "community": [],
+      "notices": []
+    },
+    "catalog:peptide:semax": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:semax/community/0",
+          "url": "https://knowyourpeptide.com/blog/semax-dosage-guide-nasal-injection-reconstitution-protocol",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:semax/community/1",
+          "url": "https://www.klearmindclinics.com/blog/semax-dosing-guide",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:semax/community/2",
+          "url": "https://www.bhrcenter.com/semax-selank-dosage-stacking-guide/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:peptide:ipamorelin": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:ipamorelin/community/0",
+          "url": "https://swolverine.com/blogs/blog/ipamorelin-dosage-guide-optimal-protocols-for-recovery-and-muscle-growth",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:ipamorelin/community/1",
+          "url": "https://www.elitefitness.com/forum/threads/cjc-and-ipamorelin-stack-for-lean-gains.1517933/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:ipamorelin/community/2",
+          "url": "https://www.elitefitness.com/forum/threads/ipamorelin-and-cjc-1295.739383/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:peptide:cjc-ipamorelin-blend": {
+      "protocolCount": 3,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:cjc-ipamorelin-blend/community/0",
+          "url": "https://www.perfectb.com/cjc-1295-ipamorelin-dosage-protocol/",
+          "claimMatch": "The attached trials concern individual components, not a clinical trial of this premixed blend. A community account about CJC-1295 with DAC does not establish a regimen for a CJC/ipamorelin blend or for no-DAC CJC. The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "formulation-context-limited"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:cjc-ipamorelin-blend/community/1",
+          "url": "https://cjc-1295.com/article/cjc-1295-sermorelin-dosing-administration-safety",
+          "claimMatch": "The attached trials concern individual components, not a clinical trial of this premixed blend. A community account about CJC-1295 with DAC does not establish a regimen for a CJC/ipamorelin blend or for no-DAC CJC. The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "formulation-context-limited"
+        }
+      ],
+      "notices": [
+        "The attached trials concern individual components, not a clinical trial of this premixed blend. A community account about CJC-1295 with DAC does not establish a regimen for a CJC/ipamorelin blend or for no-DAC CJC."
+      ]
+    },
+    "catalog:peptide:retatrutide": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:retatrutide/community/0",
+          "url": "https://www.elitefitness.com/forum/threads/retatrutide-protocol-and-tips.1514576/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:retatrutide/community/1",
+          "url": "https://www.elitefitness.com/forum/threads/proper-use-of-retatrutide.1513961/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:peptide:hexarelin": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:hexarelin/community/0",
+          "url": "https://swolverine.com/blogs/blog/hexarelin-for-beginners-dosage-benefits-and-peptide-stacking-guide",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:peptide:mots-c": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:mots-c/community/0",
+          "url": "https://www.perfectb.com/mots-c-dosage-protocol/",
+          "claimMatch": "Syringe units in the imported account depend on that source's preparation and concentration; they are not a transferable mass dose or calculator default. The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:mots-c/community/1",
+          "url": "https://www.peptidedosingprotocols.com/protocol/mots-c",
+          "claimMatch": "Syringe units in the imported account depend on that source's preparation and concentration; they are not a transferable mass dose or calculator default. The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": [
+        "Syringe units in the imported account depend on that source's preparation and concentration; they are not a transferable mass dose or calculator default."
+      ]
+    },
+    "catalog:peptide:aod-9604": {
+      "protocolCount": 3,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:aod-9604/community/0",
+          "url": "https://www.peptidedosingprotocols.com/protocol/aod-9604",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:aod-9604/community/1",
+          "url": "https://www.bhrcenter.com/aod-9604-dosage-guide-complete-protocol-for-safe-administration/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:peptide:ss-31": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:ss-31/community/0",
+          "url": "https://www.peptideprotocolwiki.com/peptides/ss-31/community",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:ss-31/community/1",
+          "url": "https://peptideinitiative.com/peptides/protocols/ss-31",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:hormone:testosterone-propionate": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:hormone:nandrolone-decanoate": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:hormone:nandrolone-decanoate/community/0",
+          "url": "https://projectclear.com/nandrolone-decanoate-how-to-take-it-safely-and-effectively/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:medication:ibuprofen": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:medication:naproxen": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:medication:antihistamine": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:hormone:levothyroxine": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:hormone:levothyroxine/community/0",
+          "url": "https://www.doctronic.ai/blog/calcium-and-levothyroxine/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:hormone:estradiol": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:hormone:estradiol/community/0",
+          "url": "https://www.folxhealth.com/library/estrogen-patches-for-hormone-replacement-therapy-what-where-and-how",
+          "claimMatch": "The imported patch account mixes labelled delivery-rate units, patch counts and a weekly total. The stated weekly arithmetic is not verified and must not be used to calculate an administered dose. The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unit-interpretation-unverified"
+        }
+      ],
+      "notices": [
+        "The imported patch account mixes labelled delivery-rate units, patch counts and a weekly total. The stated weekly arithmetic is not verified and must not be used to calculate an administered dose."
+      ]
+    },
+    "catalog:supplement:taurine": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:whey-protein": {
+      "protocolCount": 3,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:supplement:whey-protein/community/0",
+          "url": "https://www.healthline.com/nutrition/protein-shake-before-or-after-workout",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:supplement:collagen": {
+      "protocolCount": 3,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:vitamin-b-complex": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:vitamin-d3": {
+      "protocolCount": 4,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:zinc": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:fenugreek": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:supplement:fenugreek/community/0",
+          "url": "https://www.nccih.nih.gov/health/fenugreek",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:food-protocol:16-8": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:food-protocol:16-8/community/0",
+          "url": "https://www.healthline.com/nutrition/6-ways-to-do-intermittent-fasting",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:food-protocol:5-2": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:food-protocol:5-2/community/0",
+          "url": "https://www.healthline.com/nutrition/6-ways-to-do-intermittent-fasting",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:food-protocol:carnivore": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:food-protocol:carnivore/community/0",
+          "url": "https://health.clevelandclinic.org/the-carnivore-diet",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:food-protocol:vegetarian": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:food-protocol:vegetarian/community/0",
+          "url": "https://www.eatright.org/health/wellness/vegetarian-and-plant-based/vegetarianism-the-basic-facts",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:exercise:resistance-session": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:exercise:resistance-session/community/0",
+          "url": "https://health.clevelandclinic.org/strength-training",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:exercise:bodyweight": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:exercise:bodyweight/community/0",
+          "url": "https://www.acefitness.org/resources/everyone/blog/7038/body-weight-training-don-t-let-a-lack-of-equipment-keep-you-from-your-goals/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:exercise:cycling": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:exercise:cycling/community/0",
+          "url": "https://gccfla.org/labtips.shtml",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:exercise:rowing": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:exercise:rowing/community/0",
+          "url": "https://www.concept2.com/training/rowing-technique",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:exercise:martial-arts": {
+      "protocolCount": 0,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:exercise:martial-arts/community/0",
+          "url": "https://www.health.harvard.edu/exercise-and-fitness/the-health-benefits-of-tai-chi",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:recovery:red-light": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:recovery:red-light/community/0",
+          "url": "https://my.clevelandclinic.org/health/articles/22114-red-light-therapy",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:recovery:yoga": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:recovery:yoga/community/0",
+          "url": "https://www.nccih.nih.gov/health/yoga-effectiveness-and-safety",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:recovery:nap": {
+      "protocolCount": 4,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:recovery:nap/community/0",
+          "url": "https://www.nhlbi.nih.gov/news/2023/researchers-study-how-daytime-naps-may-influence-health",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:recovery:float-tank": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:recovery:float-tank/community/0",
+          "url": "https://health.clevelandclinic.org/float-therapy-benefits",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:lab-marker:panel": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:peptide:dsip": {
+      "protocolCount": 3,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:dsip/community/0",
+          "url": "https://peptideinitiative.com/peptides/dsip",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:dsip/community/1",
+          "url": "https://peptidesexplorer.com/blog/dsip-peptide-dosage",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:peptide:kpv": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:kpv/community/0",
+          "url": "https://formblends.com/articles/peptide-hub/peptides-kpv-dosage",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:peptide:selank": {
+      "protocolCount": 0,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:selank/community/0",
+          "url": "https://www.peptideprotocolwiki.com/peptides/selank/community",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:selank/community/1",
+          "url": "https://www.peptidedosingprotocols.com/protocol/selank",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:selank/community/2",
+          "url": "https://www.bhrcenter.com/semax-selank-dosage-stacking-guide/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:peptide:cjc-1295": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:cjc-1295/community/0",
+          "url": "https://www.elitefitness.com/forum/threads/cjc-and-ipamorelin-stack-for-lean-gains.1517933/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:cjc-1295/community/1",
+          "url": "https://www.elitefitness.com/forum/threads/ipamorelin-and-cjc-1295.739383/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:peptide:semaglutide": {
+      "protocolCount": 4,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:semaglutide/community/0",
+          "url": "https://www.elitefitness.com/forum/threads/how-should-i-use-semaglutide-to-cut-down.1516722/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:peptide:tesamorelin": {
+      "protocolCount": 4,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:tesamorelin/community/0",
+          "url": "https://www.elitefitness.com/forum/threads/tesamorelin-proper-dosage-for-fat-dude.1512747/",
+          "claimMatch": "The two imported community accounts report different dose-escalation and fixed-dose approaches. They are not regulatory instructions or an agreed safe regimen. The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:tesamorelin/community/1",
+          "url": "https://www.elitefitness.com/forum/threads/tesamorelin-proper-dosage-for-fat-dude.1512747/",
+          "claimMatch": "The two imported community accounts report different dose-escalation and fixed-dose approaches. They are not regulatory instructions or an agreed safe regimen. The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": [
+        "The two imported community accounts report different dose-escalation and fixed-dose approaches. They are not regulatory instructions or an agreed safe regimen."
+      ]
+    },
+    "catalog:peptide:ghrp-2": {
+      "protocolCount": 0,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:ghrp-2/community/0",
+          "url": "https://www.elitefitness.com/forum/threads/ghrp-2-proper-dosing.1516518/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:peptide:epitalon": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:epitalon/community/0",
+          "url": "https://www.perfectb.com/epithalon-dosage-protocol/",
+          "claimMatch": "Syringe units in the imported account depend on that source's preparation and concentration; they are not a transferable mass dose or calculator default. The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:epitalon/community/1",
+          "url": "https://thepeptidecatalog.com/articles/epitalon-dosing-guide",
+          "claimMatch": "Syringe units in the imported account depend on that source's preparation and concentration; they are not a transferable mass dose or calculator default. The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": [
+        "Syringe units in the imported account depend on that source's preparation and concentration; they are not a transferable mass dose or calculator default."
+      ]
+    },
+    "catalog:peptide:pt-141": {
+      "protocolCount": 4,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:pt-141/community/0",
+          "url": "https://www.peptidedosingprotocols.com/protocol/bremelanotide-pt-141",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:peptide:ghk-cu": {
+      "protocolCount": 0,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:ghk-cu/community/0",
+          "url": "https://www.peptidedosingprotocols.com/protocol/ghk-cu",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:ghk-cu/community/1",
+          "url": "https://peptiq.io/blog/ghk-cu-dosing-guide",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:hormone:oxandrolone": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:hormone:stanozolol": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:hormone:boldenone-undecylenate": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:hormone:drostanolone": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:hormone:trenbolone": {
+      "protocolCount": 0,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:hormone:trenbolone/community/0",
+          "url": "https://swolverine.com/blogs/blog/unlocking-the-power-of-trenbolone-enanthate-benefits-risks-and-expert-tips-for-bodybuilders",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:hormone:methandienone": {
+      "protocolCount": 0,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:hormone:methandienone/community/0",
+          "url": "https://swolverine.com/blogs/blog/dianabol-dosage-guide-how-much-dbol-should-you-take-per-day",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:hormone:oxymetholone": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:hormone:mesterolone": {
+      "protocolCount": 0,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:hormone:mesterolone/community/0",
+          "url": "https://www.elitefitness.com/forum/threads/how-do-you-run-proviron.1490647/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:hormone:mesterolone/community/1",
+          "url": "https://www.elitefitness.com/articles/proviron-mesterolone/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:hormone:methenolone": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:hormone:turinabol": {
+      "protocolCount": 0,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:hormone:turinabol/community/0",
+          "url": "https://swolverine.com/blogs/blog/turinabol-for-beginners-cycle-dosage-and-what-to-expect",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:hormone:turinabol/community/1",
+          "url": "https://swolverine.com/blogs/blog/unlocking-gains-the-ultimate-guide-to-a-turinabol-cycle-for-maximum-muscle-growth",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:hormone:trestolone": {
+      "protocolCount": 0,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:hormone:trestolone/community/0",
+          "url": "https://www.biomogging.com/compounds/trestolone",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:hormone:trestolone/community/1",
+          "url": "https://www.biomogging.com/compounds/trestolone",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:peptide:gonadorelin": {
+      "protocolCount": 0,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:gonadorelin/community/0",
+          "url": "https://www.peptidedosage.org/peptides/gonadorelin/dosage",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:gonadorelin/community/1",
+          "url": "https://www.peptidedosage.org/peptides/gonadorelin/dosage",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:hormone:clomiphene-citrate": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:hormone:clomiphene-citrate/community/0",
+          "url": "https://www.elitefitness.com/steroid_profiles/Clomid-Clomiphene-Citrate.html",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:hormone:enclomiphene": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:hormone:enclomiphene/community/0",
+          "url": "https://www.biomogging.com/compounds/enclomiphene",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:hormone:letrozole": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:hormone:tamoxifen": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:hormone:tamoxifen/community/0",
+          "url": "https://www.elitefitness.com/steroid_profiles/Nolvadex-Tamoxifen-Citrate.html",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:hormone:exemestane": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:hormone:cabergoline": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:medication:finasteride": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:medication:dutasteride": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:medication:sildenafil": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:medication:tadalafil": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:hormone:lgd-4033": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:hormone:rad140": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:hormone:mk-2866": {
+      "protocolCount": 0,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:hormone:mk-2866/community/0",
+          "url": "https://insidebodybuilding.com/ostarine-mk-2866/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:hormone:mk-2866/community/1",
+          "url": "https://insidebodybuilding.com/ostarine-mk-2866/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:hormone:andarine": {
+      "protocolCount": 0,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:hormone:andarine/community/0",
+          "url": "https://swolverine.com/blogs/blog/s4-andarine-guide-for-beginners-benefits-risks-dosage-amp-stacks",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:hormone:andarine/community/1",
+          "url": "https://enhancedpeptides.com/andarine-s4-the-complete-guide/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:hormone:andarine/community/2",
+          "url": "https://muscleandbrawn.com/sarms/andarine-s4/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:hormone:gw-501516": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:hormone:yk-11": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:hormone:sr9009": {
+      "protocolCount": 0,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:hormone:sr9009/community/0",
+          "url": "https://www.pathtopeptides.com/sr-9009-protocol.html",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:hormone:sr9009/community/1",
+          "url": "https://www.pathtopeptides.com/sr-9009-protocol.html",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:hormone:sr9009/community/2",
+          "url": "https://www.pathtopeptides.com/sr-9009-protocol.html",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:hormone:mk-677": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:hormone:mk-677/community/0",
+          "url": "https://www.pathtopeptides.com/mk-677-protocol.html",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:hormone:mk-677/community/1",
+          "url": "https://www.pathtopeptides.com/mk-677-protocol.html",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:hormone:mk-677/community/2",
+          "url": "https://www.pathtopeptides.com/mk-677-protocol.html",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:peptide:cerebrolysin": {
+      "protocolCount": 0,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:cerebrolysin/community/0",
+          "url": "https://www.peptidedosingprotocols.com/protocol/cerebrolysin",
+          "claimMatch": "Imported community accounts use different mass/volume quantities and routes. These are not interchangeable formulations or validated human administration instructions; no conversion or reconciliation has been inferred. The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "inconsistent-units-and-route"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:cerebrolysin/community/1",
+          "url": "https://peptiq.io/blog/cerebrolysin-nootropic-peptide-guide",
+          "claimMatch": "Imported community accounts use different mass/volume quantities and routes. These are not interchangeable formulations or validated human administration instructions; no conversion or reconciliation has been inferred. The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "inconsistent-units-and-route"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:cerebrolysin/community/2",
+          "url": "https://peptiq.io/blog/cerebrolysin-nootropic-peptide-guide",
+          "claimMatch": "Imported community accounts use different mass/volume quantities and routes. These are not interchangeable formulations or validated human administration instructions; no conversion or reconciliation has been inferred. The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "inconsistent-units-and-route"
+        }
+      ],
+      "notices": [
+        "Imported community accounts use different mass/volume quantities and routes. These are not interchangeable formulations or validated human administration instructions; no conversion or reconciliation has been inferred."
+      ]
+    },
+    "catalog:peptide:vip": {
+      "protocolCount": 0,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:vip/community/0",
+          "url": "https://www.peptidedosingprotocols.com/protocol/vip",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:vip/community/1",
+          "url": "https://www.peptidedosingprotocols.com/protocol/vip",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:vip/community/2",
+          "url": "https://peptideinitiative.com/peptides/protocols/vip-vasoactive-intestinal-peptide",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:peptide:thymalin": {
+      "protocolCount": 0,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:thymalin/community/0",
+          "url": "https://www.pathtopeptides.com/thymalin-protocol.html",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:thymalin/community/1",
+          "url": "https://www.pathtopeptides.com/thymalin-protocol.html",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:peptide:humanin": {
+      "protocolCount": 0,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:humanin/community/0",
+          "url": "https://peptidesexplorer.com/blog/humanin-peptide",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:medication:teriparatide": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:medication:oxytocin": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:aicar": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:5-amino-1mq": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:peptide:adipotide": {
+      "protocolCount": 0,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:adipotide/community/0",
+          "url": "https://peptidemind.com/peptides/adipotide",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:peptide:dihexa": {
+      "protocolCount": 0,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:peptide:dihexa/community/0",
+          "url": "https://www.pathtopeptides.com/dihexa-protocol.html",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:peptide:dihexa/community/1",
+          "url": "https://www.pathtopeptides.com/dihexa-protocol.html",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:supplement:aniracetam": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:medication:tesofensine": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:medication:pentosan-polysulfate": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:methylene-blue": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:nad-plus": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:medication:minoxidil": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:medication:minoxidil/community/0",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10806356/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:medication:cagrilintide": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:medication:liraglutide": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:medication:survodutide": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:medication:mazdutide": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:medication:orforglipron": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:caffeine": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:supplement:caffeine/community/0",
+          "url": "https://www.healthline.com/nutrition/caffeine-and-exercise",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:supplement:melatonin": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:l-theanine": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:nac": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:curcumin": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:berberine": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:supplement:berberine/community/0",
+          "url": "https://www.mskcc.org/cancer-care/integrative-medicine/herbs/berberine",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:supplement:coenzyme-q10": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:beta-alanine": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:citrulline": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:l-carnitine": {
+      "protocolCount": 2,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:alpha-gpc": {
+      "protocolCount": 2,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:inositol": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:probiotic": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:psyllium": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:selenium": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:potassium": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:5-htp": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:nmn": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:resveratrol": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:tart-cherry": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:saw-palmetto": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:supplement:beetroot": {
+      "protocolCount": 2,
+      "community": [],
+      "notices": []
+    },
+    "catalog:hormone:testosterone-undecanoate": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:hormone:testosterone-undecanoate/community/0",
+          "url": "https://themenshealthclinic.co.uk/microdosing-trt-the-future-of-testosterone-replacement-therapy/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        },
+        {
+          "origin": "evidence.json#/catalog:hormone:testosterone-undecanoate/community/1",
+          "url": "https://themenshealthclinic.co.uk/microdosing-trt-the-future-of-testosterone-replacement-therapy/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:hormone:dhea": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:hormone:dhea/community/0",
+          "url": "https://www.swansonvitamins.com/p/swanson-ultra-dhea-50-mg-120-caps",
+          "claimMatch": "The vendor label retrieved on 2026-10-15 supports a daily 50 mg capsule statement, but the imported adjustment to 100 mg was not verified. Retained as a disputed historical account, not a dose recommendation. The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Unvalidated source account; no validated human dosing population or animal-to-human equivalence is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "disputed-support"
+        }
+      ],
+      "notices": [
+        "The vendor label retrieved on 2026-10-15 supports a daily 50 mg capsule statement, but the imported adjustment to 100 mg was not verified. Retained as a disputed historical account, not a dose recommendation.",
+        "This is a commercial product label, not independent clinical evidence or a representative community cohort. The separately cited vaginal prasterone label must not be read as approval of oral DHEA supplementation."
+      ]
+    },
+    "catalog:hormone:pregnenolone": {
+      "protocolCount": 2,
+      "community": [],
+      "notices": []
+    },
+    "catalog:medication:insulin": {
+      "protocolCount": 2,
+      "community": [],
+      "notices": []
+    },
+    "catalog:medication:metformin": {
+      "protocolCount": 1,
+      "community": [],
+      "notices": []
+    },
+    "catalog:medication:atorvastatin": {
+      "protocolCount": 2,
+      "community": [],
+      "notices": []
+    },
+    "catalog:context:sleep": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:context:sleep/community/0",
+          "url": "https://www.thensf.org/nsf-sleep-diary/",
+          "claimMatch": "The earlier live reading supports only the bounded diary/traditional-use description; it does not establish effectiveness or a medical regimen.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "bounded-description-supported"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:context:alcohol": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:context:alcohol/community/0",
+          "url": "https://rethinkingdrinking.niaaa.nih.gov/tools/worksheets-more/alcohol-consumption-tracker",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:context:nicotine": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:context:nicotine/community/0",
+          "url": "https://smokefree.gov/tools-tips/quitstart",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:context:alcohol-free-day": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:context:alcohol-free-day/community/0",
+          "url": "https://www.health.harvard.edu/healthy-aging-and-longevity/take-the-dry-january-challenge",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:food-protocol:calorie-protein-target": {
+      "protocolCount": 2,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:food-protocol:calorie-protein-target/community/0",
+          "url": "https://www.myfitnesspal.com/",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:exercise:pilates": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:exercise:pilates/community/0",
+          "url": "https://health.clevelandclinic.org/everything-you-want-to-know-about-pilates",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:exercise:climbing": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:exercise:climbing/community/0",
+          "url": "https://www.climbing.com/skills/training-value-effectiveness",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:exercise:team-sport": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:exercise:team-sport/community/0",
+          "url": "https://www.countyhealthrankings.org/strategies-and-solutions/what-works-for-health/strategies/recreational-sports-leagues-for-adults",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:recovery:acupuncture": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:recovery:acupuncture/community/0",
+          "url": "https://healthy.kaiserpermanente.org/health-wellness/healtharticle.acupuncture-101",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:recovery:hyperbaric-oxygen": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:recovery:hyperbaric-oxygen/community/0",
+          "url": "https://www.health.harvard.edu/healthy-aging-and-longevity/hyperbaric-oxygen-therapy-evidence-based-uses-and-unproven-claims",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:recovery:gratitude-therapy": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:recovery:gratitude-therapy/community/0",
+          "url": "https://ggia.berkeley.edu/practice/three-good-things",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:recovery:screen-curfew": {
+      "protocolCount": 2,
+      "community": [],
+      "notices": []
+    },
+    "catalog:food-protocol:full-day-fast": {
+      "protocolCount": 1,
+      "community": [
+        {
+          "origin": "evidence.json#/catalog:food-protocol:full-day-fast/community/0",
+          "url": "https://www.healthline.com/nutrition/6-ways-to-do-intermittent-fasting",
+          "claimMatch": "The imported wording is preserved for attribution; its full clinical, dosing, efficacy or consensus claims have not been independently established.",
+          "population": "Described practice context only; no clinical benefit or safety outcome is inferred.",
+          "suitability": "historical-reference-only",
+          "result": "unverified-historical-account"
+        }
+      ],
+      "notices": []
+    },
+    "catalog:hormone:testosterone-phenylpropionate": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:hormone:testosterone-isocaproate": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    },
+    "catalog:hormone:testosterone-decanoate": {
+      "protocolCount": 0,
+      "community": [],
+      "notices": []
+    }
+  },
+  "initialPartialReview": {
+    "schemaVersion": 1,
+    "checkedOn": "2026-10-15",
+    "sourceCommit": "adc7684614f9439b41d91a3312b62e7982c7e20e",
+    "releaseCandidateCommit": "ac57f27",
+    "result": "blocked-incomplete-review",
+    "scope": {
+      "communityDescriptions": 163,
+      "uniqueCommunityUrls": 142,
+      "reviewedUniqueCommunityUrls": 5,
+      "remainingUniqueCommunityUrls": 137,
+      "clinicalAndRegulatoryClaims": "Not freshly verified by this partial review."
+    },
+    "rights": {
+      "targetRepository": "vespassassina/peptide-wiki",
+      "targetVisibility": "public",
+      "targetLicence": "MIT",
+      "sourceRepository": "vespassassina/BiohackerAssistant",
+      "sourceVisibility": "private",
+      "sourceLicenceReportedByGitHub": null,
+      "sourceLicenceEndpointStatus": 404,
+      "ownerPublicationInstruction": "merge, push and publish",
+      "conclusion": "The owner's instruction authorises the requested publication operation. A missing repository licence is not proof of either permission or infringement. It does not establish rights to third-party material. No publisher pages, images or excerpts were added to this review artifact; no blanket rights clearance is claimed."
+    },
+    "checks": [
+      {
+        "sourceId": "catalog:context:sleep",
+        "field": "community/0",
+        "url": "https://www.thensf.org/nsf-sleep-diary/",
+        "availability": "retrieved",
+        "claimMatch": "The current page describes daily diary entries on waking and before bed, matching the bounded imported practice description.",
+        "population": "General sleep-diary users; not evidence of a clinical treatment outcome.",
+        "suitability": "Suitable as an attributed description of a practice, not evidence of effectiveness.",
+        "result": "bounded-description-supported",
+        "thirdPartyContentStored": false
+      },
+      {
+        "sourceId": "catalog:supplement:ashwagandha",
+        "field": "community/0",
+        "url": "https://www.nccih.nih.gov/health/ashwagandha",
+        "availability": "HTTP 200; full HTML parsed in memory after the simplified extractor returned only the clearinghouse footer.",
+        "claimMatch": "The full page retains discussion of traditional Ayurvedic use, consistent with the bounded imported historical-use description.",
+        "population": "Traditional-use context; not a population-specific efficacy claim.",
+        "suitability": "Suitable for attributed historical-use context only; this check does not approve efficacy or dosing.",
+        "result": "bounded-description-supported",
+        "thirdPartyContentStored": false
+      },
+      {
+        "sourceId": "catalog:hormone:dhea",
+        "field": "community/0",
+        "url": "https://www.swansonvitamins.com/p/swanson-ultra-dhea-50-mg-120-caps",
+        "availability": "retrieved",
+        "claimMatch": "The current product label supports the imported reference to a 50 mg capsule taken daily. The imported additional statement about adjustment to 100 mg was not verified in the retrieved current label.",
+        "population": "A supplement vendor's product label, not an independent clinical or community cohort.",
+        "suitability": "Unresolved. This is a commercial product page, conflicting with the target contribution policy against vendor links. The additional regimen assertion needs source clarification.",
+        "result": "publication-blocker",
+        "thirdPartyContentStored": false
+      },
+      {
+        "sourceId": "catalog:peptide:igf-1-lr3",
+        "field": "community/0",
+        "url": "https://www.peptidedosingprotocols.com/protocol/igf-1-lr3",
+        "availability": "retrieved",
+        "claimMatch": "The retrieved FAQ discusses overlapping community dose and cycle ranges, but this partial review did not establish support for the imported staged progression across successive cycles.",
+        "population": "Unvalidated research-community protocol accounts, not a validated human clinical regimen.",
+        "suitability": "Not cleared as independent evidence or as a recommended protocol; remaining context needs review.",
+        "result": "partial-match-not-cleared",
+        "thirdPartyContentStored": false
+      },
+      {
+        "sourceId": "catalog:peptide:igf-1-lr3",
+        "field": "community/1",
+        "url": "https://peptideinitiative.com/peptides/protocols/igf-1-lr3-protocol",
+        "finalUrl": "https://peptideinitiative.com/peptides/protocols/igf-1-lr3",
+        "availability": "HTTP 200 after redirect; full HTML parsed in memory.",
+        "claimMatch": "Full-page retrieval contains relevant range, route and timing terms omitted by the simplified extractor. Term presence alone does not establish the full imported claim.",
+        "population": "Community protocol context; the page also references animal research, which must not be conflated with validated human use.",
+        "suitability": "Full claim and population review incomplete.",
+        "result": "not-cleared",
+        "thirdPartyContentStored": false
+      }
+    ],
+    "policyLookups": [
+      {
+        "url": "https://www.nccih.nih.gov/health/copyright",
+        "availability": "HTTP 404",
+        "result": "No rights conclusion; an unavailable guessed policy URL is not a licence determination."
+      },
+      {
+        "url": "https://www.thensf.org/terms-and-conditions/",
+        "availability": "HTTP 404",
+        "result": "No rights conclusion; an unavailable guessed policy URL is not a licence determination."
+      }
+    ],
+    "publicOutput": "not-deployed",
+    "limitations": [
+      "This is a partial release review, not certification of medical accuracy or rights.",
+      "Imported evidence and audit files remain unchanged.",
+      "No merge, push, PR or deployment has occurred."
+    ]
+  },
+  "availabilityEvidence": [
+    "research/community-live-checks.json",
+    "research/citations-live-checks.json"
+  ],
+  "publicOutput": "only-allowlisted-review-dispositions-not-this-file"
 }

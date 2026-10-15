@@ -1,5 +1,36 @@
 # Decisions
 
+## 2026-10-15 Publish a labelled historical reference, not verified medical guidance
+
+The owner explicitly requested merge, push and publication and directed
+autonomous completion. Complete the fresh publication-suitability/rights review
+without pretending to complete an independent clinical review. Read all 163
+community descriptions; audit preservation of all 270 study population/regimen/
+outcome/source contexts and all 210 uncertainty statements. Retain the initial
+five live claim readings, their limits and the original pinned bundle.
+
+Record availability for all 888 citation URLs separately. Preserve HTTP errors,
+possible barriers, response limits and TLS/redirect failures without bypassing
+them. Retrieval is not claim validation. Publish only small status/date/HTTP
+metadata, never publisher bodies, hashes or audit reports. Require complete
+source and review coverage before generating output.
+
+Resolve the vendor-policy conflict in favour of the approved lossless citation
+scope: commercial citations are historical provenance, never vendor
+recommendations, affiliates or a storefront directory. The owner's permission
+covers the identified authored material, not third-party publisher works; the
+MIT licence does not relicense the external publications. No publisher pages,
+images, excerpts, caches, private records or credentials are included.
+
+Make known support, formulation, population, route and unit limitations visible.
+Do not silently correct or delete DHEA's unverified additional claim or other
+imported discrepancies. Collapse community accounts by default and identify
+them as imported authored paraphrases, not quotations, verified consensus or
+recommended regimens. Keep original claim bytes and all provenance in the
+projection; add review dispositions beside them. No clinical/regulatory/PK
+reverification or fresh `lastReviewed` date is claimed. No new dependency is
+needed.
+
 ## 2026-10-15 Keep responsive navigation on its own full-width row
 
 The expanded menu inherited a shrinking flex item, so at intermediate widths

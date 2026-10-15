@@ -181,6 +181,24 @@ async function main() {
           await page.goto(url('/library/context-sleep.html'));
           assert(await page.locator('.research-account').count() > 0);
           await noOverflow(page);
+          await page.goto(url('/library/hormone-dhea.html#biometra'));
+          const limitation = page.locator('.research-warning').filter({ hasText: '100 mg' });
+          assert.equal(await limitation.count(), 1);
+          assert((await page.locator('.research-status').allTextContents()).some(text => text.includes('not a clinical verification')));
+          const account = page.locator('.research-account').first();
+          assert.equal(await account.getAttribute('open'), null, 'Unverified account must be collapsed initially');
+          await limitation.scrollIntoViewIfNeeded();
+          if (prefix && ((width === 375 && colorScheme === 'light') || (width === 1440 && colorScheme === 'dark'))) {
+            await capture(page, 'dhea-limitation-' + width + '-' + colorScheme);
+          }
+          await account.locator('summary').click();
+          assert.notEqual(await account.getAttribute('open'), null);
+          assert((await account.innerText()).includes('Unverified imported account'));
+          assert.equal(await account.locator('blockquote').count(), 0);
+          await noOverflow(page);
+          if (prefix && ((width === 375 && colorScheme === 'dark') || (width === 1440 && colorScheme === 'light'))) {
+            await capture(page, 'dhea-account-' + width + '-' + colorScheme);
+          }
           await page.goto(url('/calculator.html'));
           assert.equal(await page.locator('#calcMg').inputValue(), '5');
           assert.equal(await page.locator('#calcWater').inputValue(), '2');
@@ -192,7 +210,7 @@ async function main() {
           assert.equal(await page.locator('#calcDoseText').innerText(), '—');
           await noOverflow(page);
           await page.goto(url('/about.html'));
-          assert((await page.locator('body').innerText()).includes('Fresh suitability/rights review'));
+          assert((await page.locator('body').innerText()).includes('Publication suitability'));
           await noOverflow(page);
           results.push({ width, colorScheme, prefix: prefix || '/', passed: true });
         }
@@ -224,6 +242,7 @@ async function main() {
       browser: browser.version(), results, uncaughtErrors: errors, fileLinks: 'passed',
       cookieFailure: 'explicit error; no success state', externalRequests: 'blocked',
       menu: '16 breakpoint/theme cases plus 2 no-JavaScript cases passed',
+      publication: 'Visible limitations, collapsed unverified accounts and accessible disclosure passed',
     }, null, 2) + '\n');
     console.log('Passed 18 menu cases, 12 root/subpath × viewport/theme flows, file links and cookie-failure checks.');
     console.log('Screenshots and results: ' + path.resolve(artifactDirectory));

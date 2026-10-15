@@ -4,7 +4,7 @@
 
 A source-attributed static reference for peptides, medications and hormones,
 supplements, food and fasting, exercise, recovery practices, habits and lab
-markers. The local consolidation has **245 reference entries**: all 79 legacy
+markers. The library has **245 reference entries**: all 79 legacy
 records plus all 210 Biometra records, with 44 explicit identity overlaps.
 The original 8 benefit categories and 8 stacks remain available.
 
@@ -13,9 +13,10 @@ statements and uncertainty stay separate. Imported research is a historical
 snapshot, not fresh clinical verification. Conflicting accounts are retained,
 not averaged. The site/project name changes; `vespassassina/peptide-wiki` does not.
 
-This work is local only. The public URL above does not imply that this
-consolidation is deployed. Fresh suitability/rights checks and separate owner
-permission are required before new public republication.
+The owner has authorised publication. The 2026-10-15 suitability/rights review
+covers an explicitly historical reference, not clinical certification. Unverified
+community accounts are collapsed and labelled; identified source-support gaps
+remain visible. Publication uses the existing GitHub Pages workflow and URL.
 
 ## What's here
 
@@ -93,6 +94,11 @@ references, not included publisher material.
 
 Source checks are historical, not fresh clinical verification. New public
 republication requires separate suitability/rights checks and user permission.
+The current review is in `research/publication-review.json`; source availability
+for all 888 citation URLs is recorded separately in
+`research/citations-live-checks.json`. Availability failures remain visible on
+affected source references. Neither HTTP success nor the review date certifies a
+medical claim. The reports themselves are excluded from generated output.
 
 ## Checks
 
@@ -123,7 +129,8 @@ It also checks navigation at 320/375/714/768/860/861/1024/1440 CSS pixels in
 both themes, including Escape/focus return, outside clicks, tabbing out,
 breakpoint resets and short-screen scrolling. Two no-JavaScript cases ensure
 the links remain available without a working disclosure script. Four additional
-menu screenshots bring the total to 18, alongside `results.json`.
+menu screenshots and four publication-warning/account screenshots bring the
+total to 22, alongside `results.json`.
 External browser requests are blocked. Run the Python build first.
 
 ## Contributing

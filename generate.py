@@ -311,6 +311,16 @@ def conflict_block(entry):
 def source_link(source):
     circular = source["url"].startswith("https://vespassassina.github.io/peptide-wiki/")
     note = ' <span class="ak-small">(wiki-origin reference; not independent corroboration)</span>' if circular else ""
+    availability = LIBRARY["sourceAvailability"][source["url"]]
+    problem = {
+        "http-error": "source not retrieved",
+        "request-failed": "retrieval failed; no access or certificate warning bypassed",
+        "possible-access-barrier": "possible access barrier; not independently inspected",
+        "response-limit-exceeded": "response exceeded review limit; not fully inspected",
+    }.get(availability["status"])
+    if problem:
+        status = f'; HTTP {availability["httpStatus"]}' if "httpStatus" in availability else ""
+        note += f' <span class="ak-small">(availability check {esc(availability["checkedOn"])}: {esc(problem)}{esc(status)})</span>'
     author = f' — {esc(source["author"])}' if source.get("author") else ""
     return f'<a href="{esc(source["url"])}" rel="noopener">{esc(source["title"])}</a>{author}{note}'
 
@@ -322,12 +332,16 @@ def research_block(entry):
         parts.append('<p>Legacy wiki wording and the source account below are preserved independently. Their claims may differ; attachment does not resolve disagreement or establish current approval.</p>')
     for research in entry["research"]:
         verdict = research["verdict"]
+        review = research["publicationReview"]
+        parts.append(f'<p class="research-status"><strong>Publication suitability · {esc(review["checkedOn"])}:</strong> Historical reference only; not a clinical verification. Clinical, regulatory, efficacy, safety and dose claims are not independently established by this review.</p>')
+        if review["notices"]:
+            parts.append(f'<aside class="research-warning" role="note"><h4>Source-support limitation</h4>{ul(review["notices"])}</aside>')
         parts += [
             f'<h3>{esc(research["title"])}</h3><p>{esc(research["summary"])}</p>',
             f'<p><strong>Evidence category:</strong> {esc(TIER_LABELS[research["evidenceTier"]])}. This describes the source category, not approval or certainty.</p>',
             f'<p><strong>Regulatory statement in source:</strong> {esc(verdict.get("approvalStatus") or "Not separately recorded; do not infer approval from the evidence category.")}</p>',
             f'<p>{esc(research["evidenceSummary"])}</p>',
-            f'<h3>What the source supports</h3>{ul(verdict["benefits"])}',
+            f'<h3>Benefits reported in the imported source</h3>{ul(verdict["benefits"])}',
             f'<h3>Risks and limits</h3>{ul(verdict["risks"])}<p><strong>Source bottom line:</strong> {esc(verdict["bottomLine"])}</p>',
             f'<p class="research-status"><strong>Uncertainty:</strong> {esc(research["uncertainty"])}</p>',
             '<h3>Study protocols — reports, not instructions</h3>',
@@ -339,9 +353,15 @@ def research_block(entry):
 <details><summary>Claim provenance</summary><p class="ak-small">{esc("; ".join(study["origins"]))}</p></details></article>''')
         if not research["protocols"]:
             parts.append('<p>No study protocol recorded in this snapshot. This does not establish that no study exists.</p>')
-        parts.append('<h3>Community and practice descriptions</h3><p class="ak-small">Accounts of a practice are not evidence of safety or effectiveness.</p>')
+        parts.append('<h3>Community and practice descriptions</h3><p class="ak-small">Accounts of a practice are not evidence of safety or effectiveness. Words such as “standard”, “safe” or “recommended” describe the source account, not verified consensus or this wiki’s advice. Commercial and self-published citations are retained for traceability, not vendor endorsement or independent clinical corroboration.</p>')
         for community in research["community"]:
-            parts.append(f'<blockquote class="research-account"><p>{esc(community["description"])}</p><p>{source_link(community["source"])}</p></blockquote>')
+            checks = [check for check in review["community"] if check["origin"] in community["origins"]]
+            bounded = all(check["result"] == "bounded-description-supported" for check in checks)
+            label = "Limited historical practice account" if bounded else "Unverified imported account"
+            parts.append(f'<details class="research-account"><summary>{label} — {esc(community["source"]["title"])}</summary><p class="ak-small">An imported authored paraphrase, not a quotation or a recommended protocol.</p>')
+            for check in checks:
+                parts.append(f'<p class="ak-small"><strong>Review: {esc(check["result"].replace("-", " "))}.</strong> {esc(check["claimMatch"])} {esc(check["population"])}</p>')
+            parts.append(f'<p><strong>Imported wording:</strong> {esc(community["description"])}</p><p>{source_link(community["source"])}</p></details>')
         finding = research["communityFinding"]
         if finding:
             parts.append(f'<details class="research-finding"><summary>Historical research outcome: {esc(finding["status"])} · {esc(finding["checkedOn"])}</summary><p>{esc(finding["notes"])}</p><ul>')
@@ -1084,7 +1104,9 @@ def about_page():
 <article class="ak-prose">
 <section class="ak-section"><h2>What this is</h2>
 <p>Biohacker Wiki combines this preserved legacy account with all 210 authored Biometra catalogue records across eight kinds. The repository and Pages URL remain unchanged. Exact active-identity matches retain old routes; narrower fragments and premixed products stay distinct where equivalence is uncertain.</p>
-<p>Imported research is a historical snapshot, not newly verified clinical guidance. B-82 checks dated 2026-10-06 retain their original scope: 59 suitable descriptions and 71 bounded empty outcomes. Source-to-wiki backlinks are circular provenance, not independent corroboration. App defaults and rejected drafts remain in the non-deployed archive. Fresh suitability/rights review and separate owner approval are required before new public republication; neither is claimed by this local build.</p>
+<p>Imported research is a historical snapshot, not newly verified clinical guidance. B-82 checks dated 2026-10-06 retain their original scope: 59 suitable descriptions and 71 bounded empty outcomes. Source-to-wiki backlinks are circular provenance, not independent corroboration. App defaults and rejected drafts remain in the non-deployed archive.</p>
+<p><strong>Publication suitability · {esc(LIBRARY["publicationReview"]["checkedOn"])}:</strong> The owner authorised publication of the authored historical reference. Source-support limitations are visible on affected entries, and community accounts are collapsed and labelled individually. Medical, regulatory, efficacy, safety and dose claims are not independently verified. URL retrieval is not claim validation. No permission to reproduce third-party publisher pages or excerpts is claimed.</p>
+<p>Commercial-source citations are a narrow provenance exception for this preserved import, not vendor recommendations, affiliate links or a purchasing directory. Read the account’s limitations before its original wording; a vendor or forum claim is not independent clinical evidence.</p>
 <p>The full library covers peptides, medications and hormones, supplements, food and fasting, exercise, recovery practices, context and habits, and lab markers. The original peptide benefit categories remain available. Published study reports, regulatory statements and community accounts stay attributable and separate.</p>
 </section>
 <section class="ak-section"><h2>This is not medical advice</h2>
@@ -1340,7 +1362,7 @@ def build():
     xml_urls = "".join(f"<url><loc>{SITE_DOMAIN}{u}</loc></url>" for u in sitemap_urls)
     write("sitemap.xml", f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{xml_urls}</urlset>')
 
-    lines = [f"# {SITE_NAME}", "", SITE_DESC, "", "Historical snapshot; not freshly verified. Fresh suitability/rights review required before republication.", "", "## Full library (data/library.json)"]
+    lines = [f"# {SITE_NAME}", "", SITE_DESC, "", "Historical snapshot; not freshly clinically verified. " + LIBRARY["publication"], "", "## Full library (data/library.json)"]
     for entry in sorted(LIBRARY["entries"].values(), key=lambda entry: entry["title"].casefold()):
         lines.append(f'- {entry["title"]} ({SITE_DOMAIN}{entry["path"]}) — {entry["summary"]}')
     lines += ["", "## Kinds"]

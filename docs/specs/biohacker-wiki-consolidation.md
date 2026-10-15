@@ -157,6 +157,22 @@ Before any future republication, require fresh suitability/rights checks and
 separate user permission. Local migration can preserve explicitly historical or
 unverified content, but must not claim release readiness or fresh verification.
 
+### 2026-10-15 release extension
+
+The owner's later "merge, push and publish" request authorises publication
+operations, superseding the migration's local-only operational boundary.
+The fresh suitability review records an explicitly historical-reference
+disposition for every source ID and community account. It does not certify
+clinical, regulatory, efficacy, safety, PK or dose claims.
+
+Retain original claims and citations beside explicit limitations; collapse
+unverified community accounts and identify authored paraphrases rather than
+implying publisher quotations. Preserve commercial citations only as a narrow
+historical-provenance exception, never as vendor recommendations or independent
+clinical evidence. Record unavailable sources without bypassing barriers.
+Keep the previously approved defaults/audit/private/publisher exclusions.
+Review coverage and source identities must reconcile before any release build.
+
 ## Acceptance criteria
 
 1. Preserve all 79/8/8 legacy records, text, citations, routes, endpoints and favorite identities.

@@ -1,4 +1,5 @@
 import contextlib
+from copy import deepcopy
 import hashlib
 from html.parser import HTMLParser
 import io
@@ -119,6 +120,21 @@ class SiteTests(unittest.TestCase):
             if item.get("description"):
                 self.assertNotIn(item["description"], (self.output / "library/food-protocol-extended-fast.html").read_text())
 
+    def test_publication_limits_are_visible_and_unverified_accounts_are_not_quotations(self):
+        dhea = (self.output / "library/hormone-dhea.html").read_text()
+        self.assertIn("Publication suitability", dhea)
+        self.assertIn("100 mg", dhea)
+        self.assertIn("Source-support limitation", dhea)
+        self.assertIn('<details class="research-account">', dhea)
+        self.assertNotIn('<blockquote class="research-account">', dhea)
+        self.assertIn("Unverified imported account", dhea)
+        account = dhea.split('<details class="research-account">', 1)[1]
+        self.assertLess(account.index("100 mg was not verified"), account.index("Imported wording:"))
+        self.assertNotIn("What the source supports", dhea)
+        sleep = (self.output / "library/context-sleep.html").read_text()
+        self.assertIn("not a clinical verification", sleep)
+        self.assertIn("not independently verified", (self.output / "about.html").read_text())
+
     def test_every_local_link_resolves_under_root_and_pages_subpath(self):
         for path in self.output.rglob("*.html"):
             parser = Links()
@@ -142,6 +158,11 @@ class SiteTests(unittest.TestCase):
         self.assertIn("\\u003c/script", page)
         parser = Links()
         parser.feed(page)
+        entry = deepcopy(namespace["LIBRARY"]["entries"]["library:hormone-dhea"])
+        entry["research"][0]["publicationReview"]["notices"] = [title]
+        research = namespace["research_block"](entry)
+        self.assertNotIn(title, research)
+        self.assertIn("&lt;/script&gt;", research)
 
     def test_failed_input_and_render_leave_previous_output_untouched(self):
         namespace = self.namespace["main"].__globals__

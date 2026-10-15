@@ -1,6 +1,7 @@
 """Validated public projection of legacy content and the pinned research bundle."""
 
 from copy import deepcopy
+from datetime import date
 import hashlib
 import json
 import re
@@ -66,6 +67,21 @@ def load_library(root, mapping=None):
     ledger = read_json(bundle / "community-research.json")
     counts = validate_research(catalogue, evidence, ledger)
     validate_expected_counts(counts)
+    publication = read_json(root / "research/publication-review.json")
+    require(isinstance(publication, dict) and publication.get("schemaVersion") == 2,
+            "publication review", "record a complete suitability review before building")
+    require(publication.get("sourceCommit") == SOURCE_COMMIT,
+            "publication review", "source commit mismatch; review the pinned source")
+    require(publication.get("result") == "historical-publication-suitable-with-limitations"
+            and publication.get("clinicalVerification") == "not-performed",
+            "publication review", "only historical-reference publication is approved")
+    try:
+        date.fromisoformat(publication.get("checkedOn", ""))
+    except (TypeError, ValueError) as error:
+        raise ValueError("publication review: record a valid ISO 8601 review date") from error
+    entry_reviews = publication.get("entryReviews")
+    require(isinstance(entry_reviews, dict) and entry_reviews.keys() == evidence.keys(),
+            "publication review", "every source ID needs exactly one suitability disposition")
     mapping = mapping if mapping is not None else read_json(root / "research/mapping.json")
     require(mapping["sourceCommit"] == SOURCE_COMMIT, "mapping", "source commit mismatch")
     legacy = read_json(root / "peptides.json")
@@ -109,6 +125,32 @@ def load_library(root, mapping=None):
         if authored["title"] != entry["title"]:
             entry["aliases"].append(authored["title"])
         data = evidence[source_id]
+        review = entry_reviews[source_id]
+        require(isinstance(review, dict) and type(review.get("protocolCount")) is int
+                and review["protocolCount"] == len(data.get("protocols", [])),
+                source_id, "publication review study coverage mismatch")
+        community_review = review.get("community")
+        require(isinstance(community_review, list)
+                and len(community_review) == len(data.get("community", [])),
+                source_id, "publication review community coverage mismatch")
+        for index, check in enumerate(community_review):
+            require(isinstance(check, dict), source_id, "invalid community review")
+            require(check.get("origin") == f"evidence.json#/{source_id}/community/{index}"
+                    and check.get("url") == data["community"][index]["source"]["url"],
+                    source_id, "community review must match the original claim and citation")
+            require(check.get("suitability") == "historical-reference-only"
+                    and check.get("result") in {
+                        "bounded-description-supported", "unverified-historical-account",
+                        "disputed-support", "partial-match-unverified", "inconsistent-units-and-route",
+                        "formulation-context-limited", "unit-interpretation-unverified",
+                        "population-and-route-limited",
+                    }
+                    and all(isinstance(check.get(field), str) and check[field].strip()
+                            for field in ("claimMatch", "population")),
+                    source_id, "community review cannot certify a medical regimen")
+        require(isinstance(review.get("notices"), list)
+                and all(isinstance(note, str) and note.strip() for note in review["notices"]),
+                source_id, "publication notices must be explicit text")
         research = {
             "id": source_id, "title": authored["title"], "summary": authored["summary"],
             "uncertainty": authored["uncertainty"], "namespace": source_id.split(":")[1],
@@ -119,6 +161,15 @@ def load_library(root, mapping=None):
             "community": deduplicate_claims(data.get("community", []), f"evidence.json#/{source_id}/community"),
             "communityFinding": deepcopy(ledger["entries"].get(source_id)),
             "reviewState": "historical-not-reverified", "sourceCommit": SOURCE_COMMIT,
+            "publicationReview": {
+                "checkedOn": publication["checkedOn"], "status": "historical-reference-only",
+                "clinicalVerification": "not-performed", "notices": deepcopy(review["notices"]),
+                "community": [
+                    {field: check[field] for field in
+                     ("origin", "url", "claimMatch", "population", "suitability", "result")}
+                    for check in community_review
+                ],
+            },
         }
         template = authored.get("template", {})
         if "halfLife" in template:
@@ -169,9 +220,50 @@ def load_library(root, mapping=None):
             register(None, {"title": source["title"], "url": source["pubmed_url"],
                             "authorsYear": source["authors_year"]},
                      f"stacks.json#/{slug}/citations/{index}")
+    availability_report = read_json(root / "research/citations-live-checks.json")
+    require(isinstance(availability_report, dict)
+            and availability_report.get("sourceCommit") == SOURCE_COMMIT
+            and availability_report.get("checkedOn") == publication["checkedOn"]
+            and isinstance(availability_report.get("checks"), list),
+            "source availability", "record dated checks for this publication review")
+    source_urls = {occurrence["url"] for source in sources.values()
+                   for occurrence in source["occurrences"]}
+    availability = {}
+    for check in availability_report["checks"]:
+        require(isinstance(check, dict) and check.get("url") in source_urls,
+                "source availability", "unexpected citation URL")
+        url = check["url"]
+        require(url not in availability, url, "duplicate availability record")
+        require(check.get("availability") in {
+                    "retrieved-html", "retrieved-non-html", "http-error", "request-failed",
+                    "response-limit-exceeded", "possible-access-barrier",
+                    "circular-provenance-not-independently-retrieved",
+                }
+                and check.get("publisherContentStored") is False
+                and isinstance(check.get("checkedAt"), str)
+                and check["checkedAt"].startswith(publication["checkedOn"] + "T"),
+                url, "invalid or mismatched source availability check")
+        availability[url] = {
+            "checkedOn": publication["checkedOn"], "status": check["availability"],
+        }
+        if "httpStatus" in check:
+            require(type(check["httpStatus"]) is int and 100 <= check["httpStatus"] <= 599,
+                    url, "invalid HTTP status in availability check")
+            availability[url]["httpStatus"] = check["httpStatus"]
+    require(availability.keys() == source_urls,
+            "source availability", "every citation URL needs exactly one dated check")
     return {
-        "schemaVersion": 1, "entries": entries, "sources": sources, "sourceCounts": counts,
+        "schemaVersion": 1, "entries": entries, "sources": sources,
+        "sourceAvailability": availability, "sourceCounts": counts,
         "stackConflicts": mapping["stackConflicts"], "sourceCommit": SOURCE_COMMIT,
         "reviewState": "historical-not-reverified",
-        "publication": "Local migration only; fresh suitability/rights checks required before republication.",
+        "publicationReview": {
+            "checkedOn": publication["checkedOn"], "status": "historical-reference-only",
+            "clinicalVerification": "not-performed",
+        },
+        "publication": (
+            f"Historical-reference publication suitability checked {publication['checkedOn']}; "
+            "not clinical, regulatory, efficacy, safety or dose verification. "
+            "Unverified accounts and source limitations remain explicit."
+        ),
     }
