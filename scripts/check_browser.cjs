@@ -43,6 +43,60 @@ async function main() {
   }
   try {
     browser = await chromium.launch();
+    for (const width of [320, 375, 714, 768, 860, 861, 1024, 1440]) {
+      for (const colorScheme of ['light', 'dark']) {
+        const context = await browser.newContext({ viewport: { width, height: 960 }, colorScheme });
+        await context.route('**/*', route => new URL(route.request().url()).origin === origin
+          ? route.continue() : route.abort());
+        const page = await context.newPage();
+        page.on('pageerror', error => errors.push(error.message));
+        await page.goto(origin + '/peptide-wiki/index.html');
+        const menu = page.locator('#navToggle'), nav = page.locator('#siteNav');
+        if (width <= 860) {
+          await menu.click();
+          const buttonBox = await menu.boundingBox(), navBox = await nav.boundingBox();
+          assert(navBox.y >= buttonBox.y + buttonBox.height, 'Expanded menu must start below the brand/toggle row at ' + width);
+          assert(navBox.width >= width - 70, 'Expanded menu must span the content width at ' + width);
+          if (width === 375 || width === 714) await capture(page, 'menu-' + width + '-' + colorScheme);
+          await page.keyboard.press('Escape');
+          assert.equal(await menu.getAttribute('aria-expanded'), 'false');
+          assert.equal(await menu.evaluate(element => element === document.activeElement), true);
+          assert.equal(await nav.isVisible(), false);
+          await menu.click();
+          await page.locator('#siteNav button').focus();
+          await page.keyboard.press('Tab');
+          assert.equal(await nav.isVisible(), false, 'Tabbing out should close the disclosure');
+          await menu.click();
+          await page.evaluate(() => document.querySelector('.hero').click());
+          assert.equal(await nav.isVisible(), false, 'Outside click should close the disclosure');
+          await menu.click();
+          await page.setViewportSize({ width: 1024, height: 960 });
+          await page.waitForFunction(() => document.querySelector('#navToggle').getAttribute('aria-expanded') === 'false');
+          assert.equal(await menu.getAttribute('aria-expanded'), 'false');
+          await page.setViewportSize({ width, height: 320 });
+          assert.equal(await nav.isVisible(), false, 'Returning to mobile must not restore a stale open state');
+          await menu.click();
+          const bounds = await nav.boundingBox();
+          assert(bounds.y + bounds.height <= 320, 'Expanded menu must fit a short viewport');
+          await page.locator('#siteNav button').scrollIntoViewIfNeeded();
+          assert(await nav.evaluate(element => element.scrollTop > 0), 'A short menu must scroll internally');
+        } else {
+          assert.equal(await menu.isVisible(), false);
+          assert.equal(await nav.isVisible(), true);
+        }
+        await context.close();
+      }
+    }
+    for (const width of [375, 714]) {
+      const context = await browser.newContext({ viewport: { width, height: 960 }, javaScriptEnabled: false });
+      await context.route('**/*', route => new URL(route.request().url()).origin === origin
+        ? route.continue() : route.abort());
+      const page = await context.newPage();
+      await page.goto(origin + '/peptide-wiki/index.html');
+      assert(await page.locator('#siteNav').isVisible(), 'Navigation must remain available without JavaScript');
+      assert.equal(await page.locator('#navToggle').isVisible(), false, 'Do not show a non-working disclosure button');
+      await context.close();
+    }
     for (const width of [375, 768, 1440]) {
       for (const colorScheme of ['light', 'dark']) {
         const context = await browser.newContext({ viewport: { width, height: 960 }, colorScheme });
@@ -169,8 +223,9 @@ async function main() {
     await fs.writeFile(path.join(artifactDirectory, 'results.json'), JSON.stringify({
       browser: browser.version(), results, uncaughtErrors: errors, fileLinks: 'passed',
       cookieFailure: 'explicit error; no success state', externalRequests: 'blocked',
+      menu: '16 breakpoint/theme cases plus 2 no-JavaScript cases passed',
     }, null, 2) + '\n');
-    console.log('Passed 12 root/subpath × viewport/theme flows, file links and cookie-failure checks.');
+    console.log('Passed 18 menu cases, 12 root/subpath × viewport/theme flows, file links and cookie-failure checks.');
     console.log('Screenshots and results: ' + path.resolve(artifactDirectory));
   } finally {
     if (browser) await browser.close();

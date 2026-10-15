@@ -1,5 +1,23 @@
 # Decisions
 
+## 2026-10-15 Keep responsive navigation on its own full-width row
+
+The expanded menu inherited a shrinking flex item, so at intermediate widths
+it sat beside the brand and centred the brand vertically against the whole
+menu. Give the mobile navigation an explicit full-row flex basis. Disable
+column wrapping so short screens scroll the menu vertically instead of moving
+links or search into another column.
+
+Keep the incumbent disclosure, routes, colours and typography. Escape closes
+it and returns focus; outside clicks, tabbing out and breakpoint changes clear
+its state. Show the links without JavaScript rather than a non-working toggle.
+The toggle has a 44 px minimum hit area. No runtime dependency is added.
+
+The browser regression failed on the original missing Escape behaviour.
+The final checker covers 16 breakpoint/theme cases and two no-JavaScript cases,
+in addition to the existing 12 full browser flows. Its resize assertion waits
+for the asynchronous media-query event rather than assuming immediate delivery.
+
 ## 2026-10-14 Render historical research with an explicit deployment boundary
 
 Build the broader site from the public projection, never by copying source/audit

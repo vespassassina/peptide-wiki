@@ -170,7 +170,7 @@ def site_nav(active=""):
     return f'''<header class="site-topbar" role="banner">
   <div class="site-topbar-inner">
     <a class="site-brand" href="/index.html"><span aria-hidden="true">🧬</span> {esc(SITE_NAME)}</a>
-    <button class="site-nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">Menu</button>
+    <button type="button" class="site-nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">Menu</button>
     <nav class="site-nav" id="siteNav" aria-label="Primary">
       <ul class="site-links">
         <li><a href="/index.html"{cur("home")}>Home</a></li>
@@ -1155,9 +1155,34 @@ SITE_JS = """
   var toggle = document.getElementById('navToggle');
   var nav = document.getElementById('siteNav');
   if (toggle && nav) {
-    toggle.addEventListener('click', function(){
-      var open = nav.classList.toggle('is-open');
+    document.documentElement.classList.add('nav-enhanced');
+    var header = toggle.closest('header');
+    var mobile = window.matchMedia('(max-width:860px)');
+    function setOpen(open) {
+      nav.classList.toggle('is-open', open);
       toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+    toggle.addEventListener('click', function(){
+      setOpen(!nav.classList.contains('is-open'));
+    });
+    document.addEventListener('keydown', function(event){
+      if (event.key === 'Escape' && nav.classList.contains('is-open')) {
+        event.preventDefault();
+        setOpen(false);
+        toggle.focus();
+      }
+    });
+    document.addEventListener('click', function(event){
+      if (!header.contains(event.target) || nav.contains(event.target) && event.target.closest('a')) {
+        setOpen(false);
+      }
+    });
+    document.addEventListener('focusin', function(event){
+      if (!header.contains(event.target)) setOpen(false);
+    });
+    mobile.addEventListener('change', function(){
+      if (nav.contains(document.activeElement) && mobile.matches) toggle.focus();
+      setOpen(false);
     });
   }
 })();

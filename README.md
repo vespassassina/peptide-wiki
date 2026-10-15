@@ -118,7 +118,12 @@ NODE_PATH=/path/to/scratch/node_modules PLAYWRIGHT_BROWSERS_PATH=/path/to/scratc
 The script starts and closes its own loopback server. It checks root and Pages
 subpaths at 375/768/1440 CSS pixels in light/dark modes, keyboard navigation,
 search/sorting, old/new favorites, cookie errors, historical/empty research and
-unchanged calculator behaviour. It captures 14 screenshots and `results.json`.
+unchanged calculator behaviour.
+It also checks navigation at 320/375/714/768/860/861/1024/1440 CSS pixels in
+both themes, including Escape/focus return, outside clicks, tabbing out,
+breakpoint resets and short-screen scrolling. Two no-JavaScript cases ensure
+the links remain available without a working disclosure script. Four additional
+menu screenshots bring the total to 18, alongside `results.json`.
 External browser requests are blocked. Run the Python build first.
 
 ## Contributing

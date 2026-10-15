@@ -117,3 +117,25 @@ native-device/other-browser testing. Browser checks used local Chromium;
 historical claims are not certified current. The local app's project-display
 label is not changed through an unsupported API. These limits do not block the
 approved local consolidation, but this is not a release approval.
+
+## 2026-10-15 Responsive-menu follow-up
+
+The owner requested a menu fix while publication review was pending. Reproduced
+the intermediate-width layout: the opened navigation shrank beside the brand
+instead of starting below it. Fixed full-row sizing and short-screen column
+wrapping, then added disclosure dismissal, focus return and a no-JavaScript
+fallback without changing destinations or the visual identity.
+
+The regression first failed on missing Escape dismissal. Final evidence:
+32 Python tests passed without skips; the actual build generated 277 pages;
+Chromium 156.0.8078.4 passed all 18 menu cases and the original 12 full flows,
+with no uncaught errors. Breakpoints cover 320, 375, 714, 768, 860, 861, 1024
+and 1440 px in both themes; two additional cases disable JavaScript. Short
+viewports are 320 px high. JavaScript syntax and whitespace checks passed.
+
+Eighteen PNGs and `results.json` are session artifacts under `files/menu-check/`
+in session `023e5684-81e6-4e42-ae5d-d8b4f27f282b`. The four new menu captures
+cover 375/714 px in light/dark modes; inspected 714 px light and 375 px dark
+against the reproduced broken layout. Native-device/other-browser tests and
+public-site checks remain unperformed. The publication review is separate;
+passing navigation checks does not clear research claims or reuse rights.
