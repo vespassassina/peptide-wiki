@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Biohacker Wiki from preserved legacy data and pinned Biometra research."""
+"""Build Biohacker Wiki from preserved legacy data and pinned research."""
 import json, os, html, shutil, re, sys, tempfile
 from datetime import date
 from pathlib import Path
@@ -194,7 +194,7 @@ def site_nav(active=""):
 def site_footer():
     return f'''<footer class="ak-footer">
   <p><strong>Not medical advice.</strong> This wiki summarizes published research, regulatory status and self-reported community experience for informational purposes only. Many compounds described here are unapproved research chemicals with limited or no human safety data. Consult a licensed physician before starting, stopping or combining any of these substances. See <a href="/about.html">about &amp; disclaimer</a>.</p>
-  <p class="ak-small">Built {TODAY}; historical research is not newly verified. Biometra checks dated 2026-10-06 retain their original scope. · styled with <a href="https://github.com/vespassassina/artifactkit">artifactkit</a> · <a href="/data/library.json">full library data</a> · <a href="/data/peptides.json">legacy peptide data</a> · <a href="/sitemap.xml">sitemap</a> · <a href="/llms.txt">llms.txt</a></p>
+  <p class="ak-small">Built {TODAY}; historical research is not newly verified. Historical checks dated 2026-10-06 retain their original scope. · styled with <a href="https://github.com/vespassassina/artifactkit">artifactkit</a> · <a href="/data/library.json">full library data</a> · <a href="/data/peptides.json">legacy peptide data</a> · <a href="/sitemap.xml">sitemap</a> · <a href="/llms.txt">llms.txt</a></p>
 </footer>'''
 
 def breadcrumbs(items):
@@ -326,8 +326,8 @@ def source_link(source):
 
 def research_block(entry):
     if not entry["research"]:
-        return '<p class="ak-small">Legacy wiki record. No Biometra research attachment; absence is not a finding of no evidence.</p>'
-    parts = ['<section class="ak-section research-section" id="biometra"><h2>Biometra research</h2><p class="research-status">Historical source snapshot. Not freshly verified, not a recommendation. Study findings, community accounts and app defaults are not interchangeable.</p>']
+        return '<p class="ak-small">Legacy wiki record. No additional research attachment; absence is not a finding of no evidence.</p>'
+    parts = ['<section class="ak-section research-section" id="research-records"><h2>Research records</h2><p class="research-status">Historical source snapshot. Not freshly verified, not a recommendation. Study findings, community accounts and app defaults are not interchangeable.</p>']
     if entry.get("legacy"):
         parts.append('<p>Legacy wiki wording and the source account below are preserved independently. Their claims may differ; attachment does not resolve disagreement or establish current approval.</p>')
     for research in entry["research"]:
@@ -439,7 +439,7 @@ def peptide_page(slug, p):
   <nav class="ak-toc" aria-label="On this page">
     <p class="ak-eyebrow">On this page</p>
     <ul class="ak-nav">
-      {'<li><a href="#biometra">Biometra research</a></li>' if LIBRARY["entries"]["peptide:" + slug]["research"] else ''}
+      {'<li><a href="#research-records">Research records</a></li>' if LIBRARY["entries"]["peptide:" + slug]["research"] else ''}
       <li><a href="#origin">Origin</a></li>
       <li><a href="#mechanism">Mechanism</a></li>
       <li><a href="#research">Research summary</a></li>
@@ -689,7 +689,7 @@ def home_page():
   </form>
 </section>
 
-<p class="library-scope"><strong>{len(LIBRARY["entries"])} reference entries</strong> · 210 imported Biometra records · 79 preserved legacy entries · 8 stacks. Overlapping identities are mapped; these counts are not independent studies.</p>
+<p class="library-scope"><strong>{len(LIBRARY["entries"])} reference entries</strong> · 210 consolidated research records · 79 preserved legacy entries · 8 stacks. Overlapping identities are mapped; these counts are not independent studies.</p>
 <h2>Explore the library</h2>
 <ul class="kind-index">{kind_links}</ul>
 <p class="research-status">This is a historical research consolidation, not fresh clinical verification. Study reports, community descriptions and regulatory statements stay distinct. App defaults and rejected drafts are not published here.</p>
@@ -699,7 +699,7 @@ def home_page():
 
 <div class="ak-exhibit">
   <p class="ak-eyebrow">How this wiki is organized</p>
-  <p>The <a href="/directory.html">full directory</a> combines the original wiki with all 210 Biometra catalogue records. Exact active-identity matches share their existing page; narrower fragments and premixed products remain distinct when equivalence is uncertain. Each study keeps its population, regimen, duration, outcome and source. Community descriptions and dated negative findings are labelled separately, and conflicting accounts are retained rather than averaged.</p>
+  <p>The <a href="/directory.html">full directory</a> combines the original wiki with all 210 research catalogue records. Exact active-identity matches share their existing page; narrower fragments and premixed products remain distinct when equivalence is uncertain. Each study keeps its population, regimen, duration, outcome and source. Community descriptions and dated negative findings are labelled separately, and conflicting accounts are retained rather than averaged.</p>
   <p class="ak-source">The <a href="/data/library.json">public library JSON</a> retains source associations and occurrence provenance, without app templates or rejected drafts. Original endpoints remain at <a href="/data/peptides.json">peptides.json</a>, <a href="/data/categories.json">categories.json</a> and <a href="/data/stacks.json">stacks.json</a>. See the <a href="/sitemap.xml">sitemap</a> and <a href="/llms.txt">llms.txt</a>.</p>
 </div>
 
@@ -1103,7 +1103,7 @@ def about_page():
 <header class="ak-pagehead"><div><p class="ak-eyebrow">Reference</p><h1>About &amp; disclaimer</h1></div></header>
 <article class="ak-prose">
 <section class="ak-section"><h2>What this is</h2>
-<p>Biohacker Wiki combines this preserved legacy account with all 210 authored Biometra catalogue records across eight kinds. The repository and Pages URL remain unchanged. Exact active-identity matches retain old routes; narrower fragments and premixed products stay distinct where equivalence is uncertain.</p>
+<p>Biohacker Wiki combines this preserved legacy account with all 210 authored research catalogue records across eight kinds. The repository and Pages URL remain unchanged. Exact active-identity matches retain old routes; narrower fragments and premixed products stay distinct where equivalence is uncertain.</p>
 <p>Imported research is a historical snapshot, not newly verified clinical guidance. B-82 checks dated 2026-10-06 retain their original scope: 59 suitable descriptions and 71 bounded empty outcomes. Source-to-wiki backlinks are circular provenance, not independent corroboration. App defaults and rejected drafts remain in the non-deployed archive.</p>
 <p><strong>Publication suitability · {esc(LIBRARY["publicationReview"]["checkedOn"])}:</strong> The owner authorised publication of the authored historical reference. Source-support limitations are visible on affected entries, and community accounts are collapsed and labelled individually. Medical, regulatory, efficacy, safety and dose claims are not independently verified. URL retrieval is not claim validation. No permission to reproduce third-party publisher pages or excerpts is claimed.</p>
 <p>Commercial-source citations are a narrow provenance exception for this preserved import, not vendor recommendations, affiliate links or a purchasing directory. Read the account’s limitations before its original wording; a vendor or forum claim is not independent clinical evidence.</p>

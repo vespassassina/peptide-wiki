@@ -92,6 +92,20 @@ class SiteTests(unittest.TestCase):
         self.assertIn('href="../library/peptide-tb-500.html"', tb_legacy)
         self.assertIn('href="../peptides/tb-500.html"', tb_fragment)
 
+    def test_public_wiki_uses_neutral_research_labels_without_source_branding(self):
+        branded = [
+            path.relative_to(self.output).as_posix()
+            for path in self.output.rglob("*")
+            if path.is_file() and b"biometra" in path.read_bytes().lower()
+        ]
+        self.assertEqual(len(branded), 0, f"Public output still contains source branding: {branded[:8]}")
+        bpc = (self.output / "peptides/bpc-157.html").read_text()
+        self.assertEqual(bpc.count('id="research"'), 1)
+        self.assertEqual(bpc.count('id="research-records"'), 1)
+        self.assertIn('href="#research-records">Research records</a>', bpc)
+        self.assertIn('href="#research">Research summary</a>', bpc)
+        self.assertIn("Historical checks dated 2026-10-06 retain their original scope", bpc)
+
     def test_no_archive_defaults_or_false_review_dates_in_public_output(self):
         forbidden = {"template", "typicalDoseValue", "typicalRecurrence", "vialContentsValue", "usageNote"}
 

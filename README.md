@@ -5,7 +5,7 @@
 A source-attributed static reference for peptides, medications and hormones,
 supplements, food and fasting, exercise, recovery practices, habits and lab
 markers. The library has **245 reference entries**: all 79 legacy
-records plus all 210 Biometra records, with 44 explicit identity overlaps.
+records plus all 210 research catalogue records, with 44 explicit identity overlaps.
 The original 8 benefit categories and 8 stacks remain available.
 
 This is not medical advice. Study reports, community descriptions, regulatory
@@ -67,11 +67,11 @@ See the [specification](docs/specs/biohacker-wiki-consolidation.md),
 [completed sprint plan and verification evidence](docs/PLAN.md) and
 [decisions](docs/DECISIONS.md).
 
-To preview the reproducible import, use the approved isolated Biometra worktree
+To preview the reproducible import, use the approved isolated source worktree
 at commit `adc7684614f9439b41d91a3312b62e7982c7e20e`:
 
 ```sh
-python3 scripts/import_biometra.py --source /absolute/path/to/approved/biometra-worktree
+python3 scripts/import_biometra.py --source /absolute/path/to/approved/source-worktree
 ```
 
 Migration alone requires a Swift 6 compiler. It compiles temporary copies of the
@@ -109,7 +109,7 @@ python3 -B generate.py
 
 The exporter tests use Swift when available and explicitly skip if it is absent.
 All preservation, bundle-integrity and Python import-validation checks still run;
-ordinary site generation does not need Swift or the Biometra checkout.
+ordinary site generation does not need Swift or the source checkout.
 
 For the optional browser checks, install the verification-only tool in scratch,
 not the repository. It is not a production/build dependency:

@@ -1,5 +1,16 @@
 # Decisions
 
+## 2026-10-16 Remove source-app branding from the public wiki
+
+Use neutral research labels in pages, navigation, footers, conflict notes and
+public data. Replace the source-branded section fragment with `#research-records`;
+retain the legacy `#research` summary anchor without a duplicate ID.
+Document routes, identities and favorite keys stay unchanged. Keep the clinical
+claims, citations, uncertainty, historical dates and source hashes intact.
+Do not rename or rewrite the original non-rendered provenance/import archive.
+Scan every generated file case-insensitively to prevent branding leaks through
+HTML, machine-readable data or other downloads.
+
 ## 2026-10-15 Publish a labelled historical reference, not verified medical guidance
 
 The owner explicitly requested merge, push and publication and directed

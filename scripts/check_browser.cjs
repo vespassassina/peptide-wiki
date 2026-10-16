@@ -168,7 +168,12 @@ async function main() {
           assert.equal(await page.locator('#favoritesRoot a').count(), 2);
           await page.goto(url('/peptides/bpc-157.html'));
           assert((await page.locator('.research-warning').innerText()).includes('Half-life estimates differ'));
-          await page.locator('#biometra').scrollIntoViewIfNeeded();
+          await page.locator('a[href="#research-records"]').click();
+          assert.equal(new URL(page.url()).hash, '#research-records');
+          assert.equal(await page.locator('#research-records').count(), 1);
+          assert.equal(await page.locator('#research').count(), 1);
+          assert.equal(await page.locator('#research-records h2').first().innerText(), 'Research records');
+          await page.locator('#research-records').scrollIntoViewIfNeeded();
           await noOverflow(page);
           if (width === 1440 && colorScheme === 'light' && prefix) await capture(page, 'bpc-research');
           await page.goto(url('/library/medication-paracetamol.html'));
@@ -181,7 +186,7 @@ async function main() {
           await page.goto(url('/library/context-sleep.html'));
           assert(await page.locator('.research-account').count() > 0);
           await noOverflow(page);
-          await page.goto(url('/library/hormone-dhea.html#biometra'));
+          await page.goto(url('/library/hormone-dhea.html#research-records'));
           const limitation = page.locator('.research-warning').filter({ hasText: '100 mg' });
           assert.equal(await limitation.count(), 1);
           assert((await page.locator('.research-status').allTextContents()).some(text => text.includes('not a clinical verification')));

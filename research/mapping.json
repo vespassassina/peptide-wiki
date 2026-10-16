@@ -62,11 +62,11 @@
   "variants": {
     "catalog:peptide:tb-500": {
       "related": ["peptide:tb-500"],
-      "reason": "Biometra names the thymosin beta-4 fragment specifically. The legacy page covers ambiguous products sold as TB-500, including full thymosin beta-4. Keep a distinct fragment page; do not transfer full-molecule trial or PK findings to the fragment."
+      "reason": "The source catalogue names the thymosin beta-4 fragment specifically. The legacy page covers ambiguous products sold as TB-500, including full thymosin beta-4. Keep a distinct fragment page; do not transfer full-molecule trial or PK findings to the fragment."
     },
     "catalog:peptide:kisspeptin-10": {
       "related": ["peptide:kisspeptin"],
-      "reason": "Biometra identifies KP-10 specifically; the legacy article covers KP-10 and related KISS1 fragments. Preserve the narrower identity separately rather than extrapolating findings across fragments."
+      "reason": "The source catalogue identifies KP-10 specifically; the legacy article covers KP-10 and related KISS1 fragments. Preserve the narrower identity separately rather than extrapolating findings across fragments."
     }
   },
   "conflicts": {
@@ -74,21 +74,21 @@
       {
         "status": "unresolved",
         "origins": ["peptides.json#/bpc-157/research_summary", "audit/catalogue-authored.json#catalog:peptide:bpc-157/template/halfLife"],
-        "text": "Half-life estimates differ: the legacy summary reports approximately 40 minutes from an in-vitro plasma-stability study; the Biometra template reports 4-6 hours with a preclinical source note. These are not interchangeable measurements. Both accounts are retained; neither is newly verified here."
+        "text": "Half-life estimates differ: the legacy summary reports approximately 40 minutes from an in-vitro plasma-stability study; the imported template reports 4-6 hours with a preclinical source note. These are not interchangeable measurements. Both accounts are retained; neither is newly verified here."
       }
     ],
     "peptide:tb-500": [
       {
         "status": "identity-uncertain",
         "origins": ["peptides.json#/tb-500/full_name", "audit/catalogue-authored.json#catalog:peptide:tb-500"],
-        "text": "This legacy article covers products sold under an ambiguous TB-500 name. The separate Biometra fragment entry is narrower. Full thymosin beta-4 trial results and its reported PK must not be assumed to apply to that fragment."
+        "text": "This legacy article covers products sold under an ambiguous TB-500 name. The separate imported fragment entry is narrower. Full thymosin beta-4 trial results and its reported PK must not be assumed to apply to that fragment."
       }
     ],
     "peptide:cjc-1295": [
       {
         "status": "unresolved",
         "origins": ["peptides.json#/cjc-1295/full_name", "peptides.json#/cjc-1295/variant_note", "audit/catalogue-authored.json#catalog:peptide:cjc-1295"],
-        "text": "The legacy full name/aliases mention both DAC and no-DAC, while its variant note and Biometra identity identify no-DAC. The no-DAC research is attached here; the long-acting DAC variant keeps its separate page. Original wording is preserved, not treated as equivalence."
+        "text": "The legacy full name/aliases mention both DAC and no-DAC, while its variant note and imported catalogue identity identify no-DAC. The no-DAC research is attached here; the long-acting DAC variant keeps its separate page. Original wording is preserved, not treated as equivalence."
       }
     ]
   },
