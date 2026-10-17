@@ -24,9 +24,12 @@ favorite-state assertion; the test now waits for the exact destination and
 DOMContentLoaded before checking the unchanged saved state. All assertions
 remain in place.
 
-Skipped: live deployment verification (this follow-up is not pushed or
-published), Safari/Firefox checks and any fresh clinical review. Research,
-citations and the historical publication review are unchanged.
+The owner authorised pushing and publishing this follow-up on 2026-10-17.
+Release verification requires all 290 deployed files to match the tested build,
+with all 245 entries covered by the eight category indexes and the same per-type
+counts on the live cards. Receipts are retained in the session artifacts.
+Safari/Firefox checks and any fresh clinical review remain outside this change.
+Research, citations and the historical publication review are unchanged.
 
 ## Original consolidation
 
