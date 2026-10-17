@@ -11,6 +11,7 @@ async function main() {
   assert(artifactDirectory, 'Usage: node scripts/check_browser.cjs /scratch/screenshots');
   const root = path.resolve('out');
   assert((await fs.stat(root)).isDirectory(), 'Build out/ before browser verification');
+  const library = JSON.parse(await fs.readFile(path.join(root, 'data/library.json'), 'utf8'));
   await fs.mkdir(artifactDirectory, { recursive: true });
   const server = http.createServer(async (request, response) => {
     if (request.method !== 'GET') { response.writeHead(405).end(); return; }
@@ -122,6 +123,46 @@ async function main() {
             if (width === 375 && colorScheme === 'light' && prefix) await capture(page, 'mobile-menu');
             await menu.click();
           }
+          assert.equal(await page.locator('.cat-card').count(), 8);
+          for (const [slug, category] of Object.entries(library.categories)) {
+            const card = page.locator('[data-category="' + slug + '"]');
+            assert.equal(await card.locator('.card-count').innerText(), category.members.length + ' entries');
+            const expected = {};
+            for (const key of category.members) {
+              const kind = library.entries[key].kind;
+              expected[kind] = (expected[kind] || 0) + 1;
+            }
+            const actual = await card.locator('.category-counts > div').evaluateAll(rows =>
+              Object.fromEntries(rows.map(row => [row.dataset.kind, Number(row.querySelector('dd').textContent)])));
+            assert.deepEqual(actual, expected);
+          }
+          if (prefix && width !== 768) {
+            await page.locator('[data-category="longevity"]').scrollIntoViewIfNeeded();
+            await capture(page, 'category-cards-' + width + '-' + colorScheme);
+          }
+          await page.locator('[data-category="longevity"] .card-link').focus();
+          await page.keyboard.press('Enter');
+          await page.waitForURL('**/categories/longevity.html');
+          const longevity = library.categories.longevity.members.map(key => library.entries[key]);
+          assert.equal(await page.locator('section[id^="type-"]').count(), 8);
+          for (const kind of new Set(longevity.map(entry => entry.kind))) {
+            const actual = await page.locator('#type-' + kind + ' .card-grid > li > a').evaluateAll(links =>
+              links.map(link => new URL(link.href).pathname));
+            assert.deepEqual(actual, longevity.filter(entry => entry.kind === kind).map(entry => prefix + entry.path));
+          }
+          await noOverflow(page);
+          if (prefix && width !== 768) await capture(page, 'category-longevity-' + width + '-' + colorScheme);
+          await page.locator('a[href="#type-supplement"]').click();
+          assert.equal(new URL(page.url()).hash, '#type-supplement');
+          const heading = await page.locator('#heading-supplement').boundingBox();
+          const header = await page.locator('.site-topbar').boundingBox();
+          assert(heading.y >= header.y + header.height && heading.y < 960,
+            'Category type jump must leave its heading visible below the sticky header');
+          await page.goto(url('/library/supplement-caffeine.html'));
+          await page.getByRole('link', { name: 'Nootropics & cognitive', exact: true }).click();
+          await page.waitForURL('**/categories/nootropics-cognitive.html');
+          assert(await page.getByRole('link', { name: /^Caffeine\b/ }).isVisible());
+          await page.goto(url('/index.html'));
           await page.getByRole('searchbox', { name: 'Search the full library', exact: true }).fill('caffeine');
           await page.getByRole('searchbox', { name: 'Search the full library', exact: true }).press('Enter');
           await page.waitForURL('**/directory.html?q=caffeine');
@@ -162,6 +203,8 @@ async function main() {
           assert.equal(await page.locator('#favoritesRoot a').count(), 3);
           if (width === 1440 && colorScheme === 'light' && prefix) await capture(page, 'favorites');
           await caffeine.click();
+          await page.waitForURL(url('/library/supplement-caffeine.html'));
+          await page.waitForLoadState('domcontentloaded');
           assert.equal(await page.locator('.fav-toggle').getAttribute('aria-pressed'), 'true');
           await page.locator('.fav-toggle').click();
           await page.goto(url('/favorites.html'));

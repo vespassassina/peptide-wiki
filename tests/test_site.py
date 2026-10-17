@@ -1,6 +1,7 @@
 import contextlib
 from copy import deepcopy
 import hashlib
+from html import escape
 from html.parser import HTMLParser
 import io
 import json
@@ -91,6 +92,44 @@ class SiteTests(unittest.TestCase):
         tb_fragment = (self.output / "library/peptide-tb-500.html").read_text()
         self.assertIn('href="../library/peptide-tb-500.html"', tb_legacy)
         self.assertIn('href="../peptides/tb-500.html"', tb_fragment)
+
+    def test_category_cards_and_pages_cover_all_kinds_with_matching_counts(self):
+        public = json.loads((self.output / "data/library.json").read_text())
+        home = (self.output / "index.html").read_text()
+        self.assertIn("Browse by category", home)
+        self.assertNotIn("Legacy library by benefit", home)
+        for slug, category in public["categories"].items():
+            members = [public["entries"][key] for key in category["members"]]
+            card = home.split(f'data-category="{slug}"', 1)[1].split("</a>", 1)[0]
+            self.assertIn(f'{len(members)} entries', card)
+            document = (self.output / f"categories/{slug}.html").read_text()
+            parser = Links()
+            parser.feed(document)
+            structured = next(value for value in parser.json_scripts if value.get("@type") == "CollectionPage")
+            self.assertEqual({part["url"] for part in structured["hasPart"]}, {entry["path"] for entry in members})
+            for kind, label in self.namespace["KIND_LABELS"].items():
+                count = sum(entry["kind"] == kind for entry in members)
+                if count:
+                    self.assertIn(f'<div data-kind="{kind}"><dt>{escape(label)}</dt><dd>{count}</dd></div>', card)
+                    self.assertIn(f'id="type-{kind}"', document)
+                else:
+                    self.assertNotIn(f'data-kind="{kind}"', card)
+            self.assertIn("not evidence of benefit", document)
+
+    def test_category_navigation_and_machine_data_keep_legacy_compatibility(self):
+        public = json.loads((self.output / "data/library.json").read_text())
+        sitemap = json.loads((self.output / "data/sitemap.json").read_text())
+        for name in ("peptides", "categories", "stacks"):
+            self.assertEqual(json.loads((self.output / f"data/{name}.json").read_text()),
+                             json.loads((ROOT / f"{name}.json").read_text()))
+        for slug, category in public["categories"].items():
+            self.assertEqual(sitemap["categoryEntries"][slug], category["members"])
+            self.assertEqual(sitemap["categories"][slug], self.namespace["CAT_PEPTIDES"][slug])
+        for entry in public["entries"].values():
+            if entry["id"].startswith("library:"):
+                document = (self.output / entry["path"].lstrip("/")).read_text()
+                for slug in entry["categories"]:
+                    self.assertIn(f'href="../categories/{slug}.html"', document)
 
     def test_public_wiki_uses_neutral_research_labels_without_source_branding(self):
         branded = [

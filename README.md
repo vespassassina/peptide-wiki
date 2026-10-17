@@ -8,6 +8,12 @@ markers. The library has **245 reference entries**: all 79 legacy
 records plus all 210 research catalogue records, with 44 explicit identity overlaps.
 The original 8 benefit categories and 8 stacks remain available.
 
+All 245 entries now belong to at least one of the same eight topic categories.
+Category cards show a unique-entry total and a breakdown by type; zero-count
+types are omitted. Category pages group their entries by type, and entries can
+appear in multiple categories. Membership describes topical relevance, including
+risks and monitoring, not evidence of benefit or a recommendation.
+
 This is not medical advice. Study reports, community descriptions, regulatory
 statements and uncertainty stay separate. Imported research is a historical
 snapshot, not fresh clinical verification. Conflicting accounts are retained,
@@ -23,6 +29,8 @@ remain visible. Publication uses the existing GitHub Pages workflow and URL.
 - `peptides.json`, `categories.json`, `stacks.json` — unchanged legacy authored content.
 - `research/biometra/` — pinned evidence, final outcome ledger and non-deployed audit archive.
 - `research/mapping.json` — explicit identity dispositions, variant distinctions and conflicts.
+- `research/category-membership.json` — explicit topic memberships for all 166
+  additional entries, plus descriptions covering the wider library.
 - `library.py` — validated, allowlisted public projection with citation occurrence provenance.
 - `generate.py` — offline, atomic static-site build.
 - `vendor/artifactkit/` — the CSS/JS design system the site is built on.
@@ -54,6 +62,10 @@ unchanged `/peptide-wiki/` Pages base.
 `data/library.json` contains the full public catalogue and attributed research.
 The original `data/peptides.json`, `data/categories.json` and `data/stacks.json`
 remain compatible. The sitemap and `llms.txt` enumerate the broader library.
+The full category definitions and canonical member IDs are in
+`data/library.json` under `categories`. `data/sitemap.json` retains its original
+peptide-slug `categories` index and adds `categoryEntries` for the full library.
+Legacy `data/categories.json` remains unchanged.
 
 ## Biohacker Wiki consolidation
 
@@ -131,6 +143,10 @@ breakpoint resets and short-screen scrolling. Two no-JavaScript cases ensure
 the links remain available without a working disclosure script. Four additional
 menu screenshots and four publication-warning/account screenshots bring the
 total to 22, alongside `results.json`.
+Category checks compare all eight cards with the public member/type data, verify
+the all-type Longevity page, keyboard category navigation, type-anchor scrolling
+and entry-to-category links. Eight additional screenshots cover category cards
+and the Longevity page at 375/1440 pixels in light/dark modes.
 External browser requests are blocked. Run the Python build first.
 
 ## Contributing

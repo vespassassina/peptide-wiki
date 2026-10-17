@@ -82,6 +82,11 @@
 .cat-icon svg, .cat-icon-sm svg{ width:100%; height:100%; display:block }
 .cat-icon-sm{ display:inline-block; width:12px; height:12px; vertical-align:-1px }
 .card-count{ font-size:11.5px; color:var(--ak-ink-soft) }
+.card-grid .card-count{ font-size:14px; font-weight:600; color:var(--ak-ink) }
+.category-counts{ margin:var(--ak-s3) 0 0; padding-top:var(--ak-s3); border-top:1px solid var(--ak-rule); font-size:13px }
+.category-counts > div{ display:flex; justify-content:space-between; gap:var(--ak-s3); padding:2px 0 }
+.category-counts dt{ min-width:0 }
+.category-counts dd{ margin:0; font-weight:600; font-variant-numeric:tabular-nums }
 
 /* ── homepage category cards: subtle per-category tint ──────────────── */
 .card-grid > li.cat-card{

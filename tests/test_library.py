@@ -27,6 +27,67 @@ class LibraryTests(unittest.TestCase):
         for slug in json.loads((ROOT / "peptides.json").read_text()):
             self.assertEqual(entries["peptide:" + slug]["path"], f"/peptides/{slug}.html")
 
+    def test_every_entry_has_valid_topic_categories_without_reclassifying_legacy(self):
+        definitions = json.loads((ROOT / "categories.json").read_text())
+        legacy = json.loads((ROOT / "peptides.json").read_text())
+        for entry in self.catalogue["entries"].values():
+            with self.subTest(entry=entry["id"]):
+                self.assertTrue(entry["categories"])
+                self.assertEqual(len(entry["categories"]), len(set(entry["categories"])))
+                self.assertLessEqual(set(entry["categories"]), set(definitions))
+                if entry["id"].startswith("peptide:"):
+                    self.assertEqual(entry["categories"], legacy[entry["id"].split(":")[1]]["categories"])
+        caffeine = self.catalogue["entries"]["library:supplement-caffeine"]
+        self.assertEqual(set(caffeine["categories"]), {"nootropics-cognitive", "fitness-muscle"})
+        self.assertNotIn("fat-loss", self.catalogue["entries"]["library:hormone-levothyroxine"]["categories"])
+        self.assertIn("longevity", self.catalogue["entries"]["library:lab-marker-panel"]["categories"])
+
+    def test_category_indexes_are_complete_and_deduplicated(self):
+        categories = self.catalogue["categories"]
+        self.assertEqual(set(categories), set(json.loads((ROOT / "categories.json").read_text())))
+        covered = set()
+        for slug, category in categories.items():
+            expected = {key for key, entry in self.catalogue["entries"].items() if slug in entry["categories"]}
+            self.assertEqual(set(category["members"]), expected)
+            self.assertEqual(len(category["members"]), len(expected))
+            covered.update(category["members"])
+        self.assertEqual(covered, set(self.catalogue["entries"]))
+        self.assertIn("not evidence of benefit", self.catalogue["categoryPolicy"])
+        self.assertTrue(all(self.catalogue["entries"][key]["kind"] == "peptide"
+                            for key in categories["bioregulators"]["members"]))
+
+    def test_invalid_or_incomplete_category_memberships_fail_closed(self):
+        original = library.read_json
+        for mutation in ("missing", "extra", "legacy-override", "empty", "unknown", "duplicate",
+                         "wrong-type", "missing-description", "blank-description", "schema"):
+            classification = original(ROOT / "research/category-membership.json")
+            memberships = classification["memberships"]
+            if mutation == "missing":
+                memberships.pop("library:context-sleep")
+            elif mutation == "extra":
+                memberships["library:nonexistent"] = ["longevity"]
+            elif mutation == "legacy-override":
+                memberships["peptide:bpc-157"] = ["longevity"]
+            elif mutation == "empty":
+                memberships["library:context-sleep"] = []
+            elif mutation == "unknown":
+                memberships["library:context-sleep"] = ["unknown-category"]
+            elif mutation == "duplicate":
+                memberships["library:context-sleep"] = ["longevity", "longevity"]
+            elif mutation == "wrong-type":
+                memberships["library:context-sleep"] = "longevity"
+            elif mutation == "missing-description":
+                classification["descriptions"].pop("longevity")
+            elif mutation == "blank-description":
+                classification["descriptions"]["longevity"] = " "
+            else:
+                classification["schemaVersion"] = 99
+            with self.subTest(mutation=mutation):
+                with patch("library.read_json", side_effect=lambda path: classification
+                           if path.name == "category-membership.json" else original(path)):
+                    with self.assertRaises(ValueError):
+                        library.load_library(ROOT)
+
     def test_aliases_cross_kinds_and_variants_are_explicit(self):
         entries = self.catalogue["entries"]
         self.assertEqual(entries["peptide:epithalon"]["research"][0]["title"], "Epitalon")

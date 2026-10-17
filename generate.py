@@ -245,6 +245,12 @@ def pill(slug):
 def category_badges(cats):
     return "".join(f'<a class="ak-badge" href="/categories/{c}.html">{cat_icon(c, "cat-icon-sm")} {esc(CATEGORIES[c]["name"])}</a> ' for c in cats)
 
+def category_type_counts(cslug):
+    counts = dict.fromkeys(KIND_LABELS, 0)
+    for key in LIBRARY["categories"][cslug]["members"]:
+        counts[LIBRARY["entries"][key]["kind"]] += 1
+    return {kind: count for kind, count in counts.items() if count}
+
 def fav_button(key, label):
     return f'<button type="button" class="ak-btn fav-toggle" data-fav-key="{esc(key)}" aria-pressed="false"><span class="fav-star" aria-hidden="true">☆</span> <span class="fav-label">Add to favorites</span></button>'
 
@@ -390,7 +396,7 @@ def research_block(entry):
 def library_page(entry):
     crumbs = breadcrumbs([("Home", "/index.html"), (KIND_LABELS[entry["kind"]], f'/kinds/{entry["kind"]}.html'), (entry["title"], None)])
     structured = script_json({"@context": "https://schema.org", "@type": "Article", "name": entry["title"], "description": entry["summary"], "url": SITE_DOMAIN + entry["path"]})
-    body = f'''{crumbs}<article><header class="ak-pagehead"><div><h1>{esc(entry["title"])}</h1><p class="ak-lede">{esc(entry["summary"])}</p><p>{esc(KIND_LABELS[entry["kind"]])}</p></div><div class="ak-meta">{fav_button(entry["id"], entry["title"])}</div></header>
+    body = f'''{crumbs}<article><header class="ak-pagehead"><div><h1>{esc(entry["title"])}</h1><p class="ak-lede">{esc(entry["summary"])}</p><p>{esc(KIND_LABELS[entry["kind"]])}</p><div class="peptide-pills" aria-label="Topic categories">{category_badges(entry["categories"])}</div></div><div class="ak-meta">{fav_button(entry["id"], entry["title"])}</div></header>
 {conflict_block(entry)}<div class="ak-prose">{research_block(entry)}<section><h2>Related entries and components</h2>{related_list(entry["related"])}</section></div></article><script type="application/ld+json">{structured}</script>'''
     return page(entry["title"], entry["summary"], "", body, canonical=entry["path"], page_id=entry["id"].replace(":", "-"))
 
@@ -510,8 +516,10 @@ def peptide_page(slug, p):
 
 # ---------- category hub pages ----------
 def category_page(cslug, c):
-    members = CAT_PEPTIDES.get(cslug, [])
-    member_set = set(members)
+    category = LIBRARY["categories"][cslug]
+    members = [LIBRARY["entries"][key] for key in category["members"]]
+    counts = category_type_counts(cslug)
+    member_set = set(CAT_PEPTIDES[cslug])
     cat_stacks = [slug for slug, s in STACKS.items() if member_set & set(s["component_slugs"])]
     stacks_block = ""
     if cat_stacks:
@@ -521,40 +529,42 @@ def category_page(cslug, c):
         )
         stacks_block = f'''<h2 class="ak-sechead"><span class="ak-n">POPULAR</span> stacks in this category</h2>
 <ul>{stack_items}</ul>'''
-    cards = "".join(
-        f'''<li>
-  <a class="card-link" href="/peptides/{s}.html">
-    <h3>{esc(PEPTIDES[s]["name"])}</h3>
-    <p>{esc(PEPTIDES[s]["tagline"])}</p>
-    {pill(s)}
-  </a>
-</li>''' for s in members
+    groups = []
+    for kind, count in counts.items():
+        cards = "".join(
+            f'''<li><a class="card-link" href="{esc(entry["path"])}">
+<h3>{esc(entry["title"])}</h3><p>{esc(entry["summary"])}</p>
+{pill(entry["id"].split(":", 1)[1]) if entry["id"].startswith("peptide:") else ""}
+</a></li>''' for entry in members if entry["kind"] == kind
+        )
+        groups.append(f'<section class="ak-section" id="type-{kind}" aria-labelledby="heading-{kind}"><h2 id="heading-{kind}">{esc(KIND_LABELS[kind])} <span class="ak-small">({count})</span></h2><ul class="card-grid">{cards}</ul></section>')
+    kind_links = "".join(
+        f'<li><a href="#type-{kind}">{esc(KIND_LABELS[kind])}</a><span>{count} {"entry" if count == 1 else "entries"}</span></li>'
+        for kind, count in counts.items()
     )
     crumbs = breadcrumbs([("Home", "/index.html"), (c["name"], None)])
     ld = script_json({
-        "@context": "https://schema.org", "@type": "CollectionPage", "name": c["name"], "description": c["summary"],
-        "hasPart": [{"@type": "MedicalWebPage", "name": PEPTIDES[s]["name"], "url": f"/peptides/{s}.html"} for s in members]
+        "@context": "https://schema.org", "@type": "CollectionPage", "name": c["name"], "description": category["summary"],
+        "hasPart": [{"@type": "WebPage", "name": entry["title"], "url": entry["path"]} for entry in members]
     })
     body = f'''{crumbs}
 <header class="ak-pagehead">
   <div>
-    <p class="ak-eyebrow">Category</p>
     <h1>{cat_icon(cslug, "cat-icon-lg")} {esc(c["name"])}</h1>
-    <p class="ak-lede">{esc(c["summary"])}</p>
+    <p class="ak-lede">{esc(category["summary"])}</p>
   </div>
-  <div class="ak-meta">{len(members)} peptides</div>
+  <div class="ak-meta">{len(members)} entries</div>
 </header>
 
-<div class="ak-exhibit">
-  <p class="ak-eyebrow">Category primer</p>
-  <p class="ak-takeaway">{esc(c["primer"])}</p>
-</div>
+<p class="research-status">{esc(LIBRARY["categoryPolicy"])}</p>
+<nav aria-label="Entry types in this category"><ul class="kind-index">{kind_links}</ul></nav>
+<details class="ak-disclosure"><summary>Original peptide research context</summary>
+<p>{esc(c["primer"])}</p></details>
 
-<h2 class="ak-sechead"><span class="ak-n">PEPTIDES</span> in this category</h2>
-<ul class="card-grid">{cards}</ul>
+{"".join(groups)}
 {stacks_block}
 <script type="application/ld+json">{ld}</script>'''
-    return page(c["name"], c["summary"], cslug, body, canonical=f"/categories/{cslug}.html", page_id=f"category-{cslug}")
+    return page(c["name"], category["summary"], cslug, body, canonical=f"/categories/{cslug}.html", page_id=f"category-{cslug}")
 
 # ---------- stack pages ----------
 EVIDENCE_LEVEL_PILL = {
@@ -660,16 +670,22 @@ def stacks_index_page():
 
 # ---------- home page ----------
 def home_page():
-    cat_cards = "".join(
-        f'''<li style="--cat-hue:{CATEGORY_HUE.get(c, 200)}" class="cat-card">
+    cat_cards = []
+    for c, category in LIBRARY["categories"].items():
+        counts = "".join(
+            f'<div data-kind="{kind}"><dt>{esc(KIND_LABELS[kind])}</dt><dd>{count}</dd></div>'
+            for kind, count in category_type_counts(c).items()
+        )
+        cat_cards.append(f'''<li style="--cat-hue:{CATEGORY_HUE.get(c, 200)}" class="cat-card" data-category="{c}">
   <a class="card-link" href="/categories/{c}.html">
     {cat_icon(c, "cat-icon-lg")}
     <h3>{esc(CATEGORIES[c]["name"])}</h3>
-    <p>{esc(CATEGORIES[c]["summary"][:130])}…</p>
-    <p class="card-count">{len(CAT_PEPTIDES.get(c, []))} peptides</p>
+    <p>{esc(category["summary"])}</p>
+    <p class="card-count">{len(category["members"])} entries</p>
+    <dl class="category-counts" aria-label="Entries by type">{counts}</dl>
   </a>
-</li>''' for c in CATEGORIES
-    )
+</li>''')
+    cat_cards = "".join(cat_cards)
     kind_links = []
     for kind, label in KIND_LABELS.items():
         count = sum(entry["kind"] == kind for entry in LIBRARY["entries"].values())
@@ -694,7 +710,8 @@ def home_page():
 <ul class="kind-index">{kind_links}</ul>
 <p class="research-status">This is a historical research consolidation, not fresh clinical verification. Study reports, community descriptions and regulatory statements stay distinct. App defaults and rejected drafts are not published here.</p>
 
-<h2 class="ak-sechead">Legacy library by benefit</h2>
+<h2 class="ak-sechead">Browse by category</h2>
+<p class="ak-small">{esc(LIBRARY["categoryPolicy"])}</p>
 <ul class="card-grid">{cat_cards}</ul>
 
 <div class="ak-exhibit">
@@ -1107,7 +1124,7 @@ def about_page():
 <p>Imported research is a historical snapshot, not newly verified clinical guidance. B-82 checks dated 2026-10-06 retain their original scope: 59 suitable descriptions and 71 bounded empty outcomes. Source-to-wiki backlinks are circular provenance, not independent corroboration. App defaults and rejected drafts remain in the non-deployed archive.</p>
 <p><strong>Publication suitability · {esc(LIBRARY["publicationReview"]["checkedOn"])}:</strong> The owner authorised publication of the authored historical reference. Source-support limitations are visible on affected entries, and community accounts are collapsed and labelled individually. Medical, regulatory, efficacy, safety and dose claims are not independently verified. URL retrieval is not claim validation. No permission to reproduce third-party publisher pages or excerpts is claimed.</p>
 <p>Commercial-source citations are a narrow provenance exception for this preserved import, not vendor recommendations, affiliate links or a purchasing directory. Read the account’s limitations before its original wording; a vendor or forum claim is not independent clinical evidence.</p>
-<p>The full library covers peptides, medications and hormones, supplements, food and fasting, exercise, recovery practices, context and habits, and lab markers. The original peptide benefit categories remain available. Published study reports, regulatory statements and community accounts stay attributable and separate.</p>
+<p>The full library covers peptides, medications and hormones, supplements, food and fasting, exercise, recovery practices, context and habits, and lab markers. All entries are classified within the same eight topic categories. Categories can overlap and include risks and monitoring context; membership is not evidence of benefit or a recommendation. Published study reports, regulatory statements and community accounts stay attributable and separate.</p>
 </section>
 <section class="ak-section"><h2>This is not medical advice</h2>
 <div class="ak-banner ak-banner-bad">Nothing on this site is a recommendation to use, or a guide to using, any specific substance. Many peptides described here are unapproved research chemicals sold "not for human consumption," with limited to no human safety or efficacy data at the doses commonly self-administered. Always consult a licensed physician before starting, stopping, or combining any of these substances.</div>
@@ -1357,7 +1374,7 @@ def build():
     sitemap_urls += [f"/stacks/{s}.html" for s in ALL_STACK_SLUGS]
     sitemap_urls += [entry["path"] for entry in LIBRARY["entries"].values() if entry["id"].startswith("library:")]
     sitemap_urls += [f"/kinds/{kind}.html" for kind in KIND_LABELS]
-    write("data/sitemap.json", json.dumps({"site": SITE_NAME, "generated": TODAY, "pages": sitemap_urls, "categories": {c: CAT_PEPTIDES.get(c, []) for c in CATEGORIES}}, indent=2))
+    write("data/sitemap.json", json.dumps({"site": SITE_NAME, "generated": TODAY, "pages": sitemap_urls, "categories": {c: CAT_PEPTIDES.get(c, []) for c in CATEGORIES}, "categoryEntries": {c: category["members"] for c, category in LIBRARY["categories"].items()}}, indent=2))
 
     xml_urls = "".join(f"<url><loc>{SITE_DOMAIN}{u}</loc></url>" for u in sitemap_urls)
     write("sitemap.xml", f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{xml_urls}</urlset>')
@@ -1368,9 +1385,10 @@ def build():
     lines += ["", "## Kinds"]
     for kind, label in KIND_LABELS.items():
         lines.append(f"- {label} ({SITE_DOMAIN}/kinds/{kind}.html)")
-    lines += ["", "## Legacy benefit categories"]
-    for c, cc in CATEGORIES.items():
-        lines.append(f"- {cc['name']} (/categories/{c}.html): {cc['summary']}")
+    lines += ["", "## Topic categories", LIBRARY["categoryPolicy"]]
+    for c, category in LIBRARY["categories"].items():
+        counts = ", ".join(f"{KIND_LABELS[kind]}: {count}" for kind, count in category_type_counts(c).items())
+        lines.append(f"- {category['name']} (/categories/{c}.html): {category['summary']} [{len(category['members'])} entries; {counts}]")
     lines += ["", "## Peptides (machine-readable data at /data/peptides.json)"]
     for s in ALL_SLUGS:
         p = PEPTIDES[s]
@@ -1381,7 +1399,7 @@ def build():
     lines += ["", "## Notes for agents", "Every page has JSON-LD structured data (MedicalWebPage/CollectionPage + BreadcrumbList).", "Flat JSON dataset: /data/peptides.json, /data/categories.json, /data/stacks.json, /data/sitemap.json", "This is not medical advice — see /about.html."]
     write("llms.txt", "\n".join(lines))
 
-    print(f"Generated {len(LIBRARY['entries'])} reference entries, {len(STACKS)} stacks and {len(CATEGORIES)} legacy categories")
+    print(f"Generated {len(LIBRARY['entries'])} reference entries, {len(STACKS)} stacks and {len(CATEGORIES)} topic categories")
 
 def main():
     global LIBRARY, OUT

@@ -29,6 +29,11 @@ TIER_LABELS = {
     "preclinical": "Preclinical",
     "reference": "Reference only",
 }
+CATEGORY_POLICY = (
+    "Categories group entries by topical relevance, including risks, context and monitoring. "
+    "Membership is not evidence of benefit or a recommendation. "
+    "An entry can appear in more than one category; category totals must not be added together."
+)
 
 
 def read_json(path):
@@ -53,6 +58,40 @@ def citation_identity(url):
     if parsed.hostname in {"doi.org", "dx.doi.org"}:
         return "doi:" + parsed.path.strip("/").lower()
     return url
+
+
+def classify_categories(root, entries):
+    definitions = read_json(root / "categories.json")
+    classification = read_json(root / "research/category-membership.json")
+    require(isinstance(classification, dict) and classification.get("schemaVersion") == 1,
+            "category membership", "use schema version 1 for the topic classification")
+    descriptions = classification.get("descriptions")
+    require(isinstance(descriptions, dict) and descriptions.keys() == definitions.keys(),
+            "category membership", "provide a description for each existing category")
+    require(all(isinstance(text, str) and text.strip() for text in descriptions.values()),
+            "category membership", "category descriptions must be non-empty text")
+    memberships = classification.get("memberships")
+    imported = {key for key in entries if key.startswith("library:")}
+    require(isinstance(memberships, dict) and memberships.keys() == imported,
+            "category membership", "classify every additional entry exactly once; do not override legacy memberships")
+    for key, entry in entries.items():
+        categories = memberships[key] if key in imported else entry["categories"]
+        require(isinstance(categories, list) and categories
+                and all(isinstance(category, str) and category in definitions for category in categories),
+                key, "assign at least one existing topic category")
+        require(len(categories) == len(set(categories)),
+                key, "remove duplicate topic memberships")
+        entry["categories"] = list(categories)
+    return {
+        slug: {
+            "name": definition["name"], "summary": descriptions[slug],
+            "members": sorted(
+                (key for key, entry in entries.items() if slug in entry["categories"]),
+                key=lambda key: (entries[key]["title"].casefold(), key),
+            ),
+        }
+        for slug, definition in definitions.items()
+    }
 
 
 def load_library(root, mapping=None):
@@ -188,6 +227,7 @@ def load_library(root, mapping=None):
                 require(related in entries, source_id, f"unresolved related identity {related}")
                 entries[related]["related"].append(target)
         entry["research"].append(research)
+    categories = classify_categories(root, entries)
     sources = {}
 
     def register(entry, source, origin):
@@ -254,6 +294,7 @@ def load_library(root, mapping=None):
             "source availability", "every citation URL needs exactly one dated check")
     return {
         "schemaVersion": 1, "entries": entries, "sources": sources,
+        "categories": categories, "categoryPolicy": CATEGORY_POLICY,
         "sourceAvailability": availability, "sourceCounts": counts,
         "stackConflicts": mapping["stackConflicts"], "sourceCommit": SOURCE_COMMIT,
         "reviewState": "historical-not-reverified",

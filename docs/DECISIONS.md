@@ -1,5 +1,25 @@
 # Decisions
 
+## 2026-10-17 Extend the eight categories to the whole library
+
+Classify the 166 additional canonical entries explicitly, retaining all 79
+legacy records' original memberships. All 245 entries must have at least one
+valid category. Reject missing, extra, duplicate or invalid memberships before
+replacing any generated output.
+
+The unattended clarification default is topical relevance with overlapping
+membership, not supported-benefit claims. Alcohol and nicotine are exposure/risk
+context, a blood panel is monitoring context, and thyroid replacement is not
+filed as a weight-loss intervention. The bioregulator category stays
+peptide-specific. These are editorial browsing labels, not a new clinical review.
+
+Cards show unique-entry totals and non-zero type counts from the same canonical
+membership index used by category pages. Count the actual canonical kind:
+medications attached to old peptide URLs are not counted as peptides.
+Group category pages by type and add category links to imported entry pages.
+Keep legacy data exports and sitemap slug lists unchanged; expose the full
+index additively in library JSON and `categoryEntries` in sitemap JSON.
+
 ## 2026-10-16 Remove source-app branding from the public wiki
 
 Use neutral research labels in pages, navigation, footers, conflict notes and

@@ -1,5 +1,35 @@
 # Biohacker Wiki consolidation plan
 
+## Category browsing follow-up: 2026-10-17
+
+One local working increment extends the existing eight categories to all 245
+canonical entries. The unattended assumption is overlapping topical relevance,
+including risks and monitoring, not a claim that every item provides a benefit.
+
+| Task | Outcome and proof | Status |
+| --- | --- | --- |
+| classify-additional-entries | All 166 additional entries have explicit memberships; all 79 legacy memberships are unchanged | Done |
+| expand-category-browsing | Cards show totals and non-zero counts by actual kind; matching category pages group all members by type; badges and modern exports share the same index | Done |
+| verify-category-browsing | 43 tests, real offline build, 18 menu cases and 12 extended viewport/theme/base-path flows pass; 30 screenshots retained | Done |
+
+All 290 generated files retain the source-name cleanup, and all 277 HTML pages
+have unique IDs. Invalid, missing, duplicate and extra classification records are
+rejected. Hand-checked Longevity's breakdown: 15 peptides, 9 medications/hormones,
+24 supplements, 6 food/fasting, 3 exercise, 1 recovery, 4 context/habits and
+1 lab marker total 63 unique entries. Category totals overlap by design.
+
+Browser evidence is in the session's `files/category-check/` directory. The
+first browser pass exposed a navigation/load timing race in an existing
+favorite-state assertion; the test now waits for the exact destination and
+DOMContentLoaded before checking the unchanged saved state. All assertions
+remain in place.
+
+Skipped: live deployment verification (this follow-up is not pushed or
+published), Safari/Firefox checks and any fresh clinical review. Research,
+citations and the historical publication review are unchanged.
+
+## Original consolidation
+
 Scope: [approved specification](specs/biohacker-wiki-consolidation.md).
 Sprint 1 was reviewed, then the user explicitly authorised autonomous completion
 of all remaining approved work. All five sprints are complete locally. No
